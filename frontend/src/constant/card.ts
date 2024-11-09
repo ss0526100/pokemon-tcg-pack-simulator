@@ -284,7 +284,16 @@ import A1283 from '../assets/cards/A1/A1-283.webp';
 import A1284 from '../assets/cards/A1/A1-284.webp';
 import A1285 from '../assets/cards/A1/A1-285.webp';
 import A1286 from '../assets/cards/A1/A1-286.webp';
+import MISSING_NO from '../assets/cards/MiSS-000.png';
 
+export const MISSING_NO_CARD: CardInfo = {
+  id: 'MISS-000',
+  cardName: '미싱노',
+  imgSrc: MISSING_NO,
+  grade: 'crown',
+  expansion: 'A1',
+  category: 'normal',
+};
 export const A1_CARD_LIST: CardInfo[] = [
   {
     id: 'A1-001',
@@ -2989,6 +2998,7 @@ const PIKACHU_S3: CardId[] = ['A1-281'];
 const MEWTWO_S3: CardId[] = ['A1-282'];
 
 const ALL_CROWN: CardId[] = ['A1-284', 'A1-285', 'A1-286'];
+
 export const PIKACHU_PACK_CARD_ID_LIST: Record<RareGrade, CardId[]>[] = [
   {
     crown: [],
@@ -3147,3 +3157,12 @@ export const CHARIZARD_PACK_CARD_ID_LIST: Record<RareGrade, CardId[]>[] = [
     r1: [],
   },
 ];
+
+export const A1_CARD_POOL_ID_LIST: Record<
+  A1PackType,
+  Record<RareGrade, CardId[]>[]
+> = {
+  charizard: CHARIZARD_PACK_CARD_ID_LIST,
+  pikachu: PIKACHU_PACK_CARD_ID_LIST,
+  mewtwo: MEWTWO_PACK_CARD_ID_LIST,
+};
