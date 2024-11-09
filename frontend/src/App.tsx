@@ -1,10 +1,15 @@
 import Article from './components/Article/Article';
 import { Global } from '@emotion/react';
+import ImportImages from './components/PackSimulator/importImages';
 import MainLayout from './layouts/MainLayout/MainLayout';
 import PackSimulator from './components/PackSimulator/PackSimulator';
 import reset from './reset.style';
+import { useEffect } from 'react';
 
 function App() {
+  useEffect(() => {
+    ImportImages();
+  }, []);
   return (
     <>
       <Global styles={reset} />
@@ -17,4 +22,3 @@ function App() {
 }
 
 export default App;
-
