@@ -1,6 +1,7 @@
 import { css } from '@emotion/react';
 
 export const pack = css`
-  width: 250px;
-  height: 477px;
+  width: 219px;
+  height: 427px;
+  object-fit: fill;
 `;
