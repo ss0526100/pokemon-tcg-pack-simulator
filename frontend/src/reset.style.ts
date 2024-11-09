@@ -143,9 +143,9 @@ table {
 }
 
 body{
-  position:fixed;
+  position:absolute;
   top:0;
-  left:0;
+  left:5px;
   width:100vw;
   height:100vh;
   background : linear-gradient(#BFBFFC, white);
