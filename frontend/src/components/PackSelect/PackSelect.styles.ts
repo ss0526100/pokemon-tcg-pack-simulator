@@ -1,7 +1,11 @@
 import { css } from '@emotion/react';
 
 export const layout = css`
+  display: flex;
   padding: 3rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 `;
 
 export const cardContainer = css`

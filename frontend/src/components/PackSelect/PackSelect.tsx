@@ -8,14 +8,19 @@ import RightArrow from '../svgs/RightArrow';
 import { useState } from 'react';
 
 interface PackSelectProps {
+  startPackType?: A1PackType;
   onSelect: (packtype: A1PackType) => void;
 }
 const a1PackTypes: A1PackType[] = ['charizard', 'pikachu', 'mewtwo'];
 
 export default function PackSelect(props: PackSelectProps) {
-  const { onSelect } = props;
+  const { onSelect, startPackType } = props;
 
-  const [packTypeIndex, setPackTypeIndex] = useState(0);
+  const [packTypeIndex, setPackTypeIndex] = useState(() => {
+    if (!startPackType) return 0;
+    return a1PackTypes.indexOf(startPackType);
+  });
+
   const beforeIndex =
     (packTypeIndex - 1 + a1PackTypes.length) % a1PackTypes.length;
   const nextIndex = (packTypeIndex + 1) % a1PackTypes.length;
@@ -23,7 +28,7 @@ export default function PackSelect(props: PackSelectProps) {
   const nowPackType = a1PackTypes[packTypeIndex];
 
   return (
-    <section css={S.layout}>
+    <main css={S.layout}>
       <div css={S.cardContainer}>
         <div css={S.selectContainer}>
           <div css={S.svgContainer}>
@@ -41,6 +46,6 @@ export default function PackSelect(props: PackSelectProps) {
         </div>
       </div>
       <Button onClick={() => onSelect(nowPackType)}>팩 개봉하기</Button>
-    </section>
+    </main>
   );
 }
