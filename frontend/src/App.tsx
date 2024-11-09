@@ -1,5 +1,3 @@
-import './App.css';
-
 import {
   A1_CARD_ID_MAP,
   A1_CARD_POOL_ID_LIST,
@@ -7,10 +5,13 @@ import {
 } from './constant/card';
 import { useCallback, useState } from 'react';
 
+import { Global } from '@emotion/react';
+import MainLayout from './layouts/MainLayout/MainLayout';
 import { NORMAL_PACK_RARE_PERCENTAGE_LIST_BY_INDEX } from './constant/service';
 import PackSelect from './components/PackSelect';
 import getRandomElement from './utils/getRandomElement';
 import getRandomStrByPercentFunc from './utils/getRandomStrByPercentFunc';
+import reset from './reset.style';
 
 const NORMAL_PACK_RARE_RANDOM_FUNC =
   NORMAL_PACK_RARE_PERCENTAGE_LIST_BY_INDEX.map(lists =>
@@ -38,6 +39,7 @@ const getRandomPack = (type: A1PackType = 'charizard') => {
 };
 
 const initPack = getRandomPack();
+
 function App() {
   const [cardPack, setCardPack] = useState<CardInfo[]>(initPack);
   const setRandomPack = useCallback((packType: A1PackType) => {
@@ -47,8 +49,11 @@ function App() {
 
   return (
     <>
-      {cardPack.map(c => c.cardName).join(' ')}
-      <PackSelect onSelect={setRandomPack} />
+      <Global styles={reset} />
+      <MainLayout>
+        {cardPack.map(c => c.cardName).join(' ')}
+        <PackSelect onSelect={setRandomPack} />
+      </MainLayout>
     </>
   );
 }

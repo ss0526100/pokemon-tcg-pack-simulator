@@ -22,7 +22,9 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
-    "declaration": true
+    "declaration": true,
+
+    "jsxImportSource": "@emotion/react"
   },
   "include": ["src"]
 }

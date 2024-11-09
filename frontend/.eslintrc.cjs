@@ -23,6 +23,7 @@ module.exports = {
   plugins: ['react', 'react-hooks'],
   rules: {
     'react/react-in-jsx-scope': 'off',
+    'react/no-unknown-property': ['error', { ignore: ['css'] }],
   },
   settings: {
     react: { version: 'detect' },
