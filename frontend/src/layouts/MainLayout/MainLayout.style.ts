@@ -8,7 +8,6 @@ export const layout = css`
   width: 100%;
   max-width: 600px;
   min-height: 100vh;
-  border: solid 1px black;
   flex-direction: column;
   padding: 2rem;
   align-items: center;
