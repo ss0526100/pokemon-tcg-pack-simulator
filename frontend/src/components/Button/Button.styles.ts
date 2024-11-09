@@ -23,6 +23,12 @@ const getBorder = ({ primary, secondary }: ButtonProps) => {
   return '0';
 };
 
+const getFontWeight = ({ primary, secondary }: ButtonProps) => {
+  if (primary) return '600';
+  if (secondary) return `550`;
+  return '600';
+};
+
 export const button = (props: ButtonProps) => css`
   width: 100%;
 
@@ -32,10 +38,8 @@ export const button = (props: ButtonProps) => css`
   color: ${getFontColor(props)};
 
   font-size: 20px;
-  font-weight: 600;
+  font-weight: ${getFontWeight(props)};
 
   padding: 2rem;
   border: ${getBorder(props)};
-
-  margin: 20px 0;
 `;
