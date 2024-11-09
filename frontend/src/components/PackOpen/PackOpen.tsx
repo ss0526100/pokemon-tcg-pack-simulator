@@ -1,10 +1,11 @@
 import * as S from './PackOpen.styles';
 
+import { useCallback, useEffect, useState } from 'react';
+
 import Button from '../Button/Button';
 import Card from '../Card/Card';
 import LeftArrow from '../svgs/LeftArrow';
 import RightArrow from '../svgs/RightArrow';
-import { useState } from 'react';
 
 interface PackOpenProps {
   cardInfos: CardInfo[];
@@ -27,14 +28,40 @@ export default function PackOpen(props: PackOpenProps) {
     setCardIndex(prev => Math.max(0, prev - 1));
   };
 
-  const getNextCard = () => {
+  const getNextCard = useCallback(() => {
     setCardIndex(prev => Math.min(prev + 1, cardInfos.length - 1));
-  };
+  }, [cardInfos]);
 
   const reopen = () => {
+    if (cardIndex !== cardInfos.length - 1) return;
     goOpen();
     setCardIndex(0);
   };
+
+  useEffect(() => {
+    function handleKeyDown(event: KeyboardEvent) {
+      switch (event.key) {
+        case 'ArrowLeft':
+          getBeforeCard();
+          break;
+        case 'ArrowRight':
+          getNextCard();
+          break;
+        case ' ':
+          getNextCard();
+          if (cardIndex === cardInfos.length - 1) goSelect();
+          break;
+        case 'r':
+          goSelect();
+          break;
+        default:
+          break;
+      }
+    }
+    document.addEventListener('keydown', handleKeyDown);
+
+    return () => document.removeEventListener('keydown', handleKeyDown);
+  }, [cardIndex, cardInfos, getNextCard, goSelect]);
 
   return (
     <main css={S.layout}>
