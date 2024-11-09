@@ -143,8 +143,9 @@ table {
 }
 
 html{
-  min-height:100vh;
+  height:100vh;
   background : linear-gradient(#BFBFFC, white);
+  background-attachment: fixed;
 }
 `;
 export default reset;
