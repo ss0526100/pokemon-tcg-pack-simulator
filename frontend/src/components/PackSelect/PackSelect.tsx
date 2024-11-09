@@ -1,7 +1,7 @@
 import * as S from './PackSelect.styles';
 
 import { A1_PACK_INFOS } from '../../constant/pack';
-import Button from '../button/button';
+import Button from '../Button/Button';
 import LeftArrow from '../svgs/LeftArrow';
 import Pack from './components/Pack/Pack';
 import RightArrow from '../svgs/RightArrow';
