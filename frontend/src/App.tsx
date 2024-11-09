@@ -3,6 +3,7 @@ import './App.css';
 import { useCallback, useState } from 'react';
 
 import { NORMAL_PACK_RARE_PERCENTAGE_LIST_BY_INDEX } from './constant/service';
+import Pack from './components/Pack';
 import getRandomStrByPercentFunc from './utils/getRandomStrByPercentFunc';
 
 const NORMAL_PACK_RARE_RANDOM_FUNC =
@@ -19,15 +20,14 @@ const initPackRare = getRandomPackRare();
 function App() {
   const [packRare, setPackRare] = useState(initPackRare);
 
-  const buttonClickHandler = useCallback(() => {
+  const setRandomPack = useCallback(() => {
     const packRare = getRandomPackRare();
     setPackRare(packRare);
   }, []);
 
   return (
     <>
-      {packRare.join(' ')}
-      <button onClick={buttonClickHandler}>랜덤 버튼</button>
+      <Pack cardList={packRare} onEnd={setRandomPack} key={packRare.join('')} />
     </>
   );
 }
