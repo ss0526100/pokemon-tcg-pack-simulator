@@ -289,6 +289,7 @@ const cards = [
 
 const getResult = (targetPack, targetGrade) =>
   cards.filter(
+    // eslint-disable-next-line
     ([id, name, grade, pack]) =>
       (pack === targetPack || pack === '') && grade === targetGrade
   );
