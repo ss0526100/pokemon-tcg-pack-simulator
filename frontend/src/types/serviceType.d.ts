@@ -2,6 +2,8 @@ type RareGrade = 'crown' | 's3' | 's2' | 's1' | 'r4' | 'r3' | 'r2' | 'r1';
 
 type Expansion = 'A1' | 'Promo';
 
+type A1PackType = 'charizard' | 'pikachu' | 'mewtwo';
+
 type PokemonCategory = 'normal' | 'ev1' | 'ev2' | 'ex';
 type TrainersCategory = 'supporter' | 'item' | 'item-fossil';
 
@@ -29,4 +31,12 @@ interface CardInfo {
   grade: RareGrade;
   expansion: Expansion;
   category: Category;
+}
+
+type PackId = string;
+
+interface PackInfo {
+  id: PackId;
+  packType: A1PackType;
+  imgSrc: string;
 }
