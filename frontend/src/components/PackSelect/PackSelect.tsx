@@ -1,5 +1,5 @@
-import { A1_PACK_INFOS } from '../constant/pack';
-import Pack from './Pack';
+import { A1_PACK_INFOS } from '../../constant/pack';
+import Pack from './components/Pack/Pack';
 import { useState } from 'react';
 
 interface PackSelectProps {

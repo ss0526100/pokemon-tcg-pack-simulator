@@ -1,3 +1,5 @@
+import * as S from './Pack.styles';
+
 interface Pack {
   packInfo: PackInfo;
 }
@@ -5,7 +7,7 @@ interface Pack {
 export default function Pack(props: Pack) {
   const { packInfo } = props;
 
-  return <img src={packInfo.imgSrc} />;
+  return <img src={packInfo.imgSrc} css={S.pack} />;
 }
 
 // const [phase, setPhase] = useState<Phase>('start');
