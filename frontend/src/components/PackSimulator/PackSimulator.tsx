@@ -1,3 +1,5 @@
+import * as S from './PackSimulator.style';
+
 import { useCallback, useState } from 'react';
 
 import PackOpen from '../PackOpen/PackOpen';
@@ -27,7 +29,7 @@ export default function PackSimulator() {
     setPhase('select');
   };
   return (
-    <>
+    <main css={S.layout}>
       {phase === 'select' && (
         <PackSelect onSelect={goOpenPhase} startPackType={nowPackType} />
       )}
@@ -39,6 +41,6 @@ export default function PackSimulator() {
           nowPackType={nowPackType}
         />
       )}
-    </>
+    </main>
   );
 }

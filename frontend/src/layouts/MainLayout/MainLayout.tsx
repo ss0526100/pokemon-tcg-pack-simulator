@@ -5,5 +5,5 @@ import { PropsWithChildren } from 'react';
 export default function MainLayout(props: PropsWithChildren) {
   const { children } = props;
 
-  return <main css={S.layout}>{children}</main>;
+  return <section css={S.layout}>{children}</section>;
 }
