@@ -12,9 +12,7 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
   ],
-  overrides: [
-    { settings: { 'no-unused-vars': ['error', { argsIgnorePattern: '^_' }] } },
-  ],
+  overrides: [],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
@@ -25,6 +23,7 @@ module.exports = {
   plugins: ['react', 'react-hooks'],
   rules: {
     'react/react-in-jsx-scope': 'off',
+    'no-unused-vars': ['error', { argsIgnorePattern: /^_/ }],
   },
   settings: {
     react: { version: 'detect' },
