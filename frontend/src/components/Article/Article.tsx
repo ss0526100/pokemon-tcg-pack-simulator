@@ -40,12 +40,13 @@ export default function Article() {
         포켓몬 카드 게임 Pocket 설치
       </Button>
       <Button secondary onClick={goForm}>
-        건의사항/피드백 보내기
+        건의사항/피드백/버그 제보
       </Button>
-      <span>
+      <span css={S.span}>
         본 서비스는 순수 팬심으로 만든 서비스이며, 수익을 창출하지 않습니다.
-        서비스 관련 문의 및 제안사항/건의사항은 devsofa2580@gmail.com으로
-        연락주시기 바랍니다.
+        <br />
+        서비스 관련 문의 등의 이유로 연락을 위해서는 devsofa2580@gmail.com을
+        활용해주시기 바랍니다.
       </span>
     </div>
   );
