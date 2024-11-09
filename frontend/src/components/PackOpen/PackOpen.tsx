@@ -52,7 +52,7 @@ export default function PackOpen(props: PackOpenProps) {
           if (cardIndex === cardInfos.length - 1) goSelect();
           break;
         case 'r':
-          goSelect();
+          reopen();
           break;
         default:
           break;
