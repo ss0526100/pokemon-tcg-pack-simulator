@@ -5,5 +5,6 @@ export const layout = css`
   left: 50%;
   transform: translate(-50%, 0);
   max-width: 600px;
-  background-color: red;
+  min-height: 100vh;
+  border: solid 1px black;
 `;

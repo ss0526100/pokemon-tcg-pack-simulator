@@ -143,7 +143,8 @@ table {
 }
 
 html{
-  background-color : #0EB4FC;
+  height:100%;
+  background : linear-gradient(#BFBFFC, white);
 }
 `;
 export default reset;
