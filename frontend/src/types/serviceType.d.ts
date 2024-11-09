@@ -20,8 +20,10 @@ type Category = PokemonCategory | TrainersCategory;
 //   | 'Colorless'
 //   | 'nonPokemon';
 
-interface Card {
-  id: string | number;
+type CardId = string;
+
+interface CardInfo {
+  id: CardId;
   cardName: string;
   imgSrc: string;
   grade: RareGrade;
