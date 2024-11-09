@@ -31,6 +31,11 @@ export default function PackOpen(props: PackOpenProps) {
     setCardIndex(prev => Math.min(prev + 1, cardInfos.length - 1));
   };
 
+  const reopen = () => {
+    goOpen();
+    setCardIndex(0);
+  };
+
   return (
     <main css={S.layout}>
       <div css={S.cardContainer}>
@@ -49,12 +54,9 @@ export default function PackOpen(props: PackOpenProps) {
       {`(${cardIndex + 1}/${cardInfos.length})`}
       {cardIndex === cardInfos.length - 1 && (
         <div css={S.buttonContainer}>
-          <Button>개봉 결과 확인하기</Button>
-          <Button secondary onClick={goOpen}>
+          <Button onClick={goSelect}>팩 선택 하러가기</Button>
+          <Button secondary onClick={reopen}>
             다시 개봉하기(현재 {packMapper[nowPackType]} 팩)
-          </Button>
-          <Button secondary onClick={goSelect}>
-            팩 선택 하러가기
           </Button>
         </div>
       )}

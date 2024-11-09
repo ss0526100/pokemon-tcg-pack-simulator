@@ -39,7 +39,6 @@ function App() {
         )}
         {phase === 'open' && (
           <PackOpen
-            key={cardPack.map(c => c.id).join('')}
             cardInfos={cardPack}
             goOpen={reopen}
             goSelect={goSelect}
