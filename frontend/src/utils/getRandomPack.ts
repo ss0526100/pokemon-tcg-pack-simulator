@@ -5,6 +5,7 @@ import {
 } from '../constant/card';
 
 import { NORMAL_PACK_RARE_PERCENTAGE_LIST_BY_INDEX } from '../constant/service';
+import getRandom from './getRandom';
 import getRandomElement from './getRandomElement';
 import getRandomStrByPercentFunc from './getRandomStrByPercentFunc';
 
@@ -29,7 +30,7 @@ const getRandomPack = (type: A1PackType = 'charizard') => {
       if (randomId === undefined) return MISSING_NO_CARD;
       return map.get(randomId) || MISSING_NO_CARD;
     })
-    .sort(() => Math.random() - 0.5);
+    .sort(() => getRandom() - 0.5);
   return randomPack;
 };
 
