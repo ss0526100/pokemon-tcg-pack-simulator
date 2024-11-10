@@ -3,6 +3,7 @@ import { css } from '@emotion/react';
 interface ButtonProps {
   primary?: boolean;
   secondary?: boolean;
+  circle?: boolean;
 }
 const PRIMARY_COLOR = '#3de086';
 const getBackgroundColor = ({ primary, secondary }: ButtonProps) => {
@@ -29,8 +30,17 @@ const getFontWeight = ({ primary, secondary }: ButtonProps) => {
   return '600';
 };
 
+const getSize = ({ circle }: ButtonProps) => {
+  if (circle)
+    return `
+    width: 60px;
+    height: 60px;
+  `;
+  return `width: 100%;`;
+};
+
 export const button = (props: ButtonProps) => css`
-  width: 100%;
+  ${getSize(props)}
 
   border-radius: 40px;
 
