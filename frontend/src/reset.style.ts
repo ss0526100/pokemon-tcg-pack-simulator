@@ -145,7 +145,6 @@ table {
 body{
   position:absolute;
   top:0;
-  left:5px;
   overflow-x:hidden;
   width:100vw;
   height:100vh;

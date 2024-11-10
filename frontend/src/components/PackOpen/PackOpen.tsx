@@ -84,9 +84,10 @@ export default function PackOpen(props: PackOpenProps) {
       <BottomButtonContainer>
         {cardIndex === cardInfos.length - 1 && (
           <Button css={S.buttonAnimation} primary onClick={reopen}>
-            다시 개봉하기(
-            {packMapper[nowPackType] + ' ' + Math.floor(cardInfos.length / 5)}
-            팩)
+            다시 개봉하기
+            {`\n(${
+              packMapper[nowPackType] + ' ' + Math.floor(cardInfos.length / 5)
+            }팩)`}
           </Button>
         )}
         <Button
