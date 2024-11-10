@@ -49,7 +49,7 @@ export default function PackSelect(props: PackSelectProps) {
         case ' ':
           onSelect(nowPackType);
           break;
-        case 'e':
+        case 'r':
           onTenSelect(nowPackType);
           break;
         default:
