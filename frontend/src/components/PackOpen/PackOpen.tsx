@@ -50,10 +50,10 @@ export default function PackOpen(props: PackOpenProps) {
           break;
         case ' ':
           getNextCard();
-          if (cardIndex === cardInfos.length - 1) goSelect();
+          if (cardIndex === cardInfos.length - 1) reopen();
           break;
         case 'r':
-          reopen();
+          goSelect();
           break;
         default:
           break;
