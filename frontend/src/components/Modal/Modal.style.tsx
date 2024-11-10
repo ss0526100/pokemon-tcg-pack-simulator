@@ -15,13 +15,21 @@ export const dimmer = ({ hasDarkDimmer }: { hasDarkDimmer?: boolean }) => css`
 const defaultContentStyle = css`
   position: absolute;
 
-  max-width: 100%;
+  max-width: 90vw;
+  max-height: 90vh;
+
+  overflow-y: scroll;
+
   padding: 2.4rem 3.2rem;
   z-index: 199999999;
 
   background-color: #f0f4fa;
   border-radius: 1rem;
   box-shadow: 0 0 10px rgb(0 0 0 / 25%);
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `;
 
 export const content = ({ position }: { position: 'bottom' | 'center' }) => {

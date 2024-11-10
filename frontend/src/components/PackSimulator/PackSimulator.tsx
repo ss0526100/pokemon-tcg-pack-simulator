@@ -4,7 +4,7 @@ import { useCallback, useState } from 'react';
 
 import PackOpen from '../PackOpen/PackOpen';
 import PackSelect from '../PackSelect/PackSelect';
-import StatisticsInfo from './StatisticsInfo/StatisticsInfo';
+import StatisticsInfo from '../StatisticsInfo/StatisticsInfo';
 import getRandomPack from '../../utils/getRandomPack';
 
 const initPack = getRandomPack();

@@ -1,5 +1,6 @@
 import * as S from './StatisticContent.style';
 
+import Button from '../../Button/Button';
 import StatisticItem from './StatisticItem';
 
 interface StatisticContentProps {
@@ -21,7 +22,7 @@ export default function StatisticContent(props: StatisticContentProps) {
   const r1Cnt = rareCntMap.get('r1') || 0;
 
   return (
-    <>
+    <div css={S.container}>
       <span css={S.title}> 통계</span>
       <ul css={S.itemContainer}>
         <StatisticItem title='개봉한 팩' content={packCount} />
@@ -35,6 +36,12 @@ export default function StatisticContent(props: StatisticContentProps) {
         <StatisticItem title='r2' content={r2Cnt} />
         <StatisticItem title='r1' content={r1Cnt} />
       </ul>
-    </>
+      <div css={S.buttonContainer}>
+        <Button secondary css={S.button}>
+          기록 초기화
+        </Button>
+        <Button css={S.button}>닫기</Button>
+      </div>
+    </div>
   );
 }

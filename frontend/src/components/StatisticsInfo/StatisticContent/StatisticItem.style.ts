@@ -5,6 +5,9 @@ export const container = css`
   flex-direction: row;
   gap: 1rem;
   align-items: center;
+  border: solid 1px #00000023;
+
+  border-radius: 20px;
 `;
 export const title = css`
   display: flex;

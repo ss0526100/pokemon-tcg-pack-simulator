@@ -5,5 +5,5 @@ export const container = (direction: 'column' | 'row') => css`
   flex-direction: ${direction};
   gap: 1rem;
   width: 100%;
-  padding: 2rem;
+  padding: 2rem 0;
 `;
