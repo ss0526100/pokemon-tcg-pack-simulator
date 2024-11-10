@@ -39,7 +39,13 @@ export default function Article() {
     <div css={S.layout}>
       {isDesktop() && (
         <span css={S.span}>
-          PC환경에서는 키보드를 사용할 수 있습니다. (화살표 및 스페이스,R키)
+          PC환경에서는 키보드를 사용할 수 있습니다. <br />
+          심지어 통계창이 켜져 있는 상태로도요! <br />
+          <br />
+          - 스페이스바 : 1장 구매 / 다음
+          <br />
+          - R : 10장 구매 / 팩 선택하러 가기
+          <br />- 방향키 : 이전 / 다음
         </span>
       )}
       <Button secondary onClick={goMarket}>

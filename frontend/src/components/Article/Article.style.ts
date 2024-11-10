@@ -10,4 +10,5 @@ export const layout = css`
 export const span = css`
   text-align: center;
   font-size: 15px;
+  line-height: 120%;
 `;
