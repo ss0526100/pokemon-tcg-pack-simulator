@@ -7,20 +7,16 @@ import Statistics from '../svgs/Statistics';
 import { useState } from 'react';
 
 export default function StatisticsInfo() {
-  const [isModalOpen, setIsModalOpen] = useState(true);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <>
       {isModalOpen && (
         <Modal onClose={() => setIsModalOpen(false)}>
-          <StatisticContent
-            packCount={10}
-            cardCount={20}
-            rareCntMap={new Map()}
-          />
+          <StatisticContent onClose={() => setIsModalOpen(false)} />
         </Modal>
       )}
       <div css={S.container}>
-        <div css={S.itemContainer}>
+        <div css={S.itemContainer} onClick={() => setIsModalOpen(true)}>
           <Button css={S.button} circle secondary>
             <Statistics fill='#3de086' size={35} />
           </Button>
