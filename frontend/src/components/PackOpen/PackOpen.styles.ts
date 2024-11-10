@@ -2,9 +2,10 @@ import { css } from '@emotion/react';
 
 export const layout = css`
   display: flex;
-  padding: 3rem;
+  padding: 3rem 0;
   flex-direction: column;
   align-items: center;
+  min-height: 549px;
 `;
 
 export const cardContainer = css`

@@ -81,7 +81,7 @@ export default function PackOpen(props: PackOpenProps) {
       </div>
       {`(${cardIndex + 1}/${cardInfos.length})`}
 
-      <BottomButtonContainer>
+      <BottomButtonContainer direction='column'>
         {cardIndex === cardInfos.length - 1 && (
           <Button css={S.buttonAnimation} primary onClick={reopen}>
             다시 개봉하기

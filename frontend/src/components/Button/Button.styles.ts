@@ -48,6 +48,7 @@ export const button = (props: ButtonProps) => css`
   color: ${getFontColor(props)};
 
   font-size: 20px;
+  white-space: nowrap;
   font-weight: ${getFontWeight(props)};
 
   padding: 2rem;
