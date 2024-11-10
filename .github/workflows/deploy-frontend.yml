@@ -25,7 +25,7 @@ jobs:
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        run: aws s3 sync ./frontend/build ${{ secrets.S3_BUCKET_NAME }} --region ap-northeast-2 --delete
+        run: aws s3 sync ./frontend/dist ${{ secrets.S3_BUCKET_NAME }} --region ap-northeast-2 --delete
 
       - name: invalidation cloudfront cache
         env:
