@@ -29,7 +29,7 @@ export default function PackSimulator() {
     setPhase('select');
   };
   return (
-    <main css={S.layout}>
+    <section css={S.layout}>
       {phase === 'select' && (
         <PackSelect onSelect={goOpenPhase} startPackType={nowPackType} />
       )}
@@ -41,6 +41,6 @@ export default function PackSimulator() {
           nowPackType={nowPackType}
         />
       )}
-    </main>
+    </section>
   );
 }

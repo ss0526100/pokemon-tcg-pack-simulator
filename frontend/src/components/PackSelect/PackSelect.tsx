@@ -57,7 +57,7 @@ export default function PackSelect(props: PackSelectProps) {
   }, [moveBeforeIndex, moveNextIndex, nowPackType, onSelect]);
 
   return (
-    <main css={S.layout}>
+    <section css={S.layout}>
       <div css={S.cardContainer}>
         <div css={S.selectContainer}>
           <div css={S.svgContainer}>
@@ -72,6 +72,6 @@ export default function PackSelect(props: PackSelectProps) {
         </div>
       </div>
       <Button onClick={() => onSelect(nowPackType)}>팩 개봉하기</Button>
-    </main>
+    </section>
   );
 }

@@ -32,11 +32,11 @@ export default function PackOpen(props: PackOpenProps) {
     setCardIndex(prev => Math.min(prev + 1, cardInfos.length - 1));
   }, [cardInfos]);
 
-  const reopen = () => {
+  const reopen = useCallback(() => {
     if (cardIndex !== cardInfos.length - 1) return;
     goOpen();
     setCardIndex(0);
-  };
+  }, [cardIndex, cardInfos, goOpen]);
 
   useEffect(() => {
     function handleKeyDown(event: KeyboardEvent) {
@@ -61,10 +61,10 @@ export default function PackOpen(props: PackOpenProps) {
     document.addEventListener('keydown', handleKeyDown);
 
     return () => document.removeEventListener('keydown', handleKeyDown);
-  }, [cardIndex, cardInfos, getNextCard, goSelect]);
+  }, [cardIndex, cardInfos, getNextCard, goSelect, reopen]);
 
   return (
-    <main css={S.layout}>
+    <section css={S.layout}>
       <div css={S.cardContainer}>
         <div css={S.selectContainer}>
           <div css={S.svgContainer}>
@@ -87,6 +87,6 @@ export default function PackOpen(props: PackOpenProps) {
           </Button>
         </div>
       )}
-    </main>
+    </section>
   );
 }
