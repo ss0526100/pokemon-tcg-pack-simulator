@@ -72,7 +72,7 @@ export default function PackOpen(props: PackOpenProps) {
             <LeftArrow size={30} onClick={getBeforeCard} />
           </div>
         </div>
-        <Card cardInfo={cardInfos[cardIndex]} />
+        <Card cardInfo={cardInfos[cardIndex]} onClick={getNextCard} />
         <div css={S.selectContainer}>
           <div css={S.svgContainer}>
             <RightArrow size={30} onClick={getNextCard} />
