@@ -96,7 +96,7 @@ export default function PackOpen(props: PackOpenProps) {
           onClick={goSelect}
           key={'selectButton'}
         >
-          팩 선택 하러가기
+          팩 선택하러 가기
         </Button>
       </BottomButtonContainer>
     </section>
