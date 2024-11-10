@@ -16,7 +16,7 @@ export default function Rarity(props: RarityProps) {
     case 'crown':
       return (
         <div css={S.rarityContainer}>
-          <img css={S.rarity(size + 10)} src={crown} alt='왕관' />
+          <img css={S.rarity(size)} src={crown} alt='왕관' />
         </div>
       );
     case 's3':

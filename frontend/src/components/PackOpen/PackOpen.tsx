@@ -6,6 +6,7 @@ import BottomButtonContainer from '../BottomButtonContainer/BottomButtonContaine
 import Button from '../Button/Button';
 import Card from '../Card/Card';
 import LeftArrow from '../svgs/LeftArrow';
+import Rarity from '../Rarity/Rarity';
 import RightArrow from '../svgs/RightArrow';
 
 interface PackOpenProps {
@@ -80,6 +81,10 @@ export default function PackOpen(props: PackOpenProps) {
         </div>
       </div>
       {`(${cardIndex + 1}/${cardInfos.length})`}
+
+      <div css={S.rarityContainer}>
+        <Rarity cardRare={cardInfos[cardIndex].grade} size={30} />
+      </div>
 
       <BottomButtonContainer direction='column'>
         {cardIndex === cardInfos.length - 1 && (

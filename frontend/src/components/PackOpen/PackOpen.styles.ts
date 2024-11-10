@@ -5,7 +5,7 @@ export const layout = css`
   padding: 3rem 0;
   flex-direction: column;
   align-items: center;
-  height: 563px;
+  height: 600px;
 `;
 
 export const cardContainer = css`
@@ -53,4 +53,10 @@ export const buttonAnimation = css`
       opacity: 1;
     }
   }
+`;
+
+export const rarityContainer = css`
+  display: flex;
+  width: 100%;
+  padding: 10px 80px 0;
 `;

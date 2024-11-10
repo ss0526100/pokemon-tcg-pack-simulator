@@ -6,7 +6,7 @@ export const layout = css`
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  height: 563px;
+  height: 600px;
 `;
 
 export const cardContainer = css`
