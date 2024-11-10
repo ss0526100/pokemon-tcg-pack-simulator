@@ -1,3 +1,5 @@
+import getRandom from './getRandom';
+
 type Percent = number;
 export default function getRandomStrByPercentFunc<T>(list: [T, Percent][]) {
   // eslint-disable-next-line
@@ -9,7 +11,7 @@ export default function getRandomStrByPercentFunc<T>(list: [T, Percent][]) {
   const tmp = [];
 
   return () => {
-    const nowRandom = Math.random() * sumOfPercentage;
+    const nowRandom = getRandom() * sumOfPercentage;
     tmp.push(nowRandom);
 
     const nowIndex = accList.findIndex(c => nowRandom <= c);
