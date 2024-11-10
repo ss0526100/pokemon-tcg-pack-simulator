@@ -9,6 +9,11 @@ import { useEffect } from 'react';
 function App() {
   useEffect(() => {
     ImportImages();
+    function handleKeyDown(event: KeyboardEvent) {
+      event.preventDefault();
+    }
+    addEventListener('keydown', handleKeyDown);
+    return () => removeEventListener('keydown', handleKeyDown);
   }, []);
   return (
     <>
