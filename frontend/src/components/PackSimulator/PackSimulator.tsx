@@ -28,10 +28,24 @@ export default function PackSimulator() {
   const goSelect = () => {
     setPhase('select');
   };
+
+  const onTenPackOpen = (packType: A1PackType) => {
+    const randomPack = new Array(10)
+      .fill(null)
+      .map(() => getRandomPack(packType))
+      .flat();
+    setCardPack(randomPack);
+    setPhase('open');
+    setNowPackType(packType);
+  };
   return (
     <section css={S.layout}>
       {phase === 'select' && (
-        <PackSelect onSelect={goOpenPhase} startPackType={nowPackType} />
+        <PackSelect
+          onSelect={goOpenPhase}
+          startPackType={nowPackType}
+          onTenSelect={onTenPackOpen}
+        />
       )}
       {phase === 'open' && (
         <PackOpen

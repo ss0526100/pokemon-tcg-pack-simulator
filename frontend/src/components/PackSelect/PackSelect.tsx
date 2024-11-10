@@ -3,6 +3,7 @@ import * as S from './PackSelect.styles';
 import { useCallback, useEffect, useState } from 'react';
 
 import { A1_PACK_INFOS } from '../../constant/pack';
+import BottomButtonContainer from '../BottomButtonContainer/BottomButtonContainer';
 import Button from '../Button/Button';
 import LeftArrow from '../svgs/LeftArrow';
 import Pack from './components/Pack/Pack';
@@ -11,11 +12,12 @@ import RightArrow from '../svgs/RightArrow';
 interface PackSelectProps {
   startPackType?: A1PackType;
   onSelect: (packtype: A1PackType) => void;
+  onTenSelect: (packType: A1PackType) => void;
 }
 const a1PackTypes: A1PackType[] = ['charizard', 'pikachu', 'mewtwo'];
 
 export default function PackSelect(props: PackSelectProps) {
-  const { onSelect, startPackType } = props;
+  const { onSelect, onTenSelect, startPackType } = props;
 
   const [packTypeIndex, setPackTypeIndex] = useState(() => {
     if (!startPackType) return 0;
@@ -47,6 +49,9 @@ export default function PackSelect(props: PackSelectProps) {
         case ' ':
           onSelect(nowPackType);
           break;
+        case 'e':
+          onTenSelect(nowPackType);
+          break;
         default:
           break;
       }
@@ -54,7 +59,7 @@ export default function PackSelect(props: PackSelectProps) {
     document.addEventListener('keydown', handleKeyDown);
 
     return () => document.removeEventListener('keydown', handleKeyDown);
-  }, [moveBeforeIndex, moveNextIndex, nowPackType, onSelect]);
+  }, [moveBeforeIndex, moveNextIndex, nowPackType, onSelect, onTenSelect]);
 
   return (
     <section css={S.layout}>
@@ -71,7 +76,10 @@ export default function PackSelect(props: PackSelectProps) {
           </div>
         </div>
       </div>
-      <Button onClick={() => onSelect(nowPackType)}>팩 개봉하기</Button>
+      <BottomButtonContainer>
+        <Button onClick={() => onSelect(nowPackType)}>1팩 개봉</Button>
+        <Button onClick={() => onTenSelect(nowPackType)}>10팩 개봉</Button>
+      </BottomButtonContainer>
     </section>
   );
 }

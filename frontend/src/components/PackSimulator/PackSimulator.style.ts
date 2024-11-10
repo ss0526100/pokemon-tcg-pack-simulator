@@ -1,6 +1,6 @@
 import { css } from '@emotion/react';
 
 export const layout = css`
-  height: 570px;
+  height: 670px;
   user-select: none;
 `;
