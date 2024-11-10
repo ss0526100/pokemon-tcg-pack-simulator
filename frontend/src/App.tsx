@@ -6,7 +6,7 @@ import PackSimulator from './components/PackSimulator/PackSimulator';
 import reset from './reset.style';
 import { useEffect } from 'react';
 
-const effectKeys = [' ', 'ArrowLeft', 'ArrowRight', 'r'];
+const effectKeys = [' '];
 function App() {
   useEffect(() => {
     ImportImages();
