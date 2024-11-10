@@ -6,6 +6,7 @@ import BottomButtonContainer from '../BottomButtonContainer/BottomButtonContaine
 import Button from '../Button/Button';
 import Card from '../Card/Card';
 import LeftArrow from '../svgs/LeftArrow';
+import Rarity from '../Rarity/Rarity';
 import RightArrow from '../svgs/RightArrow';
 
 interface PackOpenProps {
@@ -72,7 +73,7 @@ export default function PackOpen(props: PackOpenProps) {
             <LeftArrow size={30} onClick={getBeforeCard} />
           </div>
         </div>
-        <Card cardInfo={cardInfos[cardIndex]} />
+        <Card cardInfo={cardInfos[cardIndex]} onClick={getNextCard} />
         <div css={S.selectContainer}>
           <div css={S.svgContainer}>
             <RightArrow size={30} onClick={getNextCard} />
@@ -81,7 +82,11 @@ export default function PackOpen(props: PackOpenProps) {
       </div>
       {`(${cardIndex + 1}/${cardInfos.length})`}
 
-      <BottomButtonContainer>
+      <div css={S.rarityContainer}>
+        <Rarity cardRare={cardInfos[cardIndex].grade} size={30} />
+      </div>
+
+      <BottomButtonContainer direction='column'>
         {cardIndex === cardInfos.length - 1 && (
           <Button css={S.buttonAnimation} primary onClick={reopen}>
             다시 개봉하기
@@ -96,7 +101,7 @@ export default function PackOpen(props: PackOpenProps) {
           onClick={goSelect}
           key={'selectButton'}
         >
-          팩 선택 하러가기
+          팩 선택하러 가기
         </Button>
       </BottomButtonContainer>
     </section>

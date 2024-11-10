@@ -22,14 +22,12 @@ const getRandomPack = (type: A1PackType = 'charizard') => {
 
   const randomPackRare = getRandomPackRare();
 
-  const randomPack = randomPackRare
-    .map((rare, idx) => {
-      const randomCardIds = cardPoolById[idx][rare];
-      const randomId = getRandomElement(randomCardIds);
-      if (randomId === undefined) return MISSING_NO_CARD;
-      return map.get(randomId) || MISSING_NO_CARD;
-    })
-    .sort(() => Math.random() - 0.5);
+  const randomPack = randomPackRare.map((rare, idx) => {
+    const randomCardIds = cardPoolById[idx][rare];
+    const randomId = getRandomElement(randomCardIds);
+    if (randomId === undefined) return MISSING_NO_CARD;
+    return map.get(randomId) || MISSING_NO_CARD;
+  });
   return randomPack;
 };
 

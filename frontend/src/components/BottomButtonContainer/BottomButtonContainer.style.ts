@@ -1,10 +1,9 @@
 import { css } from '@emotion/react';
 
-export const container = css`
+export const container = (direction: 'column' | 'row') => css`
   display: flex;
-  flex-direction: column;
+  flex-direction: ${direction};
   gap: 1rem;
   width: 100%;
-
-  margin: 2rem 0;
+  padding: 2rem 0;
 `;

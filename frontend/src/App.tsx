@@ -3,6 +3,7 @@ import { Global } from '@emotion/react';
 import ImportImages from './components/PackSimulator/importImages';
 import MainLayout from './layouts/MainLayout/MainLayout';
 import PackSimulator from './components/PackSimulator/PackSimulator';
+import { RecoilRoot } from 'recoil';
 import reset from './reset.style';
 import { useEffect } from 'react';
 
@@ -19,13 +20,13 @@ function App() {
     return () => removeEventListener('keydown', handleKeyDown);
   }, []);
   return (
-    <>
+    <RecoilRoot>
       <Global styles={reset} />
       <MainLayout>
         <PackSimulator />
         <Article />
       </MainLayout>
-    </>
+    </RecoilRoot>
   );
 }
 

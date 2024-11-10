@@ -39,7 +39,13 @@ export default function Article() {
     <div css={S.layout}>
       {isDesktop() && (
         <span css={S.span}>
-          PC환경에서는 키보드를 사용할 수 있습니다. (화살표 및 스페이스,R키)
+          PC환경에서는 키보드를 사용할 수 있습니다. <br />
+          심지어 통계창이 켜져 있는 상태로도요! <br />
+          <br />
+          - 스페이스바 : 1장 구매 / 다음
+          <br />
+          - R : 10장 구매 / 팩 선택하러 가기
+          <br />- 방향키 : 이전 / 다음
         </span>
       )}
       <Button secondary onClick={goMarket}>
@@ -49,10 +55,17 @@ export default function Article() {
         건의사항/피드백/버그 제보
       </Button>
       <span css={S.span}>
-        본 서비스는 순수 팬심으로 만든 서비스이며, 수익을 창출하지 않습니다.
+        본 서비스는 순수 팬심으로 만든 서비스이며,
+        <br /> 수익을 창출하지 않습니다.
         <br />
-        서비스 관련 문의 등의 이유로 연락을 위해서는 devsofa2580@gmail.com을
-        활용해주시기 바랍니다.
+        <br />
+        서비스 관련 문의 등 연락은
+        <br />
+        devsofa2580@gmail.com을 활용해주시기 바랍니다.
+        <br />
+        <br />
+        특히 신입 프론트엔드 개발자가 필요하시다면
+        <br />꼭 연락주세요ㅎㅎ
       </span>
     </div>
   );
