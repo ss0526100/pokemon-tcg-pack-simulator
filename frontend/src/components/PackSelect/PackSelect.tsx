@@ -77,8 +77,8 @@ export default function PackSelect(props: PackSelectProps) {
         </div>
       </div>
       <BottomButtonContainer>
-        <Button onClick={() => onSelect(nowPackType)}>1팩 개봉</Button>
-        <Button onClick={() => onTenSelect(nowPackType)}>10팩 개봉</Button>
+        <Button onClick={() => onSelect(nowPackType)}>1팩 개봉하기</Button>
+        <Button onClick={() => onTenSelect(nowPackType)}>10팩 개봉하기</Button>
       </BottomButtonContainer>
     </section>
   );
