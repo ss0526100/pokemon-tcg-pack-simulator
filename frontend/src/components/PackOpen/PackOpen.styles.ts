@@ -5,7 +5,7 @@ export const layout = css`
   padding: 3rem 0;
   flex-direction: column;
   align-items: center;
-  min-height: 549px;
+  height: 563px;
 `;
 
 export const cardContainer = css`
