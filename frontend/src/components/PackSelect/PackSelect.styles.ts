@@ -14,7 +14,6 @@ export const cardContainer = css`
 `;
 export const selectContainer = css`
   display: flex;
-  height: 477px;
   align-items: center;
 `;
 

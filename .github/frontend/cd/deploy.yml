@@ -1,0 +1,39 @@
+name: frontend-deploy
+on:
+  push:
+    branches:
+      - deploy
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: checkout branch.
+        uses: actions/checkout@v2
+        run: git checkout deploy
+
+      - name: change directory
+        run: cd ./frontend
+
+      - name: install npm
+        run: npm install
+
+      - name: build
+        run: npm run build
+
+      - name: move dist
+        run: cd ./build
+
+      - name: show AWS CLI Version
+        run: aws --version
+
+      - name: sync bucket
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        run: aws s3 sync ./ ${{ secrets.S3_BUCKET_NAME }} --region ap-northeast-2 --delete
+
+      - name: invalidation cloudfront cache
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        run: aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths /*

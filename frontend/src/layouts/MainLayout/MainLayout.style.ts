@@ -2,8 +2,8 @@ import { css } from '@emotion/react';
 
 export const layout = css`
   position: absolute;
-  transform: translate(-50%, 0);
   left: 50%;
+  transform: translate(-50%, 0);
   display: flex;
   width: 100%;
   max-width: 600px;
