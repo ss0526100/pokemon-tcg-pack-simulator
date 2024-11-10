@@ -4,4 +4,7 @@ export const card = css`
   width: 55vw;
   height: calc(55vw * 1.3);
   object-fit: fill;
+
+  max-width: 219px;
+  max-height: 335px;
 `;
