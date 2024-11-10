@@ -6,11 +6,14 @@ import PackSimulator from './components/PackSimulator/PackSimulator';
 import reset from './reset.style';
 import { useEffect } from 'react';
 
+const effectKeys = [' ', 'ArrowLeft', 'ArrowRight', 'r'];
 function App() {
   useEffect(() => {
     ImportImages();
     function handleKeyDown(event: KeyboardEvent) {
-      event.preventDefault();
+      if (effectKeys.includes(event.key)) {
+        event.preventDefault();
+      }
     }
     addEventListener('keydown', handleKeyDown);
     return () => removeEventListener('keydown', handleKeyDown);
