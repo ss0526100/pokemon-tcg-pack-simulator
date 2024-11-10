@@ -2,6 +2,7 @@ import * as S from './PackOpen.styles';
 
 import { useCallback, useEffect, useState } from 'react';
 
+import BottomButtonContainer from '../BottomButtonContainer/BottomButtonContainer';
 import Button from '../Button/Button';
 import Card from '../Card/Card';
 import LeftArrow from '../svgs/LeftArrow';
@@ -79,14 +80,22 @@ export default function PackOpen(props: PackOpenProps) {
         </div>
       </div>
       {`(${cardIndex + 1}/${cardInfos.length})`}
-      {cardIndex === cardInfos.length - 1 && (
-        <div css={S.buttonContainer}>
-          <Button onClick={goSelect}>팩 선택 하러가기</Button>
-          <Button secondary onClick={reopen}>
-            다시 개봉하기(현재 {packMapper[nowPackType]} 팩)
+
+      <BottomButtonContainer>
+        {cardIndex === cardInfos.length - 1 && (
+          <Button css={S.buttonAnimation} primary onClick={reopen}>
+            다시 개봉하기({packMapper[nowPackType]}팩)
           </Button>
-        </div>
-      )}
+        )}
+        <Button
+          css={S.buttonAnimation}
+          secondary
+          onClick={goSelect}
+          key={'selectButton'}
+        >
+          팩 선택 하러가기
+        </Button>
+      </BottomButtonContainer>
     </section>
   );
 }

@@ -25,14 +25,7 @@ export const svgContainer = css`
   }
 `;
 
-export const buttonContainer = css`
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  width: 100%;
-
-  margin: 2rem 0;
-
+export const buttonAnimation = css`
   animation: text-focus-in 200ms cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 
   @-webkit-keyframes text-focus-in {
