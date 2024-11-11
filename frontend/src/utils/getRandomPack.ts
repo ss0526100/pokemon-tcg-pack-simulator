@@ -31,9 +31,9 @@ const getRandomPack = (type: A1PackType = 'charizard') => {
   return randomPack;
 };
 
-export const getRandomPacks = (cnt: number = 1) => {
+export const getRandomPacks = (packType: PackType, cnt: number = 1) => {
   const packs = Array.from({ length: Math.max(Math.abs(cnt), 1) }).map(() =>
-    getRandomPack()
+    getRandomPack(packType)
   );
   return packs;
 };
