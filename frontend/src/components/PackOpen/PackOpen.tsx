@@ -13,10 +13,10 @@ interface PackOpenProps {
   cardInfos: CardInfo[];
   goOpen: () => void;
   goSelect: () => void;
-  nowPackType: A1PackType;
+  nowPackType: PackType;
 }
 
-const packMapper: Record<A1PackType, string> = {
+const packMapper: Record<PackType, string> = {
   charizard: '리자몽',
   pikachu: '피카츄',
   mewtwo: '뮤츠',
