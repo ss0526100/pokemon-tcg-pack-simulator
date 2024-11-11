@@ -10,32 +10,32 @@ import Pack from './components/Pack/Pack';
 import RightArrow from '../svgs/RightArrow';
 
 interface PackSelectProps {
-  startPackType?: A1PackType;
-  onSelect: (packtype: A1PackType) => void;
+  startPackType?: PackType;
+  onSelect: (packtype: PackType) => void;
   onTenSelect: (packType: A1PackType) => void;
 }
-const a1PackTypes: A1PackType[] = ['charizard', 'pikachu', 'mewtwo'];
+const packTypes: PackType[] = ['charizard', 'pikachu', 'mewtwo'];
 
 export default function PackSelect(props: PackSelectProps) {
   const { onSelect, onTenSelect, startPackType } = props;
 
   const [packTypeIndex, setPackTypeIndex] = useState(() => {
     if (!startPackType) return 0;
-    return a1PackTypes.indexOf(startPackType);
+    return packTypes.indexOf(startPackType);
   });
 
   const moveBeforeIndex = useCallback(() => {
     const beforeIndex =
-      (packTypeIndex - 1 + a1PackTypes.length) % a1PackTypes.length;
+      (packTypeIndex - 1 + packTypes.length) % packTypes.length;
     setPackTypeIndex(beforeIndex);
   }, [packTypeIndex]);
 
   const moveNextIndex = useCallback(() => {
-    const nextIndex = (packTypeIndex + 1) % a1PackTypes.length;
+    const nextIndex = (packTypeIndex + 1) % packTypes.length;
     setPackTypeIndex(nextIndex);
   }, [packTypeIndex]);
 
-  const nowPackType = a1PackTypes[packTypeIndex];
+  const nowPackType = packTypes[packTypeIndex];
 
   useEffect(() => {
     function handleKeyDown(event: KeyboardEvent) {

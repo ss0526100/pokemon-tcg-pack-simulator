@@ -4,6 +4,8 @@ type Expansion = 'A1' | 'Promo';
 
 type A1PackType = 'charizard' | 'pikachu' | 'mewtwo';
 
+type PackType = A1PackType;
+
 type PokemonCategory = 'normal' | 'ev1' | 'ev2' | 'ex';
 type TrainersCategory = 'supporter' | 'item' | 'item-fossil';
 
@@ -33,6 +35,7 @@ interface CardInfo {
   category: Category;
 }
 
+type Pack = CardInfo[];
 type PackId = string;
 
 interface PackInfo {
