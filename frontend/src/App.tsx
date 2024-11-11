@@ -14,17 +14,14 @@ import { useEffect } from 'react';
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <PackSimulator />,
+    errorElement: <ErrorPage />,
     children: [
+      { path: '', element: <PackSimulator /> },
       {
-        path: '/get-challenge',
+        path: 'get-challenge',
         element: <GetChallenge />,
       },
     ],
-  },
-  {
-    path: '*',
-    element: <ErrorPage />,
   },
 ]);
 const effectKeys = [' '];
