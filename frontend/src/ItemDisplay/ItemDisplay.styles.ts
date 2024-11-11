@@ -9,19 +9,26 @@ export const container = css`
   gap: 0px; /* 각 링 사이의 간격 */
   justify-items: center;
 
+  align-items: center;
+
   & > :nth-child(4) {
     grid-column: 2 / 3;
   }
 
   & > :nth-child(4),
   & > :nth-child(5) {
-    transform: translateX(-66%);
+    transform: translateX(-50%);
   }
 `;
 export const childContainer = css`
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  padding: 0 10px;
   & > * {
-    width: 90%;
-    height: 90%;
-    object-fit: contain;
+    width: 70% !important;
+    height: 70% !important;
   }
 `;
