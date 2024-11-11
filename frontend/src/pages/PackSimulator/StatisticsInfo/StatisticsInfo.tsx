@@ -1,9 +1,9 @@
 import * as S from './StatisticsInfo.styles';
 
-import Button from '../Button/Button';
-import Modal from '../Modal/Modal';
+import Button from '../../../components/Button/Button';
+import Modal from '../../../components/Modal/Modal';
 import StatisticContent from './StatisticContent/StatisticContent';
-import Statistics from '../svgs/Statistics';
+import Statistics from '../../../components/svgs/Statistics';
 import { useState } from 'react';
 
 export default function StatisticsInfo() {

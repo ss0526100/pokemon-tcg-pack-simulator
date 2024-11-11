@@ -2,9 +2,9 @@ import * as S from './PackSimulator.style';
 
 import { useCallback, useState } from 'react';
 
-import PackOpen from '../PackOpen/PackOpen';
-import PackSelect from '../PackSelect/PackSelect';
-import StatisticsInfo from '../StatisticsInfo/StatisticsInfo';
+import PackOpen from './PackOpen/PackOpen';
+import PackSelect from './PackSelect/PackSelect';
+import StatisticsInfo from './StatisticsInfo/StatisticsInfo';
 import { getRandomPacks } from '../../utils/getRandomPack';
 
 const initPack = getRandomPacks('charizard');

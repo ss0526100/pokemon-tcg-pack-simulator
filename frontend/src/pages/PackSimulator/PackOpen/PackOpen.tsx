@@ -2,12 +2,12 @@ import * as S from './PackOpen.styles';
 
 import { useCallback, useEffect } from 'react';
 
-import BottomButtonContainer from '../BottomButtonContainer/BottomButtonContainer';
-import Button from '../Button/Button';
-import Card from '../Card/Card';
-import LeftArrow from '../svgs/LeftArrow';
-import Rarity from '../Rarity/Rarity';
-import RightArrow from '../svgs/RightArrow';
+import BottomButtonContainer from '../../../components/BottomButtonContainer/BottomButtonContainer';
+import Button from '../../../components/Button/Button';
+import Card from '../../../components/Card/Card';
+import LeftArrow from '../../../components/svgs/LeftArrow';
+import Rarity from '../../../components/Rarity/Rarity';
+import RightArrow from '../../../components/svgs/RightArrow';
 import usePacksIndex from './usePacksIndex';
 
 interface PackOpenProps {

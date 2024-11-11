@@ -1,6 +1,6 @@
 import * as S from './Article.style';
 
-import Button from '../Button/Button';
+import Button from '../../components/Button/Button';
 import getMobileOperatingSystem from '../../utils/getMobilOperatingSystem';
 import isDesktop from '../../utils/isDesktop';
 

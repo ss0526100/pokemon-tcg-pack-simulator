@@ -1,11 +1,11 @@
 import * as S from './StatisticContent.style';
 
-import Button from '../../Button/Button';
-import Rarity from '../../Rarity/Rarity';
+import Button from '../../../../components/Button/Button';
+import Rarity from '../../../../components/Rarity/Rarity';
 import StatisticItem from './StatisticItem';
-import useCardCount from '../../../hooks/atoms/packs/useCardCount';
-import usePackCount from '../../../hooks/atoms/packs/usePackCount';
-import useRarityCntMap from '../../../hooks/atoms/packs/useRarityCntMap';
+import useCardCount from '../../../../hooks/atoms/packs/useCardCount';
+import usePackCount from '../../../../hooks/atoms/packs/usePackCount';
+import useRarityCntMap from '../../../../hooks/atoms/packs/useRarityCntMap';
 
 interface StatisticContentProps {
   onClose: () => void;

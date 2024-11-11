@@ -1,8 +1,8 @@
-import Article from './components/Article/Article';
+import Article from './pages/Article/Article';
 import { Global } from '@emotion/react';
-import ImportImages from './components/PackSimulator/importImages';
+import ImportImages from './pages/PackSimulator/importImages';
 import MainLayout from './layouts/MainLayout/MainLayout';
-import PackSimulator from './components/PackSimulator/PackSimulator';
+import PackSimulator from './pages/PackSimulator/PackSimulator';
 import { RecoilRoot } from 'recoil';
 import reset from './reset.style';
 import { useEffect } from 'react';
