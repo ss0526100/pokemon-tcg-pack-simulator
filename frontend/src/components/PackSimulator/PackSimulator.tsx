@@ -7,9 +7,9 @@ import PackSelect from '../PackSelect/PackSelect';
 import StatisticsInfo from '../StatisticsInfo/StatisticsInfo';
 import getRandomPack from '../../utils/getRandomPack';
 import increaseCntMap from '../../utils/increaseMap';
-import useCardCount from '../../hooks/atoms/useCardCount';
-import usePackCount from '../../hooks/atoms/usePackCount';
-import useRarityCntMap from '../../hooks/atoms/useRarityCntMap';
+import useCardCount from '../../hooks/atoms/packs/useCardCount';
+import usePackCount from '../../hooks/atoms/packs/usePackCount';
+import useRarityCntMap from '../../hooks/atoms/packs/useRarityCntMap';
 
 const initPack = getRandomPack();
 
