@@ -29,6 +29,7 @@ export default function PackOpen(props: PackOpenProps) {
   const {
     cardLength,
     cardIndex,
+    isFirstCard,
     isLastCard,
     nowCard,
     setBeforeCard,
@@ -87,13 +88,13 @@ export default function PackOpen(props: PackOpenProps) {
       <div css={S.cardContainer}>
         <div css={S.selectContainer}>
           <div css={S.svgContainer}>
-            <LeftArrow size={30} onClick={setBeforeCard} />
+            {!isFirstCard && <LeftArrow size={30} onClick={setBeforeCard} />}
           </div>
         </div>
         <Card cardInfo={nowCard} onClick={setNextCard} />
         <div css={S.selectContainer}>
           <div css={S.svgContainer}>
-            <RightArrow size={30} onClick={setNextCard} />
+            {!isLastCard && <RightArrow size={30} onClick={setNextCard} />}
           </div>
         </div>
       </div>

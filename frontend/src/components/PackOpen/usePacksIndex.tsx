@@ -85,6 +85,7 @@ export default function usePacksIndex(packs: Pack[]) {
 
   const cardIndex = getCardIndexInTotal(packIndexInfo, packs);
 
+  const isFirstCard = cardIndex === 1;
   const isLastCard = cardIndex === cardLength;
 
   const nowCard = getCardFromPacksByIndexInfo(packs, packIndexInfo);
@@ -154,6 +155,7 @@ export default function usePacksIndex(packs: Pack[]) {
   return {
     cardLength,
     cardIndex,
+    isFirstCard,
     isLastCard,
     nowCard,
     setBeforeCard,

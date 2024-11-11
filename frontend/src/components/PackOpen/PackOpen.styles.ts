@@ -20,6 +20,7 @@ export const selectContainer = css`
 export const svgContainer = css`
   border-radius: 100%;
   padding: 10px;
+  width: 50px;
   background-color: transparent;
   &:hover {
     background-color: #0000003f;
