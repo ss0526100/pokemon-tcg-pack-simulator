@@ -11,13 +11,12 @@ import RightArrow from '../svgs/RightArrow';
 
 interface PackSelectProps {
   startPackType?: PackType;
-  onSelect: (packtype: PackType) => void;
-  onTenSelect: (packType: A1PackType) => void;
+  onSelect: (packtype: PackType, packCount: 1 | 10) => void;
 }
 const packTypes: PackType[] = ['charizard', 'pikachu', 'mewtwo'];
 
 export default function PackSelect(props: PackSelectProps) {
-  const { onSelect, onTenSelect, startPackType } = props;
+  const { onSelect, startPackType } = props;
 
   const [packTypeIndex, setPackTypeIndex] = useState(() => {
     if (!startPackType) return 0;
@@ -47,10 +46,10 @@ export default function PackSelect(props: PackSelectProps) {
           moveNextIndex();
           break;
         case ' ':
-          onSelect(nowPackType);
+          onSelect(nowPackType, 1);
           break;
         case 'r':
-          onTenSelect(nowPackType);
+          onSelect(nowPackType, 10);
           break;
         default:
           break;
@@ -59,7 +58,7 @@ export default function PackSelect(props: PackSelectProps) {
     document.addEventListener('keydown', handleKeyDown);
 
     return () => document.removeEventListener('keydown', handleKeyDown);
-  }, [moveBeforeIndex, moveNextIndex, nowPackType, onSelect, onTenSelect]);
+  }, [moveBeforeIndex, moveNextIndex, nowPackType, onSelect]);
 
   return (
     <section css={S.layout}>
@@ -77,10 +76,10 @@ export default function PackSelect(props: PackSelectProps) {
         </div>
       </div>
       <BottomButtonContainer direction='row'>
-        <Button css={S.button} onClick={() => onTenSelect(nowPackType)}>
+        <Button css={S.button} onClick={() => onSelect(nowPackType, 10)}>
           10팩 개봉하기
         </Button>
-        <Button css={S.button} onClick={() => onSelect(nowPackType)}>
+        <Button css={S.button} onClick={() => onSelect(nowPackType, 1)}>
           1팩 개봉하기
         </Button>
       </BottomButtonContainer>
