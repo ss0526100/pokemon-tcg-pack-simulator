@@ -83,7 +83,7 @@ export default function PackOpen(props: PackOpenProps) {
       {`(${cardIndex + 1}/${cardInfos.length})`}
 
       <div css={S.rarityContainer}>
-        <Rarity cardRare={cardInfos[cardIndex].grade} size={30} />
+        <Rarity rarity={cardInfos[cardIndex].rarity} size={30} />
       </div>
 
       <BottomButtonContainer direction='column'>

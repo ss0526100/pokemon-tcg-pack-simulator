@@ -1,6 +1,6 @@
 import { atom, useRecoilState } from 'recoil';
 
-const rarityCntMap = atom<Map<RareGrade, number>>({
+const rarityCntMap = atom<Map<Rarity, number>>({
   key: 'rarityCntMap', // unique ID (with respect to other atoms/selectors)
   default: new Map(), // default value (aka initial value)
 });

@@ -40,7 +40,7 @@ export default function PackSimulator() {
       const randomPack = getRandomPack(packType);
       setRarityCntMap(prevMap => {
         const nextMap = new Map([...prevMap]);
-        randomPack.forEach(card => increaseCntMap(nextMap, card.grade));
+        randomPack.forEach(card => increaseCntMap(nextMap, card.rarity));
         return nextMap;
       });
       setCardPack(randomPack);
@@ -58,7 +58,7 @@ export default function PackSimulator() {
       const randomPack = getTenPack(packType);
       setRarityCntMap(prevMap => {
         const nextMap = new Map([...prevMap]);
-        randomPack.forEach(card => increaseCntMap(nextMap, card.grade));
+        randomPack.forEach(card => increaseCntMap(nextMap, card.rarity));
         return nextMap;
       });
       setCardPack(randomPack);

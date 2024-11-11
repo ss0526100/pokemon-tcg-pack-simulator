@@ -1,4 +1,4 @@
-type RareGrade = 'crown' | 's3' | 's2' | 's1' | 'r4' | 'r3' | 'r2' | 'r1';
+type Rarity = 'crown' | 's3' | 's2' | 's1' | 'r4' | 'r3' | 'r2' | 'r1';
 
 type Expansion = 'A1' | 'Promo';
 
@@ -28,7 +28,7 @@ interface CardInfo {
   id: CardId;
   cardName: string;
   imgSrc: string;
-  grade: RareGrade;
+  rarity: Rarity;
   expansion: Expansion;
   category: Category;
 }

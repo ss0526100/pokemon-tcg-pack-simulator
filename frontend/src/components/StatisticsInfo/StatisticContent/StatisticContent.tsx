@@ -37,14 +37,14 @@ export default function StatisticContent(props: StatisticContentProps) {
       <ul css={S.itemContainer}>
         <StatisticItem title='개봉한 팩' content={packCount} />
         <StatisticItem title='얻은 카드' content={cardCount} />
-        <StatisticItem title={<Rarity cardRare='crown' />} content={crownCnt} />
-        <StatisticItem title={<Rarity cardRare='s3' />} content={s3Cnt} />
-        <StatisticItem title={<Rarity cardRare='s2' />} content={s2Cnt} />
-        <StatisticItem title={<Rarity cardRare='s1' />} content={s1Cnt} />
-        <StatisticItem title={<Rarity cardRare='r4' />} content={r4Cnt} />
-        <StatisticItem title={<Rarity cardRare='r3' />} content={r3Cnt} />
-        <StatisticItem title={<Rarity cardRare='r2' />} content={r2Cnt} />
-        <StatisticItem title={<Rarity cardRare='r1' />} content={r1Cnt} />
+        <StatisticItem title={<Rarity rarity='crown' />} content={crownCnt} />
+        <StatisticItem title={<Rarity rarity='s3' />} content={s3Cnt} />
+        <StatisticItem title={<Rarity rarity='s2' />} content={s2Cnt} />
+        <StatisticItem title={<Rarity rarity='s1' />} content={s1Cnt} />
+        <StatisticItem title={<Rarity rarity='r4' />} content={r4Cnt} />
+        <StatisticItem title={<Rarity rarity='r3' />} content={r3Cnt} />
+        <StatisticItem title={<Rarity rarity='r2' />} content={r2Cnt} />
+        <StatisticItem title={<Rarity rarity='r1' />} content={r1Cnt} />
       </ul>
       <div css={S.buttonContainer}>
         <Button secondary css={S.button} onClick={resetRecord}>
