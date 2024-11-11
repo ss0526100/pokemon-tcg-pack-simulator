@@ -1,9 +1,7 @@
-import * as S from './StatisticsInfo.styles';
-
-import Button from '../../../components/Button/Button';
 import Modal from '../../../components/Modal/Modal';
 import StatisticContent from './StatisticContent/StatisticContent';
 import Statistics from '../../../components/svgs/Statistics';
+import ToolbarItem from '../../../components/ToolbarItem/ToolbarItem';
 import { useState } from 'react';
 
 export default function StatisticsInfo() {
@@ -15,14 +13,11 @@ export default function StatisticsInfo() {
           <StatisticContent onClose={() => setIsModalOpen(false)} />
         </Modal>
       )}
-      <div css={S.container}>
-        <div css={S.itemContainer} onClick={() => setIsModalOpen(true)}>
-          <Button css={S.button} circle secondary>
-            <Statistics fill='#3de086' size={35} />
-          </Button>
-          통계
-        </div>
-      </div>
+      <ToolbarItem
+        svg={<Statistics fill='#3de086' size={35} />}
+        description='통계'
+        onClick={() => setIsModalOpen(true)}
+      />
     </>
   );
 }

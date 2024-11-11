@@ -61,7 +61,7 @@ export default function PackSelect(props: PackSelectProps) {
   }, [moveBeforeIndex, moveNextIndex, nowPackType, onSelect]);
 
   return (
-    <section css={S.layout}>
+    <>
       <div css={S.cardContainer}>
         <div css={S.selectContainer}>
           <div css={S.svgContainer}>
@@ -83,6 +83,6 @@ export default function PackSelect(props: PackSelectProps) {
           1팩 개봉하기
         </Button>
       </BottomButtonContainer>
-    </section>
+    </>
   );
 }
