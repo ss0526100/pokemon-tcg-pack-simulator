@@ -18,7 +18,7 @@ export const itemContainer = css`
 export const container = css`
   width: 336px;
   display: flex;
-  padding: 10px 0;
+  padding: 0 0 10px;
   justify-content: flex-end;
   gap: 1rem;
 `;

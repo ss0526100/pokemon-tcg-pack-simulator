@@ -1,6 +1,6 @@
 import * as S from './PackOpen.styles';
 
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect } from 'react';
 
 import BottomButtonContainer from '../BottomButtonContainer/BottomButtonContainer';
 import Button from '../Button/Button';
@@ -8,53 +8,64 @@ import Card from '../Card/Card';
 import LeftArrow from '../svgs/LeftArrow';
 import Rarity from '../Rarity/Rarity';
 import RightArrow from '../svgs/RightArrow';
+import usePacksIndex from './usePacksIndex';
 
 interface PackOpenProps {
-  cardInfos: CardInfo[];
+  packs: Pack[];
   goOpen: () => void;
   goSelect: () => void;
-  nowPackType: A1PackType;
+  nowPackType: PackType;
 }
 
-const packMapper: Record<A1PackType, string> = {
+const packMapper: Record<PackType, string> = {
   charizard: '리자몽',
   pikachu: '피카츄',
   mewtwo: '뮤츠',
 };
 
 export default function PackOpen(props: PackOpenProps) {
-  const { cardInfos, goOpen, goSelect, nowPackType } = props;
-  const [cardIndex, setCardIndex] = useState(0);
+  const { packs, goOpen, goSelect, nowPackType } = props;
 
-  const getBeforeCard = () => {
-    setCardIndex(prev => Math.max(0, prev - 1));
-  };
-
-  const getNextCard = useCallback(() => {
-    setCardIndex(prev => Math.min(prev + 1, cardInfos.length - 1));
-  }, [cardInfos]);
+  const {
+    cardLength,
+    cardIndex,
+    isFirstCard,
+    isLastCard,
+    nowCard,
+    setBeforeCard,
+    setNextCard,
+    countLeftCards,
+    initPackIndex,
+  } = usePacksIndex(packs);
 
   const reopen = useCallback(() => {
-    if (cardIndex !== cardInfos.length - 1) return;
+    if (!isLastCard) return;
+    countLeftCards();
+    initPackIndex();
     goOpen();
-    setCardIndex(0);
-  }, [cardIndex, cardInfos, goOpen]);
+  }, [isLastCard, countLeftCards, initPackIndex, goOpen]);
+
+  const handleGoSelect = useCallback(() => {
+    countLeftCards();
+    initPackIndex();
+    goSelect();
+  }, [countLeftCards, initPackIndex, goSelect]);
 
   useEffect(() => {
     function handleKeyDown(event: KeyboardEvent) {
       switch (event.key) {
         case 'ArrowLeft':
-          getBeforeCard();
+          setBeforeCard();
           break;
         case 'ArrowRight':
-          getNextCard();
+          setNextCard();
           break;
         case ' ':
-          getNextCard();
-          if (cardIndex === cardInfos.length - 1) reopen();
+          setNextCard();
+          if (cardIndex === cardLength) reopen();
           break;
         case 'r':
-          goSelect();
+          handleGoSelect();
           break;
         default:
           break;
@@ -63,35 +74,42 @@ export default function PackOpen(props: PackOpenProps) {
     document.addEventListener('keydown', handleKeyDown);
 
     return () => document.removeEventListener('keydown', handleKeyDown);
-  }, [cardIndex, cardInfos, getNextCard, goSelect, reopen]);
-
+  }, [
+    cardIndex,
+    packs,
+    cardLength,
+    setBeforeCard,
+    setNextCard,
+    handleGoSelect,
+    reopen,
+  ]);
   return (
     <section css={S.layout}>
       <div css={S.cardContainer}>
         <div css={S.selectContainer}>
           <div css={S.svgContainer}>
-            <LeftArrow size={30} onClick={getBeforeCard} />
+            {!isFirstCard && <LeftArrow size={30} onClick={setBeforeCard} />}
           </div>
         </div>
-        <Card cardInfo={cardInfos[cardIndex]} onClick={getNextCard} />
+        <Card cardInfo={nowCard} onClick={setNextCard} />
         <div css={S.selectContainer}>
           <div css={S.svgContainer}>
-            <RightArrow size={30} onClick={getNextCard} />
+            {!isLastCard && <RightArrow size={30} onClick={setNextCard} />}
           </div>
         </div>
       </div>
-      {`(${cardIndex + 1}/${cardInfos.length})`}
+      {`(${cardIndex}/${cardLength})`}
 
       <div css={S.rarityContainer}>
-        <Rarity cardRare={cardInfos[cardIndex].grade} size={30} />
+        <Rarity rarity={nowCard.rarity} size={30} />
       </div>
 
       <BottomButtonContainer direction='column'>
-        {cardIndex === cardInfos.length - 1 && (
+        {isLastCard && (
           <Button css={S.buttonAnimation} primary onClick={reopen}>
             다시 개봉하기
             {`\n(${
-              packMapper[nowPackType] + ' ' + Math.floor(cardInfos.length / 5)
+              packMapper[nowPackType] + ' ' + Math.floor(packs.length)
             }팩)`}
           </Button>
         )}
