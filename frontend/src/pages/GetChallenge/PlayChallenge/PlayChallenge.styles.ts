@@ -26,19 +26,23 @@ export const cardContainer = css`
 `;
 export const cardTag = css`
   position: absolute;
+  z-index: 10;
   bottom: -30px;
   left: 50%;
   transform: translateX(-50%);
-  width: 60px !important;
-  height: 25px !important;
-  background-color: red;
-  z-index: 10;
-  border-radius: 20px;
-  background-color: ${COLOR.PRIMARY_COLOR};
-  color: white;
-  font-size: 17px;
-  font-weight: 700;
+
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+
+  width: 60px !important;
+  height: 25px !important;
+
+  font-size: 17px;
+  font-weight: 700;
+  color: white;
+
+  background-color: red;
+  background-color: ${COLOR.PRIMARY_COLOR};
+  border-radius: 20px;
 `;

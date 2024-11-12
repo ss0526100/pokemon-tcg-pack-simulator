@@ -1,155 +1,151 @@
 import { css } from '@emotion/react';
 
-const reset = css` html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  box-sizing: border-box;
-  margin    : 0;
-  padding   : 0;
+const reset = css`
+  html,
+  body,
+  div,
+  span,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  img,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,
+  b,
+  u,
+  i,
+  center,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td,
+  article,
+  aside,
+  canvas,
+  details,
+  embed,
+  figure,
+  figcaption,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  output,
+  ruby,
+  section,
+  summary,
+  time,
+  mark,
+  audio,
+  video {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 
-  font-family   : Pretendard, sans-serif;
-  font-size     : 62.5%;
-  vertical-align: baseline;
+    font-family: Pretendard, sans-serif;
+    font-size: 62.5%;
+    vertical-align: baseline;
 
-  border: 0;
-}
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-body {
-  position  : relative;
-  overflow-y: scroll;
-
-  $ {
-    layout.default
+    border: 0;
   }
 
-  margin     : 0 auto;
-  line-height: 1;
-}
+  /* HTML5 display-role reset for older browsers */
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  section {
+    display: block;
+  }
 
-ol,
-ul {
-  list-style: none;
-}
+  body {
+    position: relative;
+    position: absolute;
+    top: 0;
 
-blockquote,
-q {
-  quotes: none;
-}
+    overflow: hidden scroll;
 
-blockquote::before,
-blockquote::after,
-q::before,
-q::after {
-  content: '';
-  content: none;
-}
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
 
-table {
-  border-spacing : 0;
-  border-collapse: collapse;
-}
+    line-height: 1;
 
-body{
-  position:absolute;
-  top:0;
-  overflow-x:hidden;
-  width:100vw;
-  height:100vh;
-  background : linear-gradient(#BFBFFC, white);
-  background-attachment: fixed;
-}
+    background: linear-gradient(#bfbffc, white);
+    background-attachment: fixed;
+  }
+
+  ol,
+  ul {
+    list-style: none;
+  }
+
+  blockquote,
+  q {
+    quotes: none;
+  }
+
+  blockquote::before,
+  blockquote::after,
+  q::before,
+  q::after {
+    content: '';
+    content: none;
+  }
+
+  table {
+    border-spacing: 0;
+    border-collapse: collapse;
+  }
 `;
 export default reset;

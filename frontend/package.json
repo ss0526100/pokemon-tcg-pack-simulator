@@ -8,6 +8,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint **/*.{js,jsx,ts,tsx}",
+    "style": "stylelint \"src/**/*.{styles.ts,style.ts}\"",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
@@ -18,8 +19,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.28.0",
-    "recoil": "^0.7.7",
-    "seamless-scroll-polyfill": "^2.3.4"
+    "recoil": "^0.7.7"
   },
   "devDependencies": {
     "@eslint/js": "^8.38.0",
@@ -32,6 +32,11 @@
     "eslint-plugin-react-refresh": "^0.4.14",
     "gh-pages": "^6.2.0",
     "globals": "^15.11.0",
+    "postcss-styled-syntax": "^0.7.0",
+    "stylelint": "^16.10.0",
+    "stylelint-config-clean-order": "^6.1.0",
+    "stylelint-config-standard": "^36.0.1",
+    "stylelint-no-unsupported-browser-features": "^8.0.2",
     "typescript": "~5.6.2",
     "typescript-eslint": "^8.11.0",
     "vite": "^5.4.10"

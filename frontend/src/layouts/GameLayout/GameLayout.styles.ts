@@ -1,27 +1,27 @@
 import { css } from '@emotion/react';
 
 export const layout = css`
+  user-select: none;
+
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  height: 820px;
-
-  user-select: none;
-  max-width: 600px;
   width: 100vw;
+  max-width: 600px;
+  height: 820px;
 `;
 
 export const content = css`
   display: flex;
-  padding: 3rem 0 0;
   flex-direction: column;
-  align-items: center;
   gap: 2rem;
-  height: 600px;
+  align-items: center;
 
-  max-width: 480px;
   width: calc(100vw - 4rem);
+  max-width: 480px;
+  height: 600px;
+  padding: 3rem 0 0;
 `;
 
 interface ToolbarProps {
@@ -43,11 +43,12 @@ const getJustifyContent = ({
 };
 
 export const toolbarContainer = (props: ToolbarProps) => css`
-  max-width: 480px;
-  width: calc(100vw - 4rem);
   display: flex;
-  justify-content: ${getJustifyContent(props)};
   gap: 1rem;
+  justify-content: ${getJustifyContent(props)};
+
+  width: calc(100vw - 4rem);
+  max-width: 480px;
   padding: 2rem;
 `;
 
@@ -66,6 +67,6 @@ export const toolbarRight = css`
 export const description = css`
   display: flex;
   flex-direction: column;
-  width: calc(100vw - 4rem);
   align-items: center;
+  width: calc(100vw - 4rem);
 `;

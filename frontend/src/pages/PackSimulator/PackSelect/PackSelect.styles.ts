@@ -2,11 +2,12 @@ import { css } from '@emotion/react';
 
 export const layout = css`
   display: flex;
-  padding: 3rem 0 0;
   flex-direction: column;
-  align-items: center;
   gap: 2rem;
+  align-items: center;
+
   height: 600px;
+  padding: 3rem 0 0;
 `;
 
 export const cardContainer = css`
@@ -19,9 +20,10 @@ export const selectContainer = css`
 `;
 
 export const svgContainer = css`
-  border-radius: 100%;
   padding: 10px;
   background-color: transparent;
+  border-radius: 100%;
+
   &:hover {
     background-color: #0000003f;
   }
