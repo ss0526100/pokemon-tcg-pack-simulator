@@ -3,16 +3,19 @@ import {
   A1_CARD_POOL_ID_LIST,
   MISSING_NO_CARD,
 } from '../../constant/card';
+import { useRef, useState } from 'react';
 
+import COLOR from '../../constant/colors';
 import ChooseChallenge from './ChooseChallenge/ChooseChallenge';
 import { GET_CHALLENGE_RARITY_PERCENTAGE_LIST_BY_INDEX } from '../../constant/service';
 import GameLayout from '../../layouts/GameLayout/GameLayout';
 import PlayChallenge from './PlayChallenge/PlayChallenge';
+import Refresh from '../../components/svgs/Refresh';
+import ToolbarItem from '../../components/ToolbarItem/ToolbarItem';
 import { getCardInWhereA1Pack } from '../../utils/getCardInWhereA1Pack';
 import getRandom from '../../utils/getRandom';
 import getRandomElement from '../../utils/getRandomElement';
 import getRandomStrByPercentFunc from '../../utils/getRandomStrByPercentFunc';
-import { useState } from 'react';
 
 const RANDOM_NORMAL_PACK_RARITY_FUNCS =
   GET_CHALLENGE_RARITY_PERCENTAGE_LIST_BY_INDEX.map(lists =>
@@ -50,7 +53,7 @@ const getRandomPack = (targetId?: string) => {
 };
 
 const getRandomPacks = (targetId?: string) =>
-  Array.from({ length: 100 }).map(() => getRandomPack(targetId));
+  Array.from({ length: 10 }).map(() => getRandomPack(targetId));
 
 const initRandomPack = getRandomPacks();
 const initPack = initRandomPack[0];
@@ -60,6 +63,7 @@ export default function GetChallenge() {
   const [packs, setPacks] = useState<Pack[]>(initRandomPack);
   const [selectedPack, setSelectedPack] = useState<Pack>(initPack);
   const [phase, setPhase] = useState<Phase>('select');
+  const contentRef = useRef<HTMLDivElement>(null);
 
   const goSelect = () => setPhase('select');
   const selectPack = (pack: Pack) => {
@@ -67,16 +71,35 @@ export default function GetChallenge() {
     setPhase('play');
   };
 
+  const refreshPacks = () => {
+    setPacks(getRandomPacks());
+    if (contentRef.current) {
+      contentRef.current.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
   return (
     <GameLayout>
       <GameLayout.Content>
         {phase === 'select' && (
-          <ChooseChallenge onSelect={selectPack} packs={packs} />
+          <ChooseChallenge
+            onSelect={selectPack}
+            packs={packs}
+            ref={contentRef}
+          />
         )}
         {phase === 'play' && (
           <PlayChallenge pack={selectedPack} goSelect={goSelect} />
         )}
       </GameLayout.Content>
+      <GameLayout.Toolbar>
+        <GameLayout.Toolbar.ToolbarItemContainer>
+          <ToolbarItem
+            svg={<Refresh fill={COLOR.PRIMARY_COLOR} size={50} />}
+            description='목록 새로고침'
+            onClick={refreshPacks}
+          />
+        </GameLayout.Toolbar.ToolbarItemContainer>
+      </GameLayout.Toolbar>
     </GameLayout>
   );
 }

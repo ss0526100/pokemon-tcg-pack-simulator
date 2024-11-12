@@ -1,12 +1,13 @@
 import * as S from './ChooseChallenge.style';
 
+import { forwardRef, useState } from 'react';
+
 import { A1_CARD_LIST } from '../../../constant/card';
 import BottomButtonContainer from '../../../components/BottomButtonContainer/BottomButtonContainer';
 import Button from '../../../components/Button/Button';
 import Card from '../../../components/Card/Card';
 import ItemDisplay from '../../../components/ItemDisplay/ItemDisplay';
 import Modal from '../../../components/Modal/Modal';
-import { useState } from 'react';
 
 interface ChallengeBoxProps {
   pack: Pack;
@@ -59,41 +60,45 @@ interface ChooseChallengeProps {
   packs: Pack[];
   onSelect: (pack: Pack) => void;
 }
-export default function ChooseChallenge(props: ChooseChallengeProps) {
-  const { packs, onSelect } = props;
-  const [isOpen, setIsOpen] = useState(false);
-  const [nowPack, setNowPack] = useState<Pack>(initPack);
+const ChooseChallenge = forwardRef<HTMLDivElement, ChooseChallengeProps>(
+  function ChooseChallenge(props: ChooseChallengeProps, ref) {
+    const { packs, onSelect } = props;
+    const [isOpen, setIsOpen] = useState(false);
+    const [nowPack, setNowPack] = useState<Pack>(initPack);
 
-  const handleBoxClick = (pack: Pack) => {
-    setNowPack(pack);
-    setIsOpen(true);
-  };
+    const handleBoxClick = (pack: Pack) => {
+      setNowPack(pack);
+      setIsOpen(true);
+    };
 
-  const modalConfirm = () => {
-    onSelect(nowPack);
-    setIsOpen(false);
-  };
+    const modalConfirm = () => {
+      onSelect(nowPack);
+      setIsOpen(false);
+    };
 
-  return (
-    <>
-      <div css={S.container}>
-        {packs.map((pack, idx) => (
-          <ChallengeBox
-            pack={pack}
-            onClick={() => handleBoxClick(pack)}
-            key={idx}
-          />
-        ))}
-      </div>
-      {isOpen && (
-        <Modal onClose={() => setIsOpen(false)}>
-          <ConfirmContent
-            pack={nowPack}
-            onClose={() => setIsOpen(false)}
-            onConfirm={modalConfirm}
-          />
-        </Modal>
-      )}
-    </>
-  );
-}
+    return (
+      <>
+        <div css={S.container} ref={ref}>
+          {packs.map((pack, idx) => (
+            <ChallengeBox
+              pack={pack}
+              onClick={() => handleBoxClick(pack)}
+              key={idx}
+            />
+          ))}
+        </div>
+        {isOpen && (
+          <Modal onClose={() => setIsOpen(false)}>
+            <ConfirmContent
+              pack={nowPack}
+              onClose={() => setIsOpen(false)}
+              onConfirm={modalConfirm}
+            />
+          </Modal>
+        )}
+      </>
+    );
+  }
+);
+
+export default ChooseChallenge;

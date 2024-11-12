@@ -27,9 +27,7 @@ export const container = css`
 
   padding: 20px;
 
-  &::-webkit-scrollbar {
-    display: none;
-  }
+  scroll-behavior: smooth;
 `;
 
 export const confirmContainer = css`
