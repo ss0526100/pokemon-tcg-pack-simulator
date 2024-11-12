@@ -16,8 +16,8 @@ import PokeBall from '../../components/svgs/PokeCard';
 import Refresh from '../../components/svgs/Refresh';
 import StatisticsInfo from '../PackSimulator/StatisticsInfo/StatisticsInfo';
 import ToolbarItem from '../../components/ToolbarItem/ToolbarItem';
+import fisherShuffle from '../../utils/fisherShuffle';
 import { getCardInWhereA1Pack } from '../../utils/getCardInWhereA1Pack';
-import getRandom from '../../utils/getRandom';
 import getRandomElement from '../../utils/getRandomElement';
 import getRandomStrByPercentFunc from '../../utils/getRandomStrByPercentFunc';
 import { useNavigate } from 'react-router-dom';
@@ -32,9 +32,7 @@ const getRandomPackRarity = () =>
   RANDOM_NORMAL_PACK_RARITY_FUNCS.map(func => func());
 
 const getRandomPackType = () =>
-  ['charizard', 'pikachu', 'mewtwo'].sort(
-    () => getRandom() - 0.5
-  )[0] as PackType;
+  fisherShuffle(['charizard', 'pikachu', 'mewtwo'])[0] as PackType;
 
 const getRandomPack = (targetId?: string) => {
   const packType = targetId
@@ -55,7 +53,7 @@ const getRandomPack = (targetId?: string) => {
     if (randomId === undefined) return MISSING_NO_CARD;
     return map.get(randomId) || MISSING_NO_CARD;
   });
-  return randomPack.sort(() => getRandom() - 0.5);
+  return fisherShuffle(randomPack);
 };
 
 const getRandomPacks = (targetId?: string) =>
