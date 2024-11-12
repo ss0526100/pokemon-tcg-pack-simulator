@@ -1,3 +1,4 @@
+import COLOR from '../../constant/colors';
 import { css } from '@emotion/react';
 
 interface ButtonProps {
@@ -5,7 +6,7 @@ interface ButtonProps {
   secondary?: boolean;
   circle?: boolean;
 }
-const PRIMARY_COLOR = '#3de086';
+const PRIMARY_COLOR = COLOR.PRIMARY_COLOR;
 const getBackgroundColor = ({ primary, secondary }: ButtonProps) => {
   if (primary) return PRIMARY_COLOR;
   if (secondary) return 'white';

@@ -1,5 +1,7 @@
 import { css, keyframes } from '@emotion/react';
 
+import COLOR from '../../../constant/colors';
+
 export const displaySection = css`
   width: 100%;
   height: 360px;
@@ -32,7 +34,7 @@ export const cardTag = css`
   background-color: red;
   z-index: 10;
   border-radius: 20px;
-  background-color: #3de086;
+  background-color: ${COLOR.PRIMARY_COLOR};
   color: white;
   font-size: 17px;
   font-weight: 700;

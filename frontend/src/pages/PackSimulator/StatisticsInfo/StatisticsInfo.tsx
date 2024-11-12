@@ -1,3 +1,4 @@
+import COLOR from '../../../constant/colors';
 import Modal from '../../../components/Modal/Modal';
 import StatisticContent from './StatisticContent/StatisticContent';
 import Statistics from '../../../components/svgs/Statistics';
@@ -14,7 +15,7 @@ export default function StatisticsInfo() {
         </Modal>
       )}
       <ToolbarItem
-        svg={<Statistics fill='#3de086' size={35} />}
+        svg={<Statistics fill={COLOR.PRIMARY_COLOR} size={35} />}
         description='통계'
         onClick={() => setIsModalOpen(true)}
       />
