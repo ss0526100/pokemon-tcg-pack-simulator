@@ -66,6 +66,13 @@ export default function PlayChallenge(props: PlayChallengeProps) {
           ))}
         </ItemDisplay>
       </div>
+      {!buttonShown && (
+        <BottomButtonContainer>
+          <Button secondary css={S.buttonAnimation} onClick={goSelect}>
+            다른 챌린지 선택하기
+          </Button>
+        </BottomButtonContainer>
+      )}
       {buttonShown && (
         <BottomButtonContainer>
           <Button onClick={reselect} css={S.buttonAnimation}>

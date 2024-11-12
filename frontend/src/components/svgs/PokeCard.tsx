@@ -5,7 +5,7 @@ interface PokeCardProps extends SVGProps<SVGSVGElement> {
   fill?: string;
 }
 
-export default function PokeCard(props: PokeCardProps) {
+export default function PokeBall(props: PokeCardProps) {
   const { size = 20, fill = 'white', ...restProps } = props;
 
   return (

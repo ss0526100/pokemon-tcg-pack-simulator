@@ -6,7 +6,7 @@ import COLOR from '../../constant/colors';
 import GameLayout from '../../layouts/GameLayout/GameLayout';
 import PackOpen from './PackOpen/PackOpen';
 import PackSelect from './PackSelect/PackSelect';
-import Statistics from '../../components/svgs/Statistics';
+import PokeBall from '../../components/svgs/PokeCard';
 import StatisticsInfo from './StatisticsInfo/StatisticsInfo';
 import ToolbarItem from '../../components/ToolbarItem/ToolbarItem';
 import { getRandomPacks } from '../../utils/getRandomPack';
@@ -67,7 +67,7 @@ export default function PackSimulator() {
       <GameLayout.Toolbar>
         <GameLayout.Toolbar.ToolbarItemContainer>
           <ToolbarItem
-            svg={<Statistics fill={COLOR.PRIMARY_COLOR} size={34} />}
+            svg={<PokeBall fill={COLOR.PRIMARY_COLOR} size={50} />}
             description='겟챌린지 가기'
             onClick={() => navigate('/get-challenge')}
           />

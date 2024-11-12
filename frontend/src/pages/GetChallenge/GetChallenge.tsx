@@ -12,7 +12,7 @@ import GameLayout from '../../layouts/GameLayout/GameLayout';
 import LockedLock from '../../components/svgs/LockedLock';
 import OpenedLock from '../../components/svgs/OpenedLock';
 import PlayChallenge from './PlayChallenge/PlayChallenge';
-import PokeCard from '../../components/svgs/PokeCard';
+import PokeBall from '../../components/svgs/PokeCard';
 import Refresh from '../../components/svgs/Refresh';
 import ToolbarItem from '../../components/ToolbarItem/ToolbarItem';
 import { getCardInWhereA1Pack } from '../../utils/getCardInWhereA1Pack';
@@ -103,7 +103,7 @@ export default function GetChallenge() {
       <GameLayout.Toolbar>
         <GameLayout.Toolbar.ToolbarItemContainer>
           <ToolbarItem
-            svg={<PokeCard fill={COLOR.PRIMARY_COLOR} size={50} />}
+            svg={<PokeBall fill={COLOR.PRIMARY_COLOR} size={50} />}
             description='팩 개봉하기'
             onClick={() => navigate('/')}
           />
