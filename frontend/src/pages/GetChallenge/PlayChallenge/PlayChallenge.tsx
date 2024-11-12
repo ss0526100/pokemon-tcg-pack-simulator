@@ -6,7 +6,7 @@ import BottomButtonContainer from '../../../components/BottomButtonContainer/Bot
 import Button from '../../../components/Button/Button';
 import FlippingCard from '../../../components/FilppingCard/FlippingCard';
 import ItemDisplay from '../../../components/ItemDisplay/ItemDisplay';
-import getRandom from '../../../utils/getRandom';
+import fisherShuffle from '../../../utils/fisherShuffle';
 import useGetChallengeCnt from '../../../hooks/atoms/packs/useGetChallengeCnt';
 import usePackUtil from '../../../hooks/atoms/packs/usePackUtil';
 
@@ -19,7 +19,7 @@ export default function PlayChallenge(props: PlayChallengeProps) {
   const { pack, goSelect } = props;
 
   const [shuffledPack, setShuffledPack] = useState(() =>
-    pack.slice().sort(() => getRandom() - 0.5)
+    fisherShuffle(pack.slice())
   );
 
   // id로 관리시 같은 카드가 중복으로 오면 한 카드 선택시 여러개 돌아감
@@ -51,7 +51,7 @@ export default function PlayChallenge(props: PlayChallengeProps) {
     setButtonShown(false);
     setGetIndex(-1);
     setTimeout(() => {
-      setShuffledPack(() => pack.slice().sort(() => getRandom() - 0.5));
+      setShuffledPack(() => fisherShuffle(pack.slice()));
       isClicked.current = false;
     }, 300);
   };

@@ -8,6 +8,7 @@ import ImportImages from './pages/PackSimulator/importImages';
 import MainLayout from './layouts/MainLayout/MainLayout';
 import PackSimulator from './pages/PackSimulator/PackSimulator';
 import { RecoilRoot } from 'recoil';
+import { polyfill } from 'seamless-scroll-polyfill';
 import reset from './reset.style';
 import { useEffect } from 'react';
 
@@ -36,6 +37,11 @@ function App() {
     addEventListener('keydown', handleKeyDown);
     return () => removeEventListener('keydown', handleKeyDown);
   }, []);
+
+  useEffect(() => {
+    polyfill();
+  }, []);
+
   return (
     <RecoilRoot>
       <Global styles={reset} />
