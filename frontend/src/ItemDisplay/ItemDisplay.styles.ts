@@ -6,7 +6,7 @@ export const container = css`
   height: 100%;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 50% 50%;
-  gap: 0px; /* 각 링 사이의 간격 */
+  gap: 20px; /* 각 링 사이의 간격 */
   justify-items: center;
 
   align-items: center;
@@ -17,7 +17,7 @@ export const container = css`
 
   & > :nth-of-type(4),
   & > :nth-of-type(5) {
-    transform: translateX(-50%);
+    transform: translate(calc(-50% - 10px), -20px);
   }
 `;
 export const childContainer = css`
@@ -25,15 +25,27 @@ export const childContainer = css`
   flex-direction: column;
 
   align-items: center;
-  width: 100%;
-  height: 100%;
+  width: calc(min(30vw, 100px));
+  max-width: 180px;
+
+  height: calc(min(30vw, 100px) * 1.4);
+  height: calc(180px * 1.4)
   padding: 1rem;
-  object-fit: contain !important;
 
-  // & > * {
-  //   width: 100% !important;
-  //   height: 100% !important;
+  & > div {
+    width: 100%;
+    height: 100%;
+  }
 
-  //   object-fit: contain !important;
-  // }
+  & > div > div {
+    width: 100%;
+    height: 100%;
+  }
+  & > div > div > img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    background-color: transparent;
+  }
 `;

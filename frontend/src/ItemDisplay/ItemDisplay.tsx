@@ -1,6 +1,6 @@
 import * as S from './ItemDisplay.styles';
 
-import { PropsWithChildren, cloneElement } from 'react';
+import { PropsWithChildren } from 'react';
 
 export default function ItemDisplay(props: PropsWithChildren) {
   const { children } = props;
@@ -8,9 +8,11 @@ export default function ItemDisplay(props: PropsWithChildren) {
   return (
     <div css={S.container}>
       {Array.isArray(children) &&
-        children.map((child, idx) =>
-          cloneElement(child, { key: idx, css: S.childContainer })
-        )}
+        children.map((child, idx) => (
+          <div css={S.childContainer} key={idx}>
+            {child}
+          </div>
+        ))}
       {!Array.isArray(children) && <div css={S.childContainer}>{children}</div>}
     </div>
   );
