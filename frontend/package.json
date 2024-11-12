@@ -19,7 +19,8 @@
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.28.0",
     "recoil": "^0.7.7",
-    "seamless-scroll-polyfill": "^2.3.4"
+    "seamless-scroll-polyfill": "^2.3.4",
+    "stylelint": "^16.10.0"
   },
   "devDependencies": {
     "@eslint/js": "^8.38.0",
