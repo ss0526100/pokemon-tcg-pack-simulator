@@ -2999,6 +2999,37 @@ const MEWTWO_S3: CardId[] = ['A1-282'];
 
 const ALL_CROWN: CardId[] = ['A1-284', 'A1-285', 'A1-286'];
 
+export const A1_CHARIZARD_PACK_ID_SET = new Set(
+  ...CHARIZARD_R1,
+  ...CHARIZARD_R2,
+  ...CHARIZARD_R3,
+  ...CHARIZARD_R4,
+  ...CHARIZARD_S1,
+  ...CHARIZARD_S2,
+  ...CHARIZARD_S3,
+  ALL_CROWN
+);
+export const A1_PIKACHU_PACK_ID_SET = new Set(
+  ...PIKACHU_R1,
+  ...PIKACHU_R2,
+  ...PIKACHU_R3,
+  ...PIKACHU_R4,
+  ...PIKACHU_S1,
+  ...PIKACHU_S2,
+  ...PIKACHU_S3,
+  ALL_CROWN
+);
+export const A1_MEWTWO_PACK_ID_SET = new Set(
+  ...MEWTWO_R1,
+  ...MEWTWO_R2,
+  ...MEWTWO_R3,
+  ...MEWTWO_R4,
+  ...MEWTWO_S1,
+  ...MEWTWO_S2,
+  ...MEWTWO_S3,
+  ALL_CROWN
+);
+
 export const PIKACHU_PACK_CARD_ID_LIST: Record<Rarity, CardId[]>[] = [
   {
     crown: [],

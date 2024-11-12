@@ -1,4 +1,4 @@
-import { css } from '@emotion/react';
+import { css, keyframes } from '@emotion/react';
 
 export const layout = css`
   display: flex;
@@ -8,7 +8,7 @@ export const layout = css`
   height: 600px;
 `;
 
-export const cardContainer = css`
+export const sectionContainer = css`
   display: flex;
   gap: 0.5rem;
 `;
@@ -27,37 +27,29 @@ export const svgContainer = css`
   }
 `;
 
-export const buttonAnimation = css`
-  animation: text-focus-in 200ms cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+const focusIn = keyframes` 0% {
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      filter: blur(0px);
+      opacity: 1;
+    }`;
 
-  @-webkit-keyframes text-focus-in {
-    0% {
-      -webkit-filter: blur(12px);
-      filter: blur(12px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-filter: blur(0px);
-      filter: blur(0px);
-      opacity: 1;
-    }
-  }
-  @keyframes text-focus-in {
-    0% {
-      -webkit-filter: blur(12px);
-      filter: blur(12px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-filter: blur(0px);
-      filter: blur(0px);
-      opacity: 1;
-    }
-  }
+export const buttonAnimation = css`
+  animation: ${focusIn} 200ms cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 `;
 
 export const rarityContainer = css`
   display: flex;
   width: 100%;
   padding: 10px 80px 0;
+`;
+
+export const cardContainer = css`
+  width: 55vw;
+  height: calc(55vw * 1.3);
+
+  max-width: 219px;
+  max-height: 335px;
 `;

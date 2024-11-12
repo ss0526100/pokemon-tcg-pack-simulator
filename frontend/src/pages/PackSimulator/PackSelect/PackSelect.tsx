@@ -2,12 +2,12 @@ import * as S from './PackSelect.styles';
 
 import { useCallback, useEffect, useState } from 'react';
 
-import { A1_PACK_INFOS } from '../../constant/pack';
-import BottomButtonContainer from '../BottomButtonContainer/BottomButtonContainer';
-import Button from '../Button/Button';
-import LeftArrow from '../svgs/LeftArrow';
+import { A1_PACK_INFOS } from '../../../constant/pack';
+import BottomButtonContainer from '../../../components/BottomButtonContainer/BottomButtonContainer';
+import Button from '../../../components/Button/Button';
+import LeftArrow from '../../../components/svgs/LeftArrow';
 import Pack from './components/Pack/Pack';
-import RightArrow from '../svgs/RightArrow';
+import RightArrow from '../../../components/svgs/RightArrow';
 
 interface PackSelectProps {
   startPackType?: PackType;
@@ -61,7 +61,7 @@ export default function PackSelect(props: PackSelectProps) {
   }, [moveBeforeIndex, moveNextIndex, nowPackType, onSelect]);
 
   return (
-    <section css={S.layout}>
+    <>
       <div css={S.cardContainer}>
         <div css={S.selectContainer}>
           <div css={S.svgContainer}>
@@ -83,6 +83,6 @@ export default function PackSelect(props: PackSelectProps) {
           1팩 개봉하기
         </Button>
       </BottomButtonContainer>
-    </section>
+    </>
   );
 }

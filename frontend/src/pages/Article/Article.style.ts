@@ -5,6 +5,7 @@ export const layout = css`
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
+  padding: 2rem;
 `;
 
 export const span = css`

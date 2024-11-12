@@ -2,12 +2,12 @@ import * as S from './PackOpen.styles';
 
 import { useCallback, useEffect } from 'react';
 
-import BottomButtonContainer from '../BottomButtonContainer/BottomButtonContainer';
-import Button from '../Button/Button';
-import Card from '../Card/Card';
-import LeftArrow from '../svgs/LeftArrow';
-import Rarity from '../Rarity/Rarity';
-import RightArrow from '../svgs/RightArrow';
+import BottomButtonContainer from '../../../components/BottomButtonContainer/BottomButtonContainer';
+import Button from '../../../components/Button/Button';
+import Card from '../../../components/Card/Card';
+import LeftArrow from '../../../components/svgs/LeftArrow';
+import Rarity from '../../../components/Rarity/Rarity';
+import RightArrow from '../../../components/svgs/RightArrow';
 import usePacksIndex from './usePacksIndex';
 
 interface PackOpenProps {
@@ -85,13 +85,15 @@ export default function PackOpen(props: PackOpenProps) {
   ]);
   return (
     <section css={S.layout}>
-      <div css={S.cardContainer}>
+      <div css={S.sectionContainer}>
         <div css={S.selectContainer}>
           <div css={S.svgContainer}>
             {!isFirstCard && <LeftArrow size={30} onClick={setBeforeCard} />}
           </div>
         </div>
-        <Card cardInfo={nowCard} onClick={setNextCard} />
+        <div css={S.cardContainer}>
+          <Card cardInfo={nowCard} onClick={setNextCard} />
+        </div>
         <div css={S.selectContainer}>
           <div css={S.svgContainer}>
             {!isLastCard && <RightArrow size={30} onClick={setNextCard} />}
@@ -116,7 +118,7 @@ export default function PackOpen(props: PackOpenProps) {
         <Button
           css={S.buttonAnimation}
           secondary
-          onClick={goSelect}
+          onClick={handleGoSelect}
           key={'selectButton'}
         >
           팩 선택하러 가기

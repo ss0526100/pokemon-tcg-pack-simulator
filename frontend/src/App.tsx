@@ -1,12 +1,29 @@
-import Article from './components/Article/Article';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+
+import Article from './pages/Article/Article';
+import ErrorPage from './pages/ErrorPage/ErrorPage';
+import GetChallenge from './pages/GetChallenge/GetChallenge';
 import { Global } from '@emotion/react';
-import ImportImages from './components/PackSimulator/importImages';
+import ImportImages from './pages/PackSimulator/importImages';
 import MainLayout from './layouts/MainLayout/MainLayout';
-import PackSimulator from './components/PackSimulator/PackSimulator';
+import PackSimulator from './pages/PackSimulator/PackSimulator';
 import { RecoilRoot } from 'recoil';
 import reset from './reset.style';
 import { useEffect } from 'react';
 
+const router = createBrowserRouter([
+  {
+    path: '/',
+    errorElement: <ErrorPage />,
+    children: [
+      { path: '', element: <PackSimulator /> },
+      {
+        path: 'get-challenge',
+        element: <GetChallenge />,
+      },
+    ],
+  },
+]);
 const effectKeys = [' '];
 function App() {
   useEffect(() => {
@@ -23,7 +40,7 @@ function App() {
     <RecoilRoot>
       <Global styles={reset} />
       <MainLayout>
-        <PackSimulator />
+        <RouterProvider router={router} />
         <Article />
       </MainLayout>
     </RecoilRoot>
