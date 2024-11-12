@@ -1,6 +1,7 @@
 import { css, keyframes } from '@emotion/react';
 
 export const displaySection = css`
+  width: 100%;
   height: 360px;
 `;
 
@@ -18,11 +19,14 @@ export const buttonAnimation = css`
 `;
 export const cardContainer = css`
   position: relative;
+  width: 100%;
+  height: 100%;
 `;
 export const cardTag = css`
   position: absolute;
-  top: 143px;
-  left: 21px;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 60px !important;
   height: 25px !important;
   background-color: red;

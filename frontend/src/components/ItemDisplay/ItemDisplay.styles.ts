@@ -1,36 +1,34 @@
 import { css } from '@emotion/react';
 
 export const container = css`
-  display: grid;
+  display: flex;
   width: 100%;
   height: 100%;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 50% 50%;
-  gap: 20px; /* 각 링 사이의 간격 */
-  justify-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+`;
 
-  align-items: center;
+export const rowContainer = css`
+  height: 45%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
 
-  & > :nth-of-type(4) {
-    grid-column: 2 / 3;
-  }
-
-  & > :nth-of-type(4),
-  & > :nth-of-type(5) {
-    transform: translate(calc(-50% - 10px), -20px);
-  }
+  justify-content: space-evenly;
+  gap: 10px;
 `;
 export const childContainer = css`
   display: flex;
   flex-direction: column;
+  width: 33%;
+  height: 80%;
 
   align-items: center;
-  width: calc(min(30vw, 100px));
   max-width: 180px;
 
-  height: calc(min(30vw, 100px) * 1.4);
-  height: calc(180px * 1.4)
-  padding: 1rem;
+  & > * {
+    padding: 0 !important;
+  }
 
   & > div {
     width: 100%;
@@ -45,25 +43,23 @@ export const childContainer = css`
     width: 100%;
     height: 100%;
 
-    object-fit: cover;
+    object-fit: contain;
     background-color: transparent;
   }
-  
-  & > div > div >div> img {
+
+  & > div > div > div > img {
     width: 100%;
     height: 100%;
 
-    object-fit: cover;
+    object-fit: contain;
     background-color: transparent;
   }
-
-  
 
   & > img {
     width: 100%;
     height: 100%;
 
-    object-fit: cover;
+    object-fit: contain;
     background-color: transparent;
   }
 `;

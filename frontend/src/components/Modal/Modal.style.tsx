@@ -28,10 +28,10 @@ const defaultContentStyle = css`
 
 const slideTop = keyframes`
   0% {
-    transform: translate(   calc(min(50vw, 300px) - 50%),calc(100vh + ${window.scrollY}px));
+    transform: translate(   calc(min(50vw, 300px) - 50%),calc(100vh - ${window.scrollY}px));
     }
     100% {
-      transform: translate(   calc(min(50vw, 300px) - 50%),calc(100vh - 100% + ${window.scrollY}px));
+      transform: translate(   calc(min(50vw, 300px) - 50%),calc(100vh - 100% - ${window.scrollY}px));
   }
 `;
 

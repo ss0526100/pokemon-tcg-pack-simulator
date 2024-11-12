@@ -2,12 +2,12 @@ import { css } from '@emotion/react';
 
 export const boxContainer = css`
   width: 100%;
-  height: 60%;
+  height: 50%;
 
   max-width: 440px;
-  max-height: 320px;
+  max-height: 440px;
 
-  background: rgb(244, 247, 252) 60%;
+  background: #ffffffa9;
   border-radius: 20px;
   padding: 10px;
 `;
@@ -27,9 +27,22 @@ export const container = css`
 
   padding: 20px;
 
-  background-color: red;
-
   &::-webkit-scrollbar {
     display: none;
   }
+`;
+
+export const confirmContainer = css`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80vw;
+  max-width: 560px;
+  height: 40vh;
+`;
+
+export const modalTitle = css`
+  font-size: 30px;
+  font-weight: 600;
+  margin: 10px 0;
 `;

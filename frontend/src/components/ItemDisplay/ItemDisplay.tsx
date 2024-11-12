@@ -7,12 +7,24 @@ export default function ItemDisplay(props: PropsWithChildren) {
 
   return (
     <div css={S.container}>
-      {Array.isArray(children) &&
-        children.map((child, idx) => (
-          <div css={S.childContainer} key={idx}>
-            {child}
+      {Array.isArray(children) && (
+        <>
+          <div css={S.rowContainer}>
+            {children.slice(0, 3).map((child, idx) => (
+              <div css={S.childContainer} key={idx}>
+                {child}
+              </div>
+            ))}
           </div>
-        ))}
+          <div css={S.rowContainer}>
+            {children.slice(3).map((child, idx) => (
+              <div css={S.childContainer} key={idx}>
+                {child}
+              </div>
+            ))}
+          </div>
+        </>
+      )}
       {!Array.isArray(children) && <div css={S.childContainer}>{children}</div>}
     </div>
   );

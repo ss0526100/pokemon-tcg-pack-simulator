@@ -34,7 +34,8 @@ function ConfirmContent(props: ConfirmContent) {
   const { onClose, onConfirm, pack } = props;
   return (
     <>
-      <div style={{ height: '40vh', width: '100%', maxWidth: '600px' }}>
+      <div css={S.confirmContainer}>
+        <span css={S.modalTitle}>선택하시겠습니까?</span>
         <ItemDisplay>
           {pack.map(card => (
             <Card cardInfo={card} key={card.id} />
@@ -85,7 +86,7 @@ export default function ChooseChallenge(props: ChooseChallengeProps) {
         ))}
       </div>
       {isOpen && (
-        <Modal position='bottom' onClose={() => setIsOpen(false)}>
+        <Modal onClose={() => setIsOpen(false)}>
           <ConfirmContent
             pack={nowPack}
             onClose={() => setIsOpen(false)}
