@@ -48,6 +48,7 @@ export const toolbarContainer = (props: ToolbarProps) => css`
   display: flex;
   justify-content: ${getJustifyContent(props)};
   gap: 1rem;
+  padding: 2rem;
 `;
 
 export const toolbarLeft = css`
