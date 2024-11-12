@@ -1,4 +1,5 @@
 import { css } from '@emotion/react';
+import isAppleDevice from '../../../utils/isAppleDevice';
 
 export const boxContainer = css`
   width: 100%;
@@ -12,8 +13,7 @@ export const boxContainer = css`
 `;
 
 export const container = css`
-  scroll-behavior: smooth;
-
+  ${isAppleDevice() ? '' : 'scroll-behavior: smooth;'}
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
