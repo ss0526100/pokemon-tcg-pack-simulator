@@ -25,9 +25,6 @@ function ChallengeBox(props: ChallengeBoxProps) {
   );
 }
 
-const pack = A1_CARD_LIST.slice(0, 5);
-const pack1 = A1_CARD_LIST.slice(1, 6);
-
 interface ConfirmContent {
   pack: Pack;
   onClose: () => void;
@@ -56,7 +53,13 @@ function ConfirmContent(props: ConfirmContent) {
 }
 
 const initPack = A1_CARD_LIST.slice(0, 5);
-export default function ChooseChallenge() {
+
+interface ChooseChallengeProps {
+  packs: Pack[];
+  onSelect: (pack: Pack) => void;
+}
+export default function ChooseChallenge(props: ChooseChallengeProps) {
+  const { packs, onSelect } = props;
   const [isOpen, setIsOpen] = useState(false);
   const [nowPack, setNowPack] = useState<Pack>(initPack);
 
@@ -65,20 +68,28 @@ export default function ChooseChallenge() {
     setIsOpen(true);
   };
 
+  const modalConfirm = () => {
+    onSelect(nowPack);
+    setIsOpen(false);
+  };
+
   return (
     <>
       <div css={S.container}>
-        <ChallengeBox pack={pack} onClick={() => handleBoxClick(pack)} />
-        <ChallengeBox pack={pack1} onClick={() => handleBoxClick(pack1)} />
-        <ChallengeBox pack={pack} onClick={() => setIsOpen(true)} />
-        <ChallengeBox pack={pack} onClick={() => setIsOpen(true)} />
+        {packs.map((pack, idx) => (
+          <ChallengeBox
+            pack={pack}
+            onClick={() => handleBoxClick(pack)}
+            key={idx}
+          />
+        ))}
       </div>
       {isOpen && (
         <Modal position='bottom' onClose={() => setIsOpen(false)}>
           <ConfirmContent
             pack={nowPack}
             onClose={() => setIsOpen(false)}
-            onConfirm={() => setIsOpen(false)}
+            onConfirm={modalConfirm}
           />
         </Modal>
       )}

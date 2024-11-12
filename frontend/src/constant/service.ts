@@ -35,3 +35,22 @@ export const NORMAL_PACK_RARITY_PERCENTAGE_LIST_BY_INDEX: RarityPercentTuple[] =
       ['r2', 60],
     ],
   ];
+
+export const GET_CHALLENGE_RARITY_PERCENTAGE_LIST_BY_INDEX: RarityPercentTuple[] =
+  [
+    [['r1', 100]],
+    [['r1', 100]],
+    [['r1', 100]],
+    [
+      ['s2', 0.5],
+      ['s1', 2.572],
+      ['r4', 1.666],
+      ['r3', 5],
+      ['r2', 90],
+    ],
+    [
+      ['s2', 30],
+      ['s1', 30],
+      ['r4', 40],
+    ],
+  ];

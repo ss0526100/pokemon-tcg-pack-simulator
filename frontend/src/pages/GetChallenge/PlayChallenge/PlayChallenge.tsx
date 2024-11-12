@@ -10,10 +10,11 @@ import getRandom from '../../../utils/getRandom';
 
 interface PlayChallengeProps {
   pack: Pack;
+  goSelect: () => void;
 }
 
 export default function PlayChallenge(props: PlayChallengeProps) {
-  const { pack } = props;
+  const { pack, goSelect } = props;
 
   const [shuffledPack, setShuffledPack] = useState(() =>
     pack.slice().sort(() => getRandom() - 0.5)
@@ -67,11 +68,9 @@ export default function PlayChallenge(props: PlayChallengeProps) {
       {buttonShown && (
         <BottomButtonContainer>
           <Button onClick={reselect} css={S.buttonAnimation}>
-            {' '}
             다시 뽑기
           </Button>
-          <Button secondary css={S.buttonAnimation}>
-            {' '}
+          <Button secondary css={S.buttonAnimation} onClick={goSelect}>
             챌린지 선택하기
           </Button>
         </BottomButtonContainer>
