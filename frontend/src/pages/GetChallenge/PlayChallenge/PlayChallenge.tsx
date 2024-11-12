@@ -19,28 +19,30 @@ export default function PlayChallenge(props: PlayChallengeProps) {
   const [shuffledPack, setShuffledPack] = useState(() =>
     pack.slice().sort(() => getRandom() - 0.5)
   );
-  const [flippedIds, setFlippedIds] = useState<string[]>([]);
-  const [getId, setGetId] = useState('');
+
+  // id로 관리시 같은 카드가 중복으로 오면 한 카드 선택시 여러개 돌아감
+  const [flippedIndex, setFlippedIndex] = useState<number[]>([]);
+  const [getIndex, setGetIndex] = useState(-1);
   const [buttonShown, setButtonShown] = useState(false);
 
   const isClicked = useRef(false);
 
-  const handleClick = (id: string) => {
+  const handleClick = (index: number) => {
     if (isClicked.current) return;
     isClicked.current = true;
-    setFlippedIds(prev => prev.concat(id));
+    setFlippedIndex(prev => prev.concat(index));
     setTimeout(() => {
-      setGetId(id);
-      setFlippedIds(pack.map(card => card.id));
+      setGetIndex(index);
+      setFlippedIndex(prev => prev.concat(0, 1, 2, 3, 4));
 
       setButtonShown(true);
     }, 700);
   };
 
   const reselect = () => {
-    setFlippedIds([]);
+    setFlippedIndex([]);
     setButtonShown(false);
-    setGetId('');
+    setGetIndex(-1);
     setTimeout(() => {
       setShuffledPack(() => pack.slice().sort(() => getRandom() - 0.5));
       isClicked.current = false;
@@ -51,13 +53,13 @@ export default function PlayChallenge(props: PlayChallengeProps) {
     <>
       <div css={S.displaySection}>
         <ItemDisplay>
-          {shuffledPack.map(card => (
+          {shuffledPack.map((card, idx) => (
             <div css={S.cardContainer} key={card.id}>
-              {getId === card.id && <div css={S.cardTag}>GET!</div>}
+              {idx === getIndex && <div css={S.cardTag}>GET!</div>}
               <FlippingCard
-                onClick={() => handleClick(card.id)}
+                onClick={() => handleClick(idx)}
                 cardInfo={card}
-                flipped={!flippedIds.includes(card.id)}
+                flipped={!flippedIndex.includes(idx)}
                 controlled
               />
             </div>
