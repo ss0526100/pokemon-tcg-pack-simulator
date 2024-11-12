@@ -34,7 +34,7 @@ export default function PlayChallenge(props: PlayChallengeProps) {
 
   const handleClick = (index: number) => {
     if (isClicked.current) return;
-    countCard(pack[index]);
+    countCard(shuffledPack[index]);
     setGetChallengeCnt(prev => prev + 1);
     isClicked.current = true;
     setFlippedIndex(prev => prev.concat(index));
