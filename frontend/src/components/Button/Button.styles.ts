@@ -42,16 +42,14 @@ const getSize = ({ circle }: ButtonProps) => {
 
 export const button = (props: ButtonProps) => css`
   ${getSize(props)}
-
-  border-radius: 40px;
-
-  background-color: ${getBackgroundColor(props)};
-  color: ${getFontColor(props)};
+  padding: 2rem;
 
   font-size: 20px;
-  white-space: nowrap;
   font-weight: ${getFontWeight(props)};
+  color: ${getFontColor(props)};
+  white-space: nowrap;
 
-  padding: 2rem;
+  background-color: ${getBackgroundColor(props)};
   border: ${getBorder(props)};
+  border-radius: 40px;
 `;

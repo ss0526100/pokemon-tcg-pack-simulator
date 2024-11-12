@@ -2,10 +2,11 @@ import { css, keyframes } from '@emotion/react';
 
 export const layout = css`
   display: flex;
-  padding: 3rem 0;
   flex-direction: column;
   align-items: center;
+
   height: 600px;
+  padding: 3rem 0;
 `;
 
 export const sectionContainer = css`
@@ -18,10 +19,11 @@ export const selectContainer = css`
 `;
 
 export const svgContainer = css`
-  border-radius: 100%;
-  padding: 10px;
   width: 50px;
+  padding: 10px;
   background-color: transparent;
+  border-radius: 100%;
+
   &:hover {
     background-color: #0000003f;
   }
@@ -48,8 +50,7 @@ export const rarityContainer = css`
 
 export const cardContainer = css`
   width: 55vw;
-  height: calc(55vw * 1.3);
-
   max-width: 219px;
+  height: calc(55vw * 1.3);
   max-height: 335px;
 `;
