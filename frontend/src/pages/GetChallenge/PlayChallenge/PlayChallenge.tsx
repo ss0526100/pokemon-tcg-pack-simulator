@@ -7,6 +7,8 @@ import Button from '../../../components/Button/Button';
 import FlippingCard from '../../../components/FilppingCard/FlippingCard';
 import ItemDisplay from '../../../components/ItemDisplay/ItemDisplay';
 import getRandom from '../../../utils/getRandom';
+import useGetChallengeCnt from '../../../hooks/atoms/packs/useGetChallengeCnt';
+import usePackUtil from '../../../hooks/atoms/packs/usePackUtil';
 
 interface PlayChallengeProps {
   pack: Pack;
@@ -24,11 +26,16 @@ export default function PlayChallenge(props: PlayChallengeProps) {
   const [flippedIndex, setFlippedIndex] = useState<number[]>([]);
   const [getIndex, setGetIndex] = useState(-1);
   const [buttonShown, setButtonShown] = useState(false);
+  const { countCard } = usePackUtil();
+
+  const setGetChallengeCnt = useGetChallengeCnt()[1];
 
   const isClicked = useRef(false);
 
   const handleClick = (index: number) => {
     if (isClicked.current) return;
+    countCard(pack[index]);
+    setGetChallengeCnt(prev => prev + 1);
     isClicked.current = true;
     setFlippedIndex(prev => prev.concat(index));
     setTimeout(() => {

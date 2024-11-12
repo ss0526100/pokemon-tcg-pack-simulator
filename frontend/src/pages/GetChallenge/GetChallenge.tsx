@@ -14,6 +14,7 @@ import OpenedLock from '../../components/svgs/OpenedLock';
 import PlayChallenge from './PlayChallenge/PlayChallenge';
 import PokeBall from '../../components/svgs/PokeCard';
 import Refresh from '../../components/svgs/Refresh';
+import StatisticsInfo from '../PackSimulator/StatisticsInfo/StatisticsInfo';
 import ToolbarItem from '../../components/ToolbarItem/ToolbarItem';
 import { getCardInWhereA1Pack } from '../../utils/getCardInWhereA1Pack';
 import getRandom from '../../utils/getRandom';
@@ -107,6 +108,7 @@ export default function GetChallenge() {
             description='팩 개봉하기'
             onClick={() => navigate('/')}
           />
+          <StatisticsInfo />
         </GameLayout.Toolbar.ToolbarItemContainer>
 
         <GameLayout.Toolbar.ToolbarItemContainer>

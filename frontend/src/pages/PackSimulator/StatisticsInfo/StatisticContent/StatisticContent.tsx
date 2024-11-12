@@ -4,6 +4,7 @@ import Button from '../../../../components/Button/Button';
 import Rarity from '../../../../components/Rarity/Rarity';
 import StatisticItem from './StatisticItem';
 import useCardCount from '../../../../hooks/atoms/packs/useCardCount';
+import useGetChallengeCnt from '../../../../hooks/atoms/packs/useGetChallengeCnt';
 import usePackCount from '../../../../hooks/atoms/packs/usePackCount';
 import useRarityCntMap from '../../../../hooks/atoms/packs/useRarityCntMap';
 
@@ -15,6 +16,7 @@ export default function StatisticContent(props: StatisticContentProps) {
   const [rarityCntMap, setRarityCntMap] = useRarityCntMap();
   const [packCount, setPackCount] = usePackCount();
   const [cardCount, setCardCount] = useCardCount();
+  const getChallengeCnt = useGetChallengeCnt()[0];
 
   const crownCnt = rarityCntMap.get('crown') || 0;
   const s3Cnt = rarityCntMap.get('s3') || 0;
@@ -36,6 +38,7 @@ export default function StatisticContent(props: StatisticContentProps) {
       <span css={S.title}> 통계</span>
       <ul css={S.itemContainer}>
         <StatisticItem title='개봉한 팩' content={packCount} />
+        <StatisticItem title='겟 챌린지 횟수' content={getChallengeCnt} />
         <StatisticItem title='얻은 카드' content={cardCount} />
         <StatisticItem title={<Rarity rarity='crown' />} content={crownCnt} />
         <StatisticItem title={<Rarity rarity='s3' />} content={s3Cnt} />
