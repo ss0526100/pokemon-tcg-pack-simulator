@@ -12,7 +12,6 @@ export const container = css`
 `;
 
 export const rowContainer = css`
-  left: 50%;
   height: 45%;
   display: flex;
   flex-direction: row;
