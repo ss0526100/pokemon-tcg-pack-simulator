@@ -4,7 +4,7 @@ import { A1_CARD_LIST } from '../../../constant/card';
 import BottomButtonContainer from '../../../components/BottomButtonContainer/BottomButtonContainer';
 import Button from '../../../components/Button/Button';
 import Card from '../../../components/Card/Card';
-import ItemDisplay from '../../../ItemDisplay/ItemDisplay';
+import ItemDisplay from '../../../components/ItemDisplay/ItemDisplay';
 import Modal from '../../../components/Modal/Modal';
 import { useState } from 'react';
 

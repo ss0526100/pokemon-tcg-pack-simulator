@@ -5,7 +5,7 @@ import { useRef, useState } from 'react';
 import BottomButtonContainer from '../../../components/BottomButtonContainer/BottomButtonContainer';
 import Button from '../../../components/Button/Button';
 import Card from '../../../components/Card/Card';
-import ItemDisplay from '../../../ItemDisplay/ItemDisplay';
+import ItemDisplay from '../../../components/ItemDisplay/ItemDisplay';
 import getRandom from '../../../utils/getRandom';
 
 interface PlayChallengeProps {
