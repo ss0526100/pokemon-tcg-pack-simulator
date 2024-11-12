@@ -118,7 +118,7 @@ export default function PackOpen(props: PackOpenProps) {
         <Button
           css={S.buttonAnimation}
           secondary
-          onClick={goSelect}
+          onClick={handleGoSelect}
           key={'selectButton'}
         >
           팩 선택하러 가기
