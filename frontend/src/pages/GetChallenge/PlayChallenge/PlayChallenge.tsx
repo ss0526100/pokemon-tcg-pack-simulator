@@ -4,7 +4,7 @@ import { useRef, useState } from 'react';
 
 import BottomButtonContainer from '../../../components/BottomButtonContainer/BottomButtonContainer';
 import Button from '../../../components/Button/Button';
-import Card from '../../../components/Card/Card';
+import FlippingCard from '../../../components/FilppingCard/FlippingCard';
 import ItemDisplay from '../../../components/ItemDisplay/ItemDisplay';
 import getRandom from '../../../utils/getRandom';
 
@@ -54,12 +54,11 @@ export default function PlayChallenge(props: PlayChallengeProps) {
           {shuffledPack.map(card => (
             <div css={S.cardContainer} key={card.id}>
               {getId === card.id && <div css={S.cardTag}>GET!</div>}
-              <Card
+              <FlippingCard
                 onClick={() => handleClick(card.id)}
                 cardInfo={card}
                 flipped={!flippedIds.includes(card.id)}
                 controlled
-                flipping
               />
             </div>
           ))}

@@ -36,9 +36,11 @@ export const confirmContainer = css`
   align-items: center;
   width: 80vw;
   max-width: 560px;
-  height: 40vh;
 `;
 
+export const displayContainer = css`
+  height: 40vh;
+`;
 export const modalTitle = css`
   font-size: 30px;
   font-weight: 600;

@@ -85,13 +85,15 @@ export default function PackOpen(props: PackOpenProps) {
   ]);
   return (
     <section css={S.layout}>
-      <div css={S.cardContainer}>
+      <div css={S.sectionContainer}>
         <div css={S.selectContainer}>
           <div css={S.svgContainer}>
             {!isFirstCard && <LeftArrow size={30} onClick={setBeforeCard} />}
           </div>
         </div>
-        <Card cardInfo={nowCard} onClick={setNextCard} />
+        <div css={S.cardContainer}>
+          <Card cardInfo={nowCard} onClick={setNextCard} />
+        </div>
         <div css={S.selectContainer}>
           <div css={S.svgContainer}>
             {!isLastCard && <RightArrow size={30} onClick={setNextCard} />}

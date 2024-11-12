@@ -37,11 +37,13 @@ function ConfirmContent(props: ConfirmContent) {
     <>
       <div css={S.confirmContainer}>
         <span css={S.modalTitle}>선택하시겠습니까?</span>
-        <ItemDisplay>
-          {pack.map(card => (
-            <Card cardInfo={card} key={card.id} />
-          ))}
-        </ItemDisplay>
+        <div css={S.displayContainer}>
+          <ItemDisplay>
+            {pack.map(card => (
+              <Card cardInfo={card} key={card.id} />
+            ))}
+          </ItemDisplay>
+        </div>
       </div>
 
       <BottomButtonContainer direction='row'>

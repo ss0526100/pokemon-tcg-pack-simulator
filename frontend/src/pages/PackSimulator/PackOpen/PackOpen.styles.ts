@@ -8,7 +8,7 @@ export const layout = css`
   height: 600px;
 `;
 
-export const cardContainer = css`
+export const sectionContainer = css`
   display: flex;
   gap: 0.5rem;
 `;
@@ -44,4 +44,12 @@ export const rarityContainer = css`
   display: flex;
   width: 100%;
   padding: 10px 80px 0;
+`;
+
+export const cardContainer = css`
+  width: 55vw;
+  height: calc(55vw * 1.3);
+
+  max-width: 219px;
+  max-height: 335px;
 `;
