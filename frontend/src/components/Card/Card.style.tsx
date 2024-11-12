@@ -1,8 +1,8 @@
 import { css } from '@emotion/react';
 
 export const card = css`
-  width: 55vw;
-  height: calc(55vw * 1.3);
+  width: 100%;
+  height: calc(100%);
   object-fit: fill;
 
   max-width: 219px;
