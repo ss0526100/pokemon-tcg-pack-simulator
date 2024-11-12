@@ -9,6 +9,8 @@ import COLOR from '../../constant/colors';
 import ChooseChallenge from './ChooseChallenge/ChooseChallenge';
 import { GET_CHALLENGE_RARITY_PERCENTAGE_LIST_BY_INDEX } from '../../constant/service';
 import GameLayout from '../../layouts/GameLayout/GameLayout';
+import LockedLock from '../../components/svgs/LockedLock';
+import OpenedLock from '../../components/svgs/OpenedLock';
 import PlayChallenge from './PlayChallenge/PlayChallenge';
 import Refresh from '../../components/svgs/Refresh';
 import ToolbarItem from '../../components/ToolbarItem/ToolbarItem';
@@ -16,6 +18,7 @@ import { getCardInWhereA1Pack } from '../../utils/getCardInWhereA1Pack';
 import getRandom from '../../utils/getRandom';
 import getRandomElement from '../../utils/getRandomElement';
 import getRandomStrByPercentFunc from '../../utils/getRandomStrByPercentFunc';
+import useScrollLock from '../../hooks/useScrollHook';
 
 const RANDOM_NORMAL_PACK_RARITY_FUNCS =
   GET_CHALLENGE_RARITY_PERCENTAGE_LIST_BY_INDEX.map(lists =>
@@ -65,6 +68,8 @@ export default function GetChallenge() {
   const [phase, setPhase] = useState<Phase>('select');
   const contentRef = useRef<HTMLDivElement>(null);
 
+  const { isLocked, toggleScrollLock } = useScrollLock();
+
   const goSelect = () => setPhase('select');
   const selectPack = (pack: Pack) => {
     setSelectedPack(pack);
@@ -93,11 +98,29 @@ export default function GetChallenge() {
       </GameLayout.Content>
       <GameLayout.Toolbar>
         <GameLayout.Toolbar.ToolbarItemContainer>
-          <ToolbarItem
-            svg={<Refresh fill={COLOR.PRIMARY_COLOR} size={50} />}
-            description='목록 새로고침'
-            onClick={refreshPacks}
-          />
+          {phase === 'select' && (
+            <ToolbarItem
+              svg={<Refresh fill={COLOR.PRIMARY_COLOR} size={50} />}
+              description='목록 새로고침'
+              onClick={refreshPacks}
+            />
+          )}
+
+          {phase === 'select' && !isLocked && (
+            <ToolbarItem
+              svg={<OpenedLock fill={COLOR.PRIMARY_COLOR} size={50} />}
+              description='외부 스크롤 잠그기'
+              onClick={toggleScrollLock}
+            />
+          )}
+
+          {phase === 'select' && isLocked && (
+            <ToolbarItem
+              svg={<LockedLock fill={COLOR.PRIMARY_COLOR} size={50} />}
+              description='외부 스크롤 풀기'
+              onClick={toggleScrollLock}
+            />
+          )}
         </GameLayout.Toolbar.ToolbarItemContainer>
       </GameLayout.Toolbar>
     </GameLayout>
