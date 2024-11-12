@@ -61,7 +61,7 @@ export default function PlayChallenge(props: PlayChallengeProps) {
       <div css={S.displaySection}>
         <ItemDisplay>
           {shuffledPack.map((card, idx) => (
-            <div css={S.cardContainer} key={card.id}>
+            <div css={S.cardContainer} key={idx}>
               {idx === getIndex && <div css={S.cardTag}>GET!</div>}
               <FlippingCard
                 onClick={() => handleClick(idx)}
