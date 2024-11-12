@@ -17,7 +17,14 @@ export default function ToolbarItem(props: ToolbarItemProps) {
       <Button css={S.button} circle secondary>
         {svg}
       </Button>
-      {description}
+      <span css={S.toolbarSpan}>
+        {description.split(' ').map(str => (
+          <>
+            {str}
+            <br />
+          </>
+        ))}
+      </span>
     </div>
   );
 }

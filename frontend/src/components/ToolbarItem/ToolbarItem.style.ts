@@ -14,3 +14,9 @@ export const itemContainer = css`
   gap: 0.5rem;
   font-size: 12px;
 `;
+
+export const toolbarSpan = css`
+  width: 60px;
+  font-size: 15px;
+  text-align: center;
+`;
