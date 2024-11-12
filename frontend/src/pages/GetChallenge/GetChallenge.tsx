@@ -20,6 +20,7 @@ import fisherShuffle from '../../utils/fisherShuffle';
 import { getCardInWhereA1Pack } from '../../utils/getCardInWhereA1Pack';
 import getRandomElement from '../../utils/getRandomElement';
 import getRandomStrByPercentFunc from '../../utils/getRandomStrByPercentFunc';
+import isAppleDevice from '../../utils/isAppleDevice';
 import { useNavigate } from 'react-router-dom';
 import useScrollLock from '../../hooks/useScrollHook';
 
@@ -82,7 +83,10 @@ export default function GetChallenge() {
   const refreshPacks = () => {
     setPacks(getRandomPacks());
     if (contentRef.current) {
-      contentRef.current.scrollTo({ top: 0, behavior: 'smooth' });
+      contentRef.current.scrollTo({
+        top: 0,
+        behavior: isAppleDevice() ? undefined : 'smooth',
+      });
     }
   };
   return (
