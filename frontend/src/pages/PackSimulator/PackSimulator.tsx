@@ -2,12 +2,16 @@ import * as S from './PackSimulator.style';
 
 import { useCallback, useState } from 'react';
 
+import COLOR from '../../constant/colors';
 import GameLayout from '../../layouts/GameLayout/GameLayout';
 import PackOpen from './PackOpen/PackOpen';
 import PackSelect from './PackSelect/PackSelect';
+import Statistics from '../../components/svgs/Statistics';
 import StatisticsInfo from './StatisticsInfo/StatisticsInfo';
+import ToolbarItem from '../../components/ToolbarItem/ToolbarItem';
 import { getRandomPacks } from '../../utils/getRandomPack';
 import isMobile from '../../utils/isMobile';
+import { useNavigate } from 'react-router-dom';
 
 const initPack = getRandomPacks('charizard');
 
@@ -18,6 +22,8 @@ export default function PackSimulator() {
   const [nowPackType, setNowPackType] = useState<PackType>('charizard');
   const [nowOpenPackCnt, setNowOpenPackCnt] = useState<1 | 10>(1);
   const [phase, setPhase] = useState<Phase>('select');
+
+  const navigate = useNavigate();
 
   const goOpenPhaseAtFirst = useCallback(
     (packType: PackType, packCount: 1 | 10) => {
@@ -58,7 +64,14 @@ export default function PackSimulator() {
           />
         )}
       </GameLayout.Content>
-      <GameLayout.Toolbar rightFirst>
+      <GameLayout.Toolbar>
+        <GameLayout.Toolbar.ToolbarItemContainer>
+          <ToolbarItem
+            svg={<Statistics fill={COLOR.PRIMARY_COLOR} size={34} />}
+            description='겟챌린지 가기'
+            onClick={() => navigate('/get-challenge')}
+          />
+        </GameLayout.Toolbar.ToolbarItemContainer>
         <GameLayout.Toolbar.ToolbarItemContainer>
           <StatisticsInfo />
         </GameLayout.Toolbar.ToolbarItemContainer>

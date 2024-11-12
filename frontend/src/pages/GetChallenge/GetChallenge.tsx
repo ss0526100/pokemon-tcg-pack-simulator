@@ -12,12 +12,14 @@ import GameLayout from '../../layouts/GameLayout/GameLayout';
 import LockedLock from '../../components/svgs/LockedLock';
 import OpenedLock from '../../components/svgs/OpenedLock';
 import PlayChallenge from './PlayChallenge/PlayChallenge';
+import PokeCard from '../../components/svgs/PokeCard';
 import Refresh from '../../components/svgs/Refresh';
 import ToolbarItem from '../../components/ToolbarItem/ToolbarItem';
 import { getCardInWhereA1Pack } from '../../utils/getCardInWhereA1Pack';
 import getRandom from '../../utils/getRandom';
 import getRandomElement from '../../utils/getRandomElement';
 import getRandomStrByPercentFunc from '../../utils/getRandomStrByPercentFunc';
+import { useNavigate } from 'react-router-dom';
 import useScrollLock from '../../hooks/useScrollHook';
 
 const RANDOM_NORMAL_PACK_RARITY_FUNCS =
@@ -68,6 +70,8 @@ export default function GetChallenge() {
   const [phase, setPhase] = useState<Phase>('select');
   const contentRef = useRef<HTMLDivElement>(null);
 
+  const navigate = useNavigate();
+
   const { isLocked, toggleScrollLock } = useScrollLock();
 
   const goSelect = () => setPhase('select');
@@ -97,6 +101,14 @@ export default function GetChallenge() {
         )}
       </GameLayout.Content>
       <GameLayout.Toolbar>
+        <GameLayout.Toolbar.ToolbarItemContainer>
+          <ToolbarItem
+            svg={<PokeCard fill={COLOR.PRIMARY_COLOR} size={50} />}
+            description='팩 개봉하기'
+            onClick={() => navigate('/')}
+          />
+        </GameLayout.Toolbar.ToolbarItemContainer>
+
         <GameLayout.Toolbar.ToolbarItemContainer>
           {phase === 'select' && (
             <ToolbarItem
