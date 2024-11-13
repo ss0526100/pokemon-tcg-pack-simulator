@@ -20,7 +20,7 @@ export const content = css`
 
   width: calc(100vw - 4rem);
   max-width: 480px;
-  height: 560px;
+  height: 600px;
   padding: 3rem 0 0;
 `;
 
