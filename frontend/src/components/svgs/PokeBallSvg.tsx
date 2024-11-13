@@ -1,11 +1,11 @@
 import { SVGProps } from 'react';
 
-interface PokeCardProps extends SVGProps<SVGSVGElement> {
+interface PokeBallSvgProps extends SVGProps<SVGSVGElement> {
   size?: number;
   fill?: string;
 }
 
-export default function PokeBall(props: PokeCardProps) {
+export default function PokeBallSvg(props: PokeBallSvgProps) {
   const { size = 20, fill = 'white', ...restProps } = props;
 
   return (

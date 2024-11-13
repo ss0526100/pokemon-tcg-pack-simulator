@@ -1,9 +1,9 @@
-interface StatisticsProps {
+interface StatisticsSvgProps {
   size?: number;
   fill?: string;
 }
 
-export default function Statistics(props: StatisticsProps) {
+export default function StatisticsSvg(props: StatisticsSvgProps) {
   const { size = 20, fill = 'white', ...restProps } = props;
 
   return (

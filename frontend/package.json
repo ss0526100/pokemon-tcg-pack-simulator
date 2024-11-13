@@ -5,7 +5,7 @@
   "type": "module",
   "homepage": "http://ss0526100.github.io/pokemon-tcg-pack-simulator//",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "tsc -b && vite build",
     "lint": "eslint **/*.{js,jsx,ts,tsx}",
     "style": "stylelint \"src/**/*.{styles.ts,style.ts}\"",

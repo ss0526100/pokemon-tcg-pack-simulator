@@ -1,11 +1,11 @@
 import { SVGProps } from 'react';
 
-interface RefreshProps extends SVGProps<SVGSVGElement> {
+interface RefreshSvgProps extends SVGProps<SVGSVGElement> {
   size?: number;
   fill?: string;
 }
 
-export default function Refresh(props: RefreshProps) {
+export default function RefreshSvg(props: RefreshSvgProps) {
   const { size = 20, fill = 'white', ...restProps } = props;
 
   return (

@@ -5,7 +5,7 @@ import Rarity from '../../../../components/Rarity/Rarity';
 import StatisticItem from './StatisticItem';
 import useCardCount from '../../../../hooks/atoms/packs/useCardCount';
 import useGetChallengeCnt from '../../../../hooks/atoms/packs/useGetChallengeCnt';
-import usePackCount from '../../../../hooks/atoms/packs/usePackCount';
+import useOpenedPackCount from '../../../../hooks/atoms/packs/useOpenedPackCount';
 import useRarityCntMap from '../../../../hooks/atoms/packs/useRarityCntMap';
 
 interface StatisticContentProps {
@@ -14,7 +14,7 @@ interface StatisticContentProps {
 export default function StatisticContent(props: StatisticContentProps) {
   const { onClose } = props;
   const [rarityCntMap, setRarityCntMap] = useRarityCntMap();
-  const [packCount, setPackCount] = usePackCount();
+  const [packCount, setPackCount] = useOpenedPackCount();
   const [cardCount, setCardCount] = useCardCount();
   const getChallengeCnt = useGetChallengeCnt()[0];
 

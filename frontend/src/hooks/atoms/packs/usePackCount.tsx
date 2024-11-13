@@ -2,7 +2,7 @@ import { atom, useRecoilState } from 'recoil';
 
 const packCount = atom<number>({
   key: 'packCount',
-  default: 0,
+  default: 10,
 });
 
 export default function usePackCount() {
