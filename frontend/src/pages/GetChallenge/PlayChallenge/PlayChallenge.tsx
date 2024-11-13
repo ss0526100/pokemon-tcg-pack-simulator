@@ -6,6 +6,7 @@ import BottomButtonContainer from '../../../components/BottomButtonContainer/Bot
 import Button from '../../../components/Button/Button';
 import FlippingCard from '../../../components/FilppingCard/FlippingCard';
 import ItemDisplay from '../../../components/ItemDisplay/ItemDisplay';
+import { css } from '@emotion/react';
 import fisherShuffle from '../../../utils/fisherShuffle';
 import useGetChallengeCnt from '../../../hooks/atoms/packs/useGetChallengeCnt';
 import usePackUtil from '../../../hooks/atoms/packs/usePackUtil';
@@ -38,7 +39,9 @@ export default function PlayChallenge(props: PlayChallengeProps) {
     setGetChallengeCnt(prev => prev + 1);
     isClicked.current = true;
     setFlippedIndex(prev => prev.concat(index));
-    setGetIndex(index);
+    setTimeout(() => {
+      setGetIndex(index);
+    }, 130);
     setTimeout(() => {
       setButtonShown(true);
       setFlippedIndex(prev => prev.concat(0, 1, 2, 3, 4));
@@ -72,23 +75,24 @@ export default function PlayChallenge(props: PlayChallengeProps) {
           ))}
         </ItemDisplay>
       </div>
-      {!buttonShown && (
-        <BottomButtonContainer>
-          <Button secondary css={S.buttonAnimation} onClick={goSelect}>
-            다른 챌린지 선택하기
-          </Button>
-        </BottomButtonContainer>
-      )}
-      {buttonShown && (
-        <BottomButtonContainer>
-          <Button onClick={reselect} css={S.buttonAnimation}>
-            다시 뽑기
-          </Button>
-          <Button secondary css={S.buttonAnimation} onClick={goSelect}>
-            챌린지 선택하기
-          </Button>
-        </BottomButtonContainer>
-      )}
+
+      <BottomButtonContainer>
+        <Button
+          onClick={reselect}
+          css={[
+            S.buttonAnimation,
+            !buttonShown &&
+              css`
+                visibility: hidden;
+              `,
+          ]}
+        >
+          다시 뽑기
+        </Button>
+        <Button secondary css={S.buttonAnimation} onClick={goSelect}>
+          챌린지 선택하기
+        </Button>
+      </BottomButtonContainer>
     </>
   );
 }
