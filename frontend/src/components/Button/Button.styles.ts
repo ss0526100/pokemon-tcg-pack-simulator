@@ -40,6 +40,13 @@ const getSize = ({ circle }: ButtonProps) => {
   return `width: 100%;`;
 };
 
+const getBorderRadius = ({ circle }: ButtonProps) => {
+  if (circle)
+    return `
+    50%;
+  `;
+  return `40px`;
+};
 export const button = (props: ButtonProps) => css`
   ${getSize(props)}
   padding: 2rem;
@@ -51,5 +58,5 @@ export const button = (props: ButtonProps) => css`
 
   background-color: ${getBackgroundColor(props)};
   border: ${getBorder(props)};
-  border-radius: 40px;
+  border-radius: ${getBorderRadius(props)};
 `;

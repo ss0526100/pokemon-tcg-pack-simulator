@@ -5,9 +5,9 @@ import { useCallback, useEffect, useState } from 'react';
 import { A1_PACK_INFOS } from '../../../constant/pack';
 import BottomButtonContainer from '../../../components/BottomButtonContainer/BottomButtonContainer';
 import Button from '../../../components/Button/Button';
-import LeftArrow from '../../../components/svgs/LeftArrow';
+import LeftArrowSvg from '../../../components/svgs/LeftArrowSvg';
 import Pack from './components/Pack/Pack';
-import RightArrow from '../../../components/svgs/RightArrow';
+import RightArrowSvg from '../../../components/svgs/RightArrowSvg';
 
 interface PackSelectProps {
   startPackType?: PackType;
@@ -65,13 +65,13 @@ export default function PackSelect(props: PackSelectProps) {
       <div css={S.cardContainer}>
         <div css={S.selectContainer}>
           <div css={S.svgContainer}>
-            <LeftArrow size={30} onClick={moveBeforeIndex} />
+            <LeftArrowSvg size={30} onClick={moveBeforeIndex} />
           </div>
         </div>
         <Pack packInfo={A1_PACK_INFOS[nowPackType]} />
         <div css={S.selectContainer}>
           <div css={S.svgContainer}>
-            <RightArrow size={30} onClick={moveNextIndex} />
+            <RightArrowSvg size={30} onClick={moveNextIndex} />
           </div>
         </div>
       </div>

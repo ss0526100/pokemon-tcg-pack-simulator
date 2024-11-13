@@ -9,11 +9,11 @@ import COLOR from '../../constant/colors';
 import ChooseChallenge from './ChooseChallenge/ChooseChallenge';
 import { GET_CHALLENGE_RARITY_PERCENTAGE_LIST_BY_INDEX } from '../../constant/service';
 import GameLayout from '../../layouts/GameLayout/GameLayout';
-import LockedLock from '../../components/svgs/LockedLock';
-import OpenedLock from '../../components/svgs/OpenedLock';
+import LockedLockSvg from '../../components/svgs/LockedLockSvg';
+import OpenedLockSvg from '../../components/svgs/OpenedLockSvg';
 import PlayChallenge from './PlayChallenge/PlayChallenge';
-import PokeBall from '../../components/svgs/PokeCard';
-import Refresh from '../../components/svgs/Refresh';
+import PokeBallSvg from '../../components/svgs/PokeBallSvg';
+import RefreshSvg from '../../components/svgs/RefreshSvg';
 import StatisticsInfo from '../PackSimulator/StatisticsInfo/StatisticsInfo';
 import ToolbarItem from '../../components/ToolbarItem/ToolbarItem';
 import fisherShuffle from '../../utils/fisherShuffle';
@@ -106,7 +106,7 @@ export default function GetChallenge() {
       <GameLayout.Toolbar>
         <GameLayout.Toolbar.ToolbarItemContainer>
           <ToolbarItem
-            svg={<PokeBall fill={COLOR.PRIMARY_COLOR} size={50} />}
+            svg={<PokeBallSvg fill={COLOR.PRIMARY_COLOR} size={50} />}
             description='팩 개봉하기'
             onClick={() => navigate('/')}
           />
@@ -116,7 +116,7 @@ export default function GetChallenge() {
         <GameLayout.Toolbar.ToolbarItemContainer>
           {phase === 'select' && (
             <ToolbarItem
-              svg={<Refresh fill={COLOR.PRIMARY_COLOR} size={50} />}
+              svg={<RefreshSvg fill={COLOR.PRIMARY_COLOR} size={50} />}
               description='목록 새로고침'
               onClick={refreshPacks}
             />
@@ -124,7 +124,7 @@ export default function GetChallenge() {
 
           {phase === 'select' && !isLocked && (
             <ToolbarItem
-              svg={<OpenedLock fill={COLOR.PRIMARY_COLOR} size={50} />}
+              svg={<OpenedLockSvg fill={COLOR.PRIMARY_COLOR} size={50} />}
               description='외부 스크롤 잠그기'
               onClick={toggleScrollLock}
             />
@@ -132,7 +132,7 @@ export default function GetChallenge() {
 
           {phase === 'select' && isLocked && (
             <ToolbarItem
-              svg={<LockedLock fill={COLOR.PRIMARY_COLOR} size={50} />}
+              svg={<LockedLockSvg fill={COLOR.PRIMARY_COLOR} size={50} />}
               description='외부 스크롤 풀기'
               onClick={toggleScrollLock}
             />

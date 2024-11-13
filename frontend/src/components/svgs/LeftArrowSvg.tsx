@@ -1,11 +1,11 @@
 import { SVGProps } from 'react';
 
-interface LeftArrowProps extends SVGProps<SVGSVGElement> {
+interface LeftArrowSvgProps extends SVGProps<SVGSVGElement> {
   size?: number;
   fill?: string;
 }
 
-export default function LeftArrow(props: LeftArrowProps) {
+export default function LeftArrowSvg(props: LeftArrowSvgProps) {
   const { size = 20, fill = 'white', ...restProps } = props;
 
   return (

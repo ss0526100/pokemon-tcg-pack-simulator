@@ -1,11 +1,11 @@
 import { SVGProps } from 'react';
 
-interface OpenedLockProps extends SVGProps<SVGSVGElement> {
+interface OpenedLockSvgProps extends SVGProps<SVGSVGElement> {
   size?: number;
   fill?: string;
 }
 
-export default function OpenedLock(props: OpenedLockProps) {
+export default function OpenedLockSvg(props: OpenedLockSvgProps) {
   const { size = 20, fill = 'white', ...restProps } = props;
 
   return (

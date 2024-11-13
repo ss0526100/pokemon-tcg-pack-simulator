@@ -1,22 +1,22 @@
+import AdjustPackCountContent from './AdjustPackCountContent';
 import COLOR from '../../../constant/colors';
 import Modal from '../../../components/Modal/Modal';
-import StatisticContent from './StatisticContent/StatisticContent';
 import StatisticsSvg from '../../../components/svgs/StatisticsSvg';
 import ToolbarItem from '../../../components/ToolbarItem/ToolbarItem';
 import { useState } from 'react';
 
-export default function StatisticsInfo() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+export default function AdjustPackCount() {
+  const [isModalOpen, setIsModalOpen] = useState(true);
   return (
     <>
       {isModalOpen && (
         <Modal onClose={() => setIsModalOpen(false)}>
-          <StatisticContent onClose={() => setIsModalOpen(false)} />
+          <AdjustPackCountContent onClose={() => setIsModalOpen(false)} />
         </Modal>
       )}
       <ToolbarItem
         svg={<StatisticsSvg fill={COLOR.PRIMARY_COLOR} size={35} />}
-        description='통계'
+        description='팩 개봉 수량 변경'
         onClick={() => setIsModalOpen(true)}
       />
     </>

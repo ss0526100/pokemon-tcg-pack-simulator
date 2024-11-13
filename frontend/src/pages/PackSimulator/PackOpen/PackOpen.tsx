@@ -5,9 +5,9 @@ import { useCallback, useEffect } from 'react';
 import BottomButtonContainer from '../../../components/BottomButtonContainer/BottomButtonContainer';
 import Button from '../../../components/Button/Button';
 import Card from '../../../components/Card/Card';
-import LeftArrow from '../../../components/svgs/LeftArrow';
+import LeftArrowSvg from '../../../components/svgs/LeftArrowSvg';
 import Rarity from '../../../components/Rarity/Rarity';
-import RightArrow from '../../../components/svgs/RightArrow';
+import RightArrowSvg from '../../../components/svgs/RightArrowSvg';
 import usePacksIndex from './usePacksIndex';
 
 interface PackOpenProps {
@@ -88,7 +88,7 @@ export default function PackOpen(props: PackOpenProps) {
       <div css={S.sectionContainer}>
         <div css={S.selectContainer}>
           <div css={S.svgContainer}>
-            {!isFirstCard && <LeftArrow size={30} onClick={setBeforeCard} />}
+            {!isFirstCard && <LeftArrowSvg size={30} onClick={setBeforeCard} />}
           </div>
         </div>
         <div css={S.cardContainer}>
@@ -96,7 +96,7 @@ export default function PackOpen(props: PackOpenProps) {
         </div>
         <div css={S.selectContainer}>
           <div css={S.svgContainer}>
-            {!isLastCard && <RightArrow size={30} onClick={setNextCard} />}
+            {!isLastCard && <RightArrowSvg size={30} onClick={setNextCard} />}
           </div>
         </div>
       </div>
