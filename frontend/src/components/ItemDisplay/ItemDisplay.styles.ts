@@ -5,11 +5,13 @@ export const container = css`
 
   display: flex;
   flex-direction: column;
-  gap: 9%;
+  gap: 10%;
   align-items: center;
 
   width: 100%;
   height: 100%;
+
+  -webkit-overflow-scrolling: touch;
 `;
 
 export const rowContainer = css`
