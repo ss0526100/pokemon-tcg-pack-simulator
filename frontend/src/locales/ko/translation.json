@@ -64,7 +64,9 @@
       "title": "통계",
       "opened-pack": "개봉한 팩",
       "get-challenge-cnt": "겟 챌린지 횟수",
-      "gain-cards": "얻은 카드"
+      "gain-cards": "얻은 카드",
+      "reset": "초기화",
+      "confirm": "확인"
     }
   },
 

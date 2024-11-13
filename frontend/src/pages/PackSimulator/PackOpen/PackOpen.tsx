@@ -126,9 +126,11 @@ export default function PackOpen(props: PackOpenProps) {
         {isLastCard && !isOnePack && (
           <Button css={S.buttonAnimation} primary onClick={reopen}>
             {t('pack-simulator.open-pack.reopen')}
-            {`\n(${packMapper[nowPackType]} ${packCount} ${t(
-              'constant.unit.packs'
-            )})`}
+            {`\n(${packMapper[nowPackType]} ${packCount}${
+              i18n.language === 'ko'
+                ? '' + t('constant.unit.pack')
+                : ' ' + t('constant.unit.packs')
+            })`}
           </Button>
         )}
         <Button
