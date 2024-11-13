@@ -30,5 +30,5 @@ export const counter = css`
 `;
 
 export const buttonWrapper = css`
-  width: 60px;
+  width: 40px;
 `;

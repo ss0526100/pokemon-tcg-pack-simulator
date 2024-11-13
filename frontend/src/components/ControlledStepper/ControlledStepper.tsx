@@ -1,6 +1,9 @@
 import * as S from './ControlledStepper.styles';
 
+import COLOR from '../../constant/colors';
 import { Dispatch } from 'react';
+import MinusSvg from '../svgs/MinusSvg';
+import PlusSvg from '../svgs/PlusSvg';
 
 interface StepperProps {
   min?: number;
@@ -19,11 +22,11 @@ export default function Stepper(props: StepperProps) {
   return (
     <div css={S.container}>
       <div css={S.buttonWrapper} onClick={decreaseCount}>
-        {min < count && '-'}
+        {min < count && <MinusSvg fill={COLOR.PRIMARY_COLOR} size={30} />}
       </div>
       <div css={S.counter}>{count}</div>
       <div css={S.buttonWrapper} onClick={increaseCount}>
-        {count < max && '+'}
+        {count < max && <PlusSvg fill={COLOR.PRIMARY_COLOR} size={30} />}
       </div>
     </div>
   );
