@@ -10,6 +10,7 @@ import { css } from '@emotion/react';
 import fisherShuffle from '../../../utils/fisherShuffle';
 import useGetChallengeCnt from '../../../hooks/atoms/packs/useGetChallengeCnt';
 import usePackUtil from '../../../hooks/atoms/packs/usePackUtil';
+import { useTranslation } from 'react-i18next';
 
 interface PlayChallengeProps {
   pack: Pack;
@@ -17,6 +18,7 @@ interface PlayChallengeProps {
 }
 
 export default function PlayChallenge(props: PlayChallengeProps) {
+  const { t } = useTranslation();
   const { pack, goSelect } = props;
 
   const [shuffledPack, setShuffledPack] = useState(() =>
@@ -87,10 +89,10 @@ export default function PlayChallenge(props: PlayChallengeProps) {
               `,
           ]}
         >
-          다시 뽑기
+          {t('get-challenge.play-challenge.re-unpack')}
         </Button>
         <Button secondary css={S.buttonAnimation} onClick={goSelect}>
-          챌린지 선택하기
+          {t('get-challenge.play-challenge.chooseChallenge')}
         </Button>
       </BottomButtonContainer>
     </>

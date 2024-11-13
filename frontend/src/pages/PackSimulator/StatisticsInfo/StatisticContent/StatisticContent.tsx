@@ -7,11 +7,13 @@ import useCardCount from '../../../../hooks/atoms/packs/useCardCount';
 import useGetChallengeCnt from '../../../../hooks/atoms/packs/useGetChallengeCnt';
 import useOpenedPackCount from '../../../../hooks/atoms/packs/useOpenedPackCount';
 import useRarityCntMap from '../../../../hooks/atoms/packs/useRarityCntMap';
+import { useTranslation } from 'react-i18next';
 
 interface StatisticContentProps {
   onClose: () => void;
 }
 export default function StatisticContent(props: StatisticContentProps) {
+  const { t } = useTranslation();
   const { onClose } = props;
   const [rarityCntMap, setRarityCntMap] = useRarityCntMap();
   const [packCount, setPackCount] = useOpenedPackCount();
@@ -35,11 +37,20 @@ export default function StatisticContent(props: StatisticContentProps) {
 
   return (
     <div css={S.container}>
-      <span css={S.title}> 통계</span>
+      <span css={S.title}> {t('modal.statistic.title')}</span>
       <ul css={S.itemContainer}>
-        <StatisticItem title='개봉한 팩' content={packCount} />
-        <StatisticItem title='겟 챌린지 횟수' content={getChallengeCnt} />
-        <StatisticItem title='얻은 카드' content={cardCount} />
+        <StatisticItem
+          title={t('modal.statistic.opened-pack')}
+          content={packCount}
+        />
+        <StatisticItem
+          title={t('modal.statistic.get-challenge-cnt')}
+          content={getChallengeCnt}
+        />
+        <StatisticItem
+          title={t('modal.statistic.gain-cards')}
+          content={cardCount}
+        />
         <StatisticItem title={<Rarity rarity='crown' />} content={crownCnt} />
         <StatisticItem title={<Rarity rarity='s3' />} content={s3Cnt} />
         <StatisticItem title={<Rarity rarity='s2' />} content={s2Cnt} />

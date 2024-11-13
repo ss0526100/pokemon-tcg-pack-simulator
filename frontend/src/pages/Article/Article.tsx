@@ -2,6 +2,7 @@ import * as S from './Article.style';
 
 import Button from '../../components/Button/Button';
 import getMobileOperatingSystem from '../../utils/getMobilOperatingSystem';
+import { useTranslation } from 'react-i18next';
 
 const APP_STORE_ID = 6479970832;
 const PLAY_STORE_ID = 'jp.pokemon.pokemontcgp';
@@ -33,27 +34,30 @@ const FormURL = `https://docs.google.com/forms/d/e/1FAIpQLSeWiHRkQdes_Lzhzf4Nnk1
 const goForm = () => {
   window.open(FormURL);
 };
+
 export default function Article() {
+  const { t } = useTranslation();
   return (
     <div css={S.layout}>
       <Button secondary onClick={goMarket}>
-        포켓몬 카드 게임 Pocket 설치
+        {t(`article.install-button`)}
       </Button>
       <Button secondary onClick={goForm}>
-        건의사항/피드백/버그 제보
+        {t(`article.report-button`)}
       </Button>
       <span css={S.span}>
-        본 서비스는 순수 팬심으로 만든 서비스이며,
-        <br /> 수익을 창출하지 않습니다.
+        {t(`article.span-1`)}
+        <br /> {t(`article.span-2`)}
         <br />
         <br />
-        서비스 관련 문의 등 연락은
+        {t(`article.span-3`)}
         <br />
-        devsofa2580@gmail.com을 활용해주시기 바랍니다.
+        {t(`article.span-4`)}
         <br />
         <br />
-        특히 신입 프론트엔드 개발자가 필요하시다면
-        <br />꼭 연락주세요ㅎㅎ
+        {t(`article.span-5`)}
+        <br />
+        {t(`article.span-6`)}
       </span>
     </div>
   );

@@ -9,6 +9,7 @@ import LeftArrowSvg from '../../../components/svgs/LeftArrowSvg';
 import Pack from './components/Pack/Pack';
 import RightArrowSvg from '../../../components/svgs/RightArrowSvg';
 import usePackCount from '../../../hooks/atoms/packs/usePackCount';
+import { useTranslation } from 'react-i18next';
 
 interface PackSelectProps {
   startPackType?: PackType;
@@ -17,6 +18,7 @@ interface PackSelectProps {
 const packTypes: PackType[] = ['charizard', 'pikachu', 'mewtwo'];
 
 export default function PackSelect(props: PackSelectProps) {
+  const { t } = useTranslation();
   const { onSelect, startPackType } = props;
 
   const [packTypeIndex, setPackTypeIndex] = useState(() => {
@@ -80,10 +82,11 @@ export default function PackSelect(props: PackSelectProps) {
       </div>
       <BottomButtonContainer direction='row'>
         <Button css={S.button} onClick={() => onSelect(nowPackType, packCount)}>
-          {packCount}팩 개봉하기
+          {packCount}
+          {t('pack-simulator.select-pack.open-pack')}
         </Button>
         <Button css={S.button} onClick={() => onSelect(nowPackType, 1)}>
-          1팩 개봉하기
+          1{t('pack-simulator.select-pack.open-pack')}
         </Button>
       </BottomButtonContainer>
     </>

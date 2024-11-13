@@ -13,12 +13,15 @@ import ToolbarItem from '../../components/ToolbarItem/ToolbarItem';
 import { getRandomPacks } from '../../utils/getRandomPack';
 import isMobile from '../../utils/isMobile';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const initPack = getRandomPacks('charizard');
 
 type Phase = 'select' | 'open' | 'result';
 
 export default function PackSimulator() {
+  const { t } = useTranslation();
+
   const [cardPacks, setCardPacks] = useState<Pack[]>(initPack);
   const [nowPackType, setNowPackType] = useState<PackType>('charizard');
   const [nowPackCount, setNowPackCount] = useState(1);
@@ -70,7 +73,7 @@ export default function PackSimulator() {
         <GameLayout.Toolbar.ToolbarItemContainer>
           <ToolbarItem
             svg={<PokeBallSvg fill={COLOR.PRIMARY_COLOR} size={50} />}
-            description='겟챌린지 가기'
+            description={t('pack-simulator.toolbar.go-get-challenge')}
             onClick={() => navigate('/get-challenge')}
           />
         </GameLayout.Toolbar.ToolbarItemContainer>
@@ -83,21 +86,22 @@ export default function PackSimulator() {
       <GameLayout.Description>
         {!isMobile() && (
           <span css={S.span}>
-            PC환경에서는 키보드를 사용할 수 있습니다. <br />
-            심지어 통계창이 켜져 있는 상태로도요! <br />
+            {t('pack-simulator.pc-span-1')} <br />
+            {t('pack-simulator.pc-span-2')} <br />
             <br />
-            - 스페이스바 : 1장 구매 / 다음
-            <br />- R : {nowPackCount}팩 개봉 / 팩 선택하러 가기
-            <br />- 방향키 : 이전 / 다음
+            {t('pack-simulator.pc-span-3')}
+            <br /> {t('pack-simulator.pc-span-4')}
+            <br /> {t('pack-simulator.pc-span-5')}
           </span>
         )}
         {isMobile() && (
           <span css={S.span}>
-            PC에서도 이용 가능합니다!
+            {t('pack-simulator.mobile-span-1')}
             <br />
             <br />
-            PC에서는 키보드를 활용한 추가 기능도 존재하니
-            <br />한 번 확인해보세요!!
+            {t('pack-simulator.mobile-span-2')}
+            <br />
+            {t('pack-simulator.mobile-span-3')}
           </span>
         )}
       </GameLayout.Description>

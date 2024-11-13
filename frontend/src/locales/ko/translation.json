@@ -1,0 +1,83 @@
+{
+  "article": {
+    "install-button": "포켓몬 카드 게임 Pocket 설치",
+    "report-button": "건의사항/피드백/버그 제보",
+    "span-1": "본 서비스는 순수 팬심으로 만든 서비스이며,",
+    "span-2": "수익을 창출하지 않습니다.",
+    "span-3": "  서비스 관련 문의 등 연락은",
+    "span-4": "devsofa2580@gmail.com을 활용해주시기 바랍니다.",
+    "span-5": "특히 신입 프론트엔드 개발자가 필요하시다면",
+    "span-6": "꼭 연락주세요ㅎㅎ"
+  },
+  "get-challenge": {
+    "choose-challenge": {
+      "confirm-content": {
+        "header": "선택하시겠습니까?",
+        "cancel": "취소",
+        "confirm": "확인"
+      }
+    },
+    "play-challenge": {
+      "re-unpack": "다시 뽑기",
+      "chooseChallenge": "챌린지 선택하기"
+    },
+    "toolbar": {
+      "go-pack-simulator": "팩 개봉하기",
+      "refresh-list": "목록 새로고침",
+      "lock-scroll": "외부 스크롤 잠그기",
+      "unlock-scroll": "외부 스크롤 풀기"
+    }
+  },
+  "pack-simulator": {
+    "toolbar": {
+      "adjust-pack-count-1": "팩 개봉",
+      "adjust-pack-count-2": "수량 변경",
+      "go-get-challenge": "겟챌린지 가기"
+    },
+    "adjust-pack-count-content": {
+      "confirm": "설정 완료"
+    },
+    "open-pack": {
+      "reopen": "다시 개봉하기",
+      "choose-pack": "팩 선택하러 가기"
+    },
+    "select-pack": {
+      "open-pack": "팩 개봉하기"
+    },
+    "description": {
+      "pc-span-1": "PC환경에서는 키보드를 사용할 수 있습니다.",
+      "pc-span-2": "심지어 통계창이 켜져 있는 상태로도요!",
+      "pc-span-3": "- 스페이스바 : 1장 구매 / 다음",
+      "pc-span-4": "- R : 여러 팩 개봉 / 팩 선택하러 가기",
+      "pc-span-5": "- 방향키 : 이전 / 다음",
+      "mobile-span-1": "PC에서도 이용 가능합니다!",
+      "mobile-span-2": "PC에서는 키보드를 활용한 추가 기능도 존재하니",
+      "mobile-span-3": "한 번 확인해보세요!!"
+    }
+  },
+
+  "toolbar": {
+    "statistic": "통계"
+  },
+  "modal": {
+    "statistic": {
+      "title": "통계",
+      "opened-pack": "개봉한 팩",
+      "get-challenge-cnt": "겟 챌린지 횟수",
+      "gain-cards": "얻은 카드"
+    }
+  },
+
+  "constant": {
+    "pack": {
+      "a1": {
+        "charizard": "리자몽",
+        "pikachu": "피카츄",
+        "mewtwo": "뮤츠"
+      }
+    },
+    "unit": {
+      "pack": "팩"
+    }
+  }
+}

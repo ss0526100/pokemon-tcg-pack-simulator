@@ -23,6 +23,7 @@ import getRandomStrByPercentFunc from '../../utils/getRandomStrByPercentFunc';
 import isAppleDevice from '../../utils/isAppleDevice';
 import { useNavigate } from 'react-router-dom';
 import useScrollLock from '../../hooks/useScrollHook';
+import { useTranslation } from 'react-i18next';
 
 const RANDOM_NORMAL_PACK_RARITY_FUNCS =
   GET_CHALLENGE_RARITY_PERCENTAGE_LIST_BY_INDEX.map(lists =>
@@ -65,6 +66,7 @@ const initPack = initRandomPack[0];
 
 type Phase = 'select' | 'play';
 export default function GetChallenge() {
+  const { t } = useTranslation();
   const [packs, setPacks] = useState<Pack[]>(initRandomPack);
   const [selectedPack, setSelectedPack] = useState<Pack>(initPack);
   const [phase, setPhase] = useState<Phase>('select');
@@ -107,7 +109,7 @@ export default function GetChallenge() {
         <GameLayout.Toolbar.ToolbarItemContainer>
           <ToolbarItem
             svg={<PokeBallSvg fill={COLOR.PRIMARY_COLOR} size={50} />}
-            description='팩 개봉하기'
+            description={t('get-challenge.toolbar.go-pack-simulator')}
             onClick={() => navigate('/')}
           />
           <StatisticsInfo />
@@ -117,7 +119,7 @@ export default function GetChallenge() {
           {phase === 'select' && (
             <ToolbarItem
               svg={<RefreshSvg fill={COLOR.PRIMARY_COLOR} size={50} />}
-              description='목록 새로고침'
+              description={t('get-challenge.toolbar.refresh-list')}
               onClick={refreshPacks}
             />
           )}
@@ -125,7 +127,7 @@ export default function GetChallenge() {
           {phase === 'select' && !isLocked && (
             <ToolbarItem
               svg={<OpenedLockSvg fill={COLOR.PRIMARY_COLOR} size={50} />}
-              description='외부 스크롤 잠그기'
+              description={t('get-challenge.toolbar.lock-scroll')}
               onClick={toggleScrollLock}
             />
           )}
@@ -133,7 +135,7 @@ export default function GetChallenge() {
           {phase === 'select' && isLocked && (
             <ToolbarItem
               svg={<LockedLockSvg fill={COLOR.PRIMARY_COLOR} size={50} />}
-              description='외부 스크롤 풀기'
+              description={t('get-challenge.toolbar.unlock-scroll')}
               onClick={toggleScrollLock}
             />
           )}

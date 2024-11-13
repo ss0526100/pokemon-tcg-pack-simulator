@@ -7,11 +7,13 @@ import * as S from './AdjustPackCountContent.styles';
 import Button from '../../../components/Button/Button';
 import ControlledStepper from '../../../components/ControlledStepper/ControlledStepper';
 import usePackCount from '../../../hooks/atoms/packs/usePackCount';
+import { useTranslation } from 'react-i18next';
 
 const packAdjustCounts = [10, 25, 37, 100];
 export default function AdjustPackCountContent(
   props: AdjustPackCountContentProps
 ) {
+  const { t } = useTranslation();
   const { onClose } = props;
   const [packCount, setPackCount] = usePackCount();
 
@@ -40,7 +42,7 @@ export default function AdjustPackCountContent(
         ))}
       </div>
       <Button primary onClick={onClose}>
-        설정 완료
+        {t('pack-simulator.adjust-pack-count-content.confirm')}
       </Button>
     </section>
   );
