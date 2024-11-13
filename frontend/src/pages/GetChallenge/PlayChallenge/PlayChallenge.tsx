@@ -38,11 +38,11 @@ export default function PlayChallenge(props: PlayChallengeProps) {
     setGetChallengeCnt(prev => prev + 1);
     isClicked.current = true;
     setFlippedIndex(prev => prev.concat(index));
-    setButtonShown(true);
     setGetIndex(index);
     setTimeout(() => {
+      setButtonShown(true);
       setFlippedIndex(prev => prev.concat(0, 1, 2, 3, 4));
-    }, 700);
+    }, 500);
   };
 
   const reselect = () => {
