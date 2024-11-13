@@ -9,7 +9,7 @@ export const layout = css`
 
   width: 100vw;
   max-width: 600px;
-  height: 820px;
+  height: 900px;
 `;
 
 export const content = css`
@@ -20,7 +20,7 @@ export const content = css`
 
   width: calc(100vw - 4rem);
   max-width: 480px;
-  height: 600px;
+  height: 560px;
   padding: 3rem 0 0;
 `;
 
