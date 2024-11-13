@@ -17,7 +17,7 @@ export const recommendCountContainer = css`
   justify-content: space-between;
 
   width: 100%;
-  padding: 10px 10px 20px;
+  padding: 10px;
 `;
 
 export const recommendButton = css`

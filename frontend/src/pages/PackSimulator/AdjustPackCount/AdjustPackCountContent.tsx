@@ -4,7 +4,6 @@ interface AdjustPackCountContentProps {
 
 import * as S from './AdjustPackCountContent.styles';
 
-import BottomButtonContainer from '../../../components/BottomButtonContainer/BottomButtonContainer';
 import Button from '../../../components/Button/Button';
 import ControlledStepper from '../../../components/ControlledStepper/ControlledStepper';
 import usePackCount from '../../../hooks/atoms/packs/usePackCount';
@@ -40,14 +39,9 @@ export default function AdjustPackCountContent(
           </Button>
         ))}
       </div>
-      <BottomButtonContainer direction='row'>
-        <Button secondary onClick={onClose}>
-          취소
-        </Button>
-        <Button primary onClick={onClose}>
-          설정 완료
-        </Button>
-      </BottomButtonContainer>
+      <Button primary onClick={onClose}>
+        설정 완료
+      </Button>
     </section>
   );
 }

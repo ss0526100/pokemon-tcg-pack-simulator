@@ -6,7 +6,7 @@ import ToolbarItem from '../../../components/ToolbarItem/ToolbarItem';
 import { useState } from 'react';
 
 export default function AdjustPackCount() {
-  const [isModalOpen, setIsModalOpen] = useState(true);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <>
       {isModalOpen && (
