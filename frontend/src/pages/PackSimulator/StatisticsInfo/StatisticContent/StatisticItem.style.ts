@@ -15,7 +15,7 @@ export const title = css`
   justify-content: space-evenly;
 
   width: 30vw;
-  max-width: 200px;
+  max-width: 150px;
   height: 10vw;
   max-height: 40px;
 
@@ -30,7 +30,7 @@ export const title = css`
 
 export const span = css`
   width: 30vw;
-  max-width: 400px;
+  max-width: 350px;
 
   font-size: 1.5rem;
   font-weight: 700;
