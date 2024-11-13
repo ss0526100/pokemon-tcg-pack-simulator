@@ -8,6 +8,7 @@ import Card from '../../../components/Card/Card';
 import LeftArrowSvg from '../../../components/svgs/LeftArrowSvg';
 import Rarity from '../../../components/Rarity/Rarity';
 import RightArrowSvg from '../../../components/svgs/RightArrowSvg';
+import usePackCount from '../../../hooks/atoms/packs/usePackCount';
 import usePacksIndex from './usePacksIndex';
 
 interface PackOpenProps {
@@ -37,6 +38,8 @@ export default function PackOpen(props: PackOpenProps) {
     countLeftCards,
     initPackIndex,
   } = usePacksIndex(packs);
+
+  const packCount = usePackCount()[0];
 
   const reopen = useCallback(() => {
     if (!isLastCard) return;
@@ -110,9 +113,7 @@ export default function PackOpen(props: PackOpenProps) {
         {isLastCard && (
           <Button css={S.buttonAnimation} primary onClick={reopen}>
             다시 개봉하기
-            {`\n(${
-              packMapper[nowPackType] + ' ' + Math.floor(packs.length)
-            }팩)`}
+            {`\n(${packMapper[nowPackType] + ' ' + Math.floor(packCount)}팩)`}
           </Button>
         )}
         <Button

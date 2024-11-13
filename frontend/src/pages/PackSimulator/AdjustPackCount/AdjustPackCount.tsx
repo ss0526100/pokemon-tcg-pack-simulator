@@ -1,7 +1,7 @@
 import AdjustPackCountContent from './AdjustPackCountContent';
 import COLOR from '../../../constant/colors';
 import Modal from '../../../components/Modal/Modal';
-import StatisticsSvg from '../../../components/svgs/StatisticsSvg';
+import PlusMinusSvg from '../../../components/svgs/PlusMinusSvg';
 import ToolbarItem from '../../../components/ToolbarItem/ToolbarItem';
 import { useState } from 'react';
 
@@ -15,8 +15,14 @@ export default function AdjustPackCount() {
         </Modal>
       )}
       <ToolbarItem
-        svg={<StatisticsSvg fill={COLOR.PRIMARY_COLOR} size={35} />}
-        description='팩 개봉 수량 변경'
+        svg={<PlusMinusSvg fill={COLOR.PRIMARY_COLOR} size={35} />}
+        description={
+          <>
+            팩 개봉
+            <br />
+            수량 변경
+          </>
+        }
         onClick={() => setIsModalOpen(true)}
       />
     </>

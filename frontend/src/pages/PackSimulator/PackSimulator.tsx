@@ -21,15 +21,15 @@ type Phase = 'select' | 'open' | 'result';
 export default function PackSimulator() {
   const [cardPacks, setCardPacks] = useState<Pack[]>(initPack);
   const [nowPackType, setNowPackType] = useState<PackType>('charizard');
-  const [nowOpenPackCnt, setNowOpenPackCnt] = useState<1 | 10>(1);
+  const [nowPackCount, setNowPackCount] = useState(1);
   const [phase, setPhase] = useState<Phase>('select');
 
   const navigate = useNavigate();
 
   const goOpenPhaseAtFirst = useCallback(
-    (packType: PackType, packCount: 1 | 10) => {
-      const randomPacks = getRandomPacks(packType, packCount);
-      setNowOpenPackCnt(packCount);
+    (packType: PackType, count: number) => {
+      const randomPacks = getRandomPacks(packType, count);
+      setNowPackCount(count);
       setCardPacks(randomPacks);
       setPhase('open');
       setNowPackType(packType);
@@ -38,7 +38,7 @@ export default function PackSimulator() {
   );
 
   const reopen = () => {
-    const randomPacks = getRandomPacks(nowPackType, nowOpenPackCnt);
+    const randomPacks = getRandomPacks(nowPackType, nowPackCount);
     setCardPacks(randomPacks);
     setPhase('open');
   };
@@ -74,8 +74,8 @@ export default function PackSimulator() {
           />
         </GameLayout.Toolbar.ToolbarItemContainer>
         <GameLayout.Toolbar.ToolbarItemContainer>
-          <StatisticsInfo />
           <AdjustPackCount />
+          <StatisticsInfo />
         </GameLayout.Toolbar.ToolbarItemContainer>
       </GameLayout.Toolbar>
 
@@ -86,8 +86,7 @@ export default function PackSimulator() {
             심지어 통계창이 켜져 있는 상태로도요! <br />
             <br />
             - 스페이스바 : 1장 구매 / 다음
-            <br />
-            - R : 10장 구매 / 팩 선택하러 가기
+            <br />- R : {nowPackCount}팩 개봉 / 팩 선택하러 가기
             <br />- 방향키 : 이전 / 다음
           </span>
         )}

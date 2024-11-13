@@ -7,17 +7,39 @@ import * as S from './AdjustPackCountContent.styles';
 import BottomButtonContainer from '../../../components/BottomButtonContainer/BottomButtonContainer';
 import Button from '../../../components/Button/Button';
 import ControlledStepper from '../../../components/ControlledStepper/ControlledStepper';
-import { useState } from 'react';
+import usePackCount from '../../../hooks/atoms/packs/usePackCount';
 
+const packAdjustCounts = [10, 25, 37, 100];
 export default function AdjustPackCountContent(
   props: AdjustPackCountContentProps
 ) {
   const { onClose } = props;
-  const [count, setCount] = useState(0);
+  const [packCount, setPackCount] = usePackCount();
 
   return (
     <section css={S.content}>
-      <ControlledStepper count={count} onChange={setCount} />
+      <ControlledStepper
+        min={10}
+        max={100}
+        count={packCount}
+        onChange={setPackCount}
+      />
+
+      <div css={S.recommendCountContainer}>
+        {packAdjustCounts.map(cnt => (
+          <Button
+            key={cnt}
+            css={S.recommendButton}
+            secondary
+            primary={packCount === cnt}
+            onClick={() => {
+              setPackCount(cnt);
+            }}
+          >
+            {cnt}
+          </Button>
+        ))}
+      </div>
       <BottomButtonContainer direction='row'>
         <Button secondary onClick={onClose}>
           취소

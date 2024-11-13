@@ -6,7 +6,7 @@ import Button from '../Button/Button';
 
 interface ToolbarItemProps extends HTMLAttributes<HTMLDivElement> {
   svg: ReactNode;
-  description: string;
+  description: ReactNode;
 }
 
 export default function ToolbarItem(props: ToolbarItemProps) {
@@ -18,12 +18,14 @@ export default function ToolbarItem(props: ToolbarItemProps) {
         {svg}
       </Button>
       <span css={S.toolbarSpan}>
-        {description.split(' ').map(str => (
-          <>
-            {str}
-            <br />
-          </>
-        ))}
+        {typeof description === 'string'
+          ? description.split(' ').map(str => (
+              <>
+                {str}
+                <br />
+              </>
+            ))
+          : description}
       </span>
     </div>
   );

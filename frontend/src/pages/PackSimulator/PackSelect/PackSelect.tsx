@@ -8,10 +8,11 @@ import Button from '../../../components/Button/Button';
 import LeftArrowSvg from '../../../components/svgs/LeftArrowSvg';
 import Pack from './components/Pack/Pack';
 import RightArrowSvg from '../../../components/svgs/RightArrowSvg';
+import usePackCount from '../../../hooks/atoms/packs/usePackCount';
 
 interface PackSelectProps {
   startPackType?: PackType;
-  onSelect: (packtype: PackType, packCount: 1 | 10) => void;
+  onSelect: (packtype: PackType, count: number) => void;
 }
 const packTypes: PackType[] = ['charizard', 'pikachu', 'mewtwo'];
 
@@ -22,6 +23,8 @@ export default function PackSelect(props: PackSelectProps) {
     if (!startPackType) return 0;
     return packTypes.indexOf(startPackType);
   });
+
+  const [packCount] = usePackCount();
 
   const moveBeforeIndex = useCallback(() => {
     const beforeIndex =
@@ -49,7 +52,7 @@ export default function PackSelect(props: PackSelectProps) {
           onSelect(nowPackType, 1);
           break;
         case 'r':
-          onSelect(nowPackType, 10);
+          onSelect(nowPackType, packCount);
           break;
         default:
           break;
@@ -58,7 +61,7 @@ export default function PackSelect(props: PackSelectProps) {
     document.addEventListener('keydown', handleKeyDown);
 
     return () => document.removeEventListener('keydown', handleKeyDown);
-  }, [moveBeforeIndex, moveNextIndex, nowPackType, onSelect]);
+  }, [moveBeforeIndex, moveNextIndex, nowPackType, onSelect, packCount]);
 
   return (
     <>
@@ -76,8 +79,8 @@ export default function PackSelect(props: PackSelectProps) {
         </div>
       </div>
       <BottomButtonContainer direction='row'>
-        <Button css={S.button} onClick={() => onSelect(nowPackType, 10)}>
-          10팩 개봉하기
+        <Button css={S.button} onClick={() => onSelect(nowPackType, packCount)}>
+          {packCount}팩 개봉하기
         </Button>
         <Button css={S.button} onClick={() => onSelect(nowPackType, 1)}>
           1팩 개봉하기
