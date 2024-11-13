@@ -27,7 +27,7 @@ export const cardContainer = css`
 export const cardTag = css`
   position: absolute;
   z-index: 10;
-  bottom: -24px;
+  bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
 
