@@ -4,7 +4,7 @@ import COLOR from '../../../constant/colors';
 
 export const displaySection = css`
   width: 100%;
-  height: 360px;
+  height: 320px;
 `;
 
 const focusIn = keyframes` 0% {
