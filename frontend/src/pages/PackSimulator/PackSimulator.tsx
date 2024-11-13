@@ -86,22 +86,22 @@ export default function PackSimulator() {
       <GameLayout.Description>
         {!isMobile() && (
           <span css={S.span}>
-            {t('pack-simulator.pc-span-1')} <br />
-            {t('pack-simulator.pc-span-2')} <br />
+            {t('pack-simulator.description.pc-span-1')} <br />
+            {t('pack-simulator.description.pc-span-2')} <br />
             <br />
-            {t('pack-simulator.pc-span-3')}
-            <br /> {t('pack-simulator.pc-span-4')}
-            <br /> {t('pack-simulator.pc-span-5')}
+            {t('pack-simulator.description.pc-span-3')}
+            <br /> {t('pack-simulator.description.pc-span-4')}
+            <br /> {t('pack-simulator.description.pc-span-5')}
           </span>
         )}
         {isMobile() && (
           <span css={S.span}>
-            {t('pack-simulator.mobile-span-1')}
+            {t('pack-simulator.description.mobile-span-1')}
             <br />
             <br />
-            {t('pack-simulator.mobile-span-2')}
+            {t('pack-simulator.description.mobile-span-2')}
             <br />
-            {t('pack-simulator.mobile-span-3')}
+            {t('pack-simulator.description.mobile-span-3')}
           </span>
         )}
       </GameLayout.Description>
