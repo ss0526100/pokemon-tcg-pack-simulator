@@ -16,6 +16,7 @@ interface PackOpenProps {
   goOpen: () => void;
   goSelect: () => void;
   nowPackType: PackType;
+  isOnePack: boolean;
 }
 
 const packMapper: Record<PackType, string> = {
@@ -25,7 +26,7 @@ const packMapper: Record<PackType, string> = {
 };
 
 export default function PackOpen(props: PackOpenProps) {
-  const { packs, goOpen, goSelect, nowPackType } = props;
+  const { packs, goOpen, goSelect, nowPackType, isOnePack } = props;
 
   const {
     cardLength,
@@ -113,7 +114,11 @@ export default function PackOpen(props: PackOpenProps) {
         {isLastCard && (
           <Button css={S.buttonAnimation} primary onClick={reopen}>
             다시 개봉하기
-            {`\n(${packMapper[nowPackType] + ' ' + Math.floor(packCount)}팩)`}
+            {`\n(${
+              packMapper[nowPackType] +
+              ' ' +
+              (isOnePack ? 1 : Math.floor(packCount))
+            }팩)`}
           </Button>
         )}
         <Button

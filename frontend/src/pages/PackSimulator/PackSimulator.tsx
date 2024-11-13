@@ -62,6 +62,7 @@ export default function PackSimulator() {
             goOpen={reopen}
             goSelect={goSelect}
             nowPackType={nowPackType}
+            isOnePack={nowPackCount === 1}
           />
         )}
       </GameLayout.Content>
