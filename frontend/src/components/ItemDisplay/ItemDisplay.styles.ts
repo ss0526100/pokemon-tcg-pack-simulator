@@ -5,7 +5,7 @@ export const container = css`
 
   display: flex;
   flex-direction: column;
-  gap: 10%;
+  gap: 9%;
   align-items: center;
 
   width: 100%;
