@@ -10,15 +10,25 @@ export const container = css`
 
   width: 100%;
   height: 100%;
-
-  -webkit-overflow-scrolling: touch;
 `;
 
 export const rowContainer = css`
+  position: absolute;
+
   display: flex;
   flex-direction: row;
   gap: 10px;
+
   height: 45%;
+`;
+
+export const firstRow = css`
+  ${rowContainer};
+`;
+
+export const secondRow = css`
+  ${rowContainer};
+  top: 50%;
 `;
 
 export const childContainer = css`

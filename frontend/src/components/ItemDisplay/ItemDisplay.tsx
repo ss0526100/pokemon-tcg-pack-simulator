@@ -9,14 +9,14 @@ export default function ItemDisplay(props: PropsWithChildren) {
     <div css={S.container}>
       {Array.isArray(children) && (
         <>
-          <div css={S.rowContainer}>
+          <div css={S.firstRow}>
             {children.slice(0, 3).map((child, idx) => (
               <div css={S.childContainer} key={idx}>
                 {child}
               </div>
             ))}
           </div>
-          <div css={S.rowContainer}>
+          <div css={S.secondRow}>
             {children.slice(3).map((child, idx) => (
               <div css={S.childContainer} key={idx}>
                 {child}
