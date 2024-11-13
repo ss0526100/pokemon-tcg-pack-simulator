@@ -16,4 +16,5 @@ export const modalTitle = css`
   margin: 10px 0;
   font-size: 30px;
   font-weight: 600;
+  text-align: center;
 `;

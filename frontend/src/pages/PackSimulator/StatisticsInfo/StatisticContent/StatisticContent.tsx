@@ -62,10 +62,10 @@ export default function StatisticContent(props: StatisticContentProps) {
       </ul>
       <div css={S.buttonContainer}>
         <Button secondary css={S.button} onClick={resetRecord}>
-          기록 초기화
+          {t('modal.statistic.reset')}
         </Button>
         <Button css={S.button} onClick={onClose}>
-          닫기
+          {t('modal.statistic.confirm')}
         </Button>
       </div>
     </div>

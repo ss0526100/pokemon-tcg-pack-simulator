@@ -8,6 +8,7 @@ import Button from '../../../components/Button/Button';
 import LeftArrowSvg from '../../../components/svgs/LeftArrowSvg';
 import Pack from './components/Pack/Pack';
 import RightArrowSvg from '../../../components/svgs/RightArrowSvg';
+import i18n from '../../../locales/i18n';
 import usePackCount from '../../../hooks/atoms/packs/usePackCount';
 import { useTranslation } from 'react-i18next';
 
@@ -82,11 +83,20 @@ export default function PackSelect(props: PackSelectProps) {
       </div>
       <BottomButtonContainer direction='row'>
         <Button css={S.button} onClick={() => onSelect(nowPackType, packCount)}>
-          {packCount}
-          {t('pack-simulator.select-pack.open-pack')}
+          {i18n.language === 'ko' &&
+            packCount + t('pack-simulator.select-pack.open-pack')}
+          {i18n.language === 'en' &&
+            t('pack-simulator.select-pack.open-pack') +
+              ` ${packCount} ` +
+              t('constant.unit.packs')}
         </Button>
         <Button css={S.button} onClick={() => onSelect(nowPackType, 1)}>
-          1{t('pack-simulator.select-pack.open-pack')}
+          {i18n.language === 'ko' &&
+            packCount + t('pack-simulator.select-pack.open-pack')}
+          {i18n.language === 'en' &&
+            t('pack-simulator.select-pack.open-pack') +
+              ' 1 ' +
+              t('constant.unit.pack')}
         </Button>
       </BottomButtonContainer>
     </>

@@ -115,14 +115,18 @@ export default function PackOpen(props: PackOpenProps) {
       </div>
 
       <BottomButtonContainer direction='column'>
-        {isLastCard && (
+        {isLastCard && isOnePack && (
           <Button css={S.buttonAnimation} primary onClick={reopen}>
             {t('pack-simulator.open-pack.reopen')}
-            {`\n(${
-              packMapper[nowPackType] +
-              ' ' +
-              (isOnePack ? 1 : Math.floor(packCount))
-            }${t('constant.unit.pack')})`}
+            {`\n(${packMapper[nowPackType]} 1 ${t('constant.unit.pack')})`}
+          </Button>
+        )}
+        {isLastCard && !isOnePack && (
+          <Button css={S.buttonAnimation} primary onClick={reopen}>
+            {t('pack-simulator.open-pack.reopen')}
+            {`\n(${packMapper[nowPackType]} ${packCount} ${t(
+              'constant.unit.packs'
+            )})`}
           </Button>
         )}
         <Button
