@@ -1,7 +1,8 @@
 import * as S from './ControlledStepper.styles';
 
+import { Dispatch, useCallback, useEffect } from 'react';
+
 import COLOR from '../../constant/colors';
-import { Dispatch } from 'react';
 import MinusSvg from '../svgs/MinusSvg';
 import PlusSvg from '../svgs/PlusSvg';
 
@@ -15,9 +16,34 @@ interface StepperProps {
 export default function Stepper(props: StepperProps) {
   const { min = 1, max = 99, count = 1, onChange } = props;
 
-  const increaseCount = () => onChange(prev => Math.min(prev + 1, max));
+  const increaseCount = useCallback(
+    () => onChange(prev => Math.min(prev + 1, max)),
+    [max, onChange]
+  );
 
-  const decreaseCount = () => onChange(prev => Math.max(prev - 1, min));
+  const decreaseCount = useCallback(
+    () => onChange(prev => Math.max(prev - 1, min)),
+    [min, onChange]
+  );
+
+  useEffect(() => {
+    function handleKeyDown(event: KeyboardEvent) {
+      switch (event.key) {
+        case 'ArrowUp':
+          increaseCount();
+          break;
+        case 'ArrowDown':
+          decreaseCount();
+          break;
+
+        default:
+          break;
+      }
+    }
+    document.addEventListener('keydown', handleKeyDown);
+
+    return () => document.removeEventListener('keydown', handleKeyDown);
+  }, [decreaseCount, increaseCount]);
 
   return (
     <div css={S.container}>

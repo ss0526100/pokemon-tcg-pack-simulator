@@ -26,6 +26,7 @@ export const counter = css`
   padding: 20px;
 
   font-size: 3rem;
+  font-weight: 700;
   color: ${COLOR.PRIMARY_COLOR};
 `;
 
