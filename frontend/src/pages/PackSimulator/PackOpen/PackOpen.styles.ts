@@ -49,8 +49,6 @@ export const rarityContainer = css`
 `;
 
 export const cardContainer = css`
-  width: 55vw;
-  max-width: 219px;
-  height: calc(55vw * 1.3);
+  height: calc(30vw * 1.3);
   max-height: 335px;
 `;
