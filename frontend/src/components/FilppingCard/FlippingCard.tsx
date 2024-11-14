@@ -36,7 +36,13 @@ export default function FlippingCard(props: FlippingCard) {
           cardInfo={{
             id: '',
             cardName: 'back',
-            imgSrc: { 'ko-KR': CARD_BACK, 'en-US': CARD_BACK },
+            imgSrc: {
+              'ko-KR': CARD_BACK,
+              'en-US': CARD_BACK,
+              ko: CARD_BACK,
+              en: CARD_BACK,
+              default: CARD_BACK,
+            },
             rarity: 's3',
             expansion: 'A1',
             category: 'normal',

@@ -49,6 +49,7 @@ export const toolbarContainer = (props: ToolbarProps) => css`
 
   width: calc(100vw - 4rem);
   max-width: 480px;
+  height: 200px;
   padding: 2rem;
 `;
 

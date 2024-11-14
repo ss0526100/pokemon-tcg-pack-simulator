@@ -65,35 +65,37 @@ export default function PackSelect(props: PackSelectProps) {
 
     return () => document.removeEventListener('keydown', handleKeyDown);
   }, [moveBeforeIndex, moveNextIndex, nowPackType, onSelect, packCount]);
-  console.log(i18n.language);
+
   return (
     <>
-      <div css={S.cardContainer}>
-        <div css={S.selectContainer}>
+      <div css={S.contentContainer}>
+        <div css={S.selectContainer} onClick={moveBeforeIndex}>
           <div css={S.svgContainer}>
-            <LeftArrowSvg size={30} onClick={moveBeforeIndex} />
+            <LeftArrowSvg size={30} />
           </div>
         </div>
-        <Pack packInfo={A1_PACK_INFOS[nowPackType]} />
-        <div css={S.selectContainer}>
+        <div css={S.packContainer}>
+          <Pack packInfo={A1_PACK_INFOS[nowPackType]} />
+        </div>
+        <div css={S.selectContainer} onClick={moveNextIndex}>
           <div css={S.svgContainer}>
-            <RightArrowSvg size={30} onClick={moveNextIndex} />
+            <RightArrowSvg size={30} />
           </div>
         </div>
       </div>
       <BottomButtonContainer direction='row'>
         <Button css={S.button} onClick={() => onSelect(nowPackType, packCount)}>
-          {i18n.language === 'ko-KR' &&
+          {(i18n.language === 'ko' || i18n.language === 'ko-KR') &&
             packCount + t('pack-simulator.select-pack.open-pack')}
-          {i18n.language !== 'ko-KR' &&
+          {!(i18n.language === 'ko' || i18n.language === 'ko-KR') &&
             t('pack-simulator.select-pack.open-pack') +
               ` ${packCount} ` +
               t('constant.unit.packs')}
         </Button>
         <Button css={S.button} onClick={() => onSelect(nowPackType, 1)}>
-          {i18n.language === 'ko-KR' &&
+          {(i18n.language === 'ko' || i18n.language === 'ko-KR') &&
             ' 1' + t('pack-simulator.select-pack.open-pack')}
-          {i18n.language !== 'ko-KR' &&
+          {!(i18n.language === 'ko' || i18n.language === 'ko-KR') &&
             t('pack-simulator.select-pack.open-pack') +
               ' 1 ' +
               t('constant.unit.pack')}

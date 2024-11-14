@@ -81,10 +81,11 @@ export default function PackSimulator() {
             description={t('pack-simulator.toolbar.go-get-challenge')}
             onClick={() => navigate('/get-challenge')}
           />
+
+          <StatisticsInfo />
         </GameLayout.Toolbar.ToolbarItemContainer>
         <GameLayout.Toolbar.ToolbarItemContainer>
-          <AdjustPackCount />
-          <StatisticsInfo />
+          {phase === 'select' && <AdjustPackCount />}
         </GameLayout.Toolbar.ToolbarItemContainer>
       </GameLayout.Toolbar>
 

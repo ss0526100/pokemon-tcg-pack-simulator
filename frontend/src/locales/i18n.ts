@@ -11,6 +11,12 @@ const resources = {
   'en-US': {
     translation: translationEN,
   },
+  ko: {
+    translation: translationKO,
+  },
+  en: {
+    translation: translationEN,
+  },
 };
 
 i18n
@@ -21,6 +27,10 @@ i18n
     fallbackLng: 'en-US', // 번역 파일에서 찾을 수 없는 경우 기본 언어
     interpolation: {
       escapeValue: false,
+    },
+    detection: {
+      order: ['navigator'],
+      caches: ['localStorage'],
     },
   });
 
