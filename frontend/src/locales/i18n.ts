@@ -8,7 +8,7 @@ const resources = {
   ko: {
     translation: translationKO,
   },
-  en: {
+  'en-US': {
     translation: translationEN,
   },
 };
@@ -18,7 +18,7 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    fallbackLng: 'en', // 번역 파일에서 찾을 수 없는 경우 기본 언어
+    fallbackLng: 'en-US', // 번역 파일에서 찾을 수 없는 경우 기본 언어
     interpolation: {
       escapeValue: false,
     },
