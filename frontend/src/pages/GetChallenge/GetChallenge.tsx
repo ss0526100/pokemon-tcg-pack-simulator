@@ -3,7 +3,7 @@ import {
   A1_CARD_POOL_ID_LIST,
   MISSING_NO_CARD,
 } from '../../constant/card';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 import COLOR from '../../constant/colors';
 import ChooseChallenge from './ChooseChallenge/ChooseChallenge';
@@ -75,6 +75,11 @@ export default function GetChallenge() {
   const navigate = useNavigate();
 
   const { isLocked, toggleScrollLock } = useScrollLock();
+
+  useEffect(() => {
+    const title = document.getElementsByTagName('title')[0];
+    title.textContent = t('title.get-challenge');
+  }, [t]);
 
   const goSelect = () => setPhase('select');
   const selectPack = (pack: Pack) => {

@@ -1,6 +1,6 @@
 import * as S from './PackSimulator.style';
 
-import { useCallback, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 
 import AdjustPackCount from './AdjustPackCount/AdjustPackCount';
 import COLOR from '../../constant/colors';
@@ -28,6 +28,11 @@ export default function PackSimulator() {
   const [phase, setPhase] = useState<Phase>('select');
 
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const title = document.getElementsByTagName('title')[0];
+    title.textContent = t('title.pack-simulator');
+  }, [t]);
 
   const goOpenPhaseAtFirst = useCallback(
     (packType: PackType, count: number) => {
