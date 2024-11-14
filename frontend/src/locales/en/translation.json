@@ -80,5 +80,8 @@
       "pack": "Pack",
       "packs": "Packs"
     }
+  },
+  "link": {
+    "issue-form": "https://docs.google.com/forms/d/e/1FAIpQLSfnD5GYoyqQX8TJRsvQdygUrUEHvJnmtHko4oDsAOh4f80ZDQ/viewform?usp=sf_link"
   }
 }

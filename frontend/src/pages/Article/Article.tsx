@@ -30,13 +30,12 @@ const goMarket = () => {
   window.open(`https://play.google.com/store/apps/details?id=${PLAY_STORE_ID}`);
 };
 
-const FormURL = `https://docs.google.com/forms/d/e/1FAIpQLSeWiHRkQdes_Lzhzf4Nnk1wmJ7xiEaxUwIfWPaIdUk39aYdNg/viewform?usp=sf_link`;
-const goForm = () => {
-  window.open(FormURL);
-};
-
 export default function Article() {
   const { t } = useTranslation();
+  const FormURL = t('link.issue-form');
+  const goForm = () => {
+    window.open(FormURL);
+  };
   return (
     <div css={S.layout}>
       <Button secondary onClick={goMarket}>

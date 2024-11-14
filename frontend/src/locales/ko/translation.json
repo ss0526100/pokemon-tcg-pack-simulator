@@ -81,5 +81,8 @@
     "unit": {
       "pack": "팩"
     }
+  },
+  "link": {
+    "issue-form": "https://docs.google.com/forms/d/e/1FAIpQLSeWiHRkQdes_Lzhzf4Nnk1wmJ7xiEaxUwIfWPaIdUk39aYdNg/viewform?usp=sf_link"
   }
 }
