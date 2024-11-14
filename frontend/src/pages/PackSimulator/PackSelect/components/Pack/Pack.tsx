@@ -1,6 +1,6 @@
 import * as S from './Pack.styles';
 
-import LANGUAGES from '../../../../../constant/Language';
+import LANGUAGES from '../../../../../constant/language';
 import i18n from '../../../../../locales/i18n';
 
 interface Pack {
