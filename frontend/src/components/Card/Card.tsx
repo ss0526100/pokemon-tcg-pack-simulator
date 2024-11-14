@@ -10,6 +10,6 @@ interface Pack extends HTMLProps<HTMLImageElement> {
 export default function Card(props: Pack) {
   const { cardInfo, ...restProps } = props;
 
-  const region = i18n.language as 'ko' | 'en-US';
+  const region = i18n.language as Language;
   return <img src={cardInfo.imgSrc[region]} css={S.card} {...restProps} />;
 }
