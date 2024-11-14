@@ -26,12 +26,12 @@ type Category = PokemonCategory | TrainersCategory;
 
 type CardId = string;
 
-type Language = 'ko-KR' | 'en-US';
+type Language = 'ko-KR' | 'en-US' | 'ko' | 'en';
 
 interface CardInfo {
   id: CardId;
   cardName: string;
-  imgSrc: Record<Language, string>;
+  imgSrc: Record<Language | 'default', string>;
   rarity: Rarity;
   expansion: Expansion;
   category: Category;
@@ -43,5 +43,5 @@ type PackId = string;
 interface PackInfo {
   id: PackId;
   packType: A1PackType;
-  imgSrc: Record<Language, string>;
+  imgSrc: Record<Language | 'default', string>;
 }
