@@ -83,17 +83,17 @@ export default function PackSelect(props: PackSelectProps) {
       </div>
       <BottomButtonContainer direction='row'>
         <Button css={S.button} onClick={() => onSelect(nowPackType, packCount)}>
-          {i18n.language === 'ko-KR' &&
+          {(i18n.language === 'ko' || i18n.language === 'ko-KR') &&
             packCount + t('pack-simulator.select-pack.open-pack')}
-          {i18n.language !== 'ko-KR' &&
+          {!(i18n.language === 'ko' || i18n.language === 'ko-KR') &&
             t('pack-simulator.select-pack.open-pack') +
               ` ${packCount} ` +
               t('constant.unit.packs')}
         </Button>
         <Button css={S.button} onClick={() => onSelect(nowPackType, 1)}>
-          {i18n.language === 'ko-KR' &&
+          {(i18n.language === 'ko' || i18n.language === 'ko-KR') &&
             ' 1' + t('pack-simulator.select-pack.open-pack')}
-          {i18n.language !== 'ko-KR' &&
+          {!(i18n.language === 'ko' || i18n.language === 'ko-KR') &&
             t('pack-simulator.select-pack.open-pack') +
               ' 1 ' +
               t('constant.unit.pack')}

@@ -119,7 +119,7 @@ export default function PackOpen(props: PackOpenProps) {
           <Button css={S.buttonAnimation} primary onClick={reopen}>
             {t('pack-simulator.open-pack.reopen')}
             {`\n(${packMapper[nowPackType]} 1${
-              i18n.language === 'ko' ? '' : ' '
+              i18n.language === 'ko' || i18n.language === 'ko-KR' ? '' : ' '
             }${t('constant.unit.pack')})`}
           </Button>
         )}
@@ -127,7 +127,7 @@ export default function PackOpen(props: PackOpenProps) {
           <Button css={S.buttonAnimation} primary onClick={reopen}>
             {t('pack-simulator.open-pack.reopen')}
             {`\n(${packMapper[nowPackType]} ${packCount}${
-              i18n.language === 'ko'
+              i18n.language === 'ko' || i18n.language === 'ko-KR'
                 ? '' + t('constant.unit.pack')
                 : ' ' + t('constant.unit.packs')
             })`}
