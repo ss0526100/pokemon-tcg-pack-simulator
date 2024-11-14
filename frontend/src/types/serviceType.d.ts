@@ -26,7 +26,7 @@ type Category = PokemonCategory | TrainersCategory;
 
 type CardId = string;
 
-type Language = 'ko' | 'en-US';
+type Language = 'ko-KR' | 'en-US';
 
 interface CardInfo {
   id: CardId;

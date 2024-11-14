@@ -5,7 +5,7 @@ import translationEN from './en/translation.json';
 import translationKO from './ko/translation.json';
 
 const resources = {
-  ko: {
+  'ko-KR': {
     translation: translationKO,
   },
   'en-US': {
