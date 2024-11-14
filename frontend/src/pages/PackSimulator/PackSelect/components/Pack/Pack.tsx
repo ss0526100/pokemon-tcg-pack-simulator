@@ -1,13 +1,15 @@
 import * as S from './Pack.styles';
 
+import i18n from '../../../../../locales/i18n';
+
 interface Pack {
   packInfo: PackInfo;
 }
 
 export default function Pack(props: Pack) {
   const { packInfo } = props;
-
-  return <img src={packInfo.imgSrc} css={S.pack} />;
+  const language = i18n.language as Language;
+  return <img src={packInfo.imgSrc[language]} css={S.pack} />;
 }
 
 // const [phase, setPhase] = useState<Phase>('start');

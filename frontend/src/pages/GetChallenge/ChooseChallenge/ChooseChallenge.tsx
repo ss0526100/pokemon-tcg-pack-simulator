@@ -3,9 +3,8 @@ import * as S from './ChooseChallenge.style';
 import { forwardRef, useState } from 'react';
 
 import { A1_CARD_LIST } from '../../../constant/card';
-import BottomButtonContainer from '../../../components/BottomButtonContainer/BottomButtonContainer';
-import Button from '../../../components/Button/Button';
 import Card from '../../../components/Card/Card';
+import ConfirmContent from './ConfirmContent/ConfirmContent';
 import ItemDisplay from '../../../components/ItemDisplay/ItemDisplay';
 import Modal from '../../../components/Modal/Modal';
 
@@ -23,36 +22,6 @@ function ChallengeBox(props: ChallengeBoxProps) {
         ))}
       </ItemDisplay>
     </div>
-  );
-}
-
-interface ConfirmContent {
-  pack: Pack;
-  onClose: () => void;
-  onConfirm: () => void;
-}
-function ConfirmContent(props: ConfirmContent) {
-  const { onClose, onConfirm, pack } = props;
-  return (
-    <>
-      <div css={S.confirmContainer}>
-        <span css={S.modalTitle}>선택하시겠습니까?</span>
-        <div css={S.displayContainer}>
-          <ItemDisplay>
-            {pack.map(card => (
-              <Card cardInfo={card} key={card.id} />
-            ))}
-          </ItemDisplay>
-        </div>
-      </div>
-
-      <BottomButtonContainer direction='row'>
-        <Button secondary onClick={onClose}>
-          취소
-        </Button>
-        <Button onClick={onConfirm}>확인</Button>
-      </BottomButtonContainer>
-    </>
   );
 }
 

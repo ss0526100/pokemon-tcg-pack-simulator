@@ -8,5 +8,12 @@ export default defineConfig({
       jsxImportSource: '@emotion/react',
     }),
   ],
+  build: {
+    rollupOptions: {
+      input: {
+        main: 'index.html',
+        secondary: 'en-index.html', // 두 번째 index 파일
+      },
+    },
+  },
 });
-

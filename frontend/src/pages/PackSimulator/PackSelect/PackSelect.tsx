@@ -8,7 +8,9 @@ import Button from '../../../components/Button/Button';
 import LeftArrowSvg from '../../../components/svgs/LeftArrowSvg';
 import Pack from './components/Pack/Pack';
 import RightArrowSvg from '../../../components/svgs/RightArrowSvg';
+import i18n from '../../../locales/i18n';
 import usePackCount from '../../../hooks/atoms/packs/usePackCount';
+import { useTranslation } from 'react-i18next';
 
 interface PackSelectProps {
   startPackType?: PackType;
@@ -17,6 +19,7 @@ interface PackSelectProps {
 const packTypes: PackType[] = ['charizard', 'pikachu', 'mewtwo'];
 
 export default function PackSelect(props: PackSelectProps) {
+  const { t } = useTranslation();
   const { onSelect, startPackType } = props;
 
   const [packTypeIndex, setPackTypeIndex] = useState(() => {
@@ -62,7 +65,7 @@ export default function PackSelect(props: PackSelectProps) {
 
     return () => document.removeEventListener('keydown', handleKeyDown);
   }, [moveBeforeIndex, moveNextIndex, nowPackType, onSelect, packCount]);
-
+  console.log(i18n.language);
   return (
     <>
       <div css={S.cardContainer}>
@@ -80,10 +83,20 @@ export default function PackSelect(props: PackSelectProps) {
       </div>
       <BottomButtonContainer direction='row'>
         <Button css={S.button} onClick={() => onSelect(nowPackType, packCount)}>
-          {packCount}팩 개봉하기
+          {i18n.language === 'ko-KR' &&
+            packCount + t('pack-simulator.select-pack.open-pack')}
+          {i18n.language !== 'ko-KR' &&
+            t('pack-simulator.select-pack.open-pack') +
+              ` ${packCount} ` +
+              t('constant.unit.packs')}
         </Button>
         <Button css={S.button} onClick={() => onSelect(nowPackType, 1)}>
-          1팩 개봉하기
+          {i18n.language === 'ko-KR' &&
+            ' 1' + t('pack-simulator.select-pack.open-pack')}
+          {i18n.language !== 'ko-KR' &&
+            t('pack-simulator.select-pack.open-pack') +
+              ' 1 ' +
+              t('constant.unit.pack')}
         </Button>
       </BottomButtonContainer>
     </>

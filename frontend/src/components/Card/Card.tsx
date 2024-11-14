@@ -1,6 +1,7 @@
 import * as S from './Card.style';
 
 import { HTMLProps } from 'react';
+import i18n from '../../locales/i18n';
 
 interface Pack extends HTMLProps<HTMLImageElement> {
   cardInfo: CardInfo;
@@ -9,5 +10,6 @@ interface Pack extends HTMLProps<HTMLImageElement> {
 export default function Card(props: Pack) {
   const { cardInfo, ...restProps } = props;
 
-  return <img src={cardInfo.imgSrc} css={S.card} {...restProps} />;
+  const region = i18n.language as Language;
+  return <img src={cardInfo.imgSrc[region]} css={S.card} {...restProps} />;
 }
