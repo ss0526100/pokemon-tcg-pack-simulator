@@ -6,12 +6,14 @@ import Article from './pages/Article/Article';
 import ErrorPage from './pages/ErrorPage/ErrorPage';
 import GetChallenge from './pages/GetChallenge/GetChallenge';
 import { Global } from '@emotion/react';
-import ImportImages from './pages/PackSimulator/importImages';
 import MainLayout from './layouts/MainLayout/MainLayout';
 import PackSimulator from './pages/PackSimulator/PackSimulator';
 import { RecoilRoot } from 'recoil';
+import i18n from './locales/i18n';
 import reset from './reset.style';
 import { useEffect } from 'react';
+
+// import ImportImages from './pages/PackSimulator/importImages';
 
 function isKakaoBrowser() {
   const userAgent = navigator.userAgent.toLowerCase();
@@ -42,7 +44,9 @@ const router = createBrowserRouter([
 const effectKeys = [' '];
 function App() {
   useEffect(() => {
-    ImportImages();
+    // TODO: 이후 활성화
+    // ImportImages();
+
     function handleKeyDown(event: KeyboardEvent) {
       if (effectKeys.includes(event.key)) {
         event.preventDefault();
@@ -50,6 +54,14 @@ function App() {
     }
     addEventListener('keydown', handleKeyDown);
     return () => removeEventListener('keydown', handleKeyDown);
+  }, []);
+
+  useEffect(() => {
+    const language = i18n.language;
+    const htmlTag = document.getElementsByTagName('html')[0];
+    if (!htmlTag) return;
+
+    htmlTag.lang = language.slice(0, 2);
   }, []);
 
   return (
