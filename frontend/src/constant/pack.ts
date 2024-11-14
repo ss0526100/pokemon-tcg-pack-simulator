@@ -1,9 +1,9 @@
-import EN_A1_CHARIZARD from '../assets/packs/A1/en/A1-CHARIZARD.jpg';
-import EN_A1_MEWTWO from '../assets/packs/A1/en/A1-MEWTWO.jpg';
-import EN_A1_PIKACHU from '../assets/packs/A1/en/A1-PIKACHU.jpg';
-import KO_A1_CHARIZARD from '../assets/packs/A1/ko/A1-CHARIZARD.jpg';
-import KO_A1_MEWTWO from '../assets/packs/A1/ko/A1-MEWTWO.jpg';
-import KO_A1_PIKACHU from '../assets/packs/A1/ko/A1-PIKACHU.jpg';
+import EN_A1_CHARIZARD from '../assets/packs/A1/en/A1-CHARIZARD.webp';
+import EN_A1_MEWTWO from '../assets/packs/A1/en/A1-MEWTWO.webp';
+import EN_A1_PIKACHU from '../assets/packs/A1/en/A1-PIKACHU.webp';
+import KO_A1_CHARIZARD from '../assets/packs/A1/ko/A1-CHARIZARD.webp';
+import KO_A1_MEWTWO from '../assets/packs/A1/ko/A1-MEWTWO.webp';
+import KO_A1_PIKACHU from '../assets/packs/A1/ko/A1-PIKACHU.webp';
 
 export const A1_CHARIZARD_PACK: PackInfo = {
   id: 'A1-CHARIZARD',
