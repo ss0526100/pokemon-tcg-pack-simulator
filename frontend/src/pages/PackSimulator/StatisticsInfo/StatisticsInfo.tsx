@@ -4,8 +4,10 @@ import StatisticContent from './StatisticContent/StatisticContent';
 import StatisticsSvg from '../../../components/svgs/StatisticsSvg';
 import ToolbarItem from '../../../components/ToolbarItem/ToolbarItem';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export default function StatisticsInfo() {
+  const { t } = useTranslation();
   const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <>
@@ -16,7 +18,7 @@ export default function StatisticsInfo() {
       )}
       <ToolbarItem
         svg={<StatisticsSvg fill={COLOR.PRIMARY_COLOR} size={35} />}
-        description='통계'
+        description={t('toolbar.statistic')}
         onClick={() => setIsModalOpen(true)}
       />
     </>

@@ -25,22 +25,6 @@ export const container = css`
   width: 100%;
   height: 100%;
   padding: 20px;
-`;
 
-export const confirmContainer = css`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  width: 80vw;
-  max-width: 560px;
-`;
-
-export const displayContainer = css`
-  height: 40vh;
-`;
-export const modalTitle = css`
-  margin: 10px 0;
-  font-size: 30px;
-  font-weight: 600;
+  transform: translateY(-35px);
 `;

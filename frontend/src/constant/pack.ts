@@ -1,23 +1,26 @@
-import A1_CHARIZARD from '../assets/packs/A1/A1-CHARIZARD.jpg';
-import A1_MEWTWO from '../assets/packs/A1/A1-MEWTWO.jpg';
-import A1_PIKACHU from '../assets/packs/A1/A1-PIKACHU.jpg';
+import EN_A1_CHARIZARD from '../assets/packs/A1/en/A1-CHARIZARD.jpg';
+import EN_A1_MEWTWO from '../assets/packs/A1/en/A1-MEWTWO.jpg';
+import EN_A1_PIKACHU from '../assets/packs/A1/en/A1-PIKACHU.jpg';
+import KO_A1_CHARIZARD from '../assets/packs/A1/ko/A1-CHARIZARD.jpg';
+import KO_A1_MEWTWO from '../assets/packs/A1/ko/A1-MEWTWO.jpg';
+import KO_A1_PIKACHU from '../assets/packs/A1/ko/A1-PIKACHU.jpg';
 
 export const A1_CHARIZARD_PACK: PackInfo = {
   id: 'A1-CHARIZARD',
   packType: 'charizard',
-  imgSrc: A1_CHARIZARD,
+  imgSrc: { ko: KO_A1_CHARIZARD, 'en-US': EN_A1_CHARIZARD },
 };
 
 export const A1_PIKACHU_PACK: PackInfo = {
   id: 'A1-PIKACHU',
   packType: 'pikachu',
-  imgSrc: A1_PIKACHU,
+  imgSrc: { ko: KO_A1_PIKACHU, 'en-US': EN_A1_PIKACHU },
 };
 
 export const A1_MEWTWO_PACK: PackInfo = {
   id: 'A1-MEWTWO',
   packType: 'mewtwo',
-  imgSrc: A1_MEWTWO,
+  imgSrc: { ko: KO_A1_MEWTWO, 'en-US': EN_A1_MEWTWO },
 };
 
 export const A1_PACK_INFOS: Record<A1PackType, PackInfo> = {

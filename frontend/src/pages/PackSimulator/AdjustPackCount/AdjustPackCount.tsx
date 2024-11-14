@@ -4,8 +4,10 @@ import Modal from '../../../components/Modal/Modal';
 import PlusMinusSvg from '../../../components/svgs/PlusMinusSvg';
 import ToolbarItem from '../../../components/ToolbarItem/ToolbarItem';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export default function AdjustPackCount() {
+  const { t } = useTranslation();
   const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <>
@@ -18,9 +20,9 @@ export default function AdjustPackCount() {
         svg={<PlusMinusSvg fill={COLOR.PRIMARY_COLOR} size={35} />}
         description={
           <>
-            팩 개봉
+            {t(`pack-simulator.toolbar.adjust-pack-count-1`)}
             <br />
-            수량 변경
+            {t(`pack-simulator.toolbar.adjust-pack-count-2`)}
           </>
         }
         onClick={() => setIsModalOpen(true)}

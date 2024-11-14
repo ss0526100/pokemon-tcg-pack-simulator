@@ -1,0 +1,91 @@
+{
+  "title": {
+    "pack-simulator": "Pokémon Pack Simulator",
+    "get-challenge": "Pokémon Get Challenge"
+  },
+  "article": {
+    "install-button": "Install Pokémon TCG Pocket",
+    "report-button": "Report Issue / Share Feedback",
+    "span-1": "This service is created purely out of fandom,",
+    "span-2": "and does not generate any profit.",
+    "span-3": "For inquiries related to the service, please contact",
+    "span-4": "devsofa2580@gmail.com.",
+    "span-5": "If you're looking for a junior frontend developer,",
+    "span-6": "please reach out :)"
+  },
+  "get-challenge": {
+    "choose-challenge": {
+      "confirm-content": {
+        "header": "Would you like to select this?",
+        "cancel": "Cancel",
+        "confirm": "Confirm"
+      }
+    },
+    "play-challenge": {
+      "re-unpack": "Challenge Again",
+      "chooseChallenge": "Choose Challenge"
+    },
+    "toolbar": {
+      "go-pack-simulator": "Open Packs",
+      "refresh-list": "Refresh List",
+      "lock-scroll": "Lock External Scroll",
+      "unlock-scroll": "Unlock External Scroll"
+    }
+  },
+  "pack-simulator": {
+    "toolbar": {
+      "adjust-pack-count-1": "Change Pack Quantity",
+      "adjust-pack-count-2": "",
+      "go-get-challenge": "Get Challenge"
+    },
+    "adjust-pack-count-content": {
+      "confirm": "Apply"
+    },
+    "open-pack": {
+      "reopen": "Open Again",
+      "choose-pack": "Choose Different Pack"
+    },
+    "select-pack": {
+      "open-pack": "Open"
+    },
+    "description": {
+      "pc-span-1": "You can use the keyboard on PC,",
+      "pc-span-2": "even when the statistics window remains open!",
+      "pc-span-3": "- Spacebar: Open 1 pack / next",
+      "pc-span-4": "- R: Open multiple packs / Go to pack choice",
+      "pc-span-5": "- Arrow keys: previous / next",
+      "mobile-span-1": "Available on PC as well!",
+      "mobile-span-2": "Additional keyboard functions are available on PC!",
+      "mobile-span-3": ""
+    }
+  },
+  "toolbar": {
+    "statistic": "Statistics"
+  },
+  "modal": {
+    "statistic": {
+      "title": "Statistics",
+      "opened-pack": "Opened Packs",
+      "get-challenge-cnt": "Get Challenge",
+      "gain-cards": "Obtained Cards",
+      "reset": "Reset",
+      "confirm": "OK"
+    }
+  },
+  "constant": {
+    "pack": {
+      "a1": {
+        "charizard": "Charizard",
+        "pikachu": "Pikachu",
+        "mewtwo": "Mewtwo"
+      }
+    },
+    "unit": {
+      "pack": "Pack",
+      "packs": "Packs"
+    }
+  },
+  "link": {
+    "issue-form": "https://docs.google.com/forms/d/e/1FAIpQLSfnD5GYoyqQX8TJRsvQdygUrUEHvJnmtHko4oDsAOh4f80ZDQ/viewform?usp=sf_link"
+  }
+}

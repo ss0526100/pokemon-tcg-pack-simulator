@@ -1,3 +1,5 @@
+import './locales/i18n';
+
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
 import Article from './pages/Article/Article';

@@ -8,8 +8,10 @@ import Card from '../../../components/Card/Card';
 import LeftArrowSvg from '../../../components/svgs/LeftArrowSvg';
 import Rarity from '../../../components/Rarity/Rarity';
 import RightArrowSvg from '../../../components/svgs/RightArrowSvg';
+import i18n from '../../../locales/i18n';
 import usePackCount from '../../../hooks/atoms/packs/usePackCount';
 import usePacksIndex from './usePacksIndex';
+import { useTranslation } from 'react-i18next';
 
 interface PackOpenProps {
   packs: Pack[];
@@ -20,12 +22,13 @@ interface PackOpenProps {
 }
 
 const packMapper: Record<PackType, string> = {
-  charizard: '리자몽',
-  pikachu: '피카츄',
-  mewtwo: '뮤츠',
+  charizard: i18n.t('constant.pack.a1.charizard'),
+  pikachu: i18n.t('constant.pack.a1.pikachu'),
+  mewtwo: i18n.t('constant.pack.a1.mewtwo'),
 };
 
 export default function PackOpen(props: PackOpenProps) {
+  const { t } = useTranslation();
   const { packs, goOpen, goSelect, nowPackType, isOnePack } = props;
 
   const {
@@ -69,6 +72,7 @@ export default function PackOpen(props: PackOpenProps) {
           if (cardIndex === cardLength) reopen();
           break;
         case 'r':
+        case 'ㄱ':
           handleGoSelect();
           break;
         default:
@@ -111,14 +115,22 @@ export default function PackOpen(props: PackOpenProps) {
       </div>
 
       <BottomButtonContainer direction='column'>
-        {isLastCard && (
+        {isLastCard && isOnePack && (
           <Button css={S.buttonAnimation} primary onClick={reopen}>
-            다시 개봉하기
-            {`\n(${
-              packMapper[nowPackType] +
-              ' ' +
-              (isOnePack ? 1 : Math.floor(packCount))
-            }팩)`}
+            {t('pack-simulator.open-pack.reopen')}
+            {`\n(${packMapper[nowPackType]} 1${
+              i18n.language === 'ko' ? '' : ' '
+            }${t('constant.unit.pack')})`}
+          </Button>
+        )}
+        {isLastCard && !isOnePack && (
+          <Button css={S.buttonAnimation} primary onClick={reopen}>
+            {t('pack-simulator.open-pack.reopen')}
+            {`\n(${packMapper[nowPackType]} ${packCount}${
+              i18n.language === 'ko'
+                ? '' + t('constant.unit.pack')
+                : ' ' + t('constant.unit.packs')
+            })`}
           </Button>
         )}
         <Button
@@ -127,7 +139,7 @@ export default function PackOpen(props: PackOpenProps) {
           onClick={handleGoSelect}
           key={'selectButton'}
         >
-          팩 선택하러 가기
+          {t('pack-simulator.open-pack.choose-pack')}
         </Button>
       </BottomButtonContainer>
     </section>
