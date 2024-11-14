@@ -65,7 +65,7 @@ export default function PackSelect(props: PackSelectProps) {
 
     return () => document.removeEventListener('keydown', handleKeyDown);
   }, [moveBeforeIndex, moveNextIndex, nowPackType, onSelect, packCount]);
-  console.log(i18n.language);
+
   return (
     <>
       <div css={S.cardContainer}>

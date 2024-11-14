@@ -1,5 +1,6 @@
 import * as S from './Pack.styles';
 
+import LANGUAGES from '../../../../../constant/Language';
 import i18n from '../../../../../locales/i18n';
 
 interface Pack {
@@ -8,7 +9,9 @@ interface Pack {
 
 export default function Pack(props: Pack) {
   const { packInfo } = props;
-  const language = i18n.language as Language;
+  const language =
+    LANGUAGES.find(language => language === i18n.language) || 'default';
+
   return <img src={packInfo.imgSrc[language]} css={S.pack} />;
 }
 
