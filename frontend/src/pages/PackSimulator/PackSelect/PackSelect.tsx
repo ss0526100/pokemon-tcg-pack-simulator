@@ -70,14 +70,14 @@ export default function PackSelect(props: PackSelectProps) {
     <>
       <div css={S.cardContainer}>
         <div css={S.selectContainer}>
-          <div css={S.svgContainer}>
-            <LeftArrowSvg size={30} onClick={moveBeforeIndex} />
+          <div css={S.svgContainer} onClick={moveBeforeIndex}>
+            <LeftArrowSvg size={30} />
           </div>
         </div>
         <Pack packInfo={A1_PACK_INFOS[nowPackType]} />
         <div css={S.selectContainer}>
-          <div css={S.svgContainer}>
-            <RightArrowSvg size={30} onClick={moveNextIndex} />
+          <div css={S.svgContainer} onClick={moveNextIndex}>
+            <RightArrowSvg size={30} />
           </div>
         </div>
       </div>

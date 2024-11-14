@@ -16,6 +16,7 @@ export const sectionContainer = css`
 export const selectContainer = css`
   display: flex;
   align-items: center;
+  width: 50px;
 `;
 
 export const svgContainer = css`
