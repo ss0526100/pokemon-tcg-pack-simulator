@@ -284,7 +284,7 @@ import A1283 from '../../assets/cards/A1/ko/A1-283.webp';
 import A1284 from '../../assets/cards/A1/ko/A1-284.webp';
 import A1285 from '../../assets/cards/A1/ko/A1-285.webp';
 import A1286 from '../../assets/cards/A1/ko/A1-286.webp';
-import MISSING_NO from '../../assets/cards/MiSS-000.png';
+import MISSING_NO from '../../assets/cards/KO-MiSS-000.png';
 
 const cardImages = [
   A1001,

@@ -26,10 +26,12 @@ type Category = PokemonCategory | TrainersCategory;
 
 type CardId = string;
 
+type Languages = 'ko' | 'en-US';
+
 interface CardInfo {
   id: CardId;
   cardName: string;
-  imgSrc: string;
+  imgSrc: Record<Languages, string>;
   rarity: Rarity;
   expansion: Expansion;
   category: Category;
