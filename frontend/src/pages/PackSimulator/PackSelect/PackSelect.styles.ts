@@ -17,16 +17,17 @@ export const cardContainer = css`
 export const selectContainer = css`
   display: flex;
   align-items: center;
+  border-radius: 40px;
+
+  &:hover {
+    background-color: #0000003f;
+  }
 `;
 
 export const svgContainer = css`
   padding: 10px;
   background-color: transparent;
   border-radius: 100%;
-
-  &:hover {
-    background-color: #0000003f;
-  }
 `;
 
 export const button = css`
