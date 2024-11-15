@@ -10,16 +10,64 @@ import Pack from './components/Pack/Pack';
 import RightArrowSvg from '../../../components/svgs/RightArrowSvg';
 import i18n from '../../../locales/i18n';
 import usePackCount from '../../../hooks/atoms/packs/usePackCount';
-import { useTranslation } from 'react-i18next';
 
 interface PackSelectProps {
   startPackType?: PackType;
   onSelect: (packtype: PackType, count: number) => void;
 }
-const packTypes: PackType[] = ['charizard', 'pikachu', 'mewtwo'];
+const packTypes: PackType[] = ['charizard', 'pikachu', 'mewtwo'] as const;
+
+// TODO: ja, jp-ja 제외하기
+// 한국어/일본어는 n팩, 영어는 n packs이 어울림
+const getSeveralPackStr = (
+  language: Language | 'ja' | 'ja-JP',
+  packCount: number
+) => {
+  if (language === 'ko' || language === 'ko-KR') {
+    return packCount + i18n.t('pack-simulator.select-pack.open-pack');
+  }
+  if (language === 'en' || language === 'en-US') {
+    return (
+      i18n.t('pack-simulator.select-pack.open-pack') +
+      ` ${packCount} ` +
+      i18n.t('constant.unit.packs')
+    );
+  }
+  if (language === 'ja' || language === 'ja-JP') {
+    return packCount + i18n.t('pack-simulator.select-pack.open-pack');
+  }
+  return (
+    i18n.t('pack-simulator.select-pack.open-pack') +
+    ` ${packCount} ` +
+    i18n.t('constant.unit.packsf')
+  );
+};
+
+// TODO: ja, jp-ja 제외하기
+
+// 한국어/일본어는 1팩, 영어는 1 pack이 어울림
+const getOnePackStr = (language: Language | 'ja' | 'ja-JP') => {
+  if (language === 'ko' || language === 'ko-KR') {
+    return 1 + i18n.t('pack-simulator.select-pack.open-pack');
+  }
+  if (language === 'en' || language === 'en-US') {
+    return (
+      i18n.t('pack-simulator.select-pack.open-pack') +
+      ` a ` +
+      i18n.t('constant.unit.pack')
+    );
+  }
+  if (language === 'ja' || language === 'ja-JP') {
+    return 1 + i18n.t('pack-simulator.select-pack.open-pack');
+  }
+  return (
+    i18n.t('pack-simulator.select-pack.open-pack') +
+    ` a ` +
+    i18n.t('constant.unit.pack')
+  );
+};
 
 export default function PackSelect(props: PackSelectProps) {
-  const { t } = useTranslation();
   const { onSelect, startPackType } = props;
 
   const [packTypeIndex, setPackTypeIndex] = useState(() => {
@@ -41,6 +89,9 @@ export default function PackSelect(props: PackSelectProps) {
   }, [packTypeIndex]);
 
   const nowPackType = packTypes[packTypeIndex];
+
+  // TODO: ja, jp-ja 제외하기
+  const language = i18n.language as Language | 'ja' | 'ja-JP';
 
   useEffect(() => {
     function handleKeyDown(event: KeyboardEvent) {
@@ -85,20 +136,10 @@ export default function PackSelect(props: PackSelectProps) {
       </div>
       <BottomButtonContainer direction='row'>
         <Button css={S.button} onClick={() => onSelect(nowPackType, packCount)}>
-          {(i18n.language === 'ko' || i18n.language === 'ko-KR') &&
-            packCount + t('pack-simulator.select-pack.open-pack')}
-          {!(i18n.language === 'ko' || i18n.language === 'ko-KR') &&
-            t('pack-simulator.select-pack.open-pack') +
-              ` ${packCount} ` +
-              t('constant.unit.packs')}
+          {getSeveralPackStr(language, packCount)}
         </Button>
         <Button css={S.button} onClick={() => onSelect(nowPackType, 1)}>
-          {(i18n.language === 'ko' || i18n.language === 'ko-KR') &&
-            ' 1' + t('pack-simulator.select-pack.open-pack')}
-          {!(i18n.language === 'ko' || i18n.language === 'ko-KR') &&
-            t('pack-simulator.select-pack.open-pack') +
-              ' 1 ' +
-              t('constant.unit.pack')}
+          {getOnePackStr(language)}
         </Button>
       </BottomButtonContainer>
     </>

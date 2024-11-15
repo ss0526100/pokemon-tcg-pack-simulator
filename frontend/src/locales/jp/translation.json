@@ -1,0 +1,91 @@
+{
+  "title": {
+    "pack-simulator": "ポケモンカードパックシミュレーター",
+    "get-challenge": "ゲットチャレンジ"
+  },
+  "article": {
+    "install-button": "Pokémon TCG Pocket インストール",
+    "report-button": "問題報告 / フィードバックを送る",
+    "span-1": "このサービスは純粋なファンの気持ちで作成されたもので、",
+    "span-2": "収益を生み出しません。",
+    "span-3": "サービスに関するお問い合わせは、",
+    "span-4": "devsofa2580@gmail.com にご連絡ください。",
+    "span-5": "もしジュニアフロントエンドエンジニアをお探しなら、",
+    "span-6": "ぜひご連絡ください :)"
+  },
+  "get-challenge": {
+    "choose-challenge": {
+      "confirm-content": {
+        "header": "選択しますか？",
+        "cancel": "キャンセル",
+        "confirm": "確認"
+      }
+    },
+    "play-challenge": {
+      "re-unpack": "もう一度挑戦",
+      "chooseChallenge": "チャレンジを選択"
+    },
+    "toolbar": {
+      "go-pack-simulator": "パック開封へ",
+      "refresh-list": "リスト 更新",
+      "lock-scroll": "外部 スクロール ロック",
+      "unlock-scroll": "外部 スクロール 解除"
+    }
+  },
+  "pack-simulator": {
+    "toolbar": {
+      "adjust-pack-count-1": "パック数",
+      "adjust-pack-count-2": "変更",
+      "go-get-challenge": "ゲット チャレンジ"
+    },
+    "adjust-pack-count-content": {
+      "confirm": "適用"
+    },
+    "open-pack": {
+      "reopen": "もう一度開く",
+      "choose-pack": "パックを選び直す"
+    },
+    "select-pack": {
+      "open-pack": "パック開封"
+    },
+    "description": {
+      "pc-span-1": "キーボードで操作できます。",
+      "pc-span-2": "データ画面表示中でも操作可能です。",
+      "pc-span-3": "スペースキー: パックを開く/次へ",
+      "pc-span-4": "Rキー: 複数開封/選択",
+      "pc-span-5": "矢印キー: 前へ/次へ",
+      "mobile-span-1": "PCでもプレイ可能です。",
+      "mobile-span-2": "キーボードでの操作も可能です。",
+      "mobile-span-3": ""
+    }
+  },
+  "toolbar": {
+    "statistic": "統計"
+  },
+  "modal": {
+    "statistic": {
+      "title": "統計",
+      "opened-pack": "開封したパック",
+      "get-challenge-cnt": "ゲットチャレンジ",
+      "gain-cards": "獲得カード",
+      "reset": "リセット",
+      "confirm": "確認"
+    }
+  },
+  "constant": {
+    "pack": {
+      "a1": {
+        "charizard": "リザードン",
+        "pikachu": "ピカチュウ",
+        "mewtwo": "ミュウツー"
+      }
+    },
+    "unit": {
+      "pack": "パック",
+      "packs": "パック"
+    }
+  },
+  "link": {
+    "issue-form": "https://docs.google.com/forms/d/e/1FAIpQLSdWU6WBGVLjAPcGGT4RBspxzHXScboRnbcRfBQl6Gj2nn7utw/viewform?usp=sf_link"
+  }
+}

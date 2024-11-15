@@ -41,6 +41,8 @@ export default function FlippingCard(props: FlippingCard) {
               'en-US': CARD_BACK,
               ko: CARD_BACK,
               en: CARD_BACK,
+              ja: CARD_BACK,
+              'ja-JP': CARD_BACK,
               default: CARD_BACK,
             },
             rarity: 's3',

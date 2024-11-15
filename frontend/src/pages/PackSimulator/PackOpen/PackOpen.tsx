@@ -21,10 +21,22 @@ interface PackOpenProps {
   isOnePack: boolean;
 }
 
-const packMapper: Record<PackType, string> = {
-  charizard: i18n.t('constant.pack.a1.charizard'),
-  pikachu: i18n.t('constant.pack.a1.pikachu'),
-  mewtwo: i18n.t('constant.pack.a1.mewtwo'),
+const getPackDescription = (
+  language: Language,
+  type: PackType,
+  count: number
+) => {
+  const packMapper: Record<PackType, string> = {
+    charizard: i18n.t('constant.pack.a1.charizard'),
+    pikachu: i18n.t('constant.pack.a1.pikachu'),
+    mewtwo: i18n.t('constant.pack.a1.mewtwo'),
+  };
+  if (language === 'en' || language === 'en-US') {
+    if (count === 1)
+      return ' a ' + packMapper[type] + ' ' + i18n.t('constant.unit.pack');
+    return packMapper[type] + ` ${count} ` + i18n.t('constant.unit.packs');
+  }
+  return `${packMapper[type]} ${count}${i18n.t('constant.unit.pack')}`;
 };
 
 export default function PackOpen(props: PackOpenProps) {
@@ -57,6 +69,8 @@ export default function PackOpen(props: PackOpenProps) {
     initPackIndex();
     goSelect();
   }, [countLeftCards, initPackIndex, goSelect]);
+
+  const language = i18n.language as Language | 'ja' | 'ja-JP';
 
   useEffect(() => {
     function handleKeyDown(event: KeyboardEvent) {
@@ -94,7 +108,7 @@ export default function PackOpen(props: PackOpenProps) {
   return (
     <section css={S.layout}>
       <div css={S.sectionContainer}>
-        <div css={S.selectContainer} onClick={setBeforeCard}>
+        <div css={S.selectContainer(!isFirstCard)} onClick={setBeforeCard}>
           {!isFirstCard && (
             <div css={S.svgContainer}>
               <LeftArrowSvg size={30} />
@@ -104,7 +118,7 @@ export default function PackOpen(props: PackOpenProps) {
         <div css={S.cardContainer}>
           <Card cardInfo={nowCard} onClick={setNextCard} />
         </div>
-        <div css={S.selectContainer} onClick={setNextCard}>
+        <div css={S.selectContainer(!isLastCard)} onClick={setNextCard}>
           {!isLastCard && (
             <div css={S.svgContainer}>
               <RightArrowSvg size={30} />
@@ -119,22 +133,14 @@ export default function PackOpen(props: PackOpenProps) {
       </div>
 
       <BottomButtonContainer direction='column'>
-        {isLastCard && isOnePack && (
+        {isLastCard && (
           <Button css={S.buttonAnimation} primary onClick={reopen}>
             {t('pack-simulator.open-pack.reopen')}
-            {`\n(${packMapper[nowPackType]} 1${
-              i18n.language === 'ko' || i18n.language === 'ko-KR' ? '' : ' '
-            }${t('constant.unit.pack')})`}
-          </Button>
-        )}
-        {isLastCard && !isOnePack && (
-          <Button css={S.buttonAnimation} primary onClick={reopen}>
-            {t('pack-simulator.open-pack.reopen')}
-            {`\n(${packMapper[nowPackType]} ${packCount}${
-              i18n.language === 'ko' || i18n.language === 'ko-KR'
-                ? '' + t('constant.unit.pack')
-                : ' ' + t('constant.unit.packs')
-            })`}
+            {` (${getPackDescription(
+              language,
+              nowPackType,
+              isOnePack ? 1 : packCount
+            )})`}
           </Button>
         )}
         <Button

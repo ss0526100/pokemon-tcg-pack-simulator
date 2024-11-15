@@ -1,6 +1,8 @@
 import { css, keyframes } from '@emotion/react';
 
 export const layout = css`
+  transform: translateY(-40px);
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,7 +15,8 @@ export const sectionContainer = css`
   display: flex;
   gap: 0.5rem;
 `;
-export const selectContainer = css`
+export const selectContainer = (isViewed: boolean) => css`
+  ${isViewed ? '' : 'opacity:0;'}
   display: flex;
   align-items: center;
   width: 50px;
@@ -51,6 +54,6 @@ export const rarityContainer = css`
 `;
 
 export const cardContainer = css`
-  height: 30vh;
+  height: 33vh;
   max-height: 335px;
 `;
