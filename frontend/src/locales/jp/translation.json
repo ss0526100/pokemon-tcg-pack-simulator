@@ -42,8 +42,8 @@
       "confirm": "適用"
     },
     "open-pack": {
-      "reopen": "再度開ける",
-      "choose-pack": "別のパックを選択"
+      "reopen": "もう一度開く",
+      "choose-pack": "パックを選び直す"
     },
     "select-pack": {
       "open-pack": "パック開封"
@@ -81,7 +81,8 @@
       }
     },
     "unit": {
-      "pack": "パック"
+      "pack": "パック",
+      "packs": "パック"
     }
   },
   "link": {
