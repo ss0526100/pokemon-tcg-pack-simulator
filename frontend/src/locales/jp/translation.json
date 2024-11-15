@@ -10,7 +10,7 @@
     "span-2": "収益を生み出しません。",
     "span-3": "サービスに関するお問い合わせは、",
     "span-4": "devsofa2580@gmail.com にご連絡ください。",
-    "span-5": "もしジュニアフロントエンド開発者をお探しなら、",
+    "span-5": "もしジュニアフロントエンドエンジニアをお探しなら、",
     "span-6": "ぜひご連絡ください :)"
   },
   "get-challenge": {
@@ -26,17 +26,17 @@
       "chooseChallenge": "チャレンジを選択"
     },
     "toolbar": {
-      "go-pack-simulator": "パックを開ける",
-      "refresh-list": "リストを更新",
-      "lock-scroll": "外部スクロールをロック",
-      "unlock-scroll": "外部スクロールを解除"
+      "go-pack-simulator": "パック開封へ",
+      "refresh-list": "リスト 更新",
+      "lock-scroll": "外部 スクロール ロック",
+      "unlock-scroll": "外部 スクロール 解除"
     }
   },
   "pack-simulator": {
     "toolbar": {
-      "adjust-pack-count-1": "パック数を変更",
-      "adjust-pack-count-2": "",
-      "go-get-challenge": "ゲットチャレンジに行く"
+      "adjust-pack-count-1": "パック数",
+      "adjust-pack-count-2": "変更",
+      "go-get-challenge": "ゲット チャレンジ"
     },
     "adjust-pack-count-content": {
       "confirm": "適用"
@@ -66,7 +66,7 @@
     "statistic": {
       "title": "統計",
       "opened-pack": "開封したパック",
-      "get-challenge-cnt": "ゲットチャレンジ回数",
+      "get-challenge-cnt": "ゲットチャレンジ",
       "gain-cards": "獲得カード",
       "reset": "リセット",
       "confirm": "確認"
