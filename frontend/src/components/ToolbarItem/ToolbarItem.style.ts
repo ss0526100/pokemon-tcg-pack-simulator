@@ -18,6 +18,6 @@ export const itemContainer = css`
 
 export const toolbarSpan = css`
   width: 60px;
-  font-size: 15px;
+  font-size: 12.8px;
   text-align: center;
 `;
