@@ -36,7 +36,7 @@
     "toolbar": {
       "adjust-pack-count-1": "Change Pack Quantity",
       "adjust-pack-count-2": "",
-      "go-get-challenge": "Get Challenge"
+      "go-get-challenge": "Wonder Pick"
     },
     "adjust-pack-count-content": {
       "confirm": "Apply"
@@ -66,7 +66,7 @@
     "statistic": {
       "title": "Statistics",
       "opened-pack": "Opened Packs",
-      "get-challenge-cnt": "Get Challenge",
+      "get-challenge-cnt": "Wonder Picks",
       "gain-cards": "Obtained Cards",
       "reset": "Reset",
       "confirm": "OK"
