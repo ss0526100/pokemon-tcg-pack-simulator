@@ -19,7 +19,7 @@ export const title = css`
   height: 10vw;
   max-height: 40px;
 
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 800;
 
   background-color: #e2e8f2;
