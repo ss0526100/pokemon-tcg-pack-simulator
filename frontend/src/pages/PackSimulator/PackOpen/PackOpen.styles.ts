@@ -13,7 +13,8 @@ export const sectionContainer = css`
   display: flex;
   gap: 0.5rem;
 `;
-export const selectContainer = css`
+export const selectContainer = (isViewed: boolean) => css`
+  ${isViewed ? '' : 'opacity:0;'}
   display: flex;
   align-items: center;
   width: 50px;

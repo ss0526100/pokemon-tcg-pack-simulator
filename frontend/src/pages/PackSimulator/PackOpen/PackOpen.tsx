@@ -108,7 +108,7 @@ export default function PackOpen(props: PackOpenProps) {
   return (
     <section css={S.layout}>
       <div css={S.sectionContainer}>
-        <div css={S.selectContainer} onClick={setBeforeCard}>
+        <div css={S.selectContainer(!isFirstCard)} onClick={setBeforeCard}>
           {!isFirstCard && (
             <div css={S.svgContainer}>
               <LeftArrowSvg size={30} />
@@ -118,7 +118,7 @@ export default function PackOpen(props: PackOpenProps) {
         <div css={S.cardContainer}>
           <Card cardInfo={nowCard} onClick={setNextCard} />
         </div>
-        <div css={S.selectContainer} onClick={setNextCard}>
+        <div css={S.selectContainer(!isLastCard)} onClick={setNextCard}>
           {!isLastCard && (
             <div css={S.svgContainer}>
               <RightArrowSvg size={30} />
