@@ -1,0 +1,90 @@
+{
+  "title": {
+    "pack-simulator": "ポケモンカードパックシミュレーター",
+    "get-challenge": "ゲットチャレンジ"
+  },
+  "article": {
+    "install-button": "Pokémon TCG Pocket インストール",
+    "report-button": "問題報告 / フィードバックを送る",
+    "span-1": "このサービスは純粋なファンの気持ちで作成されたもので、",
+    "span-2": "収益を生み出しません。",
+    "span-3": "サービスに関するお問い合わせは、",
+    "span-4": "devsofa2580@gmail.com にご連絡ください。",
+    "span-5": "もしジュニアフロントエンド開発者をお探しなら、",
+    "span-6": "ぜひご連絡ください :)"
+  },
+  "get-challenge": {
+    "choose-challenge": {
+      "confirm-content": {
+        "header": "選択しますか？",
+        "cancel": "キャンセル",
+        "confirm": "確認"
+      }
+    },
+    "play-challenge": {
+      "re-unpack": "もう一度挑戦",
+      "chooseChallenge": "チャレンジを選択"
+    },
+    "toolbar": {
+      "go-pack-simulator": "パックを開ける",
+      "refresh-list": "リストを更新",
+      "lock-scroll": "外部スクロールをロック",
+      "unlock-scroll": "外部スクロールを解除"
+    }
+  },
+  "pack-simulator": {
+    "toolbar": {
+      "adjust-pack-count-1": "パック数を変更",
+      "adjust-pack-count-2": "",
+      "go-get-challenge": "ゲットチャレンジに行く"
+    },
+    "adjust-pack-count-content": {
+      "confirm": "適用"
+    },
+    "open-pack": {
+      "reopen": "再度開ける",
+      "choose-pack": "別のパックを選択"
+    },
+    "select-pack": {
+      "open-pack": "パック開封"
+    },
+    "description": {
+      "pc-span-1": "PC環境ではキーボードが使用できます。",
+      "pc-span-2": "統計ウィンドウが開いている状態でも使用可能です！",
+      "pc-span-3": "- スペースキー：1パック開封 / 次へ",
+      "pc-span-4": "- Rキー：複数パック開封 / パック選択に移動",
+      "pc-span-5": "- 矢印キー：前 / 次",
+      "mobile-span-1": "PCでもご利用いただけます！",
+      "mobile-span-2": "PCではキーボードを使用した追加機能もお楽しみいただけます！",
+      "mobile-span-3": ""
+    }
+  },
+  "toolbar": {
+    "statistic": "統計"
+  },
+  "modal": {
+    "statistic": {
+      "title": "統計",
+      "opened-pack": "開封したパック",
+      "get-challenge-cnt": "ゲットチャレンジ回数",
+      "gain-cards": "獲得カード",
+      "reset": "リセット",
+      "confirm": "確認"
+    }
+  },
+  "constant": {
+    "pack": {
+      "a1": {
+        "charizard": "リザードン",
+        "pikachu": "ピカチュウ",
+        "mewtwo": "ミュウツー"
+      }
+    },
+    "unit": {
+      "pack": "パック"
+    }
+  },
+  "link": {
+    "issue-form": "https://docs.google.com/forms/d/e/1FAIpQLSdWU6WBGVLjAPcGGT4RBspxzHXScboRnbcRfBQl6Gj2nn7utw/viewform?usp=sf_link"
+  }
+}

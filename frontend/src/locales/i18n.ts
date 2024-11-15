@@ -2,20 +2,27 @@ import I18nextBrowserLanguageDetector from 'i18next-browser-languagedetector';
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import translationEN from './en/translation.json';
+import translationJP from './jp/translation.json';
 import translationKO from './ko/translation.json';
 
 const resources = {
   'ko-KR': {
     translation: translationKO,
   },
-  'en-US': {
-    translation: translationEN,
-  },
   ko: {
     translation: translationKO,
   },
+  'en-US': {
+    translation: translationEN,
+  },
   en: {
     translation: translationEN,
+  },
+  'ja-JP': {
+    translation: translationJP,
+  },
+  ja: {
+    translation: translationJP,
   },
 };
 
