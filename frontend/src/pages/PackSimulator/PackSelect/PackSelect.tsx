@@ -39,7 +39,7 @@ const getSeveralPackStr = (
   return (
     i18n.t('pack-simulator.select-pack.open-pack') +
     ` ${packCount} ` +
-    i18n.t('constant.unit.packs')
+    i18n.t('constant.unit.packsf')
   );
 };
 
@@ -53,8 +53,8 @@ const getOnePackStr = (language: Language | 'ja' | 'ja-JP') => {
   if (language === 'en' || language === 'en-US') {
     return (
       i18n.t('pack-simulator.select-pack.open-pack') +
-      ` 1 ` +
-      i18n.t('constant.unit.packs')
+      ` a ` +
+      i18n.t('constant.unit.pack')
     );
   }
   if (language === 'ja' || language === 'ja-JP') {
