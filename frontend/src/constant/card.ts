@@ -284,6 +284,292 @@ import EN_A1283 from '../assets/cards/A1/en/A1-283.webp';
 import EN_A1284 from '../assets/cards/A1/en/A1-284.webp';
 import EN_A1285 from '../assets/cards/A1/en/A1-285.webp';
 import EN_A1286 from '../assets/cards/A1/en/A1-286.webp';
+import JA_A1001 from '../assets/cards/A1/ja/A1-001.webp';
+import JA_A1002 from '../assets/cards/A1/ja/A1-002.webp';
+import JA_A1003 from '../assets/cards/A1/ja/A1-003.webp';
+import JA_A1004 from '../assets/cards/A1/ja/A1-004.webp';
+import JA_A1005 from '../assets/cards/A1/ja/A1-005.webp';
+import JA_A1006 from '../assets/cards/A1/ja/A1-006.webp';
+import JA_A1007 from '../assets/cards/A1/ja/A1-007.webp';
+import JA_A1008 from '../assets/cards/A1/ja/A1-008.webp';
+import JA_A1009 from '../assets/cards/A1/ja/A1-009.webp';
+import JA_A1010 from '../assets/cards/A1/ja/A1-010.webp';
+import JA_A1011 from '../assets/cards/A1/ja/A1-011.webp';
+import JA_A1012 from '../assets/cards/A1/ja/A1-012.webp';
+import JA_A1013 from '../assets/cards/A1/ja/A1-013.webp';
+import JA_A1014 from '../assets/cards/A1/ja/A1-014.webp';
+import JA_A1015 from '../assets/cards/A1/ja/A1-015.webp';
+import JA_A1016 from '../assets/cards/A1/ja/A1-016.webp';
+import JA_A1017 from '../assets/cards/A1/ja/A1-017.webp';
+import JA_A1018 from '../assets/cards/A1/ja/A1-018.webp';
+import JA_A1019 from '../assets/cards/A1/ja/A1-019.webp';
+import JA_A1020 from '../assets/cards/A1/ja/A1-020.webp';
+import JA_A1021 from '../assets/cards/A1/ja/A1-021.webp';
+import JA_A1022 from '../assets/cards/A1/ja/A1-022.webp';
+import JA_A1023 from '../assets/cards/A1/ja/A1-023.webp';
+import JA_A1024 from '../assets/cards/A1/ja/A1-024.webp';
+import JA_A1025 from '../assets/cards/A1/ja/A1-025.webp';
+import JA_A1026 from '../assets/cards/A1/ja/A1-026.webp';
+import JA_A1027 from '../assets/cards/A1/ja/A1-027.webp';
+import JA_A1028 from '../assets/cards/A1/ja/A1-028.webp';
+import JA_A1029 from '../assets/cards/A1/ja/A1-029.webp';
+import JA_A1030 from '../assets/cards/A1/ja/A1-030.webp';
+import JA_A1031 from '../assets/cards/A1/ja/A1-031.webp';
+import JA_A1032 from '../assets/cards/A1/ja/A1-032.webp';
+import JA_A1033 from '../assets/cards/A1/ja/A1-033.webp';
+import JA_A1034 from '../assets/cards/A1/ja/A1-034.webp';
+import JA_A1035 from '../assets/cards/A1/ja/A1-035.webp';
+import JA_A1036 from '../assets/cards/A1/ja/A1-036.webp';
+import JA_A1037 from '../assets/cards/A1/ja/A1-037.webp';
+import JA_A1038 from '../assets/cards/A1/ja/A1-038.webp';
+import JA_A1039 from '../assets/cards/A1/ja/A1-039.webp';
+import JA_A1040 from '../assets/cards/A1/ja/A1-040.webp';
+import JA_A1041 from '../assets/cards/A1/ja/A1-041.webp';
+import JA_A1042 from '../assets/cards/A1/ja/A1-042.webp';
+import JA_A1043 from '../assets/cards/A1/ja/A1-043.webp';
+import JA_A1044 from '../assets/cards/A1/ja/A1-044.webp';
+import JA_A1045 from '../assets/cards/A1/ja/A1-045.webp';
+import JA_A1046 from '../assets/cards/A1/ja/A1-046.webp';
+import JA_A1047 from '../assets/cards/A1/ja/A1-047.webp';
+import JA_A1048 from '../assets/cards/A1/ja/A1-048.webp';
+import JA_A1049 from '../assets/cards/A1/ja/A1-049.webp';
+import JA_A1050 from '../assets/cards/A1/ja/A1-050.webp';
+import JA_A1051 from '../assets/cards/A1/ja/A1-051.webp';
+import JA_A1052 from '../assets/cards/A1/ja/A1-052.webp';
+import JA_A1053 from '../assets/cards/A1/ja/A1-053.webp';
+import JA_A1054 from '../assets/cards/A1/ja/A1-054.webp';
+import JA_A1055 from '../assets/cards/A1/ja/A1-055.webp';
+import JA_A1056 from '../assets/cards/A1/ja/A1-056.webp';
+import JA_A1057 from '../assets/cards/A1/ja/A1-057.webp';
+import JA_A1058 from '../assets/cards/A1/ja/A1-058.webp';
+import JA_A1059 from '../assets/cards/A1/ja/A1-059.webp';
+import JA_A1060 from '../assets/cards/A1/ja/A1-060.webp';
+import JA_A1061 from '../assets/cards/A1/ja/A1-061.webp';
+import JA_A1062 from '../assets/cards/A1/ja/A1-062.webp';
+import JA_A1063 from '../assets/cards/A1/ja/A1-063.webp';
+import JA_A1064 from '../assets/cards/A1/ja/A1-064.webp';
+import JA_A1065 from '../assets/cards/A1/ja/A1-065.webp';
+import JA_A1066 from '../assets/cards/A1/ja/A1-066.webp';
+import JA_A1067 from '../assets/cards/A1/ja/A1-067.webp';
+import JA_A1068 from '../assets/cards/A1/ja/A1-068.webp';
+import JA_A1069 from '../assets/cards/A1/ja/A1-069.webp';
+import JA_A1070 from '../assets/cards/A1/ja/A1-070.webp';
+import JA_A1071 from '../assets/cards/A1/ja/A1-071.webp';
+import JA_A1072 from '../assets/cards/A1/ja/A1-072.webp';
+import JA_A1073 from '../assets/cards/A1/ja/A1-073.webp';
+import JA_A1074 from '../assets/cards/A1/ja/A1-074.webp';
+import JA_A1075 from '../assets/cards/A1/ja/A1-075.webp';
+import JA_A1076 from '../assets/cards/A1/ja/A1-076.webp';
+import JA_A1077 from '../assets/cards/A1/ja/A1-077.webp';
+import JA_A1078 from '../assets/cards/A1/ja/A1-078.webp';
+import JA_A1079 from '../assets/cards/A1/ja/A1-079.webp';
+import JA_A1080 from '../assets/cards/A1/ja/A1-080.webp';
+import JA_A1081 from '../assets/cards/A1/ja/A1-081.webp';
+import JA_A1082 from '../assets/cards/A1/ja/A1-082.webp';
+import JA_A1083 from '../assets/cards/A1/ja/A1-083.webp';
+import JA_A1084 from '../assets/cards/A1/ja/A1-084.webp';
+import JA_A1085 from '../assets/cards/A1/ja/A1-085.webp';
+import JA_A1086 from '../assets/cards/A1/ja/A1-086.webp';
+import JA_A1087 from '../assets/cards/A1/ja/A1-087.webp';
+import JA_A1088 from '../assets/cards/A1/ja/A1-088.webp';
+import JA_A1089 from '../assets/cards/A1/ja/A1-089.webp';
+import JA_A1090 from '../assets/cards/A1/ja/A1-090.webp';
+import JA_A1091 from '../assets/cards/A1/ja/A1-091.webp';
+import JA_A1092 from '../assets/cards/A1/ja/A1-092.webp';
+import JA_A1093 from '../assets/cards/A1/ja/A1-093.webp';
+import JA_A1094 from '../assets/cards/A1/ja/A1-094.webp';
+import JA_A1095 from '../assets/cards/A1/ja/A1-095.webp';
+import JA_A1096 from '../assets/cards/A1/ja/A1-096.webp';
+import JA_A1097 from '../assets/cards/A1/ja/A1-097.webp';
+import JA_A1098 from '../assets/cards/A1/ja/A1-098.webp';
+import JA_A1099 from '../assets/cards/A1/ja/A1-099.webp';
+import JA_A1100 from '../assets/cards/A1/ja/A1-100.webp';
+import JA_A1101 from '../assets/cards/A1/ja/A1-101.webp';
+import JA_A1102 from '../assets/cards/A1/ja/A1-102.webp';
+import JA_A1103 from '../assets/cards/A1/ja/A1-103.webp';
+import JA_A1104 from '../assets/cards/A1/ja/A1-104.webp';
+import JA_A1105 from '../assets/cards/A1/ja/A1-105.webp';
+import JA_A1106 from '../assets/cards/A1/ja/A1-106.webp';
+import JA_A1107 from '../assets/cards/A1/ja/A1-107.webp';
+import JA_A1108 from '../assets/cards/A1/ja/A1-108.webp';
+import JA_A1109 from '../assets/cards/A1/ja/A1-109.webp';
+import JA_A1110 from '../assets/cards/A1/ja/A1-110.webp';
+import JA_A1111 from '../assets/cards/A1/ja/A1-111.webp';
+import JA_A1112 from '../assets/cards/A1/ja/A1-112.webp';
+import JA_A1113 from '../assets/cards/A1/ja/A1-113.webp';
+import JA_A1114 from '../assets/cards/A1/ja/A1-114.webp';
+import JA_A1115 from '../assets/cards/A1/ja/A1-115.webp';
+import JA_A1116 from '../assets/cards/A1/ja/A1-116.webp';
+import JA_A1117 from '../assets/cards/A1/ja/A1-117.webp';
+import JA_A1118 from '../assets/cards/A1/ja/A1-118.webp';
+import JA_A1119 from '../assets/cards/A1/ja/A1-119.webp';
+import JA_A1120 from '../assets/cards/A1/ja/A1-120.webp';
+import JA_A1121 from '../assets/cards/A1/ja/A1-121.webp';
+import JA_A1122 from '../assets/cards/A1/ja/A1-122.webp';
+import JA_A1123 from '../assets/cards/A1/ja/A1-123.webp';
+import JA_A1124 from '../assets/cards/A1/ja/A1-124.webp';
+import JA_A1125 from '../assets/cards/A1/ja/A1-125.webp';
+import JA_A1126 from '../assets/cards/A1/ja/A1-126.webp';
+import JA_A1127 from '../assets/cards/A1/ja/A1-127.webp';
+import JA_A1128 from '../assets/cards/A1/ja/A1-128.webp';
+import JA_A1129 from '../assets/cards/A1/ja/A1-129.webp';
+import JA_A1130 from '../assets/cards/A1/ja/A1-130.webp';
+import JA_A1131 from '../assets/cards/A1/ja/A1-131.webp';
+import JA_A1132 from '../assets/cards/A1/ja/A1-132.webp';
+import JA_A1133 from '../assets/cards/A1/ja/A1-133.webp';
+import JA_A1134 from '../assets/cards/A1/ja/A1-134.webp';
+import JA_A1135 from '../assets/cards/A1/ja/A1-135.webp';
+import JA_A1136 from '../assets/cards/A1/ja/A1-136.webp';
+import JA_A1137 from '../assets/cards/A1/ja/A1-137.webp';
+import JA_A1138 from '../assets/cards/A1/ja/A1-138.webp';
+import JA_A1139 from '../assets/cards/A1/ja/A1-139.webp';
+import JA_A1140 from '../assets/cards/A1/ja/A1-140.webp';
+import JA_A1141 from '../assets/cards/A1/ja/A1-141.webp';
+import JA_A1142 from '../assets/cards/A1/ja/A1-142.webp';
+import JA_A1143 from '../assets/cards/A1/ja/A1-143.webp';
+import JA_A1144 from '../assets/cards/A1/ja/A1-144.webp';
+import JA_A1145 from '../assets/cards/A1/ja/A1-145.webp';
+import JA_A1146 from '../assets/cards/A1/ja/A1-146.webp';
+import JA_A1147 from '../assets/cards/A1/ja/A1-147.webp';
+import JA_A1148 from '../assets/cards/A1/ja/A1-148.webp';
+import JA_A1149 from '../assets/cards/A1/ja/A1-149.webp';
+import JA_A1150 from '../assets/cards/A1/ja/A1-150.webp';
+import JA_A1151 from '../assets/cards/A1/ja/A1-151.webp';
+import JA_A1152 from '../assets/cards/A1/ja/A1-152.webp';
+import JA_A1153 from '../assets/cards/A1/ja/A1-153.webp';
+import JA_A1154 from '../assets/cards/A1/ja/A1-154.webp';
+import JA_A1155 from '../assets/cards/A1/ja/A1-155.webp';
+import JA_A1156 from '../assets/cards/A1/ja/A1-156.webp';
+import JA_A1157 from '../assets/cards/A1/ja/A1-157.webp';
+import JA_A1158 from '../assets/cards/A1/ja/A1-158.webp';
+import JA_A1159 from '../assets/cards/A1/ja/A1-159.webp';
+import JA_A1160 from '../assets/cards/A1/ja/A1-160.webp';
+import JA_A1161 from '../assets/cards/A1/ja/A1-161.webp';
+import JA_A1162 from '../assets/cards/A1/ja/A1-162.webp';
+import JA_A1163 from '../assets/cards/A1/ja/A1-163.webp';
+import JA_A1164 from '../assets/cards/A1/ja/A1-164.webp';
+import JA_A1165 from '../assets/cards/A1/ja/A1-165.webp';
+import JA_A1166 from '../assets/cards/A1/ja/A1-166.webp';
+import JA_A1167 from '../assets/cards/A1/ja/A1-167.webp';
+import JA_A1168 from '../assets/cards/A1/ja/A1-168.webp';
+import JA_A1169 from '../assets/cards/A1/ja/A1-169.webp';
+import JA_A1170 from '../assets/cards/A1/ja/A1-170.webp';
+import JA_A1171 from '../assets/cards/A1/ja/A1-171.webp';
+import JA_A1172 from '../assets/cards/A1/ja/A1-172.webp';
+import JA_A1173 from '../assets/cards/A1/ja/A1-173.webp';
+import JA_A1174 from '../assets/cards/A1/ja/A1-174.webp';
+import JA_A1175 from '../assets/cards/A1/ja/A1-175.webp';
+import JA_A1176 from '../assets/cards/A1/ja/A1-176.webp';
+import JA_A1177 from '../assets/cards/A1/ja/A1-177.webp';
+import JA_A1178 from '../assets/cards/A1/ja/A1-178.webp';
+import JA_A1179 from '../assets/cards/A1/ja/A1-179.webp';
+import JA_A1180 from '../assets/cards/A1/ja/A1-180.webp';
+import JA_A1181 from '../assets/cards/A1/ja/A1-181.webp';
+import JA_A1182 from '../assets/cards/A1/ja/A1-182.webp';
+import JA_A1183 from '../assets/cards/A1/ja/A1-183.webp';
+import JA_A1184 from '../assets/cards/A1/ja/A1-184.webp';
+import JA_A1185 from '../assets/cards/A1/ja/A1-185.webp';
+import JA_A1186 from '../assets/cards/A1/ja/A1-186.webp';
+import JA_A1187 from '../assets/cards/A1/ja/A1-187.webp';
+import JA_A1188 from '../assets/cards/A1/ja/A1-188.webp';
+import JA_A1189 from '../assets/cards/A1/ja/A1-189.webp';
+import JA_A1190 from '../assets/cards/A1/ja/A1-190.webp';
+import JA_A1191 from '../assets/cards/A1/ja/A1-191.webp';
+import JA_A1192 from '../assets/cards/A1/ja/A1-192.webp';
+import JA_A1193 from '../assets/cards/A1/ja/A1-193.webp';
+import JA_A1194 from '../assets/cards/A1/ja/A1-194.webp';
+import JA_A1195 from '../assets/cards/A1/ja/A1-195.webp';
+import JA_A1196 from '../assets/cards/A1/ja/A1-196.webp';
+import JA_A1197 from '../assets/cards/A1/ja/A1-197.webp';
+import JA_A1198 from '../assets/cards/A1/ja/A1-198.webp';
+import JA_A1199 from '../assets/cards/A1/ja/A1-199.webp';
+import JA_A1200 from '../assets/cards/A1/ja/A1-200.webp';
+import JA_A1201 from '../assets/cards/A1/ja/A1-201.webp';
+import JA_A1202 from '../assets/cards/A1/ja/A1-202.webp';
+import JA_A1203 from '../assets/cards/A1/ja/A1-203.webp';
+import JA_A1204 from '../assets/cards/A1/ja/A1-204.webp';
+import JA_A1205 from '../assets/cards/A1/ja/A1-205.webp';
+import JA_A1206 from '../assets/cards/A1/ja/A1-206.webp';
+import JA_A1207 from '../assets/cards/A1/ja/A1-207.webp';
+import JA_A1208 from '../assets/cards/A1/ja/A1-208.webp';
+import JA_A1209 from '../assets/cards/A1/ja/A1-209.webp';
+import JA_A1210 from '../assets/cards/A1/ja/A1-210.webp';
+import JA_A1211 from '../assets/cards/A1/ja/A1-211.webp';
+import JA_A1212 from '../assets/cards/A1/ja/A1-212.webp';
+import JA_A1213 from '../assets/cards/A1/ja/A1-213.webp';
+import JA_A1214 from '../assets/cards/A1/ja/A1-214.webp';
+import JA_A1215 from '../assets/cards/A1/ja/A1-215.webp';
+import JA_A1216 from '../assets/cards/A1/ja/A1-216.webp';
+import JA_A1217 from '../assets/cards/A1/ja/A1-217.webp';
+import JA_A1218 from '../assets/cards/A1/ja/A1-218.webp';
+import JA_A1219 from '../assets/cards/A1/ja/A1-219.webp';
+import JA_A1220 from '../assets/cards/A1/ja/A1-220.webp';
+import JA_A1221 from '../assets/cards/A1/ja/A1-221.webp';
+import JA_A1222 from '../assets/cards/A1/ja/A1-222.webp';
+import JA_A1223 from '../assets/cards/A1/ja/A1-223.webp';
+import JA_A1224 from '../assets/cards/A1/ja/A1-224.webp';
+import JA_A1225 from '../assets/cards/A1/ja/A1-225.webp';
+import JA_A1226 from '../assets/cards/A1/ja/A1-226.webp';
+import JA_A1227 from '../assets/cards/A1/ja/A1-227.webp';
+import JA_A1228 from '../assets/cards/A1/ja/A1-228.webp';
+import JA_A1229 from '../assets/cards/A1/ja/A1-229.webp';
+import JA_A1230 from '../assets/cards/A1/ja/A1-230.webp';
+import JA_A1231 from '../assets/cards/A1/ja/A1-231.webp';
+import JA_A1232 from '../assets/cards/A1/ja/A1-232.webp';
+import JA_A1233 from '../assets/cards/A1/ja/A1-233.webp';
+import JA_A1234 from '../assets/cards/A1/ja/A1-234.webp';
+import JA_A1235 from '../assets/cards/A1/ja/A1-235.webp';
+import JA_A1236 from '../assets/cards/A1/ja/A1-236.webp';
+import JA_A1237 from '../assets/cards/A1/ja/A1-237.webp';
+import JA_A1238 from '../assets/cards/A1/ja/A1-238.webp';
+import JA_A1239 from '../assets/cards/A1/ja/A1-239.webp';
+import JA_A1240 from '../assets/cards/A1/ja/A1-240.webp';
+import JA_A1241 from '../assets/cards/A1/ja/A1-241.webp';
+import JA_A1242 from '../assets/cards/A1/ja/A1-242.webp';
+import JA_A1243 from '../assets/cards/A1/ja/A1-243.webp';
+import JA_A1244 from '../assets/cards/A1/ja/A1-244.webp';
+import JA_A1245 from '../assets/cards/A1/ja/A1-245.webp';
+import JA_A1246 from '../assets/cards/A1/ja/A1-246.webp';
+import JA_A1247 from '../assets/cards/A1/ja/A1-247.webp';
+import JA_A1248 from '../assets/cards/A1/ja/A1-248.webp';
+import JA_A1249 from '../assets/cards/A1/ja/A1-249.webp';
+import JA_A1250 from '../assets/cards/A1/ja/A1-250.webp';
+import JA_A1251 from '../assets/cards/A1/ja/A1-251.webp';
+import JA_A1252 from '../assets/cards/A1/ja/A1-252.webp';
+import JA_A1253 from '../assets/cards/A1/ja/A1-253.webp';
+import JA_A1254 from '../assets/cards/A1/ja/A1-254.webp';
+import JA_A1255 from '../assets/cards/A1/ja/A1-255.webp';
+import JA_A1256 from '../assets/cards/A1/ja/A1-256.webp';
+import JA_A1257 from '../assets/cards/A1/ja/A1-257.webp';
+import JA_A1258 from '../assets/cards/A1/ja/A1-258.webp';
+import JA_A1259 from '../assets/cards/A1/ja/A1-259.webp';
+import JA_A1260 from '../assets/cards/A1/ja/A1-260.webp';
+import JA_A1261 from '../assets/cards/A1/ja/A1-261.webp';
+import JA_A1262 from '../assets/cards/A1/ja/A1-262.webp';
+import JA_A1263 from '../assets/cards/A1/ja/A1-263.webp';
+import JA_A1264 from '../assets/cards/A1/ja/A1-264.webp';
+import JA_A1265 from '../assets/cards/A1/ja/A1-265.webp';
+import JA_A1266 from '../assets/cards/A1/ja/A1-266.webp';
+import JA_A1267 from '../assets/cards/A1/ja/A1-267.webp';
+import JA_A1268 from '../assets/cards/A1/ja/A1-268.webp';
+import JA_A1269 from '../assets/cards/A1/ja/A1-269.webp';
+import JA_A1270 from '../assets/cards/A1/ja/A1-270.webp';
+import JA_A1271 from '../assets/cards/A1/ja/A1-271.webp';
+import JA_A1272 from '../assets/cards/A1/ja/A1-272.webp';
+import JA_A1273 from '../assets/cards/A1/ja/A1-273.webp';
+import JA_A1274 from '../assets/cards/A1/ja/A1-274.webp';
+import JA_A1275 from '../assets/cards/A1/ja/A1-275.webp';
+import JA_A1276 from '../assets/cards/A1/ja/A1-276.webp';
+import JA_A1277 from '../assets/cards/A1/ja/A1-277.webp';
+import JA_A1278 from '../assets/cards/A1/ja/A1-278.webp';
+import JA_A1279 from '../assets/cards/A1/ja/A1-279.webp';
+import JA_A1280 from '../assets/cards/A1/ja/A1-280.webp';
+import JA_A1281 from '../assets/cards/A1/ja/A1-281.webp';
+import JA_A1282 from '../assets/cards/A1/ja/A1-282.webp';
+import JA_A1283 from '../assets/cards/A1/ja/A1-283.webp';
+import JA_A1284 from '../assets/cards/A1/ja/A1-284.webp';
+import JA_A1285 from '../assets/cards/A1/ja/A1-285.webp';
+import JA_A1286 from '../assets/cards/A1/ja/A1-286.webp';
 import KO_A1001 from '../assets/cards/A1/ko/A1-001.webp';
 import KO_A1002 from '../assets/cards/A1/ko/A1-002.webp';
 import KO_A1003 from '../assets/cards/A1/ko/A1-003.webp';
@@ -580,6 +866,8 @@ export const MISSING_NO_CARD: CardInfo = {
     'ko-KR': KO_MISSING_NO,
     en: KO_MISSING_NO,
     'en-US': KO_MISSING_NO,
+    ja: KO_MISSING_NO,
+    'ja-JP': KO_MISSING_NO,
     default: KO_MISSING_NO,
   },
   rarity: 'crown',
@@ -595,6 +883,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1001,
       en: EN_A1001,
       'en-US': EN_A1001,
+      ja: JA_A1001,
+      'ja-JP': JA_A1001,
       default: EN_A1001,
     },
     rarity: 'r1',
@@ -609,6 +899,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1002,
       en: EN_A1002,
       'en-US': EN_A1002,
+      ja: JA_A1002,
+      'ja-JP': JA_A1002,
       default: EN_A1002,
     },
     rarity: 'r2',
@@ -623,6 +915,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1003,
       en: EN_A1003,
       'en-US': EN_A1003,
+      ja: JA_A1003,
+      'ja-JP': JA_A1003,
       default: EN_A1003,
     },
     rarity: 'r3',
@@ -637,6 +931,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1004,
       en: EN_A1004,
       'en-US': EN_A1004,
+      ja: JA_A1004,
+      'ja-JP': JA_A1004,
       default: EN_A1004,
     },
     rarity: 'r4',
@@ -651,6 +947,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1005,
       en: EN_A1005,
       'en-US': EN_A1005,
+      ja: JA_A1005,
+      'ja-JP': JA_A1005,
       default: EN_A1005,
     },
     rarity: 'r1',
@@ -665,6 +963,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1006,
       en: EN_A1006,
       'en-US': EN_A1006,
+      ja: JA_A1006,
+      'ja-JP': JA_A1006,
       default: EN_A1006,
     },
     rarity: 'r1',
@@ -679,6 +979,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1007,
       en: EN_A1007,
       'en-US': EN_A1007,
+      ja: JA_A1007,
+      'ja-JP': JA_A1007,
       default: EN_A1007,
     },
     rarity: 'r3',
@@ -693,6 +995,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1008,
       en: EN_A1008,
       'en-US': EN_A1008,
+      ja: JA_A1008,
+      'ja-JP': JA_A1008,
       default: EN_A1008,
     },
     rarity: 'r1',
@@ -707,6 +1011,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1009,
       en: EN_A1009,
       'en-US': EN_A1009,
+      ja: JA_A1009,
+      'ja-JP': JA_A1009,
       default: EN_A1009,
     },
     rarity: 'r1',
@@ -721,6 +1027,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1010,
       en: EN_A1010,
       'en-US': EN_A1010,
+      ja: JA_A1010,
+      'ja-JP': JA_A1010,
       default: EN_A1010,
     },
     rarity: 'r3',
@@ -735,6 +1043,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1011,
       en: EN_A1011,
       'en-US': EN_A1011,
+      ja: JA_A1011,
+      'ja-JP': JA_A1011,
       default: EN_A1011,
     },
     rarity: 'r1',
@@ -749,6 +1059,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1012,
       en: EN_A1012,
       'en-US': EN_A1012,
+      ja: JA_A1012,
+      'ja-JP': JA_A1012,
       default: EN_A1012,
     },
     rarity: 'r2',
@@ -763,6 +1075,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1013,
       en: EN_A1013,
       'en-US': EN_A1013,
+      ja: JA_A1013,
+      'ja-JP': JA_A1013,
       default: EN_A1013,
     },
     rarity: 'r3',
@@ -777,6 +1091,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1014,
       en: EN_A1014,
       'en-US': EN_A1014,
+      ja: JA_A1014,
+      'ja-JP': JA_A1014,
       default: EN_A1014,
     },
     rarity: 'r1',
@@ -791,6 +1107,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1015,
       en: EN_A1015,
       'en-US': EN_A1015,
+      ja: JA_A1015,
+      'ja-JP': JA_A1015,
       default: EN_A1015,
     },
     rarity: 'r2',
@@ -805,6 +1123,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1016,
       en: EN_A1016,
       'en-US': EN_A1016,
+      ja: JA_A1016,
+      'ja-JP': JA_A1016,
       default: EN_A1016,
     },
     rarity: 'r1',
@@ -819,6 +1139,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1017,
       en: EN_A1017,
       'en-US': EN_A1017,
+      ja: JA_A1017,
+      'ja-JP': JA_A1017,
       default: EN_A1017,
     },
     rarity: 'r2',
@@ -833,6 +1155,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1018,
       en: EN_A1018,
       'en-US': EN_A1018,
+      ja: JA_A1018,
+      'ja-JP': JA_A1018,
       default: EN_A1018,
     },
     rarity: 'r1',
@@ -847,6 +1171,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1019,
       en: EN_A1019,
       'en-US': EN_A1019,
+      ja: JA_A1019,
+      'ja-JP': JA_A1019,
       default: EN_A1019,
     },
     rarity: 'r2',
@@ -861,6 +1187,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1020,
       en: EN_A1020,
       'en-US': EN_A1020,
+      ja: JA_A1020,
+      'ja-JP': JA_A1020,
       default: EN_A1020,
     },
     rarity: 'r3',
@@ -875,6 +1203,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1021,
       en: EN_A1021,
       'en-US': EN_A1021,
+      ja: JA_A1021,
+      'ja-JP': JA_A1021,
       default: EN_A1021,
     },
     rarity: 'r1',
@@ -889,6 +1219,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1022,
       en: EN_A1022,
       'en-US': EN_A1022,
+      ja: JA_A1022,
+      'ja-JP': JA_A1022,
       default: EN_A1022,
     },
     rarity: 'r3',
@@ -903,6 +1235,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1023,
       en: EN_A1023,
       'en-US': EN_A1023,
+      ja: JA_A1023,
+      'ja-JP': JA_A1023,
       default: EN_A1023,
     },
     rarity: 'r4',
@@ -917,6 +1251,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1024,
       en: EN_A1024,
       'en-US': EN_A1024,
+      ja: JA_A1024,
+      'ja-JP': JA_A1024,
       default: EN_A1024,
     },
     rarity: 'r1',
@@ -931,6 +1267,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1025,
       en: EN_A1025,
       'en-US': EN_A1025,
+      ja: JA_A1025,
+      'ja-JP': JA_A1025,
       default: EN_A1025,
     },
     rarity: 'r1',
@@ -945,6 +1283,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1026,
       en: EN_A1026,
       'en-US': EN_A1026,
+      ja: JA_A1026,
+      'ja-JP': JA_A1026,
       default: EN_A1026,
     },
     rarity: 'r2',
@@ -959,6 +1299,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1027,
       en: EN_A1027,
       'en-US': EN_A1027,
+      ja: JA_A1027,
+      'ja-JP': JA_A1027,
       default: EN_A1027,
     },
     rarity: 'r1',
@@ -973,6 +1315,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1028,
       en: EN_A1028,
       'en-US': EN_A1028,
+      ja: JA_A1028,
+      'ja-JP': JA_A1028,
       default: EN_A1028,
     },
     rarity: 'r2',
@@ -987,6 +1331,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1029,
       en: EN_A1029,
       'en-US': EN_A1029,
+      ja: JA_A1029,
+      'ja-JP': JA_A1029,
       default: EN_A1029,
     },
     rarity: 'r1',
@@ -1001,6 +1347,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1030,
       en: EN_A1030,
       'en-US': EN_A1030,
+      ja: JA_A1030,
+      'ja-JP': JA_A1030,
       default: EN_A1030,
     },
     rarity: 'r2',
@@ -1015,6 +1363,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1031,
       en: EN_A1031,
       'en-US': EN_A1031,
+      ja: JA_A1031,
+      'ja-JP': JA_A1031,
       default: EN_A1031,
     },
     rarity: 'r1',
@@ -1029,6 +1379,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1032,
       en: EN_A1032,
       'en-US': EN_A1032,
+      ja: JA_A1032,
+      'ja-JP': JA_A1032,
       default: EN_A1032,
     },
     rarity: 'r1',
@@ -1043,6 +1395,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1033,
       en: EN_A1033,
       'en-US': EN_A1033,
+      ja: JA_A1033,
+      'ja-JP': JA_A1033,
       default: EN_A1033,
     },
     rarity: 'r1',
@@ -1057,6 +1411,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1034,
       en: EN_A1034,
       'en-US': EN_A1034,
+      ja: JA_A1034,
+      'ja-JP': JA_A1034,
       default: EN_A1034,
     },
     rarity: 'r2',
@@ -1071,6 +1427,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1035,
       en: EN_A1035,
       'en-US': EN_A1035,
+      ja: JA_A1035,
+      'ja-JP': JA_A1035,
       default: EN_A1035,
     },
     rarity: 'r3',
@@ -1085,6 +1443,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1036,
       en: EN_A1036,
       'en-US': EN_A1036,
+      ja: JA_A1036,
+      'ja-JP': JA_A1036,
       default: EN_A1036,
     },
     rarity: 'r4',
@@ -1099,6 +1459,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1037,
       en: EN_A1037,
       'en-US': EN_A1037,
+      ja: JA_A1037,
+      'ja-JP': JA_A1037,
       default: EN_A1037,
     },
     rarity: 'r1',
@@ -1113,6 +1475,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1038,
       en: EN_A1038,
       'en-US': EN_A1038,
+      ja: JA_A1038,
+      'ja-JP': JA_A1038,
       default: EN_A1038,
     },
     rarity: 'r2',
@@ -1127,6 +1491,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1039,
       en: EN_A1039,
       'en-US': EN_A1039,
+      ja: JA_A1039,
+      'ja-JP': JA_A1039,
       default: EN_A1039,
     },
     rarity: 'r1',
@@ -1141,6 +1507,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1040,
       en: EN_A1040,
       'en-US': EN_A1040,
+      ja: JA_A1040,
+      'ja-JP': JA_A1040,
       default: EN_A1040,
     },
     rarity: 'r3',
@@ -1155,6 +1523,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1041,
       en: EN_A1041,
       'en-US': EN_A1041,
+      ja: JA_A1041,
+      'ja-JP': JA_A1041,
       default: EN_A1041,
     },
     rarity: 'r4',
@@ -1169,6 +1539,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1042,
       en: EN_A1042,
       'en-US': EN_A1042,
+      ja: JA_A1042,
+      'ja-JP': JA_A1042,
       default: EN_A1042,
     },
     rarity: 'r1',
@@ -1183,6 +1555,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1043,
       en: EN_A1043,
       'en-US': EN_A1043,
+      ja: JA_A1043,
+      'ja-JP': JA_A1043,
       default: EN_A1043,
     },
     rarity: 'r2',
@@ -1197,6 +1571,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1044,
       en: EN_A1044,
       'en-US': EN_A1044,
+      ja: JA_A1044,
+      'ja-JP': JA_A1044,
       default: EN_A1044,
     },
     rarity: 'r1',
@@ -1211,6 +1587,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1045,
       en: EN_A1045,
       'en-US': EN_A1045,
+      ja: JA_A1045,
+      'ja-JP': JA_A1045,
       default: EN_A1045,
     },
     rarity: 'r3',
@@ -1225,6 +1603,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1046,
       en: EN_A1046,
       'en-US': EN_A1046,
+      ja: JA_A1046,
+      'ja-JP': JA_A1046,
       default: EN_A1046,
     },
     rarity: 'r3',
@@ -1239,6 +1619,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1047,
       en: EN_A1047,
       'en-US': EN_A1047,
+      ja: JA_A1047,
+      'ja-JP': JA_A1047,
       default: EN_A1047,
     },
     rarity: 'r4',
@@ -1253,6 +1635,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1048,
       en: EN_A1048,
       'en-US': EN_A1048,
+      ja: JA_A1048,
+      'ja-JP': JA_A1048,
       default: EN_A1048,
     },
     rarity: 'r1',
@@ -1267,6 +1651,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1049,
       en: EN_A1049,
       'en-US': EN_A1049,
+      ja: JA_A1049,
+      'ja-JP': JA_A1049,
       default: EN_A1049,
     },
     rarity: 'r1',
@@ -1281,6 +1667,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1050,
       en: EN_A1050,
       'en-US': EN_A1050,
+      ja: JA_A1050,
+      'ja-JP': JA_A1050,
       default: EN_A1050,
     },
     rarity: 'r1',
@@ -1295,6 +1683,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1051,
       en: EN_A1051,
       'en-US': EN_A1051,
+      ja: JA_A1051,
+      'ja-JP': JA_A1051,
       default: EN_A1051,
     },
     rarity: 'r1',
@@ -1309,6 +1699,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1052,
       en: EN_A1052,
       'en-US': EN_A1052,
+      ja: JA_A1052,
+      'ja-JP': JA_A1052,
       default: EN_A1052,
     },
     rarity: 'r2',
@@ -1323,6 +1715,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1053,
       en: EN_A1053,
       'en-US': EN_A1053,
+      ja: JA_A1053,
+      'ja-JP': JA_A1053,
       default: EN_A1053,
     },
     rarity: 'r1',
@@ -1337,6 +1731,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1054,
       en: EN_A1054,
       'en-US': EN_A1054,
+      ja: JA_A1054,
+      'ja-JP': JA_A1054,
       default: EN_A1054,
     },
     rarity: 'r2',
@@ -1351,6 +1747,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1055,
       en: EN_A1055,
       'en-US': EN_A1055,
+      ja: JA_A1055,
+      'ja-JP': JA_A1055,
       default: EN_A1055,
     },
     rarity: 'r3',
@@ -1365,6 +1763,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1056,
       en: EN_A1056,
       'en-US': EN_A1056,
+      ja: JA_A1056,
+      'ja-JP': JA_A1056,
       default: EN_A1056,
     },
     rarity: 'r4',
@@ -1379,6 +1779,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1057,
       en: EN_A1057,
       'en-US': EN_A1057,
+      ja: JA_A1057,
+      'ja-JP': JA_A1057,
       default: EN_A1057,
     },
     rarity: 'r1',
@@ -1393,6 +1795,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1058,
       en: EN_A1058,
       'en-US': EN_A1058,
+      ja: JA_A1058,
+      'ja-JP': JA_A1058,
       default: EN_A1058,
     },
     rarity: 'r2',
@@ -1407,6 +1811,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1059,
       en: EN_A1059,
       'en-US': EN_A1059,
+      ja: JA_A1059,
+      'ja-JP': JA_A1059,
       default: EN_A1059,
     },
     rarity: 'r1',
@@ -1421,6 +1827,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1060,
       en: EN_A1060,
       'en-US': EN_A1060,
+      ja: JA_A1060,
+      'ja-JP': JA_A1060,
       default: EN_A1060,
     },
     rarity: 'r2',
@@ -1435,6 +1843,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1061,
       en: EN_A1061,
       'en-US': EN_A1061,
+      ja: JA_A1061,
+      'ja-JP': JA_A1061,
       default: EN_A1061,
     },
     rarity: 'r3',
@@ -1449,6 +1859,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1062,
       en: EN_A1062,
       'en-US': EN_A1062,
+      ja: JA_A1062,
+      'ja-JP': JA_A1062,
       default: EN_A1062,
     },
     rarity: 'r1',
@@ -1463,6 +1875,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1063,
       en: EN_A1063,
       'en-US': EN_A1063,
+      ja: JA_A1063,
+      'ja-JP': JA_A1063,
       default: EN_A1063,
     },
     rarity: 'r2',
@@ -1477,6 +1891,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1064,
       en: EN_A1064,
       'en-US': EN_A1064,
+      ja: JA_A1064,
+      'ja-JP': JA_A1064,
       default: EN_A1064,
     },
     rarity: 'r1',
@@ -1491,6 +1907,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1065,
       en: EN_A1065,
       'en-US': EN_A1065,
+      ja: JA_A1065,
+      'ja-JP': JA_A1065,
       default: EN_A1065,
     },
     rarity: 'r2',
@@ -1505,6 +1923,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1066,
       en: EN_A1066,
       'en-US': EN_A1066,
+      ja: JA_A1066,
+      'ja-JP': JA_A1066,
       default: EN_A1066,
     },
     rarity: 'r1',
@@ -1519,6 +1939,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1067,
       en: EN_A1067,
       'en-US': EN_A1067,
+      ja: JA_A1067,
+      'ja-JP': JA_A1067,
       default: EN_A1067,
     },
     rarity: 'r2',
@@ -1533,6 +1955,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1068,
       en: EN_A1068,
       'en-US': EN_A1068,
+      ja: JA_A1068,
+      'ja-JP': JA_A1068,
       default: EN_A1068,
     },
     rarity: 'r1',
@@ -1547,6 +1971,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1069,
       en: EN_A1069,
       'en-US': EN_A1069,
+      ja: JA_A1069,
+      'ja-JP': JA_A1069,
       default: EN_A1069,
     },
     rarity: 'r2',
@@ -1561,6 +1987,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1070,
       en: EN_A1070,
       'en-US': EN_A1070,
+      ja: JA_A1070,
+      'ja-JP': JA_A1070,
       default: EN_A1070,
     },
     rarity: 'r1',
@@ -1575,6 +2003,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1071,
       en: EN_A1071,
       'en-US': EN_A1071,
+      ja: JA_A1071,
+      'ja-JP': JA_A1071,
       default: EN_A1071,
     },
     rarity: 'r2',
@@ -1589,6 +2019,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1072,
       en: EN_A1072,
       'en-US': EN_A1072,
+      ja: JA_A1072,
+      'ja-JP': JA_A1072,
       default: EN_A1072,
     },
     rarity: 'r1',
@@ -1603,6 +2035,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1073,
       en: EN_A1073,
       'en-US': EN_A1073,
+      ja: JA_A1073,
+      'ja-JP': JA_A1073,
       default: EN_A1073,
     },
     rarity: 'r1',
@@ -1617,6 +2051,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1074,
       en: EN_A1074,
       'en-US': EN_A1074,
+      ja: JA_A1074,
+      'ja-JP': JA_A1074,
       default: EN_A1074,
     },
     rarity: 'r1',
@@ -1631,6 +2067,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1075,
       en: EN_A1075,
       'en-US': EN_A1075,
+      ja: JA_A1075,
+      'ja-JP': JA_A1075,
       default: EN_A1075,
     },
     rarity: 'r2',
@@ -1645,6 +2083,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1076,
       en: EN_A1076,
       'en-US': EN_A1076,
+      ja: JA_A1076,
+      'ja-JP': JA_A1076,
       default: EN_A1076,
     },
     rarity: 'r4',
@@ -1659,6 +2099,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1077,
       en: EN_A1077,
       'en-US': EN_A1077,
+      ja: JA_A1077,
+      'ja-JP': JA_A1077,
       default: EN_A1077,
     },
     rarity: 'r1',
@@ -1673,6 +2115,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1078,
       en: EN_A1078,
       'en-US': EN_A1078,
+      ja: JA_A1078,
+      'ja-JP': JA_A1078,
       default: EN_A1078,
     },
     rarity: 'r3',
@@ -1687,6 +2131,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1079,
       en: EN_A1079,
       'en-US': EN_A1079,
+      ja: JA_A1079,
+      'ja-JP': JA_A1079,
       default: EN_A1079,
     },
     rarity: 'r3',
@@ -1701,6 +2147,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1080,
       en: EN_A1080,
       'en-US': EN_A1080,
+      ja: JA_A1080,
+      'ja-JP': JA_A1080,
       default: EN_A1080,
     },
     rarity: 'r3',
@@ -1715,6 +2163,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1081,
       en: EN_A1081,
       'en-US': EN_A1081,
+      ja: JA_A1081,
+      'ja-JP': JA_A1081,
       default: EN_A1081,
     },
     rarity: 'r2',
@@ -1729,6 +2179,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1082,
       en: EN_A1082,
       'en-US': EN_A1082,
+      ja: JA_A1082,
+      'ja-JP': JA_A1082,
       default: EN_A1082,
     },
     rarity: 'r3',
@@ -1743,6 +2195,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1083,
       en: EN_A1083,
       'en-US': EN_A1083,
+      ja: JA_A1083,
+      'ja-JP': JA_A1083,
       default: EN_A1083,
     },
     rarity: 'r3',
@@ -1757,6 +2211,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1084,
       en: EN_A1084,
       'en-US': EN_A1084,
+      ja: JA_A1084,
+      'ja-JP': JA_A1084,
       default: EN_A1084,
     },
     rarity: 'r4',
@@ -1771,6 +2227,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1085,
       en: EN_A1085,
       'en-US': EN_A1085,
+      ja: JA_A1085,
+      'ja-JP': JA_A1085,
       default: EN_A1085,
     },
     rarity: 'r1',
@@ -1785,6 +2243,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1086,
       en: EN_A1086,
       'en-US': EN_A1086,
+      ja: JA_A1086,
+      'ja-JP': JA_A1086,
       default: EN_A1086,
     },
     rarity: 'r2',
@@ -1799,6 +2259,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1087,
       en: EN_A1087,
       'en-US': EN_A1087,
+      ja: JA_A1087,
+      'ja-JP': JA_A1087,
       default: EN_A1087,
     },
     rarity: 'r1',
@@ -1813,6 +2275,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1088,
       en: EN_A1088,
       'en-US': EN_A1088,
+      ja: JA_A1088,
+      'ja-JP': JA_A1088,
       default: EN_A1088,
     },
     rarity: 'r2',
@@ -1827,6 +2291,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1089,
       en: EN_A1089,
       'en-US': EN_A1089,
+      ja: JA_A1089,
+      'ja-JP': JA_A1089,
       default: EN_A1089,
     },
     rarity: 'r3',
@@ -1841,6 +2307,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1090,
       en: EN_A1090,
       'en-US': EN_A1090,
+      ja: JA_A1090,
+      'ja-JP': JA_A1090,
       default: EN_A1090,
     },
     rarity: 'r1',
@@ -1855,6 +2323,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1091,
       en: EN_A1091,
       'en-US': EN_A1091,
+      ja: JA_A1091,
+      'ja-JP': JA_A1091,
       default: EN_A1091,
     },
     rarity: 'r2',
@@ -1869,6 +2339,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1092,
       en: EN_A1092,
       'en-US': EN_A1092,
+      ja: JA_A1092,
+      'ja-JP': JA_A1092,
       default: EN_A1092,
     },
     rarity: 'r1',
@@ -1883,6 +2355,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1093,
       en: EN_A1093,
       'en-US': EN_A1093,
+      ja: JA_A1093,
+      'ja-JP': JA_A1093,
       default: EN_A1093,
     },
     rarity: 'r2',
@@ -1897,6 +2371,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1094,
       en: EN_A1094,
       'en-US': EN_A1094,
+      ja: JA_A1094,
+      'ja-JP': JA_A1094,
       default: EN_A1094,
     },
     rarity: 'r1',
@@ -1911,6 +2387,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1095,
       en: EN_A1095,
       'en-US': EN_A1095,
+      ja: JA_A1095,
+      'ja-JP': JA_A1095,
       default: EN_A1095,
     },
     rarity: 'r3',
@@ -1925,6 +2403,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1096,
       en: EN_A1096,
       'en-US': EN_A1096,
+      ja: JA_A1096,
+      'ja-JP': JA_A1096,
       default: EN_A1096,
     },
     rarity: 'r4',
@@ -1939,6 +2419,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1097,
       en: EN_A1097,
       'en-US': EN_A1097,
+      ja: JA_A1097,
+      'ja-JP': JA_A1097,
       default: EN_A1097,
     },
     rarity: 'r1',
@@ -1953,6 +2435,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1098,
       en: EN_A1098,
       'en-US': EN_A1098,
+      ja: JA_A1098,
+      'ja-JP': JA_A1098,
       default: EN_A1098,
     },
     rarity: 'r3',
@@ -1967,6 +2451,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1099,
       en: EN_A1099,
       'en-US': EN_A1099,
+      ja: JA_A1099,
+      'ja-JP': JA_A1099,
       default: EN_A1099,
     },
     rarity: 'r1',
@@ -1981,6 +2467,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1100,
       en: EN_A1100,
       'en-US': EN_A1100,
+      ja: JA_A1100,
+      'ja-JP': JA_A1100,
       default: EN_A1100,
     },
     rarity: 'r2',
@@ -1995,6 +2483,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1101,
       en: EN_A1101,
       'en-US': EN_A1101,
+      ja: JA_A1101,
+      'ja-JP': JA_A1101,
       default: EN_A1101,
     },
     rarity: 'r1',
@@ -2009,6 +2499,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1102,
       en: EN_A1102,
       'en-US': EN_A1102,
+      ja: JA_A1102,
+      'ja-JP': JA_A1102,
       default: EN_A1102,
     },
     rarity: 'r3',
@@ -2023,6 +2515,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1103,
       en: EN_A1103,
       'en-US': EN_A1103,
+      ja: JA_A1103,
+      'ja-JP': JA_A1103,
       default: EN_A1103,
     },
     rarity: 'r3',
@@ -2037,6 +2531,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1104,
       en: EN_A1104,
       'en-US': EN_A1104,
+      ja: JA_A1104,
+      'ja-JP': JA_A1104,
       default: EN_A1104,
     },
     rarity: 'r4',
@@ -2051,6 +2547,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1105,
       en: EN_A1105,
       'en-US': EN_A1105,
+      ja: JA_A1105,
+      'ja-JP': JA_A1105,
       default: EN_A1105,
     },
     rarity: 'r1',
@@ -2065,6 +2563,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1106,
       en: EN_A1106,
       'en-US': EN_A1106,
+      ja: JA_A1106,
+      'ja-JP': JA_A1106,
       default: EN_A1106,
     },
     rarity: 'r2',
@@ -2079,6 +2579,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1107,
       en: EN_A1107,
       'en-US': EN_A1107,
+      ja: JA_A1107,
+      'ja-JP': JA_A1107,
       default: EN_A1107,
     },
     rarity: 'r1',
@@ -2093,6 +2595,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1108,
       en: EN_A1108,
       'en-US': EN_A1108,
+      ja: JA_A1108,
+      'ja-JP': JA_A1108,
       default: EN_A1108,
     },
     rarity: 'r2',
@@ -2107,6 +2611,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1109,
       en: EN_A1109,
       'en-US': EN_A1109,
+      ja: JA_A1109,
+      'ja-JP': JA_A1109,
       default: EN_A1109,
     },
     rarity: 'r3',
@@ -2121,6 +2627,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1110,
       en: EN_A1110,
       'en-US': EN_A1110,
+      ja: JA_A1110,
+      'ja-JP': JA_A1110,
       default: EN_A1110,
     },
     rarity: 'r1',
@@ -2135,6 +2643,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1111,
       en: EN_A1111,
       'en-US': EN_A1111,
+      ja: JA_A1111,
+      'ja-JP': JA_A1111,
       default: EN_A1111,
     },
     rarity: 'r1',
@@ -2149,6 +2659,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1112,
       en: EN_A1112,
       'en-US': EN_A1112,
+      ja: JA_A1112,
+      'ja-JP': JA_A1112,
       default: EN_A1112,
     },
     rarity: 'r2',
@@ -2163,6 +2675,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1113,
       en: EN_A1113,
       'en-US': EN_A1113,
+      ja: JA_A1113,
+      'ja-JP': JA_A1113,
       default: EN_A1113,
     },
     rarity: 'r1',
@@ -2177,6 +2691,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1114,
       en: EN_A1114,
       'en-US': EN_A1114,
+      ja: JA_A1114,
+      'ja-JP': JA_A1114,
       default: EN_A1114,
     },
     rarity: 'r2',
@@ -2191,6 +2707,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1115,
       en: EN_A1115,
       'en-US': EN_A1115,
+      ja: JA_A1115,
+      'ja-JP': JA_A1115,
       default: EN_A1115,
     },
     rarity: 'r1',
@@ -2205,6 +2723,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1116,
       en: EN_A1116,
       'en-US': EN_A1116,
+      ja: JA_A1116,
+      'ja-JP': JA_A1116,
       default: EN_A1116,
     },
     rarity: 'r2',
@@ -2219,6 +2739,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1117,
       en: EN_A1117,
       'en-US': EN_A1117,
+      ja: JA_A1117,
+      'ja-JP': JA_A1117,
       default: EN_A1117,
     },
     rarity: 'r3',
@@ -2233,6 +2755,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1118,
       en: EN_A1118,
       'en-US': EN_A1118,
+      ja: JA_A1118,
+      'ja-JP': JA_A1118,
       default: EN_A1118,
     },
     rarity: 'r1',
@@ -2247,6 +2771,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1119,
       en: EN_A1119,
       'en-US': EN_A1119,
+      ja: JA_A1119,
+      'ja-JP': JA_A1119,
       default: EN_A1119,
     },
     rarity: 'r2',
@@ -2261,6 +2787,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1120,
       en: EN_A1120,
       'en-US': EN_A1120,
+      ja: JA_A1120,
+      'ja-JP': JA_A1120,
       default: EN_A1120,
     },
     rarity: 'r1',
@@ -2275,6 +2803,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1121,
       en: EN_A1121,
       'en-US': EN_A1121,
+      ja: JA_A1121,
+      'ja-JP': JA_A1121,
       default: EN_A1121,
     },
     rarity: 'r2',
@@ -2289,6 +2819,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1122,
       en: EN_A1122,
       'en-US': EN_A1122,
+      ja: JA_A1122,
+      'ja-JP': JA_A1122,
       default: EN_A1122,
     },
     rarity: 'r3',
@@ -2303,6 +2835,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1123,
       en: EN_A1123,
       'en-US': EN_A1123,
+      ja: JA_A1123,
+      'ja-JP': JA_A1123,
       default: EN_A1123,
     },
     rarity: 'r4',
@@ -2317,6 +2851,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1124,
       en: EN_A1124,
       'en-US': EN_A1124,
+      ja: JA_A1124,
+      'ja-JP': JA_A1124,
       default: EN_A1124,
     },
     rarity: 'r1',
@@ -2331,6 +2867,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1125,
       en: EN_A1125,
       'en-US': EN_A1125,
+      ja: JA_A1125,
+      'ja-JP': JA_A1125,
       default: EN_A1125,
     },
     rarity: 'r3',
@@ -2345,6 +2883,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1126,
       en: EN_A1126,
       'en-US': EN_A1126,
+      ja: JA_A1126,
+      'ja-JP': JA_A1126,
       default: EN_A1126,
     },
     rarity: 'r2',
@@ -2359,6 +2899,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1127,
       en: EN_A1127,
       'en-US': EN_A1127,
+      ja: JA_A1127,
+      'ja-JP': JA_A1127,
       default: EN_A1127,
     },
     rarity: 'r1',
@@ -2373,6 +2915,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1128,
       en: EN_A1128,
       'en-US': EN_A1128,
+      ja: JA_A1128,
+      'ja-JP': JA_A1128,
       default: EN_A1128,
     },
     rarity: 'r3',
@@ -2387,6 +2931,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1129,
       en: EN_A1129,
       'en-US': EN_A1129,
+      ja: JA_A1129,
+      'ja-JP': JA_A1129,
       default: EN_A1129,
     },
     rarity: 'r4',
@@ -2401,6 +2947,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1130,
       en: EN_A1130,
       'en-US': EN_A1130,
+      ja: JA_A1130,
+      'ja-JP': JA_A1130,
       default: EN_A1130,
     },
     rarity: 'r1',
@@ -2415,6 +2963,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1131,
       en: EN_A1131,
       'en-US': EN_A1131,
+      ja: JA_A1131,
+      'ja-JP': JA_A1131,
       default: EN_A1131,
     },
     rarity: 'r2',
@@ -2429,6 +2979,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1132,
       en: EN_A1132,
       'en-US': EN_A1132,
+      ja: JA_A1132,
+      'ja-JP': JA_A1132,
       default: EN_A1132,
     },
     rarity: 'r3',
@@ -2443,6 +2995,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1133,
       en: EN_A1133,
       'en-US': EN_A1133,
+      ja: JA_A1133,
+      'ja-JP': JA_A1133,
       default: EN_A1133,
     },
     rarity: 'r1',
@@ -2457,6 +3011,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1134,
       en: EN_A1134,
       'en-US': EN_A1134,
+      ja: JA_A1134,
+      'ja-JP': JA_A1134,
       default: EN_A1134,
     },
     rarity: 'r1',
@@ -2471,6 +3027,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1135,
       en: EN_A1135,
       'en-US': EN_A1135,
+      ja: JA_A1135,
+      'ja-JP': JA_A1135,
       default: EN_A1135,
     },
     rarity: 'r1',
@@ -2485,6 +3043,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1136,
       en: EN_A1136,
       'en-US': EN_A1136,
+      ja: JA_A1136,
+      'ja-JP': JA_A1136,
       default: EN_A1136,
     },
     rarity: 'r2',
@@ -2499,6 +3059,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1137,
       en: EN_A1137,
       'en-US': EN_A1137,
+      ja: JA_A1137,
+      'ja-JP': JA_A1137,
       default: EN_A1137,
     },
     rarity: 'r1',
@@ -2513,6 +3075,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1138,
       en: EN_A1138,
       'en-US': EN_A1138,
+      ja: JA_A1138,
+      'ja-JP': JA_A1138,
       default: EN_A1138,
     },
     rarity: 'r2',
@@ -2527,6 +3091,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1139,
       en: EN_A1139,
       'en-US': EN_A1139,
+      ja: JA_A1139,
+      'ja-JP': JA_A1139,
       default: EN_A1139,
     },
     rarity: 'r1',
@@ -2541,6 +3107,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1140,
       en: EN_A1140,
       'en-US': EN_A1140,
+      ja: JA_A1140,
+      'ja-JP': JA_A1140,
       default: EN_A1140,
     },
     rarity: 'r2',
@@ -2555,6 +3123,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1141,
       en: EN_A1141,
       'en-US': EN_A1141,
+      ja: JA_A1141,
+      'ja-JP': JA_A1141,
       default: EN_A1141,
     },
     rarity: 'r1',
@@ -2569,6 +3139,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1142,
       en: EN_A1142,
       'en-US': EN_A1142,
+      ja: JA_A1142,
+      'ja-JP': JA_A1142,
       default: EN_A1142,
     },
     rarity: 'r2',
@@ -2583,6 +3155,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1143,
       en: EN_A1143,
       'en-US': EN_A1143,
+      ja: JA_A1143,
+      'ja-JP': JA_A1143,
       default: EN_A1143,
     },
     rarity: 'r1',
@@ -2597,6 +3171,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1144,
       en: EN_A1144,
       'en-US': EN_A1144,
+      ja: JA_A1144,
+      'ja-JP': JA_A1144,
       default: EN_A1144,
     },
     rarity: 'r2',
@@ -2611,6 +3187,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1145,
       en: EN_A1145,
       'en-US': EN_A1145,
+      ja: JA_A1145,
+      'ja-JP': JA_A1145,
       default: EN_A1145,
     },
     rarity: 'r3',
@@ -2625,6 +3203,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1146,
       en: EN_A1146,
       'en-US': EN_A1146,
+      ja: JA_A1146,
+      'ja-JP': JA_A1146,
       default: EN_A1146,
     },
     rarity: 'r4',
@@ -2639,6 +3219,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1147,
       en: EN_A1147,
       'en-US': EN_A1147,
+      ja: JA_A1147,
+      'ja-JP': JA_A1147,
       default: EN_A1147,
     },
     rarity: 'r1',
@@ -2653,6 +3235,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1148,
       en: EN_A1148,
       'en-US': EN_A1148,
+      ja: JA_A1148,
+      'ja-JP': JA_A1148,
       default: EN_A1148,
     },
     rarity: 'r2',
@@ -2667,6 +3251,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1149,
       en: EN_A1149,
       'en-US': EN_A1149,
+      ja: JA_A1149,
+      'ja-JP': JA_A1149,
       default: EN_A1149,
     },
     rarity: 'r3',
@@ -2681,6 +3267,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1150,
       en: EN_A1150,
       'en-US': EN_A1150,
+      ja: JA_A1150,
+      'ja-JP': JA_A1150,
       default: EN_A1150,
     },
     rarity: 'r2',
@@ -2695,6 +3283,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1151,
       en: EN_A1151,
       'en-US': EN_A1151,
+      ja: JA_A1151,
+      'ja-JP': JA_A1151,
       default: EN_A1151,
     },
     rarity: 'r1',
@@ -2709,6 +3299,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1152,
       en: EN_A1152,
       'en-US': EN_A1152,
+      ja: JA_A1152,
+      'ja-JP': JA_A1152,
       default: EN_A1152,
     },
     rarity: 'r2',
@@ -2723,6 +3315,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1153,
       en: EN_A1153,
       'en-US': EN_A1153,
+      ja: JA_A1153,
+      'ja-JP': JA_A1153,
       default: EN_A1153,
     },
     rarity: 'r4',
@@ -2737,6 +3331,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1154,
       en: EN_A1154,
       'en-US': EN_A1154,
+      ja: JA_A1154,
+      'ja-JP': JA_A1154,
       default: EN_A1154,
     },
     rarity: 'r1',
@@ -2751,6 +3347,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1155,
       en: EN_A1155,
       'en-US': EN_A1155,
+      ja: JA_A1155,
+      'ja-JP': JA_A1155,
       default: EN_A1155,
     },
     rarity: 'r1',
@@ -2765,6 +3363,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1156,
       en: EN_A1156,
       'en-US': EN_A1156,
+      ja: JA_A1156,
+      'ja-JP': JA_A1156,
       default: EN_A1156,
     },
     rarity: 'r1',
@@ -2779,6 +3379,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1157,
       en: EN_A1157,
       'en-US': EN_A1157,
+      ja: JA_A1157,
+      'ja-JP': JA_A1157,
       default: EN_A1157,
     },
     rarity: 'r2',
@@ -2793,6 +3395,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1158,
       en: EN_A1158,
       'en-US': EN_A1158,
+      ja: JA_A1158,
+      'ja-JP': JA_A1158,
       default: EN_A1158,
     },
     rarity: 'r2',
@@ -2807,6 +3411,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1159,
       en: EN_A1159,
       'en-US': EN_A1159,
+      ja: JA_A1159,
+      'ja-JP': JA_A1159,
       default: EN_A1159,
     },
     rarity: 'r3',
@@ -2821,6 +3427,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1160,
       en: EN_A1160,
       'en-US': EN_A1160,
+      ja: JA_A1160,
+      'ja-JP': JA_A1160,
       default: EN_A1160,
     },
     rarity: 'r1',
@@ -2835,6 +3443,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1161,
       en: EN_A1161,
       'en-US': EN_A1161,
+      ja: JA_A1161,
+      'ja-JP': JA_A1161,
       default: EN_A1161,
     },
     rarity: 'r2',
@@ -2849,6 +3459,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1162,
       en: EN_A1162,
       'en-US': EN_A1162,
+      ja: JA_A1162,
+      'ja-JP': JA_A1162,
       default: EN_A1162,
     },
     rarity: 'r1',
@@ -2863,6 +3475,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1163,
       en: EN_A1163,
       'en-US': EN_A1163,
+      ja: JA_A1163,
+      'ja-JP': JA_A1163,
       default: EN_A1163,
     },
     rarity: 'r2',
@@ -2877,6 +3491,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1164,
       en: EN_A1164,
       'en-US': EN_A1164,
+      ja: JA_A1164,
+      'ja-JP': JA_A1164,
       default: EN_A1164,
     },
     rarity: 'r1',
@@ -2891,6 +3507,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1165,
       en: EN_A1165,
       'en-US': EN_A1165,
+      ja: JA_A1165,
+      'ja-JP': JA_A1165,
       default: EN_A1165,
     },
     rarity: 'r2',
@@ -2905,6 +3523,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1166,
       en: EN_A1166,
       'en-US': EN_A1166,
+      ja: JA_A1166,
+      'ja-JP': JA_A1166,
       default: EN_A1166,
     },
     rarity: 'r1',
@@ -2919,6 +3539,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1167,
       en: EN_A1167,
       'en-US': EN_A1167,
+      ja: JA_A1167,
+      'ja-JP': JA_A1167,
       default: EN_A1167,
     },
     rarity: 'r2',
@@ -2933,6 +3555,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1168,
       en: EN_A1168,
       'en-US': EN_A1168,
+      ja: JA_A1168,
+      'ja-JP': JA_A1168,
       default: EN_A1168,
     },
     rarity: 'r3',
@@ -2947,6 +3571,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1169,
       en: EN_A1169,
       'en-US': EN_A1169,
+      ja: JA_A1169,
+      'ja-JP': JA_A1169,
       default: EN_A1169,
     },
     rarity: 'r1',
@@ -2961,6 +3587,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1170,
       en: EN_A1170,
       'en-US': EN_A1170,
+      ja: JA_A1170,
+      'ja-JP': JA_A1170,
       default: EN_A1170,
     },
     rarity: 'r2',
@@ -2975,6 +3603,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1171,
       en: EN_A1171,
       'en-US': EN_A1171,
+      ja: JA_A1171,
+      'ja-JP': JA_A1171,
       default: EN_A1171,
     },
     rarity: 'r3',
@@ -2989,6 +3619,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1172,
       en: EN_A1172,
       'en-US': EN_A1172,
+      ja: JA_A1172,
+      'ja-JP': JA_A1172,
       default: EN_A1172,
     },
     rarity: 'r1',
@@ -3003,6 +3635,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1173,
       en: EN_A1173,
       'en-US': EN_A1173,
+      ja: JA_A1173,
+      'ja-JP': JA_A1173,
       default: EN_A1173,
     },
     rarity: 'r2',
@@ -3017,6 +3651,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1174,
       en: EN_A1174,
       'en-US': EN_A1174,
+      ja: JA_A1174,
+      'ja-JP': JA_A1174,
       default: EN_A1174,
     },
     rarity: 'r1',
@@ -3031,6 +3667,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1175,
       en: EN_A1175,
       'en-US': EN_A1175,
+      ja: JA_A1175,
+      'ja-JP': JA_A1175,
       default: EN_A1175,
     },
     rarity: 'r3',
@@ -3045,6 +3683,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1176,
       en: EN_A1176,
       'en-US': EN_A1176,
+      ja: JA_A1176,
+      'ja-JP': JA_A1176,
       default: EN_A1176,
     },
     rarity: 'r1',
@@ -3059,6 +3699,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1177,
       en: EN_A1177,
       'en-US': EN_A1177,
+      ja: JA_A1177,
+      'ja-JP': JA_A1177,
       default: EN_A1177,
     },
     rarity: 'r3',
@@ -3073,6 +3715,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1178,
       en: EN_A1178,
       'en-US': EN_A1178,
+      ja: JA_A1178,
+      'ja-JP': JA_A1178,
       default: EN_A1178,
     },
     rarity: 'r1',
@@ -3087,6 +3731,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1179,
       en: EN_A1179,
       'en-US': EN_A1179,
+      ja: JA_A1179,
+      'ja-JP': JA_A1179,
       default: EN_A1179,
     },
     rarity: 'r1',
@@ -3101,6 +3747,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1180,
       en: EN_A1180,
       'en-US': EN_A1180,
+      ja: JA_A1180,
+      'ja-JP': JA_A1180,
       default: EN_A1180,
     },
     rarity: 'r2',
@@ -3115,6 +3763,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1181,
       en: EN_A1181,
       'en-US': EN_A1181,
+      ja: JA_A1181,
+      'ja-JP': JA_A1181,
       default: EN_A1181,
     },
     rarity: 'r1',
@@ -3129,6 +3779,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1182,
       en: EN_A1182,
       'en-US': EN_A1182,
+      ja: JA_A1182,
+      'ja-JP': JA_A1182,
       default: EN_A1182,
     },
     rarity: 'r3',
@@ -3143,6 +3795,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1183,
       en: EN_A1183,
       'en-US': EN_A1183,
+      ja: JA_A1183,
+      'ja-JP': JA_A1183,
       default: EN_A1183,
     },
     rarity: 'r1',
@@ -3157,6 +3811,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1184,
       en: EN_A1184,
       'en-US': EN_A1184,
+      ja: JA_A1184,
+      'ja-JP': JA_A1184,
       default: EN_A1184,
     },
     rarity: 'r2',
@@ -3171,6 +3827,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1185,
       en: EN_A1185,
       'en-US': EN_A1185,
+      ja: JA_A1185,
+      'ja-JP': JA_A1185,
       default: EN_A1185,
     },
     rarity: 'r3',
@@ -3185,6 +3843,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1186,
       en: EN_A1186,
       'en-US': EN_A1186,
+      ja: JA_A1186,
+      'ja-JP': JA_A1186,
       default: EN_A1186,
     },
     rarity: 'r1',
@@ -3199,6 +3859,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1187,
       en: EN_A1187,
       'en-US': EN_A1187,
+      ja: JA_A1187,
+      'ja-JP': JA_A1187,
       default: EN_A1187,
     },
     rarity: 'r1',
@@ -3213,6 +3875,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1188,
       en: EN_A1188,
       'en-US': EN_A1188,
+      ja: JA_A1188,
+      'ja-JP': JA_A1188,
       default: EN_A1188,
     },
     rarity: 'r3',
@@ -3227,6 +3891,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1189,
       en: EN_A1189,
       'en-US': EN_A1189,
+      ja: JA_A1189,
+      'ja-JP': JA_A1189,
       default: EN_A1189,
     },
     rarity: 'r1',
@@ -3241,6 +3907,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1190,
       en: EN_A1190,
       'en-US': EN_A1190,
+      ja: JA_A1190,
+      'ja-JP': JA_A1190,
       default: EN_A1190,
     },
     rarity: 'r1',
@@ -3255,6 +3923,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1191,
       en: EN_A1191,
       'en-US': EN_A1191,
+      ja: JA_A1191,
+      'ja-JP': JA_A1191,
       default: EN_A1191,
     },
     rarity: 'r1',
@@ -3269,6 +3939,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1192,
       en: EN_A1192,
       'en-US': EN_A1192,
+      ja: JA_A1192,
+      'ja-JP': JA_A1192,
       default: EN_A1192,
     },
     rarity: 'r1',
@@ -3283,6 +3955,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1193,
       en: EN_A1193,
       'en-US': EN_A1193,
+      ja: JA_A1193,
+      'ja-JP': JA_A1193,
       default: EN_A1193,
     },
     rarity: 'r1',
@@ -3297,6 +3971,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1194,
       en: EN_A1194,
       'en-US': EN_A1194,
+      ja: JA_A1194,
+      'ja-JP': JA_A1194,
       default: EN_A1194,
     },
     rarity: 'r1',
@@ -3311,6 +3987,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1195,
       en: EN_A1195,
       'en-US': EN_A1195,
+      ja: JA_A1195,
+      'ja-JP': JA_A1195,
       default: EN_A1195,
     },
     rarity: 'r4',
@@ -3325,6 +4003,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1196,
       en: EN_A1196,
       'en-US': EN_A1196,
+      ja: JA_A1196,
+      'ja-JP': JA_A1196,
       default: EN_A1196,
     },
     rarity: 'r1',
@@ -3339,6 +4019,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1197,
       en: EN_A1197,
       'en-US': EN_A1197,
+      ja: JA_A1197,
+      'ja-JP': JA_A1197,
       default: EN_A1197,
     },
     rarity: 'r1',
@@ -3353,6 +4035,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1198,
       en: EN_A1198,
       'en-US': EN_A1198,
+      ja: JA_A1198,
+      'ja-JP': JA_A1198,
       default: EN_A1198,
     },
     rarity: 'r1',
@@ -3367,6 +4051,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1199,
       en: EN_A1199,
       'en-US': EN_A1199,
+      ja: JA_A1199,
+      'ja-JP': JA_A1199,
       default: EN_A1199,
     },
     rarity: 'r1',
@@ -3381,6 +4067,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1200,
       en: EN_A1200,
       'en-US': EN_A1200,
+      ja: JA_A1200,
+      'ja-JP': JA_A1200,
       default: EN_A1200,
     },
     rarity: 'r2',
@@ -3395,6 +4083,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1201,
       en: EN_A1201,
       'en-US': EN_A1201,
+      ja: JA_A1201,
+      'ja-JP': JA_A1201,
       default: EN_A1201,
     },
     rarity: 'r2',
@@ -3409,6 +4099,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1202,
       en: EN_A1202,
       'en-US': EN_A1202,
+      ja: JA_A1202,
+      'ja-JP': JA_A1202,
       default: EN_A1202,
     },
     rarity: 'r2',
@@ -3423,6 +4115,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1203,
       en: EN_A1203,
       'en-US': EN_A1203,
+      ja: JA_A1203,
+      'ja-JP': JA_A1203,
       default: EN_A1203,
     },
     rarity: 'r3',
@@ -3437,6 +4131,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1204,
       en: EN_A1204,
       'en-US': EN_A1204,
+      ja: JA_A1204,
+      'ja-JP': JA_A1204,
       default: EN_A1204,
     },
     rarity: 'r2',
@@ -3451,6 +4147,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1205,
       en: EN_A1205,
       'en-US': EN_A1205,
+      ja: JA_A1205,
+      'ja-JP': JA_A1205,
       default: EN_A1205,
     },
     rarity: 'r3',
@@ -3465,6 +4163,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1206,
       en: EN_A1206,
       'en-US': EN_A1206,
+      ja: JA_A1206,
+      'ja-JP': JA_A1206,
       default: EN_A1206,
     },
     rarity: 'r1',
@@ -3479,6 +4179,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1207,
       en: EN_A1207,
       'en-US': EN_A1207,
+      ja: JA_A1207,
+      'ja-JP': JA_A1207,
       default: EN_A1207,
     },
     rarity: 'r1',
@@ -3493,6 +4195,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1208,
       en: EN_A1208,
       'en-US': EN_A1208,
+      ja: JA_A1208,
+      'ja-JP': JA_A1208,
       default: EN_A1208,
     },
     rarity: 'r1',
@@ -3507,6 +4211,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1209,
       en: EN_A1209,
       'en-US': EN_A1209,
+      ja: JA_A1209,
+      'ja-JP': JA_A1209,
       default: EN_A1209,
     },
     rarity: 'r2',
@@ -3521,6 +4227,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1210,
       en: EN_A1210,
       'en-US': EN_A1210,
+      ja: JA_A1210,
+      'ja-JP': JA_A1210,
       default: EN_A1210,
     },
     rarity: 'r3',
@@ -3535,6 +4243,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1211,
       en: EN_A1211,
       'en-US': EN_A1211,
+      ja: JA_A1211,
+      'ja-JP': JA_A1211,
       default: EN_A1211,
     },
     rarity: 'r3',
@@ -3549,6 +4259,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1212,
       en: EN_A1212,
       'en-US': EN_A1212,
+      ja: JA_A1212,
+      'ja-JP': JA_A1212,
       default: EN_A1212,
     },
     rarity: 'r1',
@@ -3563,6 +4275,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1213,
       en: EN_A1213,
       'en-US': EN_A1213,
+      ja: JA_A1213,
+      'ja-JP': JA_A1213,
       default: EN_A1213,
     },
     rarity: 'r2',
@@ -3577,6 +4291,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1214,
       en: EN_A1214,
       'en-US': EN_A1214,
+      ja: JA_A1214,
+      'ja-JP': JA_A1214,
       default: EN_A1214,
     },
     rarity: 'r1',
@@ -3591,6 +4307,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1215,
       en: EN_A1215,
       'en-US': EN_A1215,
+      ja: JA_A1215,
+      'ja-JP': JA_A1215,
       default: EN_A1215,
     },
     rarity: 'r1',
@@ -3605,6 +4323,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1216,
       en: EN_A1216,
       'en-US': EN_A1216,
+      ja: JA_A1216,
+      'ja-JP': JA_A1216,
       default: EN_A1216,
     },
     rarity: 'r1',
@@ -3619,6 +4339,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1217,
       en: EN_A1217,
       'en-US': EN_A1217,
+      ja: JA_A1217,
+      'ja-JP': JA_A1217,
       default: EN_A1217,
     },
     rarity: 'r1',
@@ -3633,6 +4355,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1218,
       en: EN_A1218,
       'en-US': EN_A1218,
+      ja: JA_A1218,
+      'ja-JP': JA_A1218,
       default: EN_A1218,
     },
     rarity: 'r1',
@@ -3647,6 +4371,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1219,
       en: EN_A1219,
       'en-US': EN_A1219,
+      ja: JA_A1219,
+      'ja-JP': JA_A1219,
       default: EN_A1219,
     },
     rarity: 'r2',
@@ -3661,6 +4387,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1220,
       en: EN_A1220,
       'en-US': EN_A1220,
+      ja: JA_A1220,
+      'ja-JP': JA_A1220,
       default: EN_A1220,
     },
     rarity: 'r2',
@@ -3675,6 +4403,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1221,
       en: EN_A1221,
       'en-US': EN_A1221,
+      ja: JA_A1221,
+      'ja-JP': JA_A1221,
       default: EN_A1221,
     },
     rarity: 'r2',
@@ -3689,6 +4419,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1222,
       en: EN_A1222,
       'en-US': EN_A1222,
+      ja: JA_A1222,
+      'ja-JP': JA_A1222,
       default: EN_A1222,
     },
     rarity: 'r2',
@@ -3703,6 +4435,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1223,
       en: EN_A1223,
       'en-US': EN_A1223,
+      ja: JA_A1223,
+      'ja-JP': JA_A1223,
       default: EN_A1223,
     },
     rarity: 'r2',
@@ -3717,6 +4451,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1224,
       en: EN_A1224,
       'en-US': EN_A1224,
+      ja: JA_A1224,
+      'ja-JP': JA_A1224,
       default: EN_A1224,
     },
     rarity: 'r2',
@@ -3731,6 +4467,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1225,
       en: EN_A1225,
       'en-US': EN_A1225,
+      ja: JA_A1225,
+      'ja-JP': JA_A1225,
       default: EN_A1225,
     },
     rarity: 'r2',
@@ -3745,6 +4483,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1226,
       en: EN_A1226,
       'en-US': EN_A1226,
+      ja: JA_A1226,
+      'ja-JP': JA_A1226,
       default: EN_A1226,
     },
     rarity: 'r2',
@@ -3759,6 +4499,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1227,
       en: EN_A1227,
       'en-US': EN_A1227,
+      ja: JA_A1227,
+      'ja-JP': JA_A1227,
       default: EN_A1227,
     },
     rarity: 's1', // ☆가 1개이므로 s1
@@ -3773,6 +4515,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1228,
       en: EN_A1228,
       'en-US': EN_A1228,
+      ja: JA_A1228,
+      'ja-JP': JA_A1228,
       default: EN_A1228,
     },
     rarity: 's1', // ☆가 1개이므로 s1
@@ -3787,6 +4531,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1229,
       en: EN_A1229,
       'en-US': EN_A1229,
+      ja: JA_A1229,
+      'ja-JP': JA_A1229,
       default: EN_A1229,
     },
     rarity: 's1', // ☆가 1개이므로 s1
@@ -3801,6 +4547,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1230,
       en: EN_A1230,
       'en-US': EN_A1230,
+      ja: JA_A1230,
+      'ja-JP': JA_A1230,
       default: EN_A1230,
     },
     rarity: 's1', // ☆가 1개이므로 s1
@@ -3815,6 +4563,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1231,
       en: EN_A1231,
       'en-US': EN_A1231,
+      ja: JA_A1231,
+      'ja-JP': JA_A1231,
       default: EN_A1231,
     },
     rarity: 's1', // ☆가 1개이므로 s1
@@ -3829,6 +4579,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1232,
       en: EN_A1232,
       'en-US': EN_A1232,
+      ja: JA_A1232,
+      'ja-JP': JA_A1232,
       default: EN_A1232,
     },
     rarity: 's1', // ☆가 1개이므로 s1
@@ -3843,6 +4595,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1233,
       en: EN_A1233,
       'en-US': EN_A1233,
+      ja: JA_A1233,
+      'ja-JP': JA_A1233,
       default: EN_A1233,
     },
     rarity: 's1', // ☆가 1개이므로 s1
@@ -3857,6 +4611,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1234,
       en: EN_A1234,
       'en-US': EN_A1234,
+      ja: JA_A1234,
+      'ja-JP': JA_A1234,
       default: EN_A1234,
     },
     rarity: 's1', // ☆가 1개이므로 s1
@@ -3871,6 +4627,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1235,
       en: EN_A1235,
       'en-US': EN_A1235,
+      ja: JA_A1235,
+      'ja-JP': JA_A1235,
       default: EN_A1235,
     },
     rarity: 's1', // ☆가 1개이므로 s1
@@ -3885,6 +4643,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1236,
       en: EN_A1236,
       'en-US': EN_A1236,
+      ja: JA_A1236,
+      'ja-JP': JA_A1236,
       default: EN_A1236,
     },
     rarity: 's1', // ☆가 1개이므로 s1
@@ -3899,6 +4659,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1237,
       en: EN_A1237,
       'en-US': EN_A1237,
+      ja: JA_A1237,
+      'ja-JP': JA_A1237,
       default: EN_A1237,
     },
     rarity: 's1', // ☆가 1개이므로 s1
@@ -3913,6 +4675,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1238,
       en: EN_A1238,
       'en-US': EN_A1238,
+      ja: JA_A1238,
+      'ja-JP': JA_A1238,
       default: EN_A1238,
     },
     rarity: 's1', // ☆가 1개이므로 s1
@@ -3927,6 +4691,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1239,
       en: EN_A1239,
       'en-US': EN_A1239,
+      ja: JA_A1239,
+      'ja-JP': JA_A1239,
       default: EN_A1239,
     },
     rarity: 's1', // ☆가 1개이므로 s1
@@ -3941,6 +4707,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1240,
       en: EN_A1240,
       'en-US': EN_A1240,
+      ja: JA_A1240,
+      'ja-JP': JA_A1240,
       default: EN_A1240,
     },
     rarity: 's1', // ☆가 1개이므로 s1
@@ -3955,6 +4723,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1241,
       en: EN_A1241,
       'en-US': EN_A1241,
+      ja: JA_A1241,
+      'ja-JP': JA_A1241,
       default: EN_A1241,
     },
     rarity: 's1', // ☆가 1개이므로 s1
@@ -3969,6 +4739,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1242,
       en: EN_A1242,
       'en-US': EN_A1242,
+      ja: JA_A1242,
+      'ja-JP': JA_A1242,
       default: EN_A1242,
     },
     rarity: 's1', // ☆가 1개이므로 s1
@@ -3983,6 +4755,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1243,
       en: EN_A1243,
       'en-US': EN_A1243,
+      ja: JA_A1243,
+      'ja-JP': JA_A1243,
       default: EN_A1243,
     },
     rarity: 's1', // ☆가 1개이므로 s1
@@ -3997,6 +4771,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1244,
       en: EN_A1244,
       'en-US': EN_A1244,
+      ja: JA_A1244,
+      'ja-JP': JA_A1244,
       default: EN_A1244,
     },
     rarity: 's1', // ☆가 1개이므로 s1
@@ -4011,6 +4787,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1245,
       en: EN_A1245,
       'en-US': EN_A1245,
+      ja: JA_A1245,
+      'ja-JP': JA_A1245,
       default: EN_A1245,
     },
     rarity: 's1', // ☆가 1개이므로 s1
@@ -4025,6 +4803,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1246,
       en: EN_A1246,
       'en-US': EN_A1246,
+      ja: JA_A1246,
+      'ja-JP': JA_A1246,
       default: EN_A1246,
     },
     rarity: 's1', // ☆가 1개이므로 s1
@@ -4039,6 +4819,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1247,
       en: EN_A1247,
       'en-US': EN_A1247,
+      ja: JA_A1247,
+      'ja-JP': JA_A1247,
       default: EN_A1247,
     },
     rarity: 's1', // ☆가 1개이므로 s1
@@ -4053,6 +4835,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1248,
       en: EN_A1248,
       'en-US': EN_A1248,
+      ja: JA_A1248,
+      'ja-JP': JA_A1248,
       default: EN_A1248,
     },
     rarity: 's1', // ☆가 1개이므로 s1
@@ -4067,6 +4851,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1249,
       en: EN_A1249,
       'en-US': EN_A1249,
+      ja: JA_A1249,
+      'ja-JP': JA_A1249,
       default: EN_A1249,
     },
     rarity: 's1', // ☆가 1개이므로 s1
@@ -4081,6 +4867,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1250,
       en: EN_A1250,
       'en-US': EN_A1250,
+      ja: JA_A1250,
+      'ja-JP': JA_A1250,
       default: EN_A1250,
     },
     rarity: 's1', // ☆가 1개이므로 s1
@@ -4095,6 +4883,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1251,
       en: EN_A1251,
       'en-US': EN_A1251,
+      ja: JA_A1251,
+      'ja-JP': JA_A1251,
       default: EN_A1251,
     },
     rarity: 's2', // ☆가 2개이므로 s2
@@ -4109,6 +4899,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1252,
       en: EN_A1252,
       'en-US': EN_A1252,
+      ja: JA_A1252,
+      'ja-JP': JA_A1252,
       default: EN_A1252,
     },
     rarity: 's2', // ☆가 2개이므로 s2
@@ -4123,6 +4915,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1253,
       en: EN_A1253,
       'en-US': EN_A1253,
+      ja: JA_A1253,
+      'ja-JP': JA_A1253,
       default: EN_A1253,
     },
     rarity: 's2', // ☆가 2개이므로 s2
@@ -4137,6 +4931,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1254,
       en: EN_A1254,
       'en-US': EN_A1254,
+      ja: JA_A1254,
+      'ja-JP': JA_A1254,
       default: EN_A1254,
     },
     rarity: 's2', // ☆가 2개이므로 s2
@@ -4151,6 +4947,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1255,
       en: EN_A1255,
       'en-US': EN_A1255,
+      ja: JA_A1255,
+      'ja-JP': JA_A1255,
       default: EN_A1255,
     },
     rarity: 's2', // ☆가 2개이므로 s2
@@ -4165,6 +4963,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1256,
       en: EN_A1256,
       'en-US': EN_A1256,
+      ja: JA_A1256,
+      'ja-JP': JA_A1256,
       default: EN_A1256,
     },
     rarity: 's2', // ☆가 2개이므로 s2
@@ -4179,6 +4979,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1257,
       en: EN_A1257,
       'en-US': EN_A1257,
+      ja: JA_A1257,
+      'ja-JP': JA_A1257,
       default: EN_A1257,
     },
     rarity: 's2', // ☆가 2개이므로 s2
@@ -4193,6 +4995,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1258,
       en: EN_A1258,
       'en-US': EN_A1258,
+      ja: JA_A1258,
+      'ja-JP': JA_A1258,
       default: EN_A1258,
     },
     rarity: 's2', // ☆가 2개이므로 s2
@@ -4207,6 +5011,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1259,
       en: EN_A1259,
       'en-US': EN_A1259,
+      ja: JA_A1259,
+      'ja-JP': JA_A1259,
       default: EN_A1259,
     },
     rarity: 's2', // ☆가 2개이므로 s2
@@ -4221,6 +5027,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1260,
       en: EN_A1260,
       'en-US': EN_A1260,
+      ja: JA_A1260,
+      'ja-JP': JA_A1260,
       default: EN_A1260,
     },
     rarity: 's2', // ☆가 2개이므로 s2
@@ -4235,6 +5043,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1260,
       en: EN_A1260,
       'en-US': EN_A1260,
+      ja: JA_A1260,
+      'ja-JP': JA_A1260,
       default: EN_A1260,
     },
     rarity: 's2', // ☆가 2개이므로 s2
@@ -4249,6 +5059,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1261,
       en: EN_A1261,
       'en-US': EN_A1261,
+      ja: JA_A1261,
+      'ja-JP': JA_A1261,
       default: EN_A1261,
     },
     rarity: 's2', // ☆가 2개이므로 s2
@@ -4263,6 +5075,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1262,
       en: EN_A1262,
       'en-US': EN_A1262,
+      ja: JA_A1262,
+      'ja-JP': JA_A1262,
       default: EN_A1262,
     },
     rarity: 's2', // ☆가 2개이므로 s2
@@ -4277,6 +5091,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1263,
       en: EN_A1263,
       'en-US': EN_A1263,
+      ja: JA_A1263,
+      'ja-JP': JA_A1263,
       default: EN_A1263,
     },
     rarity: 's2', // ☆가 2개이므로 s2
@@ -4291,6 +5107,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1264,
       en: EN_A1264,
       'en-US': EN_A1264,
+      ja: JA_A1264,
+      'ja-JP': JA_A1264,
       default: EN_A1264,
     },
     rarity: 's2', // ☆가 2개이므로 s2
@@ -4305,6 +5123,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1265,
       en: EN_A1265,
       'en-US': EN_A1265,
+      ja: JA_A1265,
+      'ja-JP': JA_A1265,
       default: EN_A1265,
     },
     rarity: 's2', // ☆가 2개이므로 s2
@@ -4319,6 +5139,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1266,
       en: EN_A1266,
       'en-US': EN_A1266,
+      ja: JA_A1266,
+      'ja-JP': JA_A1266,
       default: EN_A1266,
     },
     rarity: 's2', // ☆가 2개이므로 s2
@@ -4333,6 +5155,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1267,
       en: EN_A1267,
       'en-US': EN_A1267,
+      ja: JA_A1267,
+      'ja-JP': JA_A1267,
       default: EN_A1267,
     },
     rarity: 's2', // ☆가 2개이므로 s2
@@ -4347,6 +5171,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1268,
       en: EN_A1268,
       'en-US': EN_A1268,
+      ja: JA_A1268,
+      'ja-JP': JA_A1268,
       default: EN_A1268,
     },
     rarity: 's2', // ☆가 2개이므로 s2
@@ -4361,6 +5187,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1269,
       en: EN_A1269,
       'en-US': EN_A1269,
+      ja: JA_A1269,
+      'ja-JP': JA_A1269,
       default: EN_A1269,
     },
     rarity: 's2', // ☆가 2개이므로 s2
@@ -4375,6 +5203,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1270,
       en: EN_A1270,
       'en-US': EN_A1270,
+      ja: JA_A1270,
+      'ja-JP': JA_A1270,
       default: EN_A1270,
     },
     rarity: 's2', // ☆가 2개이므로 s2
@@ -4389,6 +5219,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1271,
       en: EN_A1271,
       'en-US': EN_A1271,
+      ja: JA_A1271,
+      'ja-JP': JA_A1271,
       default: EN_A1271,
     },
     rarity: 's2', // ☆가 2개이므로 s2
@@ -4403,6 +5235,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1272,
       en: EN_A1272,
       'en-US': EN_A1272,
+      ja: JA_A1272,
+      'ja-JP': JA_A1272,
       default: EN_A1272,
     },
     rarity: 's2', // ☆가 2개이므로 s2
@@ -4417,6 +5251,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1273,
       en: EN_A1273,
       'en-US': EN_A1273,
+      ja: JA_A1273,
+      'ja-JP': JA_A1273,
       default: EN_A1273,
     },
     rarity: 's2', // ☆가 2개이므로 s2
@@ -4431,6 +5267,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1274,
       en: EN_A1274,
       'en-US': EN_A1274,
+      ja: JA_A1274,
+      'ja-JP': JA_A1274,
       default: EN_A1274,
     },
     rarity: 's2', // ☆가 2개이므로 s2
@@ -4445,6 +5283,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1275,
       en: EN_A1275,
       'en-US': EN_A1275,
+      ja: JA_A1275,
+      'ja-JP': JA_A1275,
       default: EN_A1275,
     },
     rarity: 's2', // ☆가 2개이므로 s2
@@ -4459,6 +5299,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1276,
       en: EN_A1276,
       'en-US': EN_A1276,
+      ja: JA_A1276,
+      'ja-JP': JA_A1276,
       default: EN_A1276,
     },
     rarity: 's2', // ☆가 2개이므로 s2
@@ -4473,6 +5315,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1277,
       en: EN_A1277,
       'en-US': EN_A1277,
+      ja: JA_A1277,
+      'ja-JP': JA_A1277,
       default: EN_A1277,
     },
     rarity: 's2', // ☆가 2개이므로 s2
@@ -4487,6 +5331,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1278,
       en: EN_A1278,
       'en-US': EN_A1278,
+      ja: JA_A1278,
+      'ja-JP': JA_A1278,
       default: EN_A1278,
     },
     rarity: 's2', // ☆가 2개이므로 s2
@@ -4501,6 +5347,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1279,
       en: EN_A1279,
       'en-US': EN_A1279,
+      ja: JA_A1279,
+      'ja-JP': JA_A1279,
       default: EN_A1279,
     },
     rarity: 's2', // ☆가 2개이므로 s2
@@ -4515,6 +5363,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1280,
       en: EN_A1280,
       'en-US': EN_A1280,
+      ja: JA_A1280,
+      'ja-JP': JA_A1280,
       default: EN_A1280,
     },
     rarity: 's3', // ☆가 3개이므로 s3
@@ -4529,6 +5379,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1281,
       en: EN_A1281,
       'en-US': EN_A1281,
+      ja: JA_A1281,
+      'ja-JP': JA_A1281,
       default: EN_A1281,
     },
     rarity: 's3', // ☆가 3개이므로 s3
@@ -4543,6 +5395,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1282,
       en: EN_A1282,
       'en-US': EN_A1282,
+      ja: JA_A1282,
+      'ja-JP': JA_A1282,
       default: EN_A1282,
     },
     rarity: 's3', // ☆가 3개이므로 s3
@@ -4557,6 +5411,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1283,
       en: EN_A1283,
       'en-US': EN_A1283,
+      ja: JA_A1283,
+      'ja-JP': JA_A1283,
       default: EN_A1283,
     },
     rarity: 's3', // ☆가 3개이므로 s3
@@ -4571,6 +5427,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1284,
       en: EN_A1284,
       'en-US': EN_A1284,
+      ja: JA_A1284,
+      'ja-JP': JA_A1284,
       default: EN_A1284,
     },
     rarity: 'crown', // ♕은 왕관 등급
@@ -4585,6 +5443,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1285,
       en: EN_A1285,
       'en-US': EN_A1285,
+      ja: JA_A1285,
+      'ja-JP': JA_A1285,
       default: EN_A1285,
     },
     rarity: 'crown', // ♕은 왕관 등급
@@ -4599,6 +5459,8 @@ export const A1_CARD_LIST: CardInfo[] = [
       'ko-KR': KO_A1286,
       en: EN_A1286,
       'en-US': EN_A1286,
+      ja: JA_A1286,
+      'ja-JP': JA_A1286,
       default: EN_A1286,
     },
     rarity: 'crown', // ♕은 왕관 등급
