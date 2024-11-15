@@ -21,24 +21,24 @@ interface PackOpenProps {
   isOnePack: boolean;
 }
 
-const packMapper: Record<PackType, string> = {
-  charizard: i18n.t('constant.pack.a1.charizard'),
-  pikachu: i18n.t('constant.pack.a1.pikachu'),
-  mewtwo: i18n.t('constant.pack.a1.mewtwo'),
+const getPackDescription = (
+  language: Language,
+  type: PackType,
+  count: number
+) => {
+  const packMapper: Record<PackType, string> = {
+    charizard: i18n.t('constant.pack.a1.charizard'),
+    pikachu: i18n.t('constant.pack.a1.pikachu'),
+    mewtwo: i18n.t('constant.pack.a1.mewtwo'),
+  };
+  if (language === 'en' || language === 'en-US') {
+    if (count === 1)
+      return ' a ' + packMapper[type] + ' ' + i18n.t('constant.unit.pack');
+    return packMapper[type] + ` ${count} ` + i18n.t('constant.unit.packs');
+  }
+  return `${packMapper[type]} ${count}${i18n.t('constant.unit.pack')}`;
 };
 
-const getPackSpacing = (language: Language) => {
-  const hasSpace = language === 'en' || language === 'en-US';
-  return hasSpace ? ' ' : '';
-};
-
-const getPackUnit = (language: Language, count: number) => {
-  const isPack = language !== 'en' && language !== 'en-US';
-  if (isPack) return i18n.t('constant.unit.pack');
-  return count === 1
-    ? i18n.t('constant.unit.pack')
-    : i18n.t('constant.unit.packs');
-};
 export default function PackOpen(props: PackOpenProps) {
   const { t } = useTranslation();
   const { packs, goOpen, goSelect, nowPackType, isOnePack } = props;
@@ -133,21 +133,14 @@ export default function PackOpen(props: PackOpenProps) {
       </div>
 
       <BottomButtonContainer direction='column'>
-        {isLastCard && isOnePack && (
+        {isLastCard && (
           <Button css={S.buttonAnimation} primary onClick={reopen}>
             {t('pack-simulator.open-pack.reopen')}
-            {`\n(${packMapper[nowPackType]} 1${getPackSpacing(
-              language
-            )}${getPackUnit(language, 1)})`}
-          </Button>
-        )}
-        {isLastCard && !isOnePack && (
-          <Button css={S.buttonAnimation} primary onClick={reopen}>
-            {t('pack-simulator.open-pack.reopen')}
-            {`\n(${packMapper[nowPackType]} ${packCount}${getPackSpacing(
-              language
-            )} + ${getPackUnit(language, packCount)}
-            })`}
+            {` (${getPackDescription(
+              language,
+              nowPackType,
+              isOnePack ? 1 : packCount
+            )})`}
           </Button>
         )}
         <Button

@@ -1,6 +1,8 @@
 import { css, keyframes } from '@emotion/react';
 
 export const layout = css`
+  transform: translateY(-40px);
+
   display: flex;
   flex-direction: column;
   align-items: center;
