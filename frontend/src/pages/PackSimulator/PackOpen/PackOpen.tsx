@@ -27,6 +27,12 @@ const packMapper: Record<PackType, string> = {
   mewtwo: i18n.t('constant.pack.a1.mewtwo'),
 };
 
+// TODO: ja, jp-ja 제외하기
+const getPackSpacing = (language: Language | 'ja' | 'ja-JP') => {
+  const hasSpace = language !== 'en' && language !== 'en-US';
+  return hasSpace ? ' ' : '';
+};
+
 export default function PackOpen(props: PackOpenProps) {
   const { t } = useTranslation();
   const { packs, goOpen, goSelect, nowPackType, isOnePack } = props;
@@ -57,6 +63,8 @@ export default function PackOpen(props: PackOpenProps) {
     initPackIndex();
     goSelect();
   }, [countLeftCards, initPackIndex, goSelect]);
+
+  const language = i18n.language as Language | 'ja' | 'ja-JP';
 
   useEffect(() => {
     function handleKeyDown(event: KeyboardEvent) {
@@ -122,18 +130,17 @@ export default function PackOpen(props: PackOpenProps) {
         {isLastCard && isOnePack && (
           <Button css={S.buttonAnimation} primary onClick={reopen}>
             {t('pack-simulator.open-pack.reopen')}
-            {`\n(${packMapper[nowPackType]} 1${
-              i18n.language === 'ko' || i18n.language === 'ko-KR' ? '' : ' '
-            }${t('constant.unit.pack')})`}
+            {`\n(${packMapper[nowPackType]} 1${getPackSpacing(language)}${t(
+              'constant.unit.pack'
+            )})`}
           </Button>
         )}
         {isLastCard && !isOnePack && (
           <Button css={S.buttonAnimation} primary onClick={reopen}>
             {t('pack-simulator.open-pack.reopen')}
-            {`\n(${packMapper[nowPackType]} ${packCount}${
-              i18n.language === 'ko' || i18n.language === 'ko-KR'
-                ? '' + t('constant.unit.pack')
-                : ' ' + t('constant.unit.packs')
+            {`\n(${packMapper[nowPackType]} ${packCount}${getPackSpacing(
+              language
+            )} + t('constant.unit.packs')
             })`}
           </Button>
         )}
