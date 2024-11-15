@@ -62,8 +62,8 @@ const getOnePackStr = (language: Language | 'ja' | 'ja-JP') => {
   }
   return (
     i18n.t('pack-simulator.select-pack.open-pack') +
-    ` ${1} ` +
-    i18n.t('constant.unit.packs')
+    ` a ` +
+    i18n.t('constant.unit.pack')
   );
 };
 
