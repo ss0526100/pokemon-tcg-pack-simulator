@@ -15,6 +15,7 @@
   },
   "get-challenge": {
     "choose-challenge": {
+      "refresh-list": "リスト 更新",
       "confirm-content": {
         "header": "選択しますか？",
         "cancel": "キャンセル",

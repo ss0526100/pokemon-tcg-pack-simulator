@@ -104,6 +104,7 @@ export default function GetChallenge() {
             onSelect={selectPack}
             packs={packs}
             ref={contentRef}
+            refreshPacks={refreshPacks}
           />
         )}
         {phase === 'play' && (

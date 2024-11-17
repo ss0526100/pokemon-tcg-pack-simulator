@@ -15,6 +15,7 @@
   },
   "get-challenge": {
     "choose-challenge": {
+      "refresh-list": "Refresh List",
       "confirm-content": {
         "header": "Would you like to select this?",
         "cancel": "Cancel",

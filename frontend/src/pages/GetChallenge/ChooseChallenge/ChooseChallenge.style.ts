@@ -31,3 +31,11 @@ export const container = css`
     transform: none;
   }
 `;
+
+export const refreshButton = css`
+  display: none;
+
+  @media (width<=600px) {
+    display: block;
+  }
+`;
