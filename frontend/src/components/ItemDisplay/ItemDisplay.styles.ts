@@ -5,20 +5,22 @@ export const container = css`
 
   display: flex;
   flex-direction: column;
-  gap: 10%;
+  gap: 2%;
   align-items: center;
 
   width: 100%;
   height: 100%;
+  padding: 20px 0 0;
 `;
 
 export const rowContainer = css`
-  position: absolute;
+  position: relative;
 
   display: flex;
   flex-direction: row;
   gap: 10px;
 
+  width: 100%;
   height: 45%;
 `;
 
@@ -28,7 +30,9 @@ export const firstRow = css`
 
 export const secondRow = css`
   ${rowContainer};
+  position: absolute;
   top: 50%;
+  left: 16.7%;
 `;
 
 export const childContainer = css`
@@ -36,6 +40,11 @@ export const childContainer = css`
   flex-direction: column;
   align-items: center;
 
-  max-width: 180px;
-  height: 100%;
+  aspect-ratio: 1 / 1.395;
+  width: 32%;
+
+  & > img {
+    width: 100%;
+    height: auto;
+  }
 `;
