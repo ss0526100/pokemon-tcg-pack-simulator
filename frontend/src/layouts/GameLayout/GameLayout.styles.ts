@@ -32,6 +32,7 @@ export const content = css`
   @media (width <= 600px) {
     width: 100vw;
     height: 100vh;
+    padding: 0;
   }
 `;
 

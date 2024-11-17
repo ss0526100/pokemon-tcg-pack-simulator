@@ -8,6 +8,10 @@ export const layout = css`
 
   height: 600px;
   padding: 3rem 0 0;
+
+  @media (width <= 600px) {
+    padding: 0;
+  }
 `;
 
 export const contentContainer = css`
