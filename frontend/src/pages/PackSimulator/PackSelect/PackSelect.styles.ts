@@ -47,7 +47,10 @@ export const svgContainer = css`
 `;
 
 export const button = css`
-  font-size: 15px;
+  @media (width <= 600px) {
+    padding: 20px 10px;
+    font-size: 18px;
+  }
 `;
 
 const bounce = keyframes`
