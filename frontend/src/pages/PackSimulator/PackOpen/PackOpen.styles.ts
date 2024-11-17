@@ -9,11 +9,25 @@ export const layout = css`
 
   height: 600px;
   padding: 3rem 0;
+
+  @media (width <= 600px) {
+    transform: translateY(0);
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
 `;
 
 export const sectionContainer = css`
   display: flex;
   gap: 0.5rem;
+  margin: 0 0 50px;
+
+  @media (width<=600px) {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+  }
 `;
 export const selectContainer = (isViewed: boolean) => css`
   ${isViewed ? '' : 'opacity:0;'}
@@ -22,8 +36,13 @@ export const selectContainer = (isViewed: boolean) => css`
   width: 50px;
   border-radius: 40px;
 
-  &:hover {
+  &:active {
     background-color: #0000003f;
+  }
+
+  @media (width <= 600px) {
+    z-index: 1;
+    height: 100%;
   }
 `;
 
@@ -48,12 +67,46 @@ export const buttonAnimation = css`
 `;
 
 export const rarityContainer = css`
+  position: absolute;
+  bottom: -60px;
+  left: 20px;
   display: flex;
-  width: 100%;
-  padding: 10px 80px 0;
 `;
 
+export const cardInfoContainer = css`
+  position: relative;
+
+  @media (width<=600px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 70%;
+  }
+`;
 export const cardContainer = css`
+  position: relative;
   height: 33vh;
   max-height: 335px;
+
+  @media (width<=600px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: auto;
+    height: 60vh;
+    max-height: none;
+  }
+`;
+
+export const bottomContainer = css`
+  @media (width<=600px) {
+    position: fixed;
+    bottom: 0;
+    display: none;
+    padding: 2rem;
+  }
 `;

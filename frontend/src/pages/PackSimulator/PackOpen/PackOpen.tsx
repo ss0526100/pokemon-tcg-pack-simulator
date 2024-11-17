@@ -33,7 +33,7 @@ const getPackDescription = (
   };
   if (language === 'en' || language === 'en-US') {
     if (count === 1)
-      return ' a ' + packMapper[type] + ' ' + i18n.t('constant.unit.pack');
+      return 'A ' + packMapper[type] + ' ' + i18n.t('constant.unit.pack');
     return packMapper[type] + ` ${count} ` + i18n.t('constant.unit.packs');
   }
   return `${packMapper[type]} ${count}${i18n.t('constant.unit.pack')}`;
@@ -115,8 +115,13 @@ export default function PackOpen(props: PackOpenProps) {
             </div>
           )}
         </div>
-        <div css={S.cardContainer}>
-          <Card cardInfo={nowCard} onClick={setNextCard} />
+        <div css={S.cardInfoContainer}>
+          <div css={S.cardContainer}>
+            <Card cardInfo={nowCard} onClick={setNextCard} />
+            <div css={S.rarityContainer}>
+              <Rarity rarity={nowCard.rarity} size={40} />
+            </div>
+          </div>
         </div>
         <div css={S.selectContainer(!isLastCard)} onClick={setNextCard}>
           {!isLastCard && (
@@ -126,13 +131,8 @@ export default function PackOpen(props: PackOpenProps) {
           )}
         </div>
       </div>
-      {`(${cardIndex}/${cardLength})`}
 
-      <div css={S.rarityContainer}>
-        <Rarity rarity={nowCard.rarity} size={30} />
-      </div>
-
-      <BottomButtonContainer direction='column'>
+      <BottomButtonContainer direction='column' css={S.bottomContainer}>
         {isLastCard && (
           <Button css={S.buttonAnimation} primary onClick={reopen}>
             {t('pack-simulator.open-pack.reopen')}

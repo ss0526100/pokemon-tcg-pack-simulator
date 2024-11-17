@@ -15,35 +15,38 @@ export default function Rarity(props: RarityProps) {
   switch (rarity) {
     case 'crown':
       return (
-        <div>
+        <div css={S.container}>
           <img css={S.rarity(size)} src={crownImg} alt='왕관' />
         </div>
       );
+
     case 's3':
       return (
-        <div>
+        <div css={S.container}>
           <img css={S.rarity(size)} src={starImg} alt='별' />
           <img css={S.rarity(size)} src={starImg} alt='별' />
           <img css={S.rarity(size)} src={starImg} alt='별' />
         </div>
       );
+
     case 's2':
       return (
-        <div>
+        <div css={S.container}>
           <img css={S.rarity(size)} src={starImg} alt='별' />
           <img css={S.rarity(size)} src={starImg} alt='별' />
         </div>
       );
+
     case 's1':
       return (
-        <div>
+        <div css={S.container}>
           <img css={S.rarity(size)} src={starImg} alt='별' />
         </div>
       );
 
     case 'r4':
       return (
-        <div>
+        <div css={S.container}>
           <img css={S.rarity(size)} src={rarityImg} alt='다이아' />
           <img css={S.rarity(size)} src={rarityImg} alt='다이아' />
           <img css={S.rarity(size)} src={rarityImg} alt='다이아' />
@@ -53,7 +56,7 @@ export default function Rarity(props: RarityProps) {
 
     case 'r3':
       return (
-        <div>
+        <div css={S.container}>
           <img css={S.rarity(size)} src={rarityImg} alt='다이아' />
           <img css={S.rarity(size)} src={rarityImg} alt='다이아' />
           <img css={S.rarity(size)} src={rarityImg} alt='다이아' />
@@ -62,7 +65,7 @@ export default function Rarity(props: RarityProps) {
 
     case 'r2':
       return (
-        <div>
+        <div css={S.container}>
           <img css={S.rarity(size)} src={rarityImg} alt='다이아' />
           <img css={S.rarity(size)} src={rarityImg} alt='다이아' />
         </div>
@@ -70,7 +73,7 @@ export default function Rarity(props: RarityProps) {
 
     case 'r1':
       return (
-        <div>
+        <div css={S.container}>
           <img css={S.rarity(size)} src={rarityImg} alt='다이아' />
         </div>
       );
