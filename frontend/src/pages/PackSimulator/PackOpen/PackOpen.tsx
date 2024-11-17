@@ -171,6 +171,18 @@ export default function PackOpen(props: PackOpenProps) {
         </div>
       </div>
 
+      <BottomButtonContainer direction='row' css={S.mobileBottomFixed}>
+        {isLastCard && (
+          <Button
+            css={S.buttonAnimation}
+            onClick={handleGoSelect}
+            key={'selectButton'}
+          >
+            {t('pack-simulator.open-pack.choose-pack')}
+          </Button>
+        )}
+      </BottomButtonContainer>
+
       <BottomButtonContainer direction='column' css={S.bottomContainer}>
         {isLastCard && (
           <Button css={S.buttonAnimation} primary onClick={reopen}>

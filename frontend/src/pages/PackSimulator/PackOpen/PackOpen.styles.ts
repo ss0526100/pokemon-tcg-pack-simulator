@@ -24,6 +24,7 @@ export const sectionContainer = css`
   margin: 0 0 50px;
 
   @media (width<=600px) {
+    align-items: center;
     width: 100%;
     height: 100vh;
     margin: 0;
@@ -42,7 +43,7 @@ export const selectContainer = (isViewed: boolean) => css`
 
   @media (width <= 600px) {
     z-index: 1;
-    height: 100%;
+    height: 80%;
   }
 `;
 
@@ -114,6 +115,17 @@ export const bottomContainer = css`
     position: fixed;
     bottom: 0;
     display: none;
+    padding: 2rem;
+  }
+`;
+
+export const mobileBottomFixed = css`
+  display: none;
+
+  @media (width<=600px) {
+    position: fixed;
+    bottom: 0;
+    display: block;
     padding: 2rem;
   }
 `;
