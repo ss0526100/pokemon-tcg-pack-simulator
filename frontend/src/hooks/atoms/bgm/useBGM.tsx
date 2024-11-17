@@ -34,8 +34,22 @@ export default function useBGM(page: Page) {
     audio.current.loop = true;
     audio.current.play();
 
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === 'hidden') {
+        if (audio.current) {
+          audio.current.pause(); // 화면이 비활성화되면 오디오 멈추기
+        }
+      } else {
+        if (audio.current) {
+          audio.current.play(); // 화면이 활성화되면 오디오 재생 (필요시)
+        }
+      }
+    };
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+
     return () => {
       audio.current.pause();
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
     };
   }, [nowBGM, isPlayingBGM, page, setNowBGM]);
 
