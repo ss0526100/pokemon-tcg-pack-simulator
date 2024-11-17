@@ -5,8 +5,10 @@ export const hamburger = css`
 
   @media (width<=600px) {
     position: fixed;
+    z-index: 2;
     top: 20px;
     right: 20px;
+
     display: block;
   }
 `;
@@ -103,5 +105,19 @@ export const optionSpan = css`
     display: inline;
     font-size: 13px;
     line-height: 100%;
+  }
+`;
+
+export const line = css`
+  display: none;
+
+  @media (width<=600px) {
+    display: block;
+
+    width: 100%;
+    height: 1px;
+    margin: 10px 0;
+
+    background-color: rgb(0 0 0 / 20%);
   }
 `;

@@ -65,3 +65,7 @@ MobileTopRightHamburger.Option = function Option(props: OptionProps) {
     </>
   );
 };
+
+MobileTopRightHamburger.Line = function Line() {
+  return <div css={S.line} />;
+};
