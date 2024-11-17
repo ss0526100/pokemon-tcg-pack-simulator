@@ -1,10 +1,11 @@
 import * as S from './BottomButtonContainer.style';
 
+import { HTMLAttributes, ReactElement } from 'react';
+
 import Button from '../Button/Button';
-import { ReactElement } from 'react';
 
 type ChildrenType = ReactElement<typeof Button> | null | boolean;
-interface BottomButtonContainerProps {
+interface BottomButtonContainerProps extends HTMLAttributes<HTMLDivElement> {
   children: ChildrenType | ChildrenType[];
   direction?: 'column' | 'row';
 }
@@ -12,7 +13,11 @@ interface BottomButtonContainerProps {
 export default function BottomButtonContainer(
   props: BottomButtonContainerProps
 ) {
-  const { direction = 'column', children } = props;
+  const { direction = 'column', children, ...restProps } = props;
 
-  return <div css={S.container(direction)}>{children}</div>;
+  return (
+    <div css={S.container(direction)} {...restProps}>
+      {children}
+    </div>
+  );
 }

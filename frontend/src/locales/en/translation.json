@@ -1,7 +1,7 @@
 {
   "title": {
     "pack-simulator": "Pokémon Pack Simulator",
-    "get-challenge": "Pokémon Get Challenge"
+    "get-challenge": "Pokémon Wonder Pick"
   },
   "article": {
     "install-button": "Install Pokémon TCG Pocket",
@@ -15,6 +15,7 @@
   },
   "get-challenge": {
     "choose-challenge": {
+      "refresh-list": "Refresh List",
       "confirm-content": {
         "header": "Would you like to select this?",
         "cancel": "Cancel",
@@ -22,8 +23,8 @@
       }
     },
     "play-challenge": {
-      "re-unpack": "Challenge Again",
-      "chooseChallenge": "Choose Challenge"
+      "re-unpack": "Pick Again",
+      "chooseChallenge": "Choose Other Wonder Pick"
     },
     "toolbar": {
       "go-pack-simulator": "Open Packs",
@@ -36,7 +37,7 @@
     "toolbar": {
       "adjust-pack-count-1": "Change Pack Quantity",
       "adjust-pack-count-2": "",
-      "go-get-challenge": "Get Challenge"
+      "go-get-challenge": "Wonder Pick"
     },
     "adjust-pack-count-content": {
       "confirm": "Apply"
@@ -66,7 +67,7 @@
     "statistic": {
       "title": "Statistics",
       "opened-pack": "Opened Packs",
-      "get-challenge-cnt": "Get Challenge",
+      "get-challenge-cnt": "Wonder Picks",
       "gain-cards": "Obtained Cards",
       "reset": "Reset",
       "confirm": "OK"

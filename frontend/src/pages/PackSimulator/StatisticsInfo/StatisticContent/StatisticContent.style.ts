@@ -15,6 +15,10 @@ export const itemContainer = css`
   display: flex;
   flex-direction: column;
   gap: 1rem;
+
+  @media (width<=600px) {
+    overflow-y: scroll;
+  }
 `;
 
 export const button = css`
@@ -37,4 +41,8 @@ export const container = css`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (width<=600px) {
+    height: 80vh;
+  }
 `;

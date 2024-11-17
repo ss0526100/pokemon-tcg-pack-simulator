@@ -10,4 +10,8 @@ export const span = css`
   font-size: 15px;
   line-height: 120%;
   text-align: center;
+
+  @media (width <= 600px) {
+    display: none;
+  }
 `;

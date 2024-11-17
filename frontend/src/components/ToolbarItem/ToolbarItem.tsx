@@ -1,6 +1,6 @@
 import * as S from './ToolbarItem.style';
 
-import { HTMLAttributes, ReactNode } from 'react';
+import { Fragment, HTMLAttributes, ReactNode } from 'react';
 
 import Button from '../Button/Button';
 
@@ -20,10 +20,10 @@ export default function ToolbarItem(props: ToolbarItemProps) {
       <span css={S.toolbarSpan}>
         {typeof description === 'string'
           ? description.split(' ').map(str => (
-              <>
+              <Fragment key={str}>
                 {str}
                 <br />
-              </>
+              </Fragment>
             ))
           : description}
       </span>

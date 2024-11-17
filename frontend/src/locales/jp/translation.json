@@ -1,7 +1,7 @@
 {
   "title": {
-    "pack-simulator": "ポケモンカードパックシミュレーター",
-    "get-challenge": "ゲットチャレンジ"
+    "pack-simulator": "ポケポケカードパックシミュレーター",
+    "get-challenge": "ポケポケゲットチャレンジ"
   },
   "article": {
     "install-button": "Pokémon TCG Pocket インストール",
@@ -15,6 +15,7 @@
   },
   "get-challenge": {
     "choose-challenge": {
+      "refresh-list": "リスト 更新",
       "confirm-content": {
         "header": "選択しますか？",
         "cancel": "キャンセル",
@@ -22,7 +23,7 @@
       }
     },
     "play-challenge": {
-      "re-unpack": "もう一度挑戦",
+      "re-unpack": "もう一度チャレンジ",
       "chooseChallenge": "チャレンジを選択"
     },
     "toolbar": {

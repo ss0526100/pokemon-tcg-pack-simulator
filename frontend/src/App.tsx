@@ -28,19 +28,30 @@ if (isKakaoBrowser()) {
   location.href = 'kakaotalk://web/openExternal?url=' + location.href;
 }
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: '/',
+      errorElement: <ErrorPage />,
+      children: [
+        { path: '', element: <PackSimulator /> },
+        {
+          path: 'get-challenge',
+          element: <GetChallenge />,
+        },
+      ],
+    },
+  ],
   {
-    path: '/',
-    errorElement: <ErrorPage />,
-    children: [
-      { path: '', element: <PackSimulator /> },
-      {
-        path: 'get-challenge',
-        element: <GetChallenge />,
-      },
-    ],
-  },
-]);
+    future: {
+      v7_relativeSplatPath: true,
+      v7_fetcherPersist: true,
+      v7_normalizeFormMethod: true,
+      v7_partialHydration: true,
+      v7_skipActionErrorRevalidation: true,
+    },
+  }
+);
 const effectKeys = [' '];
 function App() {
   useEffect(() => {
@@ -52,6 +63,7 @@ function App() {
         event.preventDefault();
       }
     }
+
     addEventListener('keydown', handleKeyDown);
     return () => removeEventListener('keydown', handleKeyDown);
   }, []);
@@ -68,7 +80,7 @@ function App() {
     <RecoilRoot>
       <Global styles={reset} />
       <MainLayout>
-        <RouterProvider router={router} />
+        <RouterProvider router={router} future={{ v7_startTransition: true }} />
         <Article />
       </MainLayout>
     </RecoilRoot>
