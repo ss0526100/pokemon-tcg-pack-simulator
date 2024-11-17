@@ -47,7 +47,7 @@ export const svgContainer = css`
 `;
 
 export const button = css`
-  font-size: clamp(10px, 4.5vw, 20px);
+  font-size: 15px;
 `;
 
 const bounce = keyframes`
