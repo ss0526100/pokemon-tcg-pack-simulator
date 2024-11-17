@@ -1,15 +1,23 @@
 import * as S from './PackOpen.styles';
 
-import { useCallback, useEffect } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 
 import BottomButtonContainer from '../../../components/BottomButtonContainer/BottomButtonContainer';
 import Button from '../../../components/Button/Button';
+import COLOR from '../../../constant/colors';
 import Card from '../../../components/Card/Card';
 import LeftArrowSvg from '../../../components/svgs/LeftArrowSvg';
+import MobileTopRightHamburger from '../../../components/MobileTopRightHamburger/MobileTopRightHamburger';
+import Modal from '../../../components/Modal/Modal';
+import PokeBallSvg from '../../../components/svgs/PokeBallSvg';
 import Rarity from '../../../components/Rarity/Rarity';
 import RightArrowSvg from '../../../components/svgs/RightArrowSvg';
+import StatisticContent from '../StatisticsInfo/StatisticContent/StatisticContent';
+import StatisticsSvg from '../../../components/svgs/StatisticsSvg';
+import ThreePacksSvg from '../../../components/svgs/ThreePacksSvg';
 import i18n from '../../../locales/i18n';
 import useBGM from '../../../hooks/atoms/bgm/useBGM';
+import { useNavigate } from 'react-router-dom';
 import usePackCount from '../../../hooks/atoms/packs/usePackCount';
 import usePacksIndex from './usePacksIndex';
 import { useTranslation } from 'react-i18next';
@@ -40,11 +48,18 @@ const getPackDescription = (
   return `${packMapper[type]} ${count}${i18n.t('constant.unit.pack')}`;
 };
 
+type ModalContent = 'Statistics';
+
 export default function PackOpen(props: PackOpenProps) {
   const { t } = useTranslation();
+  const navigate = useNavigate();
   const { packs, goOpen, goSelect, nowPackType, isOnePack } = props;
 
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalContent, setModalContent] = useState<ModalContent>('Statistics');
+
   useBGM('packOpen');
+
   const {
     cardLength,
     cardIndex,
@@ -109,6 +124,28 @@ export default function PackOpen(props: PackOpenProps) {
   ]);
   return (
     <section css={S.layout}>
+      <MobileTopRightHamburger>
+        <MobileTopRightHamburger.Option
+          icon={<ThreePacksSvg fill={COLOR.PRIMARY_COLOR} size={17} />}
+          description={t('pack-simulator.open-pack.choose-pack')}
+          onClick={handleGoSelect}
+        />
+
+        <MobileTopRightHamburger.Line />
+        <MobileTopRightHamburger.Option
+          icon={<StatisticsSvg fill={COLOR.PRIMARY_COLOR} size={15} />}
+          description={t('toolbar.statistic')}
+          onClick={() => {
+            setIsModalOpen(true);
+            setModalContent('Statistics');
+          }}
+        />
+        <MobileTopRightHamburger.Option
+          icon={<PokeBallSvg fill={COLOR.PRIMARY_COLOR} size={25} />}
+          description={t('pack-simulator.toolbar.go-get-challenge')}
+          onClick={() => navigate('/get-challenge')}
+        />
+      </MobileTopRightHamburger>
       <div css={S.sectionContainer}>
         <div css={S.selectContainer(!isFirstCard)} onClick={setBeforeCard}>
           {!isFirstCard && (
@@ -154,6 +191,13 @@ export default function PackOpen(props: PackOpenProps) {
           {t('pack-simulator.open-pack.choose-pack')}
         </Button>
       </BottomButtonContainer>
+      {isModalOpen && (
+        <Modal onClose={() => setIsModalOpen(false)}>
+          {modalContent === 'Statistics' && (
+            <StatisticContent onClose={() => setIsModalOpen(false)} />
+          )}
+        </Modal>
+      )}
     </section>
   );
 }
