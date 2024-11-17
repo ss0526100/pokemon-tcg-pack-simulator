@@ -77,7 +77,7 @@ export default function PlayChallenge(props: PlayChallengeProps) {
         </ItemDisplay>
       </div>
 
-      <BottomButtonContainer>
+      <BottomButtonContainer css={S.buttonContainer}>
         <Button
           onClick={reselect}
           css={[
