@@ -1,6 +1,6 @@
 import * as S from './MobileTopRightHamburger.style';
 
-import { HTMLProps, ReactNode, SVGProps } from 'react';
+import { HTMLProps, ReactNode, SVGProps, useEffect, useState } from 'react';
 
 import Button from '../Button/Button';
 import HamburgerSvg from '../svgs/HamgurgerSvg';
@@ -9,28 +9,59 @@ export default function MobileTopRightHamburger(
   props: SVGProps<SVGSVGElement>
 ) {
   const { children, ...restProps } = props;
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    if (!isMenuOpen) return;
+    const html = document.getElementsByTagName('html')[0] as HTMLElement;
+    const beforeSetting = html.style.overflow;
+
+    html.style.overflow = 'hidden';
+
+    return () => {
+      html.style.overflow = beforeSetting;
+    };
+  }, [isMenuOpen]);
   return (
     <>
-      <HamburgerSvg css={S.hamburger} fill={'black'} size={30} {...restProps} />
-      <div css={S.rightBox}>{children}</div>
+      <HamburgerSvg
+        css={S.hamburger}
+        fill={'black'}
+        size={30}
+        {...restProps}
+        onClick={() => setIsMenuOpen(true)}
+      />
+
+      {isMenuOpen && (
+        <>
+          <div css={S.dimmer} onClick={() => setIsMenuOpen(false)} />
+
+          <div css={S.rightBox}>
+            <div onClick={() => setIsMenuOpen(false)}>{children}</div>
+          </div>
+        </>
+      )}
     </>
   );
 }
 
 interface OptionProps extends HTMLProps<HTMLDivElement> {
-  svg: ReactNode;
+  icon: ReactNode;
   description: string;
 }
 
 MobileTopRightHamburger.Option = function Option(props: OptionProps) {
-  const { svg, description, ...restProps } = props;
+  const { icon, description, ...restProps } = props;
 
   return (
-    <div css={S.optionContainer} {...restProps}>
-      <Button css={S.button} circle secondary>
-        {svg}
-      </Button>
-      <span css={S.optionSpan}>{description}</span>
-    </div>
+    <>
+      <div css={S.optionContainer} {...restProps}>
+        <Button css={S.button} circle secondary>
+          {icon}
+        </Button>
+        <span css={S.optionSpan}>{description}</span>
+      </div>
+    </>
   );
 };

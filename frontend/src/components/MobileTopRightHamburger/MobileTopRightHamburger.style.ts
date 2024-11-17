@@ -1,4 +1,4 @@
-import { css } from '@emotion/react';
+import { css, keyframes } from '@emotion/react';
 
 export const hamburger = css`
   display: none;
@@ -11,8 +11,27 @@ export const hamburger = css`
   }
 `;
 
+const popup = keyframes`
+  0%{
+    transform:translateY(100%);
+  }
+
+  100%{
+  transform:translateY(0);
+  }
+`;
+// const popDown = keyframes`
+//   from{
+//     transform:translateY(0);
+//   }
+
+//   to{
+//   transform:translateY(100vh);
+//   }
+// `;
 export const rightBox = css`
   display: none;
+  animation: ${popup} 0.1s;
 
   @media (width<=600px) {
     position: fixed;
@@ -29,6 +48,24 @@ export const rightBox = css`
   }
 `;
 
+export const dimmer = css`
+  display: none;
+
+  @media (width<=600px) {
+    position: fixed;
+    z-index: 2;
+    top: -5vh;
+    left: -5vw;
+
+    display: block;
+
+    width: 105vw;
+    height: 105vh;
+
+    background-color: rgb(0 0 0 / 43%);
+  }
+`;
+
 export const optionContainer = css`
   display: none;
 
@@ -36,7 +73,10 @@ export const optionContainer = css`
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    align-items: center;
+
     width: 50vw;
+    height: 40px;
   }
 `;
 
@@ -44,12 +84,14 @@ export const button = css`
   display: none;
 
   @media (width<=600px) {
+    z-index: 2;
+
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     padding: 0;
   }
 `;
@@ -58,6 +100,8 @@ export const optionSpan = css`
   display: none;
 
   @media (width<=600px) {
-    font-size: 20px;
+    display: inline;
+    font-size: 13px;
+    line-height: 100%;
   }
 `;

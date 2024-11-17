@@ -60,7 +60,11 @@ export default function PackSimulator() {
     <GameLayout>
       <MobileTopRightHamburger>
         <MobileTopRightHamburger.Option
-          svg={<PokeBallSvg fill={COLOR.PRIMARY_COLOR} size={20} />}
+          icon={<PokeBallSvg fill={COLOR.PRIMARY_COLOR} size={30} />}
+          description='안녕하세요'
+        />
+        <MobileTopRightHamburger.Option
+          icon={<PokeBallSvg fill={COLOR.PRIMARY_COLOR} size={30} />}
           description='안녕하세요'
         />
       </MobileTopRightHamburger>
