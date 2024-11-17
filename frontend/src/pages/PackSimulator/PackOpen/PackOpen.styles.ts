@@ -91,14 +91,21 @@ export const cardContainer = css`
   max-height: 335px;
 
   @media (width<=600px) {
+    transform: translateY(-25px);
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
 
-    width: auto;
-    height: 60vh;
+    width: 70vw;
+    height: auto;
     max-height: none;
+
+    & > * {
+      width: 100%;
+      height: auto;
+    }
   }
 `;
 
