@@ -10,6 +10,7 @@ export const confirmContainer = css`
 `;
 
 export const displayContainer = css`
+  aspect-ratio: 0.9/1;
   height: 40vh;
 `;
 export const modalTitle = css`

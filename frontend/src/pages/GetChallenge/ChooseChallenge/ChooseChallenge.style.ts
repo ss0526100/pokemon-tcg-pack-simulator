@@ -2,10 +2,9 @@ import { css } from '@emotion/react';
 import isAppleDevice from '../../../utils/isAppleDevice';
 
 export const boxContainer = css`
+  aspect-ratio: 0.9/1;
   width: 100%;
   max-width: 440px;
-  height: 50%;
-  max-height: 440px;
   padding: 10px;
 
   background: #ffffffa9;

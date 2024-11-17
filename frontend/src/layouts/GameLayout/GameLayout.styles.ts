@@ -9,7 +9,13 @@ export const layout = css`
 
   width: 100vw;
   max-width: 600px;
-  height: 900px;
+  height: 100vh;
+
+  @media (width <= 600px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
 `;
 
 export const content = css`
@@ -22,6 +28,11 @@ export const content = css`
   max-width: 480px;
   height: 560px;
   padding: 3rem 0 0;
+
+  @media (width <= 600px) {
+    width: 100vw;
+    height: 100vh;
+  }
 `;
 
 interface ToolbarProps {
@@ -51,6 +62,10 @@ export const toolbarContainer = (props: ToolbarProps) => css`
   max-width: 480px;
   height: 200px;
   padding: 2rem;
+
+  @media (width <= 600px) {
+    display: none;
+  }
 `;
 
 export const toolbarLeft = css`

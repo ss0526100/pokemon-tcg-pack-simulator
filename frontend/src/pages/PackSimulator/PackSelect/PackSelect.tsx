@@ -134,7 +134,7 @@ export default function PackSelect(props: PackSelectProps) {
           </div>
         </div>
       </div>
-      <BottomButtonContainer direction='row'>
+      <BottomButtonContainer css={S.buttonContainer} direction='row'>
         <Button css={S.button} onClick={() => onSelect(nowPackType, packCount)}>
           {getSeveralPackStr(language, packCount)}
         </Button>
