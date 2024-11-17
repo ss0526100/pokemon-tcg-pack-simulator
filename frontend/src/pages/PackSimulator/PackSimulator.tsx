@@ -5,6 +5,7 @@ import { useCallback, useEffect, useState } from 'react';
 import AdjustPackCount from './AdjustPackCount/AdjustPackCount';
 import COLOR from '../../constant/colors';
 import GameLayout from '../../layouts/GameLayout/GameLayout';
+import MobileTopRightHamburger from '../../components/MobileTopRightHamburger/MobileTopRightHamburger';
 import PackOpen from './PackOpen/PackOpen';
 import PackSelect from './PackSelect/PackSelect';
 import PokeBallSvg from '../../components/svgs/PokeBallSvg';
@@ -57,6 +58,12 @@ export default function PackSimulator() {
 
   return (
     <GameLayout>
+      <MobileTopRightHamburger>
+        <MobileTopRightHamburger.Option
+          svg={<PokeBallSvg fill={COLOR.PRIMARY_COLOR} size={20} />}
+          description='안녕하세요'
+        />
+      </MobileTopRightHamburger>
       <GameLayout.Content>
         {phase === 'select' && (
           <PackSelect
