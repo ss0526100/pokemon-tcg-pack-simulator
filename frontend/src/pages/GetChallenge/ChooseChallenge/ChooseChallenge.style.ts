@@ -26,4 +26,8 @@ export const container = css`
   padding: 20px;
 
   transform: translateY(-35px);
+
+  @media (width<=600px) {
+    transform: none;
+  }
 `;
