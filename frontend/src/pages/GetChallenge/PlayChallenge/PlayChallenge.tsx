@@ -4,12 +4,19 @@ import { useRef, useState } from 'react';
 
 import BottomButtonContainer from '../../../components/BottomButtonContainer/BottomButtonContainer';
 import Button from '../../../components/Button/Button';
+import COLOR from '../../../constant/colors';
 import FlippingCard from '../../../components/FilppingCard/FlippingCard';
 import ItemDisplay from '../../../components/ItemDisplay/ItemDisplay';
+import MobileTopRightHamburger from '../../../components/MobileTopRightHamburger/MobileTopRightHamburger';
+import Modal from '../../../components/Modal/Modal';
+import PokeBallSvg from '../../../components/svgs/PokeBallSvg';
+import StatisticContent from '../../PackSimulator/StatisticsInfo/StatisticContent/StatisticContent';
+import StatisticsSvg from '../../../components/svgs/StatisticsSvg';
 import { css } from '@emotion/react';
 import fisherShuffle from '../../../utils/fisherShuffle';
 import useBGM from '../../../hooks/atoms/bgm/useBGM';
 import useGetChallengeCnt from '../../../hooks/atoms/packs/useGetChallengeCnt';
+import { useNavigate } from 'react-router-dom';
 import usePackUtil from '../../../hooks/atoms/packs/usePackUtil';
 import { useTranslation } from 'react-i18next';
 
@@ -18,11 +25,13 @@ interface PlayChallengeProps {
   goSelect: () => void;
 }
 
+type ModalContent = 'Statistics';
 export default function PlayChallenge(props: PlayChallengeProps) {
   const { pack, goSelect } = props;
 
   useBGM('playChallenge');
   const { t } = useTranslation();
+  const navigate = useNavigate();
 
   const [shuffledPack, setShuffledPack] = useState(() =>
     fisherShuffle(pack.slice())
@@ -32,6 +41,9 @@ export default function PlayChallenge(props: PlayChallengeProps) {
   const [flippedIndex, setFlippedIndex] = useState<number[]>([]);
   const [getIndex, setGetIndex] = useState(-1);
   const [buttonShown, setButtonShown] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalContent, setModalContent] = useState<ModalContent>('Statistics');
+
   const { countCard } = usePackUtil();
 
   const setGetChallengeCnt = useGetChallengeCnt()[1];
@@ -64,6 +76,21 @@ export default function PlayChallenge(props: PlayChallengeProps) {
 
   return (
     <>
+      <MobileTopRightHamburger>
+        <MobileTopRightHamburger.Option
+          icon={<StatisticsSvg fill={COLOR.PRIMARY_COLOR} size={15} />}
+          description={t('toolbar.statistic')}
+          onClick={() => {
+            setIsModalOpen(true);
+            setModalContent('Statistics');
+          }}
+        />
+        <MobileTopRightHamburger.Option
+          icon={<PokeBallSvg fill={COLOR.PRIMARY_COLOR} size={25} />}
+          description={t('pack-simulator.toolbar.go-get-challenge')}
+          onClick={() => navigate('/')}
+        />
+      </MobileTopRightHamburger>
       <div css={S.displaySection}>
         <ItemDisplay>
           {shuffledPack.map((card, idx) => (
@@ -97,6 +124,13 @@ export default function PlayChallenge(props: PlayChallengeProps) {
           {t('get-challenge.play-challenge.chooseChallenge')}
         </Button>
       </BottomButtonContainer>
+      {isModalOpen && (
+        <Modal onClose={() => isModalOpen}>
+          {modalContent === 'Statistics' && (
+            <StatisticContent onClose={() => setIsModalOpen(false)} />
+          )}
+        </Modal>
+      )}
     </>
   );
 }
