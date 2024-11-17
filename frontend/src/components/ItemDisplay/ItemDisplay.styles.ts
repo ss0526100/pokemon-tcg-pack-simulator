@@ -3,6 +3,7 @@ import { css } from '@emotion/react';
 export const container = css`
   position: relative;
 
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   gap: 2%;
