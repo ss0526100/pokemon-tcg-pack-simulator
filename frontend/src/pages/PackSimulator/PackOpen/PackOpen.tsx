@@ -9,6 +9,7 @@ import LeftArrowSvg from '../../../components/svgs/LeftArrowSvg';
 import Rarity from '../../../components/Rarity/Rarity';
 import RightArrowSvg from '../../../components/svgs/RightArrowSvg';
 import i18n from '../../../locales/i18n';
+import useBGM from '../../../hooks/atoms/bgm/useBGM';
 import usePackCount from '../../../hooks/atoms/packs/usePackCount';
 import usePacksIndex from './usePacksIndex';
 import { useTranslation } from 'react-i18next';
@@ -43,6 +44,7 @@ export default function PackOpen(props: PackOpenProps) {
   const { t } = useTranslation();
   const { packs, goOpen, goSelect, nowPackType, isOnePack } = props;
 
+  useBGM('packOpen');
   const {
     cardLength,
     cardIndex,

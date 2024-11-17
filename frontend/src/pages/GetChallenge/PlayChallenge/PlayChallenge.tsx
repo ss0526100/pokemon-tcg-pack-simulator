@@ -8,6 +8,7 @@ import FlippingCard from '../../../components/FilppingCard/FlippingCard';
 import ItemDisplay from '../../../components/ItemDisplay/ItemDisplay';
 import { css } from '@emotion/react';
 import fisherShuffle from '../../../utils/fisherShuffle';
+import useBGM from '../../../hooks/atoms/bgm/useBGM';
 import useGetChallengeCnt from '../../../hooks/atoms/packs/useGetChallengeCnt';
 import usePackUtil from '../../../hooks/atoms/packs/usePackUtil';
 import { useTranslation } from 'react-i18next';
@@ -18,8 +19,10 @@ interface PlayChallengeProps {
 }
 
 export default function PlayChallenge(props: PlayChallengeProps) {
-  const { t } = useTranslation();
   const { pack, goSelect } = props;
+
+  useBGM('playChallenge');
+  const { t } = useTranslation();
 
   const [shuffledPack, setShuffledPack] = useState(() =>
     fisherShuffle(pack.slice())

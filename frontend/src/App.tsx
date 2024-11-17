@@ -52,6 +52,7 @@ function App() {
         event.preventDefault();
       }
     }
+
     addEventListener('keydown', handleKeyDown);
     return () => removeEventListener('keydown', handleKeyDown);
   }, []);

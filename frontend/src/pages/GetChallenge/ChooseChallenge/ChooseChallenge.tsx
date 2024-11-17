@@ -7,6 +7,7 @@ import Card from '../../../components/Card/Card';
 import ConfirmContent from './ConfirmContent/ConfirmContent';
 import ItemDisplay from '../../../components/ItemDisplay/ItemDisplay';
 import Modal from '../../../components/Modal/Modal';
+import useBGM from '../../../hooks/atoms/bgm/useBGM';
 
 interface ChallengeBoxProps {
   pack: Pack;
@@ -33,6 +34,7 @@ interface ChooseChallengeProps {
 }
 const ChooseChallenge = forwardRef<HTMLDivElement, ChooseChallengeProps>(
   function ChooseChallenge(props: ChooseChallengeProps, ref) {
+    useBGM('chooseChallenge');
     const { packs, onSelect } = props;
     const [isOpen, setIsOpen] = useState(false);
     const [nowPack, setNowPack] = useState<Pack>(initPack);

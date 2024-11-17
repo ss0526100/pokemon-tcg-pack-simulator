@@ -9,6 +9,7 @@ import LeftArrowSvg from '../../../components/svgs/LeftArrowSvg';
 import Pack from './components/Pack/Pack';
 import RightArrowSvg from '../../../components/svgs/RightArrowSvg';
 import i18n from '../../../locales/i18n';
+import useBGM from '../../../hooks/atoms/bgm/useBGM';
 import usePackCount from '../../../hooks/atoms/packs/usePackCount';
 
 interface PackSelectProps {
@@ -70,6 +71,8 @@ const getOnePackStr = (language: Language | 'ja' | 'ja-JP') => {
 export default function PackSelect(props: PackSelectProps) {
   const { onSelect, startPackType } = props;
 
+  const { playBGM } = useBGM('packSelect');
+
   const [packTypeIndex, setPackTypeIndex] = useState(() => {
     if (!startPackType) return 0;
     return packTypes.indexOf(startPackType);
@@ -90,8 +93,7 @@ export default function PackSelect(props: PackSelectProps) {
 
   const nowPackType = packTypes[packTypeIndex];
 
-  // TODO: ja, jp-ja 제외하기
-  const language = i18n.language as Language | 'ja' | 'ja-JP';
+  const language = i18n.language as Language;
 
   useEffect(() => {
     function handleKeyDown(event: KeyboardEvent) {
@@ -115,7 +117,14 @@ export default function PackSelect(props: PackSelectProps) {
     document.addEventListener('keydown', handleKeyDown);
 
     return () => document.removeEventListener('keydown', handleKeyDown);
-  }, [moveBeforeIndex, moveNextIndex, nowPackType, onSelect, packCount]);
+  }, [
+    moveBeforeIndex,
+    moveNextIndex,
+    nowPackType,
+    onSelect,
+    packCount,
+    playBGM,
+  ]);
 
   return (
     <>
@@ -125,7 +134,7 @@ export default function PackSelect(props: PackSelectProps) {
             <LeftArrowSvg size={30} />
           </div>
         </div>
-        <div css={S.packContainer}>
+        <div css={S.packContainer} onClick={() => playBGM()}>
           <Pack packInfo={A1_PACK_INFOS[nowPackType]} />
         </div>
         <div css={S.selectContainer} onClick={moveNextIndex}>
