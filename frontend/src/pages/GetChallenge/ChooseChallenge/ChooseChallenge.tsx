@@ -11,10 +11,12 @@ import ItemDisplay from '../../../components/ItemDisplay/ItemDisplay';
 import MobileTopRightHamburger from '../../../components/MobileTopRightHamburger/MobileTopRightHamburger';
 import Modal from '../../../components/Modal/Modal';
 import PokeBallSvg from '../../../components/svgs/PokeBallSvg';
+import SoundSvg from '../../../components/SoundSvg/SoundSvg';
 import StatisticContent from '../../PackSimulator/StatisticsInfo/StatisticContent/StatisticContent';
 import StatisticsSvg from '../../../components/svgs/StatisticsSvg';
 import i18n from '../../../locales/i18n';
 import useBGM from '../../../hooks/atoms/bgm/useBGM';
+import useIsPlayingBGM from '../../../hooks/atoms/bgm/useIsPlayingBGM';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
@@ -48,7 +50,9 @@ const ChooseChallenge = forwardRef<HTMLDivElement, ChooseChallengeProps>(
   function ChooseChallenge(props: ChooseChallengeProps, ref) {
     const { t } = useTranslation();
     const navigate = useNavigate();
-    useBGM('chooseChallenge');
+
+    const { toggleBGM } = useBGM('chooseChallenge');
+    const [isPlayingBGM] = useIsPlayingBGM();
     const { packs, refreshPacks, onSelect } = props;
     const [nowPack, setNowPack] = useState<Pack>(initPack);
 
@@ -70,6 +74,16 @@ const ChooseChallenge = forwardRef<HTMLDivElement, ChooseChallengeProps>(
     return (
       <>
         <MobileTopRightHamburger>
+          <MobileTopRightHamburger.Option
+            icon={<SoundSvg fill={COLOR.PRIMARY_COLOR} size={20} />}
+            description={
+              isPlayingBGM ? t('toolbar.sound-off') : t('toolbar.sound-on')
+            }
+            onClick={e => {
+              e.stopPropagation();
+              toggleBGM();
+            }}
+          />
           <MobileTopRightHamburger.Option
             icon={<StatisticsSvg fill={COLOR.PRIMARY_COLOR} size={15} />}
             description={t('toolbar.statistic')}
