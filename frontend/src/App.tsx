@@ -9,6 +9,7 @@ import { Global } from '@emotion/react';
 import MainLayout from './layouts/MainLayout/MainLayout';
 import PackSimulator from './pages/PackSimulator/PackSimulator';
 import { RecoilRoot } from 'recoil';
+import StartPage from './pages/StartPage/StartPage';
 import i18n from './locales/i18n';
 import reset from './reset.style';
 import { useEffect } from 'react';
@@ -28,19 +29,30 @@ if (isKakaoBrowser()) {
   location.href = 'kakaotalk://web/openExternal?url=' + location.href;
 }
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: '/',
+      errorElement: <ErrorPage />,
+      children: [
+        { path: '', element: <PackSimulator /> },
+        {
+          path: 'get-challenge',
+          element: <GetChallenge />,
+        },
+      ],
+    },
+  ],
   {
-    path: '/',
-    errorElement: <ErrorPage />,
-    children: [
-      { path: '', element: <PackSimulator /> },
-      {
-        path: 'get-challenge',
-        element: <GetChallenge />,
-      },
-    ],
-  },
-]);
+    future: {
+      v7_relativeSplatPath: true,
+      v7_fetcherPersist: true,
+      v7_normalizeFormMethod: true,
+      v7_partialHydration: true,
+      v7_skipActionErrorRevalidation: true,
+    },
+  }
+);
 const effectKeys = [' '];
 function App() {
   useEffect(() => {
@@ -52,6 +64,7 @@ function App() {
         event.preventDefault();
       }
     }
+
     addEventListener('keydown', handleKeyDown);
     return () => removeEventListener('keydown', handleKeyDown);
   }, []);
@@ -66,9 +79,10 @@ function App() {
 
   return (
     <RecoilRoot>
+      <StartPage />
       <Global styles={reset} />
       <MainLayout>
-        <RouterProvider router={router} />
+        <RouterProvider router={router} future={{ v7_startTransition: true }} />
         <Article />
       </MainLayout>
     </RecoilRoot>

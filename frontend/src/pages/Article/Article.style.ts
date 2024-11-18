@@ -7,6 +7,10 @@ export const layout = css`
   justify-content: center;
 
   padding: 2rem;
+
+  @media (width <= 600px) {
+    display: none;
+  }
 `;
 
 export const span = css`

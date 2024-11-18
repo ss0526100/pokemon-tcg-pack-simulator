@@ -1,18 +1,19 @@
 import * as S from './Pack.styles';
 
+import { HTMLAttributes } from 'react';
 import LANGUAGES from '../../../../../constant/language';
 import i18n from '../../../../../locales/i18n';
 
-interface Pack {
+interface Pack extends HTMLAttributes<HTMLImageElement> {
   packInfo: PackInfo;
 }
 
 export default function Pack(props: Pack) {
-  const { packInfo } = props;
+  const { packInfo, ...restProps } = props;
   const language =
     LANGUAGES.find(language => language === i18n.language) || 'default';
 
-  return <img src={packInfo.imgSrc[language]} css={S.pack} />;
+  return <img src={packInfo.imgSrc[language]} css={S.pack} {...restProps} />;
 }
 
 // const [phase, setPhase] = useState<Phase>('start');

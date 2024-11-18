@@ -5,6 +5,10 @@ import COLOR from '../../../constant/colors';
 export const displaySection = css`
   width: 100%;
   height: 320px;
+
+  @media (width<=600px) {
+    margin: 20vh 0 0;
+  }
 `;
 
 const focusIn = keyframes` 0% {
@@ -24,6 +28,7 @@ export const cardContainer = css`
   width: 100%;
   height: 100%;
 `;
+
 export const cardTag = css`
   position: absolute;
   z-index: 10;
@@ -45,4 +50,12 @@ export const cardTag = css`
   background-color: red;
   background-color: ${COLOR.PRIMARY_COLOR};
   border-radius: 20px;
+`;
+
+export const buttonContainer = css`
+  @media (width<=600px) {
+    position: fixed;
+    bottom: 0;
+    padding: 2rem;
+  }
 `;

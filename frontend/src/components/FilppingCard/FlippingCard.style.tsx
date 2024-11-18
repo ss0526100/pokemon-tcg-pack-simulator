@@ -4,6 +4,10 @@ export const flip = css`
   height: 100%;
 
   perspective: 1100px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 `;
 
 export const card = (isFlipped: boolean) => css`

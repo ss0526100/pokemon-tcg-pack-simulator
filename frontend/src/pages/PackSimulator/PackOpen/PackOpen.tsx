@@ -1,14 +1,25 @@
 import * as S from './PackOpen.styles';
 
-import { useCallback, useEffect } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 
 import BottomButtonContainer from '../../../components/BottomButtonContainer/BottomButtonContainer';
 import Button from '../../../components/Button/Button';
+import COLOR from '../../../constant/colors';
 import Card from '../../../components/Card/Card';
 import LeftArrowSvg from '../../../components/svgs/LeftArrowSvg';
+import MobileTopRightHamburger from '../../../components/MobileTopRightHamburger/MobileTopRightHamburger';
+import Modal from '../../../components/Modal/Modal';
+import PokeBallSvg from '../../../components/svgs/PokeBallSvg';
 import Rarity from '../../../components/Rarity/Rarity';
 import RightArrowSvg from '../../../components/svgs/RightArrowSvg';
+import SoundSvg from '../../../components/SoundSvg/SoundSvg';
+import StatisticContent from '../StatisticsInfo/StatisticContent/StatisticContent';
+import StatisticsSvg from '../../../components/svgs/StatisticsSvg';
+import ThreePacksSvg from '../../../components/svgs/ThreePacksSvg';
 import i18n from '../../../locales/i18n';
+import useBGM from '../../../hooks/atoms/bgm/useBGM';
+import useIsPlayingBGM from '../../../hooks/atoms/bgm/useIsPlayingBGM';
+import { useNavigate } from 'react-router-dom';
 import usePackCount from '../../../hooks/atoms/packs/usePackCount';
 import usePacksIndex from './usePacksIndex';
 import { useTranslation } from 'react-i18next';
@@ -33,15 +44,24 @@ const getPackDescription = (
   };
   if (language === 'en' || language === 'en-US') {
     if (count === 1)
-      return ' a ' + packMapper[type] + ' ' + i18n.t('constant.unit.pack');
+      return 'A ' + packMapper[type] + ' ' + i18n.t('constant.unit.pack');
     return packMapper[type] + ` ${count} ` + i18n.t('constant.unit.packs');
   }
   return `${packMapper[type]} ${count}${i18n.t('constant.unit.pack')}`;
 };
 
+type ModalContent = 'Statistics';
+
 export default function PackOpen(props: PackOpenProps) {
   const { t } = useTranslation();
+  const navigate = useNavigate();
   const { packs, goOpen, goSelect, nowPackType, isOnePack } = props;
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalContent, setModalContent] = useState<ModalContent>('Statistics');
+
+  const { toggleBGM } = useBGM('packOpen');
+  const [isPlayingBGM] = useIsPlayingBGM();
 
   const {
     cardLength,
@@ -107,6 +127,38 @@ export default function PackOpen(props: PackOpenProps) {
   ]);
   return (
     <section css={S.layout}>
+      <MobileTopRightHamburger>
+        <MobileTopRightHamburger.Option
+          icon={<ThreePacksSvg fill={COLOR.PRIMARY_COLOR} size={17} />}
+          description={t('pack-simulator.open-pack.choose-pack')}
+          onClick={handleGoSelect}
+        />
+
+        <MobileTopRightHamburger.Line />
+        <MobileTopRightHamburger.Option
+          icon={<SoundSvg fill={COLOR.PRIMARY_COLOR} size={20} />}
+          description={
+            isPlayingBGM ? t('toolbar.sound-off') : t('toolbar.sound-on')
+          }
+          onClick={e => {
+            e.stopPropagation();
+            toggleBGM();
+          }}
+        />
+        <MobileTopRightHamburger.Option
+          icon={<StatisticsSvg fill={COLOR.PRIMARY_COLOR} size={15} />}
+          description={t('toolbar.statistic')}
+          onClick={() => {
+            setIsModalOpen(true);
+            setModalContent('Statistics');
+          }}
+        />
+        <MobileTopRightHamburger.Option
+          icon={<PokeBallSvg fill={COLOR.PRIMARY_COLOR} size={25} />}
+          description={t('pack-simulator.toolbar.go-get-challenge')}
+          onClick={() => navigate('/get-challenge')}
+        />
+      </MobileTopRightHamburger>
       <div css={S.sectionContainer}>
         <div css={S.selectContainer(!isFirstCard)} onClick={setBeforeCard}>
           {!isFirstCard && (
@@ -115,8 +167,13 @@ export default function PackOpen(props: PackOpenProps) {
             </div>
           )}
         </div>
-        <div css={S.cardContainer}>
-          <Card cardInfo={nowCard} onClick={setNextCard} />
+        <div css={S.cardInfoContainer}>
+          <div css={S.cardContainer}>
+            <Card cardInfo={nowCard} onClick={setNextCard} />
+            <div css={S.rarityContainer}>
+              <Rarity rarity={nowCard.rarity} size={40} />
+            </div>
+          </div>
         </div>
         <div css={S.selectContainer(!isLastCard)} onClick={setNextCard}>
           {!isLastCard && (
@@ -126,13 +183,20 @@ export default function PackOpen(props: PackOpenProps) {
           )}
         </div>
       </div>
-      {`(${cardIndex}/${cardLength})`}
 
-      <div css={S.rarityContainer}>
-        <Rarity rarity={nowCard.rarity} size={30} />
-      </div>
+      <BottomButtonContainer direction='row' css={S.mobileBottomFixed}>
+        {isLastCard && (
+          <Button
+            css={S.buttonAnimation}
+            onClick={handleGoSelect}
+            key={'selectButton'}
+          >
+            {t('pack-simulator.open-pack.choose-pack')}
+          </Button>
+        )}
+      </BottomButtonContainer>
 
-      <BottomButtonContainer direction='column'>
+      <BottomButtonContainer direction='column' css={S.bottomContainer}>
         {isLastCard && (
           <Button css={S.buttonAnimation} primary onClick={reopen}>
             {t('pack-simulator.open-pack.reopen')}
@@ -152,6 +216,13 @@ export default function PackOpen(props: PackOpenProps) {
           {t('pack-simulator.open-pack.choose-pack')}
         </Button>
       </BottomButtonContainer>
+      {isModalOpen && (
+        <Modal onClose={() => setIsModalOpen(false)}>
+          {modalContent === 'Statistics' && (
+            <StatisticContent onClose={() => setIsModalOpen(false)} />
+          )}
+        </Modal>
+      )}
     </section>
   );
 }

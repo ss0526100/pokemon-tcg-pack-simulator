@@ -15,6 +15,7 @@
   },
   "get-challenge": {
     "choose-challenge": {
+      "refresh-list": "목록 새로고침",
       "confirm-content": {
         "header": "선택하시겠습니까?",
         "cancel": "취소",
@@ -61,7 +62,9 @@
   },
 
   "toolbar": {
-    "statistic": "통계"
+    "statistic": "통계",
+    "sound-on": "소리 켜기",
+    "sound-off": "소리 끄기"
   },
   "modal": {
     "statistic": {
@@ -88,5 +91,8 @@
   },
   "link": {
     "issue-form": "https://docs.google.com/forms/d/e/1FAIpQLSeWiHRkQdes_Lzhzf4Nnk1wmJ7xiEaxUwIfWPaIdUk39aYdNg/viewform?usp=sf_link"
+  },
+  "start-page": {
+    "tap-to-start": "아무 곳이나 눌러 시작하세요"
   }
 }

@@ -10,6 +10,7 @@ import ChooseChallenge from './ChooseChallenge/ChooseChallenge';
 import { GET_CHALLENGE_RARITY_PERCENTAGE_LIST_BY_INDEX } from '../../constant/service';
 import GameLayout from '../../layouts/GameLayout/GameLayout';
 import LockedLockSvg from '../../components/svgs/LockedLockSvg';
+import MobileTopRightHamburger from '../../components/MobileTopRightHamburger/MobileTopRightHamburger';
 import OpenedLockSvg from '../../components/svgs/OpenedLockSvg';
 import PlayChallenge from './PlayChallenge/PlayChallenge';
 import PokeBallSvg from '../../components/svgs/PokeBallSvg';
@@ -98,12 +99,14 @@ export default function GetChallenge() {
   };
   return (
     <GameLayout>
+      <MobileTopRightHamburger />
       <GameLayout.Content>
         {phase === 'select' && (
           <ChooseChallenge
             onSelect={selectPack}
             packs={packs}
             ref={contentRef}
+            refreshPacks={refreshPacks}
           />
         )}
         {phase === 'play' && (
