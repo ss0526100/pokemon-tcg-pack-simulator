@@ -14,6 +14,7 @@ import Pack from './components/Pack/Pack';
 import PlusMinusSvg from '../../../components/svgs/PlusMinusSvg';
 import PokeBallSvg from '../../../components/svgs/PokeBallSvg';
 import RightArrowSvg from '../../../components/svgs/RightArrowSvg';
+import SoundSvg from '../../../components/SoundSvg/SoundSvg';
 import StatisticContent from '../StatisticsInfo/StatisticContent/StatisticContent';
 import StatisticsSvg from '../../../components/svgs/StatisticsSvg';
 import i18n from '../../../locales/i18n';
@@ -79,7 +80,7 @@ export default function PackSelect(props: PackSelectProps) {
   const navigate = useNavigate();
   const { onSelect, startPackType } = props;
 
-  const { playBGM } = useBGM('packSelect');
+  const { playBGM, toggleBGM, isPlayingBGM } = useBGM('packSelect');
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalContent, setModalContent] = useState<ModalContent>('Statistics');
@@ -151,7 +152,16 @@ export default function PackSelect(props: PackSelectProps) {
             setModalContent('PackCount');
           }}
         />
+
         <MobileTopRightHamburger.Line />
+        <MobileTopRightHamburger.Option
+          icon={<SoundSvg fill={COLOR.PRIMARY_COLOR} size={20} />}
+          description={isPlayingBGM ? '사운드 끄기' : '사운드 켜기'}
+          onClick={e => {
+            e.stopPropagation();
+            toggleBGM();
+          }}
+        />
         <MobileTopRightHamburger.Option
           icon={<StatisticsSvg fill={COLOR.PRIMARY_COLOR} size={15} />}
           description={t('toolbar.statistic')}

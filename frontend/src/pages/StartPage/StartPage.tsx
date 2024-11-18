@@ -6,19 +6,25 @@ import useBGM from '../../hooks/atoms/bgm/useBGM';
 
 export default function StartPage() {
   const [isInteracted, setIsInteracted] = useState(false);
-  const { playBGM } = useBGM();
+  const { playBGM, pauseBGM } = useBGM();
   useEffect(() => {
+    if (!localStorage.getItem('isPlaying'))
+      localStorage.setItem('isPlaying', JSON.stringify(true));
+    const isPlaying = JSON.parse(localStorage.getItem('isPlaying') || 'true');
     function clickHandler(e: MouseEvent) {
       e.stopPropagation();
       setIsInteracted(true);
-      playBGM();
+      if (isPlaying) playBGM();
+      if (!isPlaying) pauseBGM();
       cleanUp();
     }
 
     function keydownHandler(e: KeyboardEvent) {
       e.stopPropagation();
       setIsInteracted(true);
-      playBGM();
+
+      if (isPlaying) playBGM();
+      if (!isPlaying) pauseBGM();
       cleanUp();
     }
 
@@ -31,7 +37,7 @@ export default function StartPage() {
     addEventListener('keydown', keydownHandler);
 
     return cleanUp;
-  }, [playBGM]);
+  }, [playBGM, pauseBGM]);
 
   if (isInteracted) return null;
 
