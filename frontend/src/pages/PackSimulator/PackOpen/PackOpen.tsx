@@ -170,6 +170,7 @@ export default function PackOpen(props: PackOpenProps) {
         <div css={S.cardInfoContainer}>
           <div css={S.cardContainer}>
             <Card cardInfo={nowCard} onClick={setNextCard} />
+            {/* <MovingCard cardInfo={nowCard} onClick={setNextCard} /> */}
             <div css={S.rarityContainer}>
               <Rarity rarity={nowCard.rarity} size={40} />
             </div>
