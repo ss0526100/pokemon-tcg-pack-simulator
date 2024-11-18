@@ -8,7 +8,6 @@ export default function StartPage() {
   const [isInteracted, setIsInteracted] = useState(false);
   const { playBGM, pauseBGM } = useBGM();
   useEffect(() => {
-    console.log('start effect');
     if (isInteracted) return;
     if (!localStorage.getItem('isPlaying'))
       localStorage.setItem('isPlaying', JSON.stringify(true));
