@@ -9,6 +9,7 @@ import { Global } from '@emotion/react';
 import MainLayout from './layouts/MainLayout/MainLayout';
 import PackSimulator from './pages/PackSimulator/PackSimulator';
 import { RecoilRoot } from 'recoil';
+import StartPage from './pages/StartPage/StartPage';
 import i18n from './locales/i18n';
 import reset from './reset.style';
 import { useEffect } from 'react';
@@ -78,6 +79,7 @@ function App() {
 
   return (
     <RecoilRoot>
+      <StartPage />
       <Global styles={reset} />
       <MainLayout>
         <RouterProvider router={router} future={{ v7_startTransition: true }} />
