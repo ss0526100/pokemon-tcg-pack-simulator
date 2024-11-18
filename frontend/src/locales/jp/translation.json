@@ -90,5 +90,8 @@
   },
   "link": {
     "issue-form": "https://docs.google.com/forms/d/e/1FAIpQLSdWU6WBGVLjAPcGGT4RBspxzHXScboRnbcRfBQl6Gj2nn7utw/viewform?usp=sf_link"
+  },
+  "start-page": {
+    "tap-to-start": "- どこでもタップしてスタート -"
   }
 }

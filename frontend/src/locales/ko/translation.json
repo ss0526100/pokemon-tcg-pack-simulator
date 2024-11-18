@@ -91,5 +91,8 @@
   },
   "link": {
     "issue-form": "https://docs.google.com/forms/d/e/1FAIpQLSeWiHRkQdes_Lzhzf4Nnk1wmJ7xiEaxUwIfWPaIdUk39aYdNg/viewform?usp=sf_link"
+  },
+  "start-page": {
+    "tap-to-start": "아무 곳이나 눌러 시작하세요"
   }
 }
