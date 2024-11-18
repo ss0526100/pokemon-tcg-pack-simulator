@@ -62,7 +62,9 @@
   },
 
   "toolbar": {
-    "statistic": "통계"
+    "statistic": "통계",
+    "sound-on": "소리 켜기",
+    "sound-off": "소리 끄기"
   },
   "modal": {
     "statistic": {

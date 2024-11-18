@@ -61,7 +61,9 @@
     }
   },
   "toolbar": {
-    "statistic": "Statistics"
+    "statistic": "Statistics",
+    "sound-on": "Sound On",
+    "sound-off": "Sound Off"
   },
   "modal": {
     "statistic": {

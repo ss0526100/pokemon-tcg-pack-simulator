@@ -156,7 +156,9 @@ export default function PackSelect(props: PackSelectProps) {
         <MobileTopRightHamburger.Line />
         <MobileTopRightHamburger.Option
           icon={<SoundSvg fill={COLOR.PRIMARY_COLOR} size={20} />}
-          description={isPlayingBGM ? '사운드 끄기' : '사운드 켜기'}
+          description={
+            isPlayingBGM ? t('toolbar.sound-off') : t('toolbar.sound-on')
+          }
           onClick={e => {
             e.stopPropagation();
             toggleBGM();
@@ -182,7 +184,7 @@ export default function PackSelect(props: PackSelectProps) {
             <LeftArrowSvg size={30} />
           </div>
         </div>
-        <div css={S.packContainer} onClick={() => playBGM()}>
+        <div css={S.packContainer}>
           <Pack packInfo={A1_PACK_INFOS[nowPackType]} />
         </div>
         <div css={S.selectContainer} onClick={moveNextIndex}>
