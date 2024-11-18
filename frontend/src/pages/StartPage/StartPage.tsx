@@ -8,6 +8,8 @@ export default function StartPage() {
   const [isInteracted, setIsInteracted] = useState(false);
   const { playBGM, pauseBGM } = useBGM();
   useEffect(() => {
+    console.log('start effect');
+    if (isInteracted) return;
     if (!localStorage.getItem('isPlaying'))
       localStorage.setItem('isPlaying', JSON.stringify(true));
     const isPlaying = JSON.parse(localStorage.getItem('isPlaying') || 'true');
@@ -37,7 +39,7 @@ export default function StartPage() {
     addEventListener('keydown', keydownHandler);
 
     return cleanUp;
-  }, [playBGM, pauseBGM]);
+  }, [isInteracted]);
 
   if (isInteracted) return null;
 

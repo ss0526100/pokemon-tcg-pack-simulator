@@ -7,9 +7,15 @@ const isPlayingBGM = atom<boolean>({
   default: false, // default value (aka initial value)
 });
 
+let isFirstEffect = true;
 export default function useIsPlayingBGM() {
   const [isPlaying, setIsPlaying] = useRecoilState(isPlayingBGM);
+
   useEffect(() => {
+    if (isFirstEffect) {
+      isFirstEffect = false;
+      return;
+    }
     localStorage.setItem('isPlaying', JSON.stringify(isPlaying));
   }, [isPlaying]);
 
