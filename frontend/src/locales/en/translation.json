@@ -61,7 +61,9 @@
     }
   },
   "toolbar": {
-    "statistic": "Statistics"
+    "statistic": "Statistics",
+    "sound-on": "Master Volume On",
+    "sound-off": "Master Volume Off"
   },
   "modal": {
     "statistic": {
@@ -88,5 +90,8 @@
   },
   "link": {
     "issue-form": "https://docs.google.com/forms/d/e/1FAIpQLSfnD5GYoyqQX8TJRsvQdygUrUEHvJnmtHko4oDsAOh4f80ZDQ/viewform?usp=sf_link"
+  },
+  "start-page": {
+    "tap-to-start": "- Any Press To Start -"
   }
 }

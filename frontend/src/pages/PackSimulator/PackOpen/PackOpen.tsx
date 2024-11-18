@@ -12,11 +12,13 @@ import Modal from '../../../components/Modal/Modal';
 import PokeBallSvg from '../../../components/svgs/PokeBallSvg';
 import Rarity from '../../../components/Rarity/Rarity';
 import RightArrowSvg from '../../../components/svgs/RightArrowSvg';
+import SoundSvg from '../../../components/SoundSvg/SoundSvg';
 import StatisticContent from '../StatisticsInfo/StatisticContent/StatisticContent';
 import StatisticsSvg from '../../../components/svgs/StatisticsSvg';
 import ThreePacksSvg from '../../../components/svgs/ThreePacksSvg';
 import i18n from '../../../locales/i18n';
 import useBGM from '../../../hooks/atoms/bgm/useBGM';
+import useIsPlayingBGM from '../../../hooks/atoms/bgm/useIsPlayingBGM';
 import { useNavigate } from 'react-router-dom';
 import usePackCount from '../../../hooks/atoms/packs/usePackCount';
 import usePacksIndex from './usePacksIndex';
@@ -58,7 +60,8 @@ export default function PackOpen(props: PackOpenProps) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalContent, setModalContent] = useState<ModalContent>('Statistics');
 
-  useBGM('packOpen');
+  const { toggleBGM } = useBGM('packOpen');
+  const [isPlayingBGM] = useIsPlayingBGM();
 
   const {
     cardLength,
@@ -132,6 +135,16 @@ export default function PackOpen(props: PackOpenProps) {
         />
 
         <MobileTopRightHamburger.Line />
+        <MobileTopRightHamburger.Option
+          icon={<SoundSvg fill={COLOR.PRIMARY_COLOR} size={20} />}
+          description={
+            isPlayingBGM ? t('toolbar.sound-off') : t('toolbar.sound-on')
+          }
+          onClick={e => {
+            e.stopPropagation();
+            toggleBGM();
+          }}
+        />
         <MobileTopRightHamburger.Option
           icon={<StatisticsSvg fill={COLOR.PRIMARY_COLOR} size={15} />}
           description={t('toolbar.statistic')}

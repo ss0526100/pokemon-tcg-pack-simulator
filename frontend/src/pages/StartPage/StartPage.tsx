@@ -3,8 +3,10 @@ import * as S from './StartPage.style';
 import { useEffect, useState } from 'react';
 
 import useBGM from '../../hooks/atoms/bgm/useBGM';
+import { useTranslation } from 'react-i18next';
 
 export default function StartPage() {
+  const { t } = useTranslation();
   const [isInteracted, setIsInteracted] = useState(false);
   const { playBGM, pauseBGM } = useBGM();
   useEffect(() => {
@@ -44,7 +46,7 @@ export default function StartPage() {
 
   return (
     <div css={S.dimmer}>
-      <span css={S.span}>- 아무 곳이나 눌러 시작하세요 -</span>
+      <span css={S.span}>{t('start-page.tap-to-start')}</span>
     </div>
   );
 }
