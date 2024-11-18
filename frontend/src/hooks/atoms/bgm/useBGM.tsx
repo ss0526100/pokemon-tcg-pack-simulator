@@ -13,10 +13,10 @@ const bgmMapper: Record<Page, string> = {
   chooseChallenge: chooseGetChallenge,
   playChallenge: playChallenge,
 };
-export default function useBGM(page: Page) {
+export default function useBGM(page?: Page) {
   const [nowBGM, setNowBGM] = useNowBGM();
   const [isPlayingBGM, setIsPlayingBGM] = useIsPlayingBGM();
-  const audio = useRef(new Audio(bgmMapper[page]));
+  const audio = useRef(new Audio(bgmMapper[page || 'packSelect']));
 
   useEffect(() => {
     if (page) setNowBGM(page);
