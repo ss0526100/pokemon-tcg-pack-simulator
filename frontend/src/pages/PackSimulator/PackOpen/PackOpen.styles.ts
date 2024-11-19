@@ -3,6 +3,7 @@ import { css, keyframes } from '@emotion/react';
 export const layout = css`
   transform: translateY(-40px);
 
+  overflow: hidden auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -92,8 +93,6 @@ export const cardContainer = css`
   max-height: 335px;
 
   @media (width<=600px) {
-    transform: translateY(-25px);
-
     display: flex;
     flex-direction: column;
     align-items: center;
