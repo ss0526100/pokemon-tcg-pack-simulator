@@ -5,10 +5,10 @@ import { useCallback, useEffect, useState } from 'react';
 import BottomButtonContainer from '../../../components/BottomButtonContainer/BottomButtonContainer';
 import Button from '../../../components/Button/Button';
 import COLOR from '../../../constant/colors';
-import Card from '../../../components/Card/Card';
 import LeftArrowSvg from '../../../components/svgs/LeftArrowSvg';
 import MobileTopRightHamburger from '../../../components/MobileTopRightHamburger/MobileTopRightHamburger';
 import Modal from '../../../components/Modal/Modal';
+import OpenedPack from './OpenedPack/OpenedPack';
 import PokeBallSvg from '../../../components/svgs/PokeBallSvg';
 import Rarity from '../../../components/Rarity/Rarity';
 import RightArrowSvg from '../../../components/svgs/RightArrowSvg';
@@ -68,7 +68,10 @@ export default function PackOpen(props: PackOpenProps) {
     cardIndex,
     isFirstCard,
     isLastCard,
+    beforeCard,
     nowCard,
+    nextCard,
+    isEmergingNowCard,
     setBeforeCard,
     setNextCard,
     countLeftCards,
@@ -169,7 +172,17 @@ export default function PackOpen(props: PackOpenProps) {
         </div>
         <div css={S.cardInfoContainer}>
           <div css={S.cardContainer}>
-            <Card cardInfo={nowCard} onClick={setNextCard} />
+            <OpenedPack
+              beforeCard={beforeCard}
+              nowCard={nowCard}
+              nextCard={nextCard}
+              isEmergingNowCard={isEmergingNowCard}
+              setNextCard={setNextCard}
+              setBeforeCard={setBeforeCard}
+              nowIndex={cardIndex}
+            />
+            {/* <Card cardInfo={nowCard} onClick={setNextCard} /> */}
+            {/* <MovingCard cardInfo={nowCard} onClick={setNextCard} /> */}
             <div css={S.rarityContainer}>
               <Rarity rarity={nowCard.rarity} size={40} />
             </div>
