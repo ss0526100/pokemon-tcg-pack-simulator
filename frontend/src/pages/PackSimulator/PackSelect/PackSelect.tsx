@@ -17,6 +17,7 @@ import RightArrowSvg from '../../../components/svgs/RightArrowSvg';
 import SoundSvg from '../../../components/SoundSvg/SoundSvg';
 import StatisticContent from '../StatisticsInfo/StatisticContent/StatisticContent';
 import StatisticsSvg from '../../../components/svgs/StatisticsSvg';
+import SwipeXDetector from '../../../components/SwipeXDetector/SwipeXDetector';
 import i18n from '../../../locales/i18n';
 import useBGM from '../../../hooks/atoms/bgm/useBGM';
 import { useNavigate } from 'react-router-dom';
@@ -184,9 +185,14 @@ export default function PackSelect(props: PackSelectProps) {
             <LeftArrowSvg size={30} />
           </div>
         </div>
-        <div css={S.packContainer}>
+        <SwipeXDetector
+          direction='both'
+          onLeftDetect={moveBeforeIndex}
+          onRightDetect={moveNextIndex}
+          css={S.packContainer}
+        >
           <Pack packInfo={A1_PACK_INFOS[nowPackType]} />
-        </div>
+        </SwipeXDetector>
         <div css={S.selectContainer} onClick={moveNextIndex}>
           <div css={S.svgContainer}>
             <RightArrowSvg size={30} />

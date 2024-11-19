@@ -178,6 +178,7 @@ export default function PackOpen(props: PackOpenProps) {
               nextCard={nextCard}
               isEmergingNowCard={isEmergingNowCard}
               setNextCard={setNextCard}
+              setBeforeCard={setBeforeCard}
               nowIndex={cardIndex}
             />
             {/* <Card cardInfo={nowCard} onClick={setNextCard} /> */}
