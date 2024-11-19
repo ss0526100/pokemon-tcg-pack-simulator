@@ -28,6 +28,22 @@ const getNextIndexInfo = (packIndexInfo: PackIndexInfo, packs: Pack[]) => {
   };
 };
 
+const getBeforeIndexInfo = (packIndexInfo: PackIndexInfo, packs: Pack[]) => {
+  if (packIndexInfo.cardIndex === 0 && packIndexInfo.packIndex === 0)
+    return { ...packIndexInfo };
+  if (packIndexInfo.cardIndex === 0) {
+    const nextPackIndex = Math.max(0, packIndexInfo.packIndex - 1);
+    return {
+      packIndex: nextPackIndex,
+      cardIndex: packs[nextPackIndex].length - 1,
+    };
+  }
+  return {
+    ...packIndexInfo,
+    cardIndex: packIndexInfo.cardIndex - 1,
+  };
+};
+
 const isBiggerIndexInfo = (
   checkIndexInfo: PackIndexInfo,
   targetIndexInfo: PackIndexInfo
@@ -73,6 +89,8 @@ export default function usePacksIndex(packs: Pack[]) {
     useState<PackIndexInfo>(initPackIndexInfo);
   const { countCard, increasePackCount } = usePackUtil();
 
+  const [isEmergingNowCard, setIsEmergingNowCard] = useState(true);
+
   const [maxPackIndexInfo, setMaxPackIndexInfo] =
     useState<PackIndexInfo>(packIndexInfo);
 
@@ -88,24 +106,21 @@ export default function usePacksIndex(packs: Pack[]) {
   const isFirstCard = cardIndex === 1;
   const isLastCard = cardIndex === cardLength;
 
+  const beforeIndexInfo = getBeforeIndexInfo(packIndexInfo, packs);
+  const nextIndexInfo = getNextIndexInfo(packIndexInfo, packs);
+
+  const beforeCard = isFirstCard
+    ? null
+    : getCardFromPacksByIndexInfo(packs, beforeIndexInfo);
   const nowCard = getCardFromPacksByIndexInfo(packs, packIndexInfo);
+  const nextCard = isLastCard
+    ? null
+    : getCardFromPacksByIndexInfo(packs, nextIndexInfo);
 
   const setBeforeCard = useCallback(() => {
-    setPackIndexInfo(prevInfo => {
-      if (prevInfo.cardIndex === 0 && prevInfo.packIndex === 0)
-        return { ...prevInfo };
-      if (prevInfo.cardIndex === 0) {
-        const nextPackIndex = Math.max(0, prevInfo.packIndex - 1);
-        return {
-          packIndex: nextPackIndex,
-          cardIndex: packs[nextPackIndex].length - 1,
-        };
-      }
-      return {
-        ...prevInfo,
-        cardIndex: prevInfo.cardIndex - 1,
-      };
-    });
+    setPackIndexInfo(prevInfo => getBeforeIndexInfo(prevInfo, packs));
+
+    setIsEmergingNowCard(false);
   }, [packs]);
 
   const setNextCard = useCallback(() => {
@@ -121,6 +136,7 @@ export default function usePacksIndex(packs: Pack[]) {
       const nextCard = getCardFromPacksByIndexInfo(packs, nextPackInfo);
       countCard(nextCard);
     }
+    setIsEmergingNowCard(true);
   }, [countCard, packs, packIndexInfo, maxPackIndexInfo]);
 
   const countLeftCards = useCallback(() => {
@@ -157,7 +173,10 @@ export default function usePacksIndex(packs: Pack[]) {
     cardIndex,
     isFirstCard,
     isLastCard,
+    isEmergingNowCard,
+    beforeCard,
     nowCard,
+    nextCard,
     setBeforeCard,
     setNextCard,
     countLeftCards,
