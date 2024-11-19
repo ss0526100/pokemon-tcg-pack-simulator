@@ -1,6 +1,7 @@
 import * as S from './OpenedPack.style';
 
 import Card from '../../../../components/Card/Card';
+import SwipeXDetector from '../../../../components/SwipeXDetector/SwipeXDetector';
 
 interface OpenedPackProps {
   beforeCard: CardInfo | null;
@@ -9,6 +10,7 @@ interface OpenedPackProps {
   isEmergingNowCard: boolean;
   nowIndex: number;
   setNextCard: () => void;
+  setBeforeCard: () => void;
 }
 
 export default function OpenedPack(props: OpenedPackProps) {
@@ -19,11 +21,17 @@ export default function OpenedPack(props: OpenedPackProps) {
     isEmergingNowCard,
     nowIndex,
     setNextCard,
+    setBeforeCard,
   } = props;
 
   if (isEmergingNowCard)
     return (
-      <div css={S.cardCase}>
+      <SwipeXDetector
+        direction='both'
+        onLeftDetect={setBeforeCard}
+        onRightDetect={setNextCard}
+        css={S.cardCase}
+      >
         {nextCard && (
           <div key={nowIndex + 1} css={S.cardContainer}>
             <Card cardInfo={nextCard} />
@@ -38,11 +46,16 @@ export default function OpenedPack(props: OpenedPackProps) {
             <Card cardInfo={beforeCard} />
           </div>
         )}
-      </div>
+      </SwipeXDetector>
     );
 
   return (
-    <div css={S.cardCase}>
+    <SwipeXDetector
+      direction='both'
+      onLeftDetect={setBeforeCard}
+      onRightDetect={setNextCard}
+      css={S.cardCase}
+    >
       {nextCard && (
         <div key={nowIndex + 1} css={S.cardContainer}>
           <Card cardInfo={nextCard} />
@@ -52,6 +65,6 @@ export default function OpenedPack(props: OpenedPackProps) {
       <div key={nowIndex} css={S.rightInCardContainer}>
         <Card cardInfo={nowCard} onClick={setNextCard} />
       </div>
-    </div>
+    </SwipeXDetector>
   );
 }
