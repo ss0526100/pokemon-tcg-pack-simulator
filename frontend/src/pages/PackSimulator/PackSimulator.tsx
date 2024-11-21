@@ -10,12 +10,12 @@ import PackSelect from './PackSelect/PackSelect';
 import PokeBallSvg from '../../components/svgs/PokeBallSvg';
 import StatisticsInfo from './StatisticsInfo/StatisticsInfo';
 import ToolbarItem from '../../components/ToolbarItem/ToolbarItem';
-import { getRandomPacks } from '../../utils/getRandomPack';
+import getPacks from '../../server/apis/getPacks';
 import isMobile from '../../utils/isMobile';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
-const initPack = getRandomPacks('charizard');
+const initPack = getPacks('charizard');
 
 type Phase = 'select' | 'open' | 'result';
 
@@ -36,7 +36,7 @@ export default function PackSimulator() {
 
   const goOpenPhaseAtFirst = useCallback(
     (packType: PackType, count: number) => {
-      const randomPacks = getRandomPacks(packType, count);
+      const randomPacks = getPacks(packType, count);
       setNowPackCount(count);
       setCardPacks(randomPacks);
       setPhase('open');
@@ -46,7 +46,7 @@ export default function PackSimulator() {
   );
 
   const reopen = () => {
-    const randomPacks = getRandomPacks(nowPackType, nowPackCount);
+    const randomPacks = getPacks(nowPackType, nowPackCount);
     setCardPacks(randomPacks);
     setPhase('open');
   };

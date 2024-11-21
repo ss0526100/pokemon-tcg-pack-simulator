@@ -1,862 +1,862 @@
-import EN_A1001 from '../assets/cards/A1/en/A1-001.webp';
-import EN_A1002 from '../assets/cards/A1/en/A1-002.webp';
-import EN_A1003 from '../assets/cards/A1/en/A1-003.webp';
-import EN_A1004 from '../assets/cards/A1/en/A1-004.webp';
-import EN_A1005 from '../assets/cards/A1/en/A1-005.webp';
-import EN_A1006 from '../assets/cards/A1/en/A1-006.webp';
-import EN_A1007 from '../assets/cards/A1/en/A1-007.webp';
-import EN_A1008 from '../assets/cards/A1/en/A1-008.webp';
-import EN_A1009 from '../assets/cards/A1/en/A1-009.webp';
-import EN_A1010 from '../assets/cards/A1/en/A1-010.webp';
-import EN_A1011 from '../assets/cards/A1/en/A1-011.webp';
-import EN_A1012 from '../assets/cards/A1/en/A1-012.webp';
-import EN_A1013 from '../assets/cards/A1/en/A1-013.webp';
-import EN_A1014 from '../assets/cards/A1/en/A1-014.webp';
-import EN_A1015 from '../assets/cards/A1/en/A1-015.webp';
-import EN_A1016 from '../assets/cards/A1/en/A1-016.webp';
-import EN_A1017 from '../assets/cards/A1/en/A1-017.webp';
-import EN_A1018 from '../assets/cards/A1/en/A1-018.webp';
-import EN_A1019 from '../assets/cards/A1/en/A1-019.webp';
-import EN_A1020 from '../assets/cards/A1/en/A1-020.webp';
-import EN_A1021 from '../assets/cards/A1/en/A1-021.webp';
-import EN_A1022 from '../assets/cards/A1/en/A1-022.webp';
-import EN_A1023 from '../assets/cards/A1/en/A1-023.webp';
-import EN_A1024 from '../assets/cards/A1/en/A1-024.webp';
-import EN_A1025 from '../assets/cards/A1/en/A1-025.webp';
-import EN_A1026 from '../assets/cards/A1/en/A1-026.webp';
-import EN_A1027 from '../assets/cards/A1/en/A1-027.webp';
-import EN_A1028 from '../assets/cards/A1/en/A1-028.webp';
-import EN_A1029 from '../assets/cards/A1/en/A1-029.webp';
-import EN_A1030 from '../assets/cards/A1/en/A1-030.webp';
-import EN_A1031 from '../assets/cards/A1/en/A1-031.webp';
-import EN_A1032 from '../assets/cards/A1/en/A1-032.webp';
-import EN_A1033 from '../assets/cards/A1/en/A1-033.webp';
-import EN_A1034 from '../assets/cards/A1/en/A1-034.webp';
-import EN_A1035 from '../assets/cards/A1/en/A1-035.webp';
-import EN_A1036 from '../assets/cards/A1/en/A1-036.webp';
-import EN_A1037 from '../assets/cards/A1/en/A1-037.webp';
-import EN_A1038 from '../assets/cards/A1/en/A1-038.webp';
-import EN_A1039 from '../assets/cards/A1/en/A1-039.webp';
-import EN_A1040 from '../assets/cards/A1/en/A1-040.webp';
-import EN_A1041 from '../assets/cards/A1/en/A1-041.webp';
-import EN_A1042 from '../assets/cards/A1/en/A1-042.webp';
-import EN_A1043 from '../assets/cards/A1/en/A1-043.webp';
-import EN_A1044 from '../assets/cards/A1/en/A1-044.webp';
-import EN_A1045 from '../assets/cards/A1/en/A1-045.webp';
-import EN_A1046 from '../assets/cards/A1/en/A1-046.webp';
-import EN_A1047 from '../assets/cards/A1/en/A1-047.webp';
-import EN_A1048 from '../assets/cards/A1/en/A1-048.webp';
-import EN_A1049 from '../assets/cards/A1/en/A1-049.webp';
-import EN_A1050 from '../assets/cards/A1/en/A1-050.webp';
-import EN_A1051 from '../assets/cards/A1/en/A1-051.webp';
-import EN_A1052 from '../assets/cards/A1/en/A1-052.webp';
-import EN_A1053 from '../assets/cards/A1/en/A1-053.webp';
-import EN_A1054 from '../assets/cards/A1/en/A1-054.webp';
-import EN_A1055 from '../assets/cards/A1/en/A1-055.webp';
-import EN_A1056 from '../assets/cards/A1/en/A1-056.webp';
-import EN_A1057 from '../assets/cards/A1/en/A1-057.webp';
-import EN_A1058 from '../assets/cards/A1/en/A1-058.webp';
-import EN_A1059 from '../assets/cards/A1/en/A1-059.webp';
-import EN_A1060 from '../assets/cards/A1/en/A1-060.webp';
-import EN_A1061 from '../assets/cards/A1/en/A1-061.webp';
-import EN_A1062 from '../assets/cards/A1/en/A1-062.webp';
-import EN_A1063 from '../assets/cards/A1/en/A1-063.webp';
-import EN_A1064 from '../assets/cards/A1/en/A1-064.webp';
-import EN_A1065 from '../assets/cards/A1/en/A1-065.webp';
-import EN_A1066 from '../assets/cards/A1/en/A1-066.webp';
-import EN_A1067 from '../assets/cards/A1/en/A1-067.webp';
-import EN_A1068 from '../assets/cards/A1/en/A1-068.webp';
-import EN_A1069 from '../assets/cards/A1/en/A1-069.webp';
-import EN_A1070 from '../assets/cards/A1/en/A1-070.webp';
-import EN_A1071 from '../assets/cards/A1/en/A1-071.webp';
-import EN_A1072 from '../assets/cards/A1/en/A1-072.webp';
-import EN_A1073 from '../assets/cards/A1/en/A1-073.webp';
-import EN_A1074 from '../assets/cards/A1/en/A1-074.webp';
-import EN_A1075 from '../assets/cards/A1/en/A1-075.webp';
-import EN_A1076 from '../assets/cards/A1/en/A1-076.webp';
-import EN_A1077 from '../assets/cards/A1/en/A1-077.webp';
-import EN_A1078 from '../assets/cards/A1/en/A1-078.webp';
-import EN_A1079 from '../assets/cards/A1/en/A1-079.webp';
-import EN_A1080 from '../assets/cards/A1/en/A1-080.webp';
-import EN_A1081 from '../assets/cards/A1/en/A1-081.webp';
-import EN_A1082 from '../assets/cards/A1/en/A1-082.webp';
-import EN_A1083 from '../assets/cards/A1/en/A1-083.webp';
-import EN_A1084 from '../assets/cards/A1/en/A1-084.webp';
-import EN_A1085 from '../assets/cards/A1/en/A1-085.webp';
-import EN_A1086 from '../assets/cards/A1/en/A1-086.webp';
-import EN_A1087 from '../assets/cards/A1/en/A1-087.webp';
-import EN_A1088 from '../assets/cards/A1/en/A1-088.webp';
-import EN_A1089 from '../assets/cards/A1/en/A1-089.webp';
-import EN_A1090 from '../assets/cards/A1/en/A1-090.webp';
-import EN_A1091 from '../assets/cards/A1/en/A1-091.webp';
-import EN_A1092 from '../assets/cards/A1/en/A1-092.webp';
-import EN_A1093 from '../assets/cards/A1/en/A1-093.webp';
-import EN_A1094 from '../assets/cards/A1/en/A1-094.webp';
-import EN_A1095 from '../assets/cards/A1/en/A1-095.webp';
-import EN_A1096 from '../assets/cards/A1/en/A1-096.webp';
-import EN_A1097 from '../assets/cards/A1/en/A1-097.webp';
-import EN_A1098 from '../assets/cards/A1/en/A1-098.webp';
-import EN_A1099 from '../assets/cards/A1/en/A1-099.webp';
-import EN_A1100 from '../assets/cards/A1/en/A1-100.webp';
-import EN_A1101 from '../assets/cards/A1/en/A1-101.webp';
-import EN_A1102 from '../assets/cards/A1/en/A1-102.webp';
-import EN_A1103 from '../assets/cards/A1/en/A1-103.webp';
-import EN_A1104 from '../assets/cards/A1/en/A1-104.webp';
-import EN_A1105 from '../assets/cards/A1/en/A1-105.webp';
-import EN_A1106 from '../assets/cards/A1/en/A1-106.webp';
-import EN_A1107 from '../assets/cards/A1/en/A1-107.webp';
-import EN_A1108 from '../assets/cards/A1/en/A1-108.webp';
-import EN_A1109 from '../assets/cards/A1/en/A1-109.webp';
-import EN_A1110 from '../assets/cards/A1/en/A1-110.webp';
-import EN_A1111 from '../assets/cards/A1/en/A1-111.webp';
-import EN_A1112 from '../assets/cards/A1/en/A1-112.webp';
-import EN_A1113 from '../assets/cards/A1/en/A1-113.webp';
-import EN_A1114 from '../assets/cards/A1/en/A1-114.webp';
-import EN_A1115 from '../assets/cards/A1/en/A1-115.webp';
-import EN_A1116 from '../assets/cards/A1/en/A1-116.webp';
-import EN_A1117 from '../assets/cards/A1/en/A1-117.webp';
-import EN_A1118 from '../assets/cards/A1/en/A1-118.webp';
-import EN_A1119 from '../assets/cards/A1/en/A1-119.webp';
-import EN_A1120 from '../assets/cards/A1/en/A1-120.webp';
-import EN_A1121 from '../assets/cards/A1/en/A1-121.webp';
-import EN_A1122 from '../assets/cards/A1/en/A1-122.webp';
-import EN_A1123 from '../assets/cards/A1/en/A1-123.webp';
-import EN_A1124 from '../assets/cards/A1/en/A1-124.webp';
-import EN_A1125 from '../assets/cards/A1/en/A1-125.webp';
-import EN_A1126 from '../assets/cards/A1/en/A1-126.webp';
-import EN_A1127 from '../assets/cards/A1/en/A1-127.webp';
-import EN_A1128 from '../assets/cards/A1/en/A1-128.webp';
-import EN_A1129 from '../assets/cards/A1/en/A1-129.webp';
-import EN_A1130 from '../assets/cards/A1/en/A1-130.webp';
-import EN_A1131 from '../assets/cards/A1/en/A1-131.webp';
-import EN_A1132 from '../assets/cards/A1/en/A1-132.webp';
-import EN_A1133 from '../assets/cards/A1/en/A1-133.webp';
-import EN_A1134 from '../assets/cards/A1/en/A1-134.webp';
-import EN_A1135 from '../assets/cards/A1/en/A1-135.webp';
-import EN_A1136 from '../assets/cards/A1/en/A1-136.webp';
-import EN_A1137 from '../assets/cards/A1/en/A1-137.webp';
-import EN_A1138 from '../assets/cards/A1/en/A1-138.webp';
-import EN_A1139 from '../assets/cards/A1/en/A1-139.webp';
-import EN_A1140 from '../assets/cards/A1/en/A1-140.webp';
-import EN_A1141 from '../assets/cards/A1/en/A1-141.webp';
-import EN_A1142 from '../assets/cards/A1/en/A1-142.webp';
-import EN_A1143 from '../assets/cards/A1/en/A1-143.webp';
-import EN_A1144 from '../assets/cards/A1/en/A1-144.webp';
-import EN_A1145 from '../assets/cards/A1/en/A1-145.webp';
-import EN_A1146 from '../assets/cards/A1/en/A1-146.webp';
-import EN_A1147 from '../assets/cards/A1/en/A1-147.webp';
-import EN_A1148 from '../assets/cards/A1/en/A1-148.webp';
-import EN_A1149 from '../assets/cards/A1/en/A1-149.webp';
-import EN_A1150 from '../assets/cards/A1/en/A1-150.webp';
-import EN_A1151 from '../assets/cards/A1/en/A1-151.webp';
-import EN_A1152 from '../assets/cards/A1/en/A1-152.webp';
-import EN_A1153 from '../assets/cards/A1/en/A1-153.webp';
-import EN_A1154 from '../assets/cards/A1/en/A1-154.webp';
-import EN_A1155 from '../assets/cards/A1/en/A1-155.webp';
-import EN_A1156 from '../assets/cards/A1/en/A1-156.webp';
-import EN_A1157 from '../assets/cards/A1/en/A1-157.webp';
-import EN_A1158 from '../assets/cards/A1/en/A1-158.webp';
-import EN_A1159 from '../assets/cards/A1/en/A1-159.webp';
-import EN_A1160 from '../assets/cards/A1/en/A1-160.webp';
-import EN_A1161 from '../assets/cards/A1/en/A1-161.webp';
-import EN_A1162 from '../assets/cards/A1/en/A1-162.webp';
-import EN_A1163 from '../assets/cards/A1/en/A1-163.webp';
-import EN_A1164 from '../assets/cards/A1/en/A1-164.webp';
-import EN_A1165 from '../assets/cards/A1/en/A1-165.webp';
-import EN_A1166 from '../assets/cards/A1/en/A1-166.webp';
-import EN_A1167 from '../assets/cards/A1/en/A1-167.webp';
-import EN_A1168 from '../assets/cards/A1/en/A1-168.webp';
-import EN_A1169 from '../assets/cards/A1/en/A1-169.webp';
-import EN_A1170 from '../assets/cards/A1/en/A1-170.webp';
-import EN_A1171 from '../assets/cards/A1/en/A1-171.webp';
-import EN_A1172 from '../assets/cards/A1/en/A1-172.webp';
-import EN_A1173 from '../assets/cards/A1/en/A1-173.webp';
-import EN_A1174 from '../assets/cards/A1/en/A1-174.webp';
-import EN_A1175 from '../assets/cards/A1/en/A1-175.webp';
-import EN_A1176 from '../assets/cards/A1/en/A1-176.webp';
-import EN_A1177 from '../assets/cards/A1/en/A1-177.webp';
-import EN_A1178 from '../assets/cards/A1/en/A1-178.webp';
-import EN_A1179 from '../assets/cards/A1/en/A1-179.webp';
-import EN_A1180 from '../assets/cards/A1/en/A1-180.webp';
-import EN_A1181 from '../assets/cards/A1/en/A1-181.webp';
-import EN_A1182 from '../assets/cards/A1/en/A1-182.webp';
-import EN_A1183 from '../assets/cards/A1/en/A1-183.webp';
-import EN_A1184 from '../assets/cards/A1/en/A1-184.webp';
-import EN_A1185 from '../assets/cards/A1/en/A1-185.webp';
-import EN_A1186 from '../assets/cards/A1/en/A1-186.webp';
-import EN_A1187 from '../assets/cards/A1/en/A1-187.webp';
-import EN_A1188 from '../assets/cards/A1/en/A1-188.webp';
-import EN_A1189 from '../assets/cards/A1/en/A1-189.webp';
-import EN_A1190 from '../assets/cards/A1/en/A1-190.webp';
-import EN_A1191 from '../assets/cards/A1/en/A1-191.webp';
-import EN_A1192 from '../assets/cards/A1/en/A1-192.webp';
-import EN_A1193 from '../assets/cards/A1/en/A1-193.webp';
-import EN_A1194 from '../assets/cards/A1/en/A1-194.webp';
-import EN_A1195 from '../assets/cards/A1/en/A1-195.webp';
-import EN_A1196 from '../assets/cards/A1/en/A1-196.webp';
-import EN_A1197 from '../assets/cards/A1/en/A1-197.webp';
-import EN_A1198 from '../assets/cards/A1/en/A1-198.webp';
-import EN_A1199 from '../assets/cards/A1/en/A1-199.webp';
-import EN_A1200 from '../assets/cards/A1/en/A1-200.webp';
-import EN_A1201 from '../assets/cards/A1/en/A1-201.webp';
-import EN_A1202 from '../assets/cards/A1/en/A1-202.webp';
-import EN_A1203 from '../assets/cards/A1/en/A1-203.webp';
-import EN_A1204 from '../assets/cards/A1/en/A1-204.webp';
-import EN_A1205 from '../assets/cards/A1/en/A1-205.webp';
-import EN_A1206 from '../assets/cards/A1/en/A1-206.webp';
-import EN_A1207 from '../assets/cards/A1/en/A1-207.webp';
-import EN_A1208 from '../assets/cards/A1/en/A1-208.webp';
-import EN_A1209 from '../assets/cards/A1/en/A1-209.webp';
-import EN_A1210 from '../assets/cards/A1/en/A1-210.webp';
-import EN_A1211 from '../assets/cards/A1/en/A1-211.webp';
-import EN_A1212 from '../assets/cards/A1/en/A1-212.webp';
-import EN_A1213 from '../assets/cards/A1/en/A1-213.webp';
-import EN_A1214 from '../assets/cards/A1/en/A1-214.webp';
-import EN_A1215 from '../assets/cards/A1/en/A1-215.webp';
-import EN_A1216 from '../assets/cards/A1/en/A1-216.webp';
-import EN_A1217 from '../assets/cards/A1/en/A1-217.webp';
-import EN_A1218 from '../assets/cards/A1/en/A1-218.webp';
-import EN_A1219 from '../assets/cards/A1/en/A1-219.webp';
-import EN_A1220 from '../assets/cards/A1/en/A1-220.webp';
-import EN_A1221 from '../assets/cards/A1/en/A1-221.webp';
-import EN_A1222 from '../assets/cards/A1/en/A1-222.webp';
-import EN_A1223 from '../assets/cards/A1/en/A1-223.webp';
-import EN_A1224 from '../assets/cards/A1/en/A1-224.webp';
-import EN_A1225 from '../assets/cards/A1/en/A1-225.webp';
-import EN_A1226 from '../assets/cards/A1/en/A1-226.webp';
-import EN_A1227 from '../assets/cards/A1/en/A1-227.webp';
-import EN_A1228 from '../assets/cards/A1/en/A1-228.webp';
-import EN_A1229 from '../assets/cards/A1/en/A1-229.webp';
-import EN_A1230 from '../assets/cards/A1/en/A1-230.webp';
-import EN_A1231 from '../assets/cards/A1/en/A1-231.webp';
-import EN_A1232 from '../assets/cards/A1/en/A1-232.webp';
-import EN_A1233 from '../assets/cards/A1/en/A1-233.webp';
-import EN_A1234 from '../assets/cards/A1/en/A1-234.webp';
-import EN_A1235 from '../assets/cards/A1/en/A1-235.webp';
-import EN_A1236 from '../assets/cards/A1/en/A1-236.webp';
-import EN_A1237 from '../assets/cards/A1/en/A1-237.webp';
-import EN_A1238 from '../assets/cards/A1/en/A1-238.webp';
-import EN_A1239 from '../assets/cards/A1/en/A1-239.webp';
-import EN_A1240 from '../assets/cards/A1/en/A1-240.webp';
-import EN_A1241 from '../assets/cards/A1/en/A1-241.webp';
-import EN_A1242 from '../assets/cards/A1/en/A1-242.webp';
-import EN_A1243 from '../assets/cards/A1/en/A1-243.webp';
-import EN_A1244 from '../assets/cards/A1/en/A1-244.webp';
-import EN_A1245 from '../assets/cards/A1/en/A1-245.webp';
-import EN_A1246 from '../assets/cards/A1/en/A1-246.webp';
-import EN_A1247 from '../assets/cards/A1/en/A1-247.webp';
-import EN_A1248 from '../assets/cards/A1/en/A1-248.webp';
-import EN_A1249 from '../assets/cards/A1/en/A1-249.webp';
-import EN_A1250 from '../assets/cards/A1/en/A1-250.webp';
-import EN_A1251 from '../assets/cards/A1/en/A1-251.webp';
-import EN_A1252 from '../assets/cards/A1/en/A1-252.webp';
-import EN_A1253 from '../assets/cards/A1/en/A1-253.webp';
-import EN_A1254 from '../assets/cards/A1/en/A1-254.webp';
-import EN_A1255 from '../assets/cards/A1/en/A1-255.webp';
-import EN_A1256 from '../assets/cards/A1/en/A1-256.webp';
-import EN_A1257 from '../assets/cards/A1/en/A1-257.webp';
-import EN_A1258 from '../assets/cards/A1/en/A1-258.webp';
-import EN_A1259 from '../assets/cards/A1/en/A1-259.webp';
-import EN_A1260 from '../assets/cards/A1/en/A1-260.webp';
-import EN_A1261 from '../assets/cards/A1/en/A1-261.webp';
-import EN_A1262 from '../assets/cards/A1/en/A1-262.webp';
-import EN_A1263 from '../assets/cards/A1/en/A1-263.webp';
-import EN_A1264 from '../assets/cards/A1/en/A1-264.webp';
-import EN_A1265 from '../assets/cards/A1/en/A1-265.webp';
-import EN_A1266 from '../assets/cards/A1/en/A1-266.webp';
-import EN_A1267 from '../assets/cards/A1/en/A1-267.webp';
-import EN_A1268 from '../assets/cards/A1/en/A1-268.webp';
-import EN_A1269 from '../assets/cards/A1/en/A1-269.webp';
-import EN_A1270 from '../assets/cards/A1/en/A1-270.webp';
-import EN_A1271 from '../assets/cards/A1/en/A1-271.webp';
-import EN_A1272 from '../assets/cards/A1/en/A1-272.webp';
-import EN_A1273 from '../assets/cards/A1/en/A1-273.webp';
-import EN_A1274 from '../assets/cards/A1/en/A1-274.webp';
-import EN_A1275 from '../assets/cards/A1/en/A1-275.webp';
-import EN_A1276 from '../assets/cards/A1/en/A1-276.webp';
-import EN_A1277 from '../assets/cards/A1/en/A1-277.webp';
-import EN_A1278 from '../assets/cards/A1/en/A1-278.webp';
-import EN_A1279 from '../assets/cards/A1/en/A1-279.webp';
-import EN_A1280 from '../assets/cards/A1/en/A1-280.webp';
-import EN_A1281 from '../assets/cards/A1/en/A1-281.webp';
-import EN_A1282 from '../assets/cards/A1/en/A1-282.webp';
-import EN_A1283 from '../assets/cards/A1/en/A1-283.webp';
-import EN_A1284 from '../assets/cards/A1/en/A1-284.webp';
-import EN_A1285 from '../assets/cards/A1/en/A1-285.webp';
-import EN_A1286 from '../assets/cards/A1/en/A1-286.webp';
-import JA_A1001 from '../assets/cards/A1/ja/A1-001.webp';
-import JA_A1002 from '../assets/cards/A1/ja/A1-002.webp';
-import JA_A1003 from '../assets/cards/A1/ja/A1-003.webp';
-import JA_A1004 from '../assets/cards/A1/ja/A1-004.webp';
-import JA_A1005 from '../assets/cards/A1/ja/A1-005.webp';
-import JA_A1006 from '../assets/cards/A1/ja/A1-006.webp';
-import JA_A1007 from '../assets/cards/A1/ja/A1-007.webp';
-import JA_A1008 from '../assets/cards/A1/ja/A1-008.webp';
-import JA_A1009 from '../assets/cards/A1/ja/A1-009.webp';
-import JA_A1010 from '../assets/cards/A1/ja/A1-010.webp';
-import JA_A1011 from '../assets/cards/A1/ja/A1-011.webp';
-import JA_A1012 from '../assets/cards/A1/ja/A1-012.webp';
-import JA_A1013 from '../assets/cards/A1/ja/A1-013.webp';
-import JA_A1014 from '../assets/cards/A1/ja/A1-014.webp';
-import JA_A1015 from '../assets/cards/A1/ja/A1-015.webp';
-import JA_A1016 from '../assets/cards/A1/ja/A1-016.webp';
-import JA_A1017 from '../assets/cards/A1/ja/A1-017.webp';
-import JA_A1018 from '../assets/cards/A1/ja/A1-018.webp';
-import JA_A1019 from '../assets/cards/A1/ja/A1-019.webp';
-import JA_A1020 from '../assets/cards/A1/ja/A1-020.webp';
-import JA_A1021 from '../assets/cards/A1/ja/A1-021.webp';
-import JA_A1022 from '../assets/cards/A1/ja/A1-022.webp';
-import JA_A1023 from '../assets/cards/A1/ja/A1-023.webp';
-import JA_A1024 from '../assets/cards/A1/ja/A1-024.webp';
-import JA_A1025 from '../assets/cards/A1/ja/A1-025.webp';
-import JA_A1026 from '../assets/cards/A1/ja/A1-026.webp';
-import JA_A1027 from '../assets/cards/A1/ja/A1-027.webp';
-import JA_A1028 from '../assets/cards/A1/ja/A1-028.webp';
-import JA_A1029 from '../assets/cards/A1/ja/A1-029.webp';
-import JA_A1030 from '../assets/cards/A1/ja/A1-030.webp';
-import JA_A1031 from '../assets/cards/A1/ja/A1-031.webp';
-import JA_A1032 from '../assets/cards/A1/ja/A1-032.webp';
-import JA_A1033 from '../assets/cards/A1/ja/A1-033.webp';
-import JA_A1034 from '../assets/cards/A1/ja/A1-034.webp';
-import JA_A1035 from '../assets/cards/A1/ja/A1-035.webp';
-import JA_A1036 from '../assets/cards/A1/ja/A1-036.webp';
-import JA_A1037 from '../assets/cards/A1/ja/A1-037.webp';
-import JA_A1038 from '../assets/cards/A1/ja/A1-038.webp';
-import JA_A1039 from '../assets/cards/A1/ja/A1-039.webp';
-import JA_A1040 from '../assets/cards/A1/ja/A1-040.webp';
-import JA_A1041 from '../assets/cards/A1/ja/A1-041.webp';
-import JA_A1042 from '../assets/cards/A1/ja/A1-042.webp';
-import JA_A1043 from '../assets/cards/A1/ja/A1-043.webp';
-import JA_A1044 from '../assets/cards/A1/ja/A1-044.webp';
-import JA_A1045 from '../assets/cards/A1/ja/A1-045.webp';
-import JA_A1046 from '../assets/cards/A1/ja/A1-046.webp';
-import JA_A1047 from '../assets/cards/A1/ja/A1-047.webp';
-import JA_A1048 from '../assets/cards/A1/ja/A1-048.webp';
-import JA_A1049 from '../assets/cards/A1/ja/A1-049.webp';
-import JA_A1050 from '../assets/cards/A1/ja/A1-050.webp';
-import JA_A1051 from '../assets/cards/A1/ja/A1-051.webp';
-import JA_A1052 from '../assets/cards/A1/ja/A1-052.webp';
-import JA_A1053 from '../assets/cards/A1/ja/A1-053.webp';
-import JA_A1054 from '../assets/cards/A1/ja/A1-054.webp';
-import JA_A1055 from '../assets/cards/A1/ja/A1-055.webp';
-import JA_A1056 from '../assets/cards/A1/ja/A1-056.webp';
-import JA_A1057 from '../assets/cards/A1/ja/A1-057.webp';
-import JA_A1058 from '../assets/cards/A1/ja/A1-058.webp';
-import JA_A1059 from '../assets/cards/A1/ja/A1-059.webp';
-import JA_A1060 from '../assets/cards/A1/ja/A1-060.webp';
-import JA_A1061 from '../assets/cards/A1/ja/A1-061.webp';
-import JA_A1062 from '../assets/cards/A1/ja/A1-062.webp';
-import JA_A1063 from '../assets/cards/A1/ja/A1-063.webp';
-import JA_A1064 from '../assets/cards/A1/ja/A1-064.webp';
-import JA_A1065 from '../assets/cards/A1/ja/A1-065.webp';
-import JA_A1066 from '../assets/cards/A1/ja/A1-066.webp';
-import JA_A1067 from '../assets/cards/A1/ja/A1-067.webp';
-import JA_A1068 from '../assets/cards/A1/ja/A1-068.webp';
-import JA_A1069 from '../assets/cards/A1/ja/A1-069.webp';
-import JA_A1070 from '../assets/cards/A1/ja/A1-070.webp';
-import JA_A1071 from '../assets/cards/A1/ja/A1-071.webp';
-import JA_A1072 from '../assets/cards/A1/ja/A1-072.webp';
-import JA_A1073 from '../assets/cards/A1/ja/A1-073.webp';
-import JA_A1074 from '../assets/cards/A1/ja/A1-074.webp';
-import JA_A1075 from '../assets/cards/A1/ja/A1-075.webp';
-import JA_A1076 from '../assets/cards/A1/ja/A1-076.webp';
-import JA_A1077 from '../assets/cards/A1/ja/A1-077.webp';
-import JA_A1078 from '../assets/cards/A1/ja/A1-078.webp';
-import JA_A1079 from '../assets/cards/A1/ja/A1-079.webp';
-import JA_A1080 from '../assets/cards/A1/ja/A1-080.webp';
-import JA_A1081 from '../assets/cards/A1/ja/A1-081.webp';
-import JA_A1082 from '../assets/cards/A1/ja/A1-082.webp';
-import JA_A1083 from '../assets/cards/A1/ja/A1-083.webp';
-import JA_A1084 from '../assets/cards/A1/ja/A1-084.webp';
-import JA_A1085 from '../assets/cards/A1/ja/A1-085.webp';
-import JA_A1086 from '../assets/cards/A1/ja/A1-086.webp';
-import JA_A1087 from '../assets/cards/A1/ja/A1-087.webp';
-import JA_A1088 from '../assets/cards/A1/ja/A1-088.webp';
-import JA_A1089 from '../assets/cards/A1/ja/A1-089.webp';
-import JA_A1090 from '../assets/cards/A1/ja/A1-090.webp';
-import JA_A1091 from '../assets/cards/A1/ja/A1-091.webp';
-import JA_A1092 from '../assets/cards/A1/ja/A1-092.webp';
-import JA_A1093 from '../assets/cards/A1/ja/A1-093.webp';
-import JA_A1094 from '../assets/cards/A1/ja/A1-094.webp';
-import JA_A1095 from '../assets/cards/A1/ja/A1-095.webp';
-import JA_A1096 from '../assets/cards/A1/ja/A1-096.webp';
-import JA_A1097 from '../assets/cards/A1/ja/A1-097.webp';
-import JA_A1098 from '../assets/cards/A1/ja/A1-098.webp';
-import JA_A1099 from '../assets/cards/A1/ja/A1-099.webp';
-import JA_A1100 from '../assets/cards/A1/ja/A1-100.webp';
-import JA_A1101 from '../assets/cards/A1/ja/A1-101.webp';
-import JA_A1102 from '../assets/cards/A1/ja/A1-102.webp';
-import JA_A1103 from '../assets/cards/A1/ja/A1-103.webp';
-import JA_A1104 from '../assets/cards/A1/ja/A1-104.webp';
-import JA_A1105 from '../assets/cards/A1/ja/A1-105.webp';
-import JA_A1106 from '../assets/cards/A1/ja/A1-106.webp';
-import JA_A1107 from '../assets/cards/A1/ja/A1-107.webp';
-import JA_A1108 from '../assets/cards/A1/ja/A1-108.webp';
-import JA_A1109 from '../assets/cards/A1/ja/A1-109.webp';
-import JA_A1110 from '../assets/cards/A1/ja/A1-110.webp';
-import JA_A1111 from '../assets/cards/A1/ja/A1-111.webp';
-import JA_A1112 from '../assets/cards/A1/ja/A1-112.webp';
-import JA_A1113 from '../assets/cards/A1/ja/A1-113.webp';
-import JA_A1114 from '../assets/cards/A1/ja/A1-114.webp';
-import JA_A1115 from '../assets/cards/A1/ja/A1-115.webp';
-import JA_A1116 from '../assets/cards/A1/ja/A1-116.webp';
-import JA_A1117 from '../assets/cards/A1/ja/A1-117.webp';
-import JA_A1118 from '../assets/cards/A1/ja/A1-118.webp';
-import JA_A1119 from '../assets/cards/A1/ja/A1-119.webp';
-import JA_A1120 from '../assets/cards/A1/ja/A1-120.webp';
-import JA_A1121 from '../assets/cards/A1/ja/A1-121.webp';
-import JA_A1122 from '../assets/cards/A1/ja/A1-122.webp';
-import JA_A1123 from '../assets/cards/A1/ja/A1-123.webp';
-import JA_A1124 from '../assets/cards/A1/ja/A1-124.webp';
-import JA_A1125 from '../assets/cards/A1/ja/A1-125.webp';
-import JA_A1126 from '../assets/cards/A1/ja/A1-126.webp';
-import JA_A1127 from '../assets/cards/A1/ja/A1-127.webp';
-import JA_A1128 from '../assets/cards/A1/ja/A1-128.webp';
-import JA_A1129 from '../assets/cards/A1/ja/A1-129.webp';
-import JA_A1130 from '../assets/cards/A1/ja/A1-130.webp';
-import JA_A1131 from '../assets/cards/A1/ja/A1-131.webp';
-import JA_A1132 from '../assets/cards/A1/ja/A1-132.webp';
-import JA_A1133 from '../assets/cards/A1/ja/A1-133.webp';
-import JA_A1134 from '../assets/cards/A1/ja/A1-134.webp';
-import JA_A1135 from '../assets/cards/A1/ja/A1-135.webp';
-import JA_A1136 from '../assets/cards/A1/ja/A1-136.webp';
-import JA_A1137 from '../assets/cards/A1/ja/A1-137.webp';
-import JA_A1138 from '../assets/cards/A1/ja/A1-138.webp';
-import JA_A1139 from '../assets/cards/A1/ja/A1-139.webp';
-import JA_A1140 from '../assets/cards/A1/ja/A1-140.webp';
-import JA_A1141 from '../assets/cards/A1/ja/A1-141.webp';
-import JA_A1142 from '../assets/cards/A1/ja/A1-142.webp';
-import JA_A1143 from '../assets/cards/A1/ja/A1-143.webp';
-import JA_A1144 from '../assets/cards/A1/ja/A1-144.webp';
-import JA_A1145 from '../assets/cards/A1/ja/A1-145.webp';
-import JA_A1146 from '../assets/cards/A1/ja/A1-146.webp';
-import JA_A1147 from '../assets/cards/A1/ja/A1-147.webp';
-import JA_A1148 from '../assets/cards/A1/ja/A1-148.webp';
-import JA_A1149 from '../assets/cards/A1/ja/A1-149.webp';
-import JA_A1150 from '../assets/cards/A1/ja/A1-150.webp';
-import JA_A1151 from '../assets/cards/A1/ja/A1-151.webp';
-import JA_A1152 from '../assets/cards/A1/ja/A1-152.webp';
-import JA_A1153 from '../assets/cards/A1/ja/A1-153.webp';
-import JA_A1154 from '../assets/cards/A1/ja/A1-154.webp';
-import JA_A1155 from '../assets/cards/A1/ja/A1-155.webp';
-import JA_A1156 from '../assets/cards/A1/ja/A1-156.webp';
-import JA_A1157 from '../assets/cards/A1/ja/A1-157.webp';
-import JA_A1158 from '../assets/cards/A1/ja/A1-158.webp';
-import JA_A1159 from '../assets/cards/A1/ja/A1-159.webp';
-import JA_A1160 from '../assets/cards/A1/ja/A1-160.webp';
-import JA_A1161 from '../assets/cards/A1/ja/A1-161.webp';
-import JA_A1162 from '../assets/cards/A1/ja/A1-162.webp';
-import JA_A1163 from '../assets/cards/A1/ja/A1-163.webp';
-import JA_A1164 from '../assets/cards/A1/ja/A1-164.webp';
-import JA_A1165 from '../assets/cards/A1/ja/A1-165.webp';
-import JA_A1166 from '../assets/cards/A1/ja/A1-166.webp';
-import JA_A1167 from '../assets/cards/A1/ja/A1-167.webp';
-import JA_A1168 from '../assets/cards/A1/ja/A1-168.webp';
-import JA_A1169 from '../assets/cards/A1/ja/A1-169.webp';
-import JA_A1170 from '../assets/cards/A1/ja/A1-170.webp';
-import JA_A1171 from '../assets/cards/A1/ja/A1-171.webp';
-import JA_A1172 from '../assets/cards/A1/ja/A1-172.webp';
-import JA_A1173 from '../assets/cards/A1/ja/A1-173.webp';
-import JA_A1174 from '../assets/cards/A1/ja/A1-174.webp';
-import JA_A1175 from '../assets/cards/A1/ja/A1-175.webp';
-import JA_A1176 from '../assets/cards/A1/ja/A1-176.webp';
-import JA_A1177 from '../assets/cards/A1/ja/A1-177.webp';
-import JA_A1178 from '../assets/cards/A1/ja/A1-178.webp';
-import JA_A1179 from '../assets/cards/A1/ja/A1-179.webp';
-import JA_A1180 from '../assets/cards/A1/ja/A1-180.webp';
-import JA_A1181 from '../assets/cards/A1/ja/A1-181.webp';
-import JA_A1182 from '../assets/cards/A1/ja/A1-182.webp';
-import JA_A1183 from '../assets/cards/A1/ja/A1-183.webp';
-import JA_A1184 from '../assets/cards/A1/ja/A1-184.webp';
-import JA_A1185 from '../assets/cards/A1/ja/A1-185.webp';
-import JA_A1186 from '../assets/cards/A1/ja/A1-186.webp';
-import JA_A1187 from '../assets/cards/A1/ja/A1-187.webp';
-import JA_A1188 from '../assets/cards/A1/ja/A1-188.webp';
-import JA_A1189 from '../assets/cards/A1/ja/A1-189.webp';
-import JA_A1190 from '../assets/cards/A1/ja/A1-190.webp';
-import JA_A1191 from '../assets/cards/A1/ja/A1-191.webp';
-import JA_A1192 from '../assets/cards/A1/ja/A1-192.webp';
-import JA_A1193 from '../assets/cards/A1/ja/A1-193.webp';
-import JA_A1194 from '../assets/cards/A1/ja/A1-194.webp';
-import JA_A1195 from '../assets/cards/A1/ja/A1-195.webp';
-import JA_A1196 from '../assets/cards/A1/ja/A1-196.webp';
-import JA_A1197 from '../assets/cards/A1/ja/A1-197.webp';
-import JA_A1198 from '../assets/cards/A1/ja/A1-198.webp';
-import JA_A1199 from '../assets/cards/A1/ja/A1-199.webp';
-import JA_A1200 from '../assets/cards/A1/ja/A1-200.webp';
-import JA_A1201 from '../assets/cards/A1/ja/A1-201.webp';
-import JA_A1202 from '../assets/cards/A1/ja/A1-202.webp';
-import JA_A1203 from '../assets/cards/A1/ja/A1-203.webp';
-import JA_A1204 from '../assets/cards/A1/ja/A1-204.webp';
-import JA_A1205 from '../assets/cards/A1/ja/A1-205.webp';
-import JA_A1206 from '../assets/cards/A1/ja/A1-206.webp';
-import JA_A1207 from '../assets/cards/A1/ja/A1-207.webp';
-import JA_A1208 from '../assets/cards/A1/ja/A1-208.webp';
-import JA_A1209 from '../assets/cards/A1/ja/A1-209.webp';
-import JA_A1210 from '../assets/cards/A1/ja/A1-210.webp';
-import JA_A1211 from '../assets/cards/A1/ja/A1-211.webp';
-import JA_A1212 from '../assets/cards/A1/ja/A1-212.webp';
-import JA_A1213 from '../assets/cards/A1/ja/A1-213.webp';
-import JA_A1214 from '../assets/cards/A1/ja/A1-214.webp';
-import JA_A1215 from '../assets/cards/A1/ja/A1-215.webp';
-import JA_A1216 from '../assets/cards/A1/ja/A1-216.webp';
-import JA_A1217 from '../assets/cards/A1/ja/A1-217.webp';
-import JA_A1218 from '../assets/cards/A1/ja/A1-218.webp';
-import JA_A1219 from '../assets/cards/A1/ja/A1-219.webp';
-import JA_A1220 from '../assets/cards/A1/ja/A1-220.webp';
-import JA_A1221 from '../assets/cards/A1/ja/A1-221.webp';
-import JA_A1222 from '../assets/cards/A1/ja/A1-222.webp';
-import JA_A1223 from '../assets/cards/A1/ja/A1-223.webp';
-import JA_A1224 from '../assets/cards/A1/ja/A1-224.webp';
-import JA_A1225 from '../assets/cards/A1/ja/A1-225.webp';
-import JA_A1226 from '../assets/cards/A1/ja/A1-226.webp';
-import JA_A1227 from '../assets/cards/A1/ja/A1-227.webp';
-import JA_A1228 from '../assets/cards/A1/ja/A1-228.webp';
-import JA_A1229 from '../assets/cards/A1/ja/A1-229.webp';
-import JA_A1230 from '../assets/cards/A1/ja/A1-230.webp';
-import JA_A1231 from '../assets/cards/A1/ja/A1-231.webp';
-import JA_A1232 from '../assets/cards/A1/ja/A1-232.webp';
-import JA_A1233 from '../assets/cards/A1/ja/A1-233.webp';
-import JA_A1234 from '../assets/cards/A1/ja/A1-234.webp';
-import JA_A1235 from '../assets/cards/A1/ja/A1-235.webp';
-import JA_A1236 from '../assets/cards/A1/ja/A1-236.webp';
-import JA_A1237 from '../assets/cards/A1/ja/A1-237.webp';
-import JA_A1238 from '../assets/cards/A1/ja/A1-238.webp';
-import JA_A1239 from '../assets/cards/A1/ja/A1-239.webp';
-import JA_A1240 from '../assets/cards/A1/ja/A1-240.webp';
-import JA_A1241 from '../assets/cards/A1/ja/A1-241.webp';
-import JA_A1242 from '../assets/cards/A1/ja/A1-242.webp';
-import JA_A1243 from '../assets/cards/A1/ja/A1-243.webp';
-import JA_A1244 from '../assets/cards/A1/ja/A1-244.webp';
-import JA_A1245 from '../assets/cards/A1/ja/A1-245.webp';
-import JA_A1246 from '../assets/cards/A1/ja/A1-246.webp';
-import JA_A1247 from '../assets/cards/A1/ja/A1-247.webp';
-import JA_A1248 from '../assets/cards/A1/ja/A1-248.webp';
-import JA_A1249 from '../assets/cards/A1/ja/A1-249.webp';
-import JA_A1250 from '../assets/cards/A1/ja/A1-250.webp';
-import JA_A1251 from '../assets/cards/A1/ja/A1-251.webp';
-import JA_A1252 from '../assets/cards/A1/ja/A1-252.webp';
-import JA_A1253 from '../assets/cards/A1/ja/A1-253.webp';
-import JA_A1254 from '../assets/cards/A1/ja/A1-254.webp';
-import JA_A1255 from '../assets/cards/A1/ja/A1-255.webp';
-import JA_A1256 from '../assets/cards/A1/ja/A1-256.webp';
-import JA_A1257 from '../assets/cards/A1/ja/A1-257.webp';
-import JA_A1258 from '../assets/cards/A1/ja/A1-258.webp';
-import JA_A1259 from '../assets/cards/A1/ja/A1-259.webp';
-import JA_A1260 from '../assets/cards/A1/ja/A1-260.webp';
-import JA_A1261 from '../assets/cards/A1/ja/A1-261.webp';
-import JA_A1262 from '../assets/cards/A1/ja/A1-262.webp';
-import JA_A1263 from '../assets/cards/A1/ja/A1-263.webp';
-import JA_A1264 from '../assets/cards/A1/ja/A1-264.webp';
-import JA_A1265 from '../assets/cards/A1/ja/A1-265.webp';
-import JA_A1266 from '../assets/cards/A1/ja/A1-266.webp';
-import JA_A1267 from '../assets/cards/A1/ja/A1-267.webp';
-import JA_A1268 from '../assets/cards/A1/ja/A1-268.webp';
-import JA_A1269 from '../assets/cards/A1/ja/A1-269.webp';
-import JA_A1270 from '../assets/cards/A1/ja/A1-270.webp';
-import JA_A1271 from '../assets/cards/A1/ja/A1-271.webp';
-import JA_A1272 from '../assets/cards/A1/ja/A1-272.webp';
-import JA_A1273 from '../assets/cards/A1/ja/A1-273.webp';
-import JA_A1274 from '../assets/cards/A1/ja/A1-274.webp';
-import JA_A1275 from '../assets/cards/A1/ja/A1-275.webp';
-import JA_A1276 from '../assets/cards/A1/ja/A1-276.webp';
-import JA_A1277 from '../assets/cards/A1/ja/A1-277.webp';
-import JA_A1278 from '../assets/cards/A1/ja/A1-278.webp';
-import JA_A1279 from '../assets/cards/A1/ja/A1-279.webp';
-import JA_A1280 from '../assets/cards/A1/ja/A1-280.webp';
-import JA_A1281 from '../assets/cards/A1/ja/A1-281.webp';
-import JA_A1282 from '../assets/cards/A1/ja/A1-282.webp';
-import JA_A1283 from '../assets/cards/A1/ja/A1-283.webp';
-import JA_A1284 from '../assets/cards/A1/ja/A1-284.webp';
-import JA_A1285 from '../assets/cards/A1/ja/A1-285.webp';
-import JA_A1286 from '../assets/cards/A1/ja/A1-286.webp';
-import KO_A1001 from '../assets/cards/A1/ko/A1-001.webp';
-import KO_A1002 from '../assets/cards/A1/ko/A1-002.webp';
-import KO_A1003 from '../assets/cards/A1/ko/A1-003.webp';
-import KO_A1004 from '../assets/cards/A1/ko/A1-004.webp';
-import KO_A1005 from '../assets/cards/A1/ko/A1-005.webp';
-import KO_A1006 from '../assets/cards/A1/ko/A1-006.webp';
-import KO_A1007 from '../assets/cards/A1/ko/A1-007.webp';
-import KO_A1008 from '../assets/cards/A1/ko/A1-008.webp';
-import KO_A1009 from '../assets/cards/A1/ko/A1-009.webp';
-import KO_A1010 from '../assets/cards/A1/ko/A1-010.webp';
-import KO_A1011 from '../assets/cards/A1/ko/A1-011.webp';
-import KO_A1012 from '../assets/cards/A1/ko/A1-012.webp';
-import KO_A1013 from '../assets/cards/A1/ko/A1-013.webp';
-import KO_A1014 from '../assets/cards/A1/ko/A1-014.webp';
-import KO_A1015 from '../assets/cards/A1/ko/A1-015.webp';
-import KO_A1016 from '../assets/cards/A1/ko/A1-016.webp';
-import KO_A1017 from '../assets/cards/A1/ko/A1-017.webp';
-import KO_A1018 from '../assets/cards/A1/ko/A1-018.webp';
-import KO_A1019 from '../assets/cards/A1/ko/A1-019.webp';
-import KO_A1020 from '../assets/cards/A1/ko/A1-020.webp';
-import KO_A1021 from '../assets/cards/A1/ko/A1-021.webp';
-import KO_A1022 from '../assets/cards/A1/ko/A1-022.webp';
-import KO_A1023 from '../assets/cards/A1/ko/A1-023.webp';
-import KO_A1024 from '../assets/cards/A1/ko/A1-024.webp';
-import KO_A1025 from '../assets/cards/A1/ko/A1-025.webp';
-import KO_A1026 from '../assets/cards/A1/ko/A1-026.webp';
-import KO_A1027 from '../assets/cards/A1/ko/A1-027.webp';
-import KO_A1028 from '../assets/cards/A1/ko/A1-028.webp';
-import KO_A1029 from '../assets/cards/A1/ko/A1-029.webp';
-import KO_A1030 from '../assets/cards/A1/ko/A1-030.webp';
-import KO_A1031 from '../assets/cards/A1/ko/A1-031.webp';
-import KO_A1032 from '../assets/cards/A1/ko/A1-032.webp';
-import KO_A1033 from '../assets/cards/A1/ko/A1-033.webp';
-import KO_A1034 from '../assets/cards/A1/ko/A1-034.webp';
-import KO_A1035 from '../assets/cards/A1/ko/A1-035.webp';
-import KO_A1036 from '../assets/cards/A1/ko/A1-036.webp';
-import KO_A1037 from '../assets/cards/A1/ko/A1-037.webp';
-import KO_A1038 from '../assets/cards/A1/ko/A1-038.webp';
-import KO_A1039 from '../assets/cards/A1/ko/A1-039.webp';
-import KO_A1040 from '../assets/cards/A1/ko/A1-040.webp';
-import KO_A1041 from '../assets/cards/A1/ko/A1-041.webp';
-import KO_A1042 from '../assets/cards/A1/ko/A1-042.webp';
-import KO_A1043 from '../assets/cards/A1/ko/A1-043.webp';
-import KO_A1044 from '../assets/cards/A1/ko/A1-044.webp';
-import KO_A1045 from '../assets/cards/A1/ko/A1-045.webp';
-import KO_A1046 from '../assets/cards/A1/ko/A1-046.webp';
-import KO_A1047 from '../assets/cards/A1/ko/A1-047.webp';
-import KO_A1048 from '../assets/cards/A1/ko/A1-048.webp';
-import KO_A1049 from '../assets/cards/A1/ko/A1-049.webp';
-import KO_A1050 from '../assets/cards/A1/ko/A1-050.webp';
-import KO_A1051 from '../assets/cards/A1/ko/A1-051.webp';
-import KO_A1052 from '../assets/cards/A1/ko/A1-052.webp';
-import KO_A1053 from '../assets/cards/A1/ko/A1-053.webp';
-import KO_A1054 from '../assets/cards/A1/ko/A1-054.webp';
-import KO_A1055 from '../assets/cards/A1/ko/A1-055.webp';
-import KO_A1056 from '../assets/cards/A1/ko/A1-056.webp';
-import KO_A1057 from '../assets/cards/A1/ko/A1-057.webp';
-import KO_A1058 from '../assets/cards/A1/ko/A1-058.webp';
-import KO_A1059 from '../assets/cards/A1/ko/A1-059.webp';
-import KO_A1060 from '../assets/cards/A1/ko/A1-060.webp';
-import KO_A1061 from '../assets/cards/A1/ko/A1-061.webp';
-import KO_A1062 from '../assets/cards/A1/ko/A1-062.webp';
-import KO_A1063 from '../assets/cards/A1/ko/A1-063.webp';
-import KO_A1064 from '../assets/cards/A1/ko/A1-064.webp';
-import KO_A1065 from '../assets/cards/A1/ko/A1-065.webp';
-import KO_A1066 from '../assets/cards/A1/ko/A1-066.webp';
-import KO_A1067 from '../assets/cards/A1/ko/A1-067.webp';
-import KO_A1068 from '../assets/cards/A1/ko/A1-068.webp';
-import KO_A1069 from '../assets/cards/A1/ko/A1-069.webp';
-import KO_A1070 from '../assets/cards/A1/ko/A1-070.webp';
-import KO_A1071 from '../assets/cards/A1/ko/A1-071.webp';
-import KO_A1072 from '../assets/cards/A1/ko/A1-072.webp';
-import KO_A1073 from '../assets/cards/A1/ko/A1-073.webp';
-import KO_A1074 from '../assets/cards/A1/ko/A1-074.webp';
-import KO_A1075 from '../assets/cards/A1/ko/A1-075.webp';
-import KO_A1076 from '../assets/cards/A1/ko/A1-076.webp';
-import KO_A1077 from '../assets/cards/A1/ko/A1-077.webp';
-import KO_A1078 from '../assets/cards/A1/ko/A1-078.webp';
-import KO_A1079 from '../assets/cards/A1/ko/A1-079.webp';
-import KO_A1080 from '../assets/cards/A1/ko/A1-080.webp';
-import KO_A1081 from '../assets/cards/A1/ko/A1-081.webp';
-import KO_A1082 from '../assets/cards/A1/ko/A1-082.webp';
-import KO_A1083 from '../assets/cards/A1/ko/A1-083.webp';
-import KO_A1084 from '../assets/cards/A1/ko/A1-084.webp';
-import KO_A1085 from '../assets/cards/A1/ko/A1-085.webp';
-import KO_A1086 from '../assets/cards/A1/ko/A1-086.webp';
-import KO_A1087 from '../assets/cards/A1/ko/A1-087.webp';
-import KO_A1088 from '../assets/cards/A1/ko/A1-088.webp';
-import KO_A1089 from '../assets/cards/A1/ko/A1-089.webp';
-import KO_A1090 from '../assets/cards/A1/ko/A1-090.webp';
-import KO_A1091 from '../assets/cards/A1/ko/A1-091.webp';
-import KO_A1092 from '../assets/cards/A1/ko/A1-092.webp';
-import KO_A1093 from '../assets/cards/A1/ko/A1-093.webp';
-import KO_A1094 from '../assets/cards/A1/ko/A1-094.webp';
-import KO_A1095 from '../assets/cards/A1/ko/A1-095.webp';
-import KO_A1096 from '../assets/cards/A1/ko/A1-096.webp';
-import KO_A1097 from '../assets/cards/A1/ko/A1-097.webp';
-import KO_A1098 from '../assets/cards/A1/ko/A1-098.webp';
-import KO_A1099 from '../assets/cards/A1/ko/A1-099.webp';
-import KO_A1100 from '../assets/cards/A1/ko/A1-100.webp';
-import KO_A1101 from '../assets/cards/A1/ko/A1-101.webp';
-import KO_A1102 from '../assets/cards/A1/ko/A1-102.webp';
-import KO_A1103 from '../assets/cards/A1/ko/A1-103.webp';
-import KO_A1104 from '../assets/cards/A1/ko/A1-104.webp';
-import KO_A1105 from '../assets/cards/A1/ko/A1-105.webp';
-import KO_A1106 from '../assets/cards/A1/ko/A1-106.webp';
-import KO_A1107 from '../assets/cards/A1/ko/A1-107.webp';
-import KO_A1108 from '../assets/cards/A1/ko/A1-108.webp';
-import KO_A1109 from '../assets/cards/A1/ko/A1-109.webp';
-import KO_A1110 from '../assets/cards/A1/ko/A1-110.webp';
-import KO_A1111 from '../assets/cards/A1/ko/A1-111.webp';
-import KO_A1112 from '../assets/cards/A1/ko/A1-112.webp';
-import KO_A1113 from '../assets/cards/A1/ko/A1-113.webp';
-import KO_A1114 from '../assets/cards/A1/ko/A1-114.webp';
-import KO_A1115 from '../assets/cards/A1/ko/A1-115.webp';
-import KO_A1116 from '../assets/cards/A1/ko/A1-116.webp';
-import KO_A1117 from '../assets/cards/A1/ko/A1-117.webp';
-import KO_A1118 from '../assets/cards/A1/ko/A1-118.webp';
-import KO_A1119 from '../assets/cards/A1/ko/A1-119.webp';
-import KO_A1120 from '../assets/cards/A1/ko/A1-120.webp';
-import KO_A1121 from '../assets/cards/A1/ko/A1-121.webp';
-import KO_A1122 from '../assets/cards/A1/ko/A1-122.webp';
-import KO_A1123 from '../assets/cards/A1/ko/A1-123.webp';
-import KO_A1124 from '../assets/cards/A1/ko/A1-124.webp';
-import KO_A1125 from '../assets/cards/A1/ko/A1-125.webp';
-import KO_A1126 from '../assets/cards/A1/ko/A1-126.webp';
-import KO_A1127 from '../assets/cards/A1/ko/A1-127.webp';
-import KO_A1128 from '../assets/cards/A1/ko/A1-128.webp';
-import KO_A1129 from '../assets/cards/A1/ko/A1-129.webp';
-import KO_A1130 from '../assets/cards/A1/ko/A1-130.webp';
-import KO_A1131 from '../assets/cards/A1/ko/A1-131.webp';
-import KO_A1132 from '../assets/cards/A1/ko/A1-132.webp';
-import KO_A1133 from '../assets/cards/A1/ko/A1-133.webp';
-import KO_A1134 from '../assets/cards/A1/ko/A1-134.webp';
-import KO_A1135 from '../assets/cards/A1/ko/A1-135.webp';
-import KO_A1136 from '../assets/cards/A1/ko/A1-136.webp';
-import KO_A1137 from '../assets/cards/A1/ko/A1-137.webp';
-import KO_A1138 from '../assets/cards/A1/ko/A1-138.webp';
-import KO_A1139 from '../assets/cards/A1/ko/A1-139.webp';
-import KO_A1140 from '../assets/cards/A1/ko/A1-140.webp';
-import KO_A1141 from '../assets/cards/A1/ko/A1-141.webp';
-import KO_A1142 from '../assets/cards/A1/ko/A1-142.webp';
-import KO_A1143 from '../assets/cards/A1/ko/A1-143.webp';
-import KO_A1144 from '../assets/cards/A1/ko/A1-144.webp';
-import KO_A1145 from '../assets/cards/A1/ko/A1-145.webp';
-import KO_A1146 from '../assets/cards/A1/ko/A1-146.webp';
-import KO_A1147 from '../assets/cards/A1/ko/A1-147.webp';
-import KO_A1148 from '../assets/cards/A1/ko/A1-148.webp';
-import KO_A1149 from '../assets/cards/A1/ko/A1-149.webp';
-import KO_A1150 from '../assets/cards/A1/ko/A1-150.webp';
-import KO_A1151 from '../assets/cards/A1/ko/A1-151.webp';
-import KO_A1152 from '../assets/cards/A1/ko/A1-152.webp';
-import KO_A1153 from '../assets/cards/A1/ko/A1-153.webp';
-import KO_A1154 from '../assets/cards/A1/ko/A1-154.webp';
-import KO_A1155 from '../assets/cards/A1/ko/A1-155.webp';
-import KO_A1156 from '../assets/cards/A1/ko/A1-156.webp';
-import KO_A1157 from '../assets/cards/A1/ko/A1-157.webp';
-import KO_A1158 from '../assets/cards/A1/ko/A1-158.webp';
-import KO_A1159 from '../assets/cards/A1/ko/A1-159.webp';
-import KO_A1160 from '../assets/cards/A1/ko/A1-160.webp';
-import KO_A1161 from '../assets/cards/A1/ko/A1-161.webp';
-import KO_A1162 from '../assets/cards/A1/ko/A1-162.webp';
-import KO_A1163 from '../assets/cards/A1/ko/A1-163.webp';
-import KO_A1164 from '../assets/cards/A1/ko/A1-164.webp';
-import KO_A1165 from '../assets/cards/A1/ko/A1-165.webp';
-import KO_A1166 from '../assets/cards/A1/ko/A1-166.webp';
-import KO_A1167 from '../assets/cards/A1/ko/A1-167.webp';
-import KO_A1168 from '../assets/cards/A1/ko/A1-168.webp';
-import KO_A1169 from '../assets/cards/A1/ko/A1-169.webp';
-import KO_A1170 from '../assets/cards/A1/ko/A1-170.webp';
-import KO_A1171 from '../assets/cards/A1/ko/A1-171.webp';
-import KO_A1172 from '../assets/cards/A1/ko/A1-172.webp';
-import KO_A1173 from '../assets/cards/A1/ko/A1-173.webp';
-import KO_A1174 from '../assets/cards/A1/ko/A1-174.webp';
-import KO_A1175 from '../assets/cards/A1/ko/A1-175.webp';
-import KO_A1176 from '../assets/cards/A1/ko/A1-176.webp';
-import KO_A1177 from '../assets/cards/A1/ko/A1-177.webp';
-import KO_A1178 from '../assets/cards/A1/ko/A1-178.webp';
-import KO_A1179 from '../assets/cards/A1/ko/A1-179.webp';
-import KO_A1180 from '../assets/cards/A1/ko/A1-180.webp';
-import KO_A1181 from '../assets/cards/A1/ko/A1-181.webp';
-import KO_A1182 from '../assets/cards/A1/ko/A1-182.webp';
-import KO_A1183 from '../assets/cards/A1/ko/A1-183.webp';
-import KO_A1184 from '../assets/cards/A1/ko/A1-184.webp';
-import KO_A1185 from '../assets/cards/A1/ko/A1-185.webp';
-import KO_A1186 from '../assets/cards/A1/ko/A1-186.webp';
-import KO_A1187 from '../assets/cards/A1/ko/A1-187.webp';
-import KO_A1188 from '../assets/cards/A1/ko/A1-188.webp';
-import KO_A1189 from '../assets/cards/A1/ko/A1-189.webp';
-import KO_A1190 from '../assets/cards/A1/ko/A1-190.webp';
-import KO_A1191 from '../assets/cards/A1/ko/A1-191.webp';
-import KO_A1192 from '../assets/cards/A1/ko/A1-192.webp';
-import KO_A1193 from '../assets/cards/A1/ko/A1-193.webp';
-import KO_A1194 from '../assets/cards/A1/ko/A1-194.webp';
-import KO_A1195 from '../assets/cards/A1/ko/A1-195.webp';
-import KO_A1196 from '../assets/cards/A1/ko/A1-196.webp';
-import KO_A1197 from '../assets/cards/A1/ko/A1-197.webp';
-import KO_A1198 from '../assets/cards/A1/ko/A1-198.webp';
-import KO_A1199 from '../assets/cards/A1/ko/A1-199.webp';
-import KO_A1200 from '../assets/cards/A1/ko/A1-200.webp';
-import KO_A1201 from '../assets/cards/A1/ko/A1-201.webp';
-import KO_A1202 from '../assets/cards/A1/ko/A1-202.webp';
-import KO_A1203 from '../assets/cards/A1/ko/A1-203.webp';
-import KO_A1204 from '../assets/cards/A1/ko/A1-204.webp';
-import KO_A1205 from '../assets/cards/A1/ko/A1-205.webp';
-import KO_A1206 from '../assets/cards/A1/ko/A1-206.webp';
-import KO_A1207 from '../assets/cards/A1/ko/A1-207.webp';
-import KO_A1208 from '../assets/cards/A1/ko/A1-208.webp';
-import KO_A1209 from '../assets/cards/A1/ko/A1-209.webp';
-import KO_A1210 from '../assets/cards/A1/ko/A1-210.webp';
-import KO_A1211 from '../assets/cards/A1/ko/A1-211.webp';
-import KO_A1212 from '../assets/cards/A1/ko/A1-212.webp';
-import KO_A1213 from '../assets/cards/A1/ko/A1-213.webp';
-import KO_A1214 from '../assets/cards/A1/ko/A1-214.webp';
-import KO_A1215 from '../assets/cards/A1/ko/A1-215.webp';
-import KO_A1216 from '../assets/cards/A1/ko/A1-216.webp';
-import KO_A1217 from '../assets/cards/A1/ko/A1-217.webp';
-import KO_A1218 from '../assets/cards/A1/ko/A1-218.webp';
-import KO_A1219 from '../assets/cards/A1/ko/A1-219.webp';
-import KO_A1220 from '../assets/cards/A1/ko/A1-220.webp';
-import KO_A1221 from '../assets/cards/A1/ko/A1-221.webp';
-import KO_A1222 from '../assets/cards/A1/ko/A1-222.webp';
-import KO_A1223 from '../assets/cards/A1/ko/A1-223.webp';
-import KO_A1224 from '../assets/cards/A1/ko/A1-224.webp';
-import KO_A1225 from '../assets/cards/A1/ko/A1-225.webp';
-import KO_A1226 from '../assets/cards/A1/ko/A1-226.webp';
-import KO_A1227 from '../assets/cards/A1/ko/A1-227.webp';
-import KO_A1228 from '../assets/cards/A1/ko/A1-228.webp';
-import KO_A1229 from '../assets/cards/A1/ko/A1-229.webp';
-import KO_A1230 from '../assets/cards/A1/ko/A1-230.webp';
-import KO_A1231 from '../assets/cards/A1/ko/A1-231.webp';
-import KO_A1232 from '../assets/cards/A1/ko/A1-232.webp';
-import KO_A1233 from '../assets/cards/A1/ko/A1-233.webp';
-import KO_A1234 from '../assets/cards/A1/ko/A1-234.webp';
-import KO_A1235 from '../assets/cards/A1/ko/A1-235.webp';
-import KO_A1236 from '../assets/cards/A1/ko/A1-236.webp';
-import KO_A1237 from '../assets/cards/A1/ko/A1-237.webp';
-import KO_A1238 from '../assets/cards/A1/ko/A1-238.webp';
-import KO_A1239 from '../assets/cards/A1/ko/A1-239.webp';
-import KO_A1240 from '../assets/cards/A1/ko/A1-240.webp';
-import KO_A1241 from '../assets/cards/A1/ko/A1-241.webp';
-import KO_A1242 from '../assets/cards/A1/ko/A1-242.webp';
-import KO_A1243 from '../assets/cards/A1/ko/A1-243.webp';
-import KO_A1244 from '../assets/cards/A1/ko/A1-244.webp';
-import KO_A1245 from '../assets/cards/A1/ko/A1-245.webp';
-import KO_A1246 from '../assets/cards/A1/ko/A1-246.webp';
-import KO_A1247 from '../assets/cards/A1/ko/A1-247.webp';
-import KO_A1248 from '../assets/cards/A1/ko/A1-248.webp';
-import KO_A1249 from '../assets/cards/A1/ko/A1-249.webp';
-import KO_A1250 from '../assets/cards/A1/ko/A1-250.webp';
-import KO_A1251 from '../assets/cards/A1/ko/A1-251.webp';
-import KO_A1252 from '../assets/cards/A1/ko/A1-252.webp';
-import KO_A1253 from '../assets/cards/A1/ko/A1-253.webp';
-import KO_A1254 from '../assets/cards/A1/ko/A1-254.webp';
-import KO_A1255 from '../assets/cards/A1/ko/A1-255.webp';
-import KO_A1256 from '../assets/cards/A1/ko/A1-256.webp';
-import KO_A1257 from '../assets/cards/A1/ko/A1-257.webp';
-import KO_A1258 from '../assets/cards/A1/ko/A1-258.webp';
-import KO_A1259 from '../assets/cards/A1/ko/A1-259.webp';
-import KO_A1260 from '../assets/cards/A1/ko/A1-260.webp';
-import KO_A1261 from '../assets/cards/A1/ko/A1-261.webp';
-import KO_A1262 from '../assets/cards/A1/ko/A1-262.webp';
-import KO_A1263 from '../assets/cards/A1/ko/A1-263.webp';
-import KO_A1264 from '../assets/cards/A1/ko/A1-264.webp';
-import KO_A1265 from '../assets/cards/A1/ko/A1-265.webp';
-import KO_A1266 from '../assets/cards/A1/ko/A1-266.webp';
-import KO_A1267 from '../assets/cards/A1/ko/A1-267.webp';
-import KO_A1268 from '../assets/cards/A1/ko/A1-268.webp';
-import KO_A1269 from '../assets/cards/A1/ko/A1-269.webp';
-import KO_A1270 from '../assets/cards/A1/ko/A1-270.webp';
-import KO_A1271 from '../assets/cards/A1/ko/A1-271.webp';
-import KO_A1272 from '../assets/cards/A1/ko/A1-272.webp';
-import KO_A1273 from '../assets/cards/A1/ko/A1-273.webp';
-import KO_A1274 from '../assets/cards/A1/ko/A1-274.webp';
-import KO_A1275 from '../assets/cards/A1/ko/A1-275.webp';
-import KO_A1276 from '../assets/cards/A1/ko/A1-276.webp';
-import KO_A1277 from '../assets/cards/A1/ko/A1-277.webp';
-import KO_A1278 from '../assets/cards/A1/ko/A1-278.webp';
-import KO_A1279 from '../assets/cards/A1/ko/A1-279.webp';
-import KO_A1280 from '../assets/cards/A1/ko/A1-280.webp';
-import KO_A1281 from '../assets/cards/A1/ko/A1-281.webp';
-import KO_A1282 from '../assets/cards/A1/ko/A1-282.webp';
-import KO_A1283 from '../assets/cards/A1/ko/A1-283.webp';
-import KO_A1284 from '../assets/cards/A1/ko/A1-284.webp';
-import KO_A1285 from '../assets/cards/A1/ko/A1-285.webp';
-import KO_A1286 from '../assets/cards/A1/ko/A1-286.webp';
-import KO_MISSING_NO from '../assets/cards/KO-MiSS-000.png';
+import EN_A1001 from '../../../assets/cards/A1/en/A1-001.webp';
+import EN_A1002 from '../../../assets/cards/A1/en/A1-002.webp';
+import EN_A1003 from '../../../assets/cards/A1/en/A1-003.webp';
+import EN_A1004 from '../../../assets/cards/A1/en/A1-004.webp';
+import EN_A1005 from '../../../assets/cards/A1/en/A1-005.webp';
+import EN_A1006 from '../../../assets/cards/A1/en/A1-006.webp';
+import EN_A1007 from '../../../assets/cards/A1/en/A1-007.webp';
+import EN_A1008 from '../../../assets/cards/A1/en/A1-008.webp';
+import EN_A1009 from '../../../assets/cards/A1/en/A1-009.webp';
+import EN_A1010 from '../../../assets/cards/A1/en/A1-010.webp';
+import EN_A1011 from '../../../assets/cards/A1/en/A1-011.webp';
+import EN_A1012 from '../../../assets/cards/A1/en/A1-012.webp';
+import EN_A1013 from '../../../assets/cards/A1/en/A1-013.webp';
+import EN_A1014 from '../../../assets/cards/A1/en/A1-014.webp';
+import EN_A1015 from '../../../assets/cards/A1/en/A1-015.webp';
+import EN_A1016 from '../../../assets/cards/A1/en/A1-016.webp';
+import EN_A1017 from '../../../assets/cards/A1/en/A1-017.webp';
+import EN_A1018 from '../../../assets/cards/A1/en/A1-018.webp';
+import EN_A1019 from '../../../assets/cards/A1/en/A1-019.webp';
+import EN_A1020 from '../../../assets/cards/A1/en/A1-020.webp';
+import EN_A1021 from '../../../assets/cards/A1/en/A1-021.webp';
+import EN_A1022 from '../../../assets/cards/A1/en/A1-022.webp';
+import EN_A1023 from '../../../assets/cards/A1/en/A1-023.webp';
+import EN_A1024 from '../../../assets/cards/A1/en/A1-024.webp';
+import EN_A1025 from '../../../assets/cards/A1/en/A1-025.webp';
+import EN_A1026 from '../../../assets/cards/A1/en/A1-026.webp';
+import EN_A1027 from '../../../assets/cards/A1/en/A1-027.webp';
+import EN_A1028 from '../../../assets/cards/A1/en/A1-028.webp';
+import EN_A1029 from '../../../assets/cards/A1/en/A1-029.webp';
+import EN_A1030 from '../../../assets/cards/A1/en/A1-030.webp';
+import EN_A1031 from '../../../assets/cards/A1/en/A1-031.webp';
+import EN_A1032 from '../../../assets/cards/A1/en/A1-032.webp';
+import EN_A1033 from '../../../assets/cards/A1/en/A1-033.webp';
+import EN_A1034 from '../../../assets/cards/A1/en/A1-034.webp';
+import EN_A1035 from '../../../assets/cards/A1/en/A1-035.webp';
+import EN_A1036 from '../../../assets/cards/A1/en/A1-036.webp';
+import EN_A1037 from '../../../assets/cards/A1/en/A1-037.webp';
+import EN_A1038 from '../../../assets/cards/A1/en/A1-038.webp';
+import EN_A1039 from '../../../assets/cards/A1/en/A1-039.webp';
+import EN_A1040 from '../../../assets/cards/A1/en/A1-040.webp';
+import EN_A1041 from '../../../assets/cards/A1/en/A1-041.webp';
+import EN_A1042 from '../../../assets/cards/A1/en/A1-042.webp';
+import EN_A1043 from '../../../assets/cards/A1/en/A1-043.webp';
+import EN_A1044 from '../../../assets/cards/A1/en/A1-044.webp';
+import EN_A1045 from '../../../assets/cards/A1/en/A1-045.webp';
+import EN_A1046 from '../../../assets/cards/A1/en/A1-046.webp';
+import EN_A1047 from '../../../assets/cards/A1/en/A1-047.webp';
+import EN_A1048 from '../../../assets/cards/A1/en/A1-048.webp';
+import EN_A1049 from '../../../assets/cards/A1/en/A1-049.webp';
+import EN_A1050 from '../../../assets/cards/A1/en/A1-050.webp';
+import EN_A1051 from '../../../assets/cards/A1/en/A1-051.webp';
+import EN_A1052 from '../../../assets/cards/A1/en/A1-052.webp';
+import EN_A1053 from '../../../assets/cards/A1/en/A1-053.webp';
+import EN_A1054 from '../../../assets/cards/A1/en/A1-054.webp';
+import EN_A1055 from '../../../assets/cards/A1/en/A1-055.webp';
+import EN_A1056 from '../../../assets/cards/A1/en/A1-056.webp';
+import EN_A1057 from '../../../assets/cards/A1/en/A1-057.webp';
+import EN_A1058 from '../../../assets/cards/A1/en/A1-058.webp';
+import EN_A1059 from '../../../assets/cards/A1/en/A1-059.webp';
+import EN_A1060 from '../../../assets/cards/A1/en/A1-060.webp';
+import EN_A1061 from '../../../assets/cards/A1/en/A1-061.webp';
+import EN_A1062 from '../../../assets/cards/A1/en/A1-062.webp';
+import EN_A1063 from '../../../assets/cards/A1/en/A1-063.webp';
+import EN_A1064 from '../../../assets/cards/A1/en/A1-064.webp';
+import EN_A1065 from '../../../assets/cards/A1/en/A1-065.webp';
+import EN_A1066 from '../../../assets/cards/A1/en/A1-066.webp';
+import EN_A1067 from '../../../assets/cards/A1/en/A1-067.webp';
+import EN_A1068 from '../../../assets/cards/A1/en/A1-068.webp';
+import EN_A1069 from '../../../assets/cards/A1/en/A1-069.webp';
+import EN_A1070 from '../../../assets/cards/A1/en/A1-070.webp';
+import EN_A1071 from '../../../assets/cards/A1/en/A1-071.webp';
+import EN_A1072 from '../../../assets/cards/A1/en/A1-072.webp';
+import EN_A1073 from '../../../assets/cards/A1/en/A1-073.webp';
+import EN_A1074 from '../../../assets/cards/A1/en/A1-074.webp';
+import EN_A1075 from '../../../assets/cards/A1/en/A1-075.webp';
+import EN_A1076 from '../../../assets/cards/A1/en/A1-076.webp';
+import EN_A1077 from '../../../assets/cards/A1/en/A1-077.webp';
+import EN_A1078 from '../../../assets/cards/A1/en/A1-078.webp';
+import EN_A1079 from '../../../assets/cards/A1/en/A1-079.webp';
+import EN_A1080 from '../../../assets/cards/A1/en/A1-080.webp';
+import EN_A1081 from '../../../assets/cards/A1/en/A1-081.webp';
+import EN_A1082 from '../../../assets/cards/A1/en/A1-082.webp';
+import EN_A1083 from '../../../assets/cards/A1/en/A1-083.webp';
+import EN_A1084 from '../../../assets/cards/A1/en/A1-084.webp';
+import EN_A1085 from '../../../assets/cards/A1/en/A1-085.webp';
+import EN_A1086 from '../../../assets/cards/A1/en/A1-086.webp';
+import EN_A1087 from '../../../assets/cards/A1/en/A1-087.webp';
+import EN_A1088 from '../../../assets/cards/A1/en/A1-088.webp';
+import EN_A1089 from '../../../assets/cards/A1/en/A1-089.webp';
+import EN_A1090 from '../../../assets/cards/A1/en/A1-090.webp';
+import EN_A1091 from '../../../assets/cards/A1/en/A1-091.webp';
+import EN_A1092 from '../../../assets/cards/A1/en/A1-092.webp';
+import EN_A1093 from '../../../assets/cards/A1/en/A1-093.webp';
+import EN_A1094 from '../../../assets/cards/A1/en/A1-094.webp';
+import EN_A1095 from '../../../assets/cards/A1/en/A1-095.webp';
+import EN_A1096 from '../../../assets/cards/A1/en/A1-096.webp';
+import EN_A1097 from '../../../assets/cards/A1/en/A1-097.webp';
+import EN_A1098 from '../../../assets/cards/A1/en/A1-098.webp';
+import EN_A1099 from '../../../assets/cards/A1/en/A1-099.webp';
+import EN_A1100 from '../../../assets/cards/A1/en/A1-100.webp';
+import EN_A1101 from '../../../assets/cards/A1/en/A1-101.webp';
+import EN_A1102 from '../../../assets/cards/A1/en/A1-102.webp';
+import EN_A1103 from '../../../assets/cards/A1/en/A1-103.webp';
+import EN_A1104 from '../../../assets/cards/A1/en/A1-104.webp';
+import EN_A1105 from '../../../assets/cards/A1/en/A1-105.webp';
+import EN_A1106 from '../../../assets/cards/A1/en/A1-106.webp';
+import EN_A1107 from '../../../assets/cards/A1/en/A1-107.webp';
+import EN_A1108 from '../../../assets/cards/A1/en/A1-108.webp';
+import EN_A1109 from '../../../assets/cards/A1/en/A1-109.webp';
+import EN_A1110 from '../../../assets/cards/A1/en/A1-110.webp';
+import EN_A1111 from '../../../assets/cards/A1/en/A1-111.webp';
+import EN_A1112 from '../../../assets/cards/A1/en/A1-112.webp';
+import EN_A1113 from '../../../assets/cards/A1/en/A1-113.webp';
+import EN_A1114 from '../../../assets/cards/A1/en/A1-114.webp';
+import EN_A1115 from '../../../assets/cards/A1/en/A1-115.webp';
+import EN_A1116 from '../../../assets/cards/A1/en/A1-116.webp';
+import EN_A1117 from '../../../assets/cards/A1/en/A1-117.webp';
+import EN_A1118 from '../../../assets/cards/A1/en/A1-118.webp';
+import EN_A1119 from '../../../assets/cards/A1/en/A1-119.webp';
+import EN_A1120 from '../../../assets/cards/A1/en/A1-120.webp';
+import EN_A1121 from '../../../assets/cards/A1/en/A1-121.webp';
+import EN_A1122 from '../../../assets/cards/A1/en/A1-122.webp';
+import EN_A1123 from '../../../assets/cards/A1/en/A1-123.webp';
+import EN_A1124 from '../../../assets/cards/A1/en/A1-124.webp';
+import EN_A1125 from '../../../assets/cards/A1/en/A1-125.webp';
+import EN_A1126 from '../../../assets/cards/A1/en/A1-126.webp';
+import EN_A1127 from '../../../assets/cards/A1/en/A1-127.webp';
+import EN_A1128 from '../../../assets/cards/A1/en/A1-128.webp';
+import EN_A1129 from '../../../assets/cards/A1/en/A1-129.webp';
+import EN_A1130 from '../../../assets/cards/A1/en/A1-130.webp';
+import EN_A1131 from '../../../assets/cards/A1/en/A1-131.webp';
+import EN_A1132 from '../../../assets/cards/A1/en/A1-132.webp';
+import EN_A1133 from '../../../assets/cards/A1/en/A1-133.webp';
+import EN_A1134 from '../../../assets/cards/A1/en/A1-134.webp';
+import EN_A1135 from '../../../assets/cards/A1/en/A1-135.webp';
+import EN_A1136 from '../../../assets/cards/A1/en/A1-136.webp';
+import EN_A1137 from '../../../assets/cards/A1/en/A1-137.webp';
+import EN_A1138 from '../../../assets/cards/A1/en/A1-138.webp';
+import EN_A1139 from '../../../assets/cards/A1/en/A1-139.webp';
+import EN_A1140 from '../../../assets/cards/A1/en/A1-140.webp';
+import EN_A1141 from '../../../assets/cards/A1/en/A1-141.webp';
+import EN_A1142 from '../../../assets/cards/A1/en/A1-142.webp';
+import EN_A1143 from '../../../assets/cards/A1/en/A1-143.webp';
+import EN_A1144 from '../../../assets/cards/A1/en/A1-144.webp';
+import EN_A1145 from '../../../assets/cards/A1/en/A1-145.webp';
+import EN_A1146 from '../../../assets/cards/A1/en/A1-146.webp';
+import EN_A1147 from '../../../assets/cards/A1/en/A1-147.webp';
+import EN_A1148 from '../../../assets/cards/A1/en/A1-148.webp';
+import EN_A1149 from '../../../assets/cards/A1/en/A1-149.webp';
+import EN_A1150 from '../../../assets/cards/A1/en/A1-150.webp';
+import EN_A1151 from '../../../assets/cards/A1/en/A1-151.webp';
+import EN_A1152 from '../../../assets/cards/A1/en/A1-152.webp';
+import EN_A1153 from '../../../assets/cards/A1/en/A1-153.webp';
+import EN_A1154 from '../../../assets/cards/A1/en/A1-154.webp';
+import EN_A1155 from '../../../assets/cards/A1/en/A1-155.webp';
+import EN_A1156 from '../../../assets/cards/A1/en/A1-156.webp';
+import EN_A1157 from '../../../assets/cards/A1/en/A1-157.webp';
+import EN_A1158 from '../../../assets/cards/A1/en/A1-158.webp';
+import EN_A1159 from '../../../assets/cards/A1/en/A1-159.webp';
+import EN_A1160 from '../../../assets/cards/A1/en/A1-160.webp';
+import EN_A1161 from '../../../assets/cards/A1/en/A1-161.webp';
+import EN_A1162 from '../../../assets/cards/A1/en/A1-162.webp';
+import EN_A1163 from '../../../assets/cards/A1/en/A1-163.webp';
+import EN_A1164 from '../../../assets/cards/A1/en/A1-164.webp';
+import EN_A1165 from '../../../assets/cards/A1/en/A1-165.webp';
+import EN_A1166 from '../../../assets/cards/A1/en/A1-166.webp';
+import EN_A1167 from '../../../assets/cards/A1/en/A1-167.webp';
+import EN_A1168 from '../../../assets/cards/A1/en/A1-168.webp';
+import EN_A1169 from '../../../assets/cards/A1/en/A1-169.webp';
+import EN_A1170 from '../../../assets/cards/A1/en/A1-170.webp';
+import EN_A1171 from '../../../assets/cards/A1/en/A1-171.webp';
+import EN_A1172 from '../../../assets/cards/A1/en/A1-172.webp';
+import EN_A1173 from '../../../assets/cards/A1/en/A1-173.webp';
+import EN_A1174 from '../../../assets/cards/A1/en/A1-174.webp';
+import EN_A1175 from '../../../assets/cards/A1/en/A1-175.webp';
+import EN_A1176 from '../../../assets/cards/A1/en/A1-176.webp';
+import EN_A1177 from '../../../assets/cards/A1/en/A1-177.webp';
+import EN_A1178 from '../../../assets/cards/A1/en/A1-178.webp';
+import EN_A1179 from '../../../assets/cards/A1/en/A1-179.webp';
+import EN_A1180 from '../../../assets/cards/A1/en/A1-180.webp';
+import EN_A1181 from '../../../assets/cards/A1/en/A1-181.webp';
+import EN_A1182 from '../../../assets/cards/A1/en/A1-182.webp';
+import EN_A1183 from '../../../assets/cards/A1/en/A1-183.webp';
+import EN_A1184 from '../../../assets/cards/A1/en/A1-184.webp';
+import EN_A1185 from '../../../assets/cards/A1/en/A1-185.webp';
+import EN_A1186 from '../../../assets/cards/A1/en/A1-186.webp';
+import EN_A1187 from '../../../assets/cards/A1/en/A1-187.webp';
+import EN_A1188 from '../../../assets/cards/A1/en/A1-188.webp';
+import EN_A1189 from '../../../assets/cards/A1/en/A1-189.webp';
+import EN_A1190 from '../../../assets/cards/A1/en/A1-190.webp';
+import EN_A1191 from '../../../assets/cards/A1/en/A1-191.webp';
+import EN_A1192 from '../../../assets/cards/A1/en/A1-192.webp';
+import EN_A1193 from '../../../assets/cards/A1/en/A1-193.webp';
+import EN_A1194 from '../../../assets/cards/A1/en/A1-194.webp';
+import EN_A1195 from '../../../assets/cards/A1/en/A1-195.webp';
+import EN_A1196 from '../../../assets/cards/A1/en/A1-196.webp';
+import EN_A1197 from '../../../assets/cards/A1/en/A1-197.webp';
+import EN_A1198 from '../../../assets/cards/A1/en/A1-198.webp';
+import EN_A1199 from '../../../assets/cards/A1/en/A1-199.webp';
+import EN_A1200 from '../../../assets/cards/A1/en/A1-200.webp';
+import EN_A1201 from '../../../assets/cards/A1/en/A1-201.webp';
+import EN_A1202 from '../../../assets/cards/A1/en/A1-202.webp';
+import EN_A1203 from '../../../assets/cards/A1/en/A1-203.webp';
+import EN_A1204 from '../../../assets/cards/A1/en/A1-204.webp';
+import EN_A1205 from '../../../assets/cards/A1/en/A1-205.webp';
+import EN_A1206 from '../../../assets/cards/A1/en/A1-206.webp';
+import EN_A1207 from '../../../assets/cards/A1/en/A1-207.webp';
+import EN_A1208 from '../../../assets/cards/A1/en/A1-208.webp';
+import EN_A1209 from '../../../assets/cards/A1/en/A1-209.webp';
+import EN_A1210 from '../../../assets/cards/A1/en/A1-210.webp';
+import EN_A1211 from '../../../assets/cards/A1/en/A1-211.webp';
+import EN_A1212 from '../../../assets/cards/A1/en/A1-212.webp';
+import EN_A1213 from '../../../assets/cards/A1/en/A1-213.webp';
+import EN_A1214 from '../../../assets/cards/A1/en/A1-214.webp';
+import EN_A1215 from '../../../assets/cards/A1/en/A1-215.webp';
+import EN_A1216 from '../../../assets/cards/A1/en/A1-216.webp';
+import EN_A1217 from '../../../assets/cards/A1/en/A1-217.webp';
+import EN_A1218 from '../../../assets/cards/A1/en/A1-218.webp';
+import EN_A1219 from '../../../assets/cards/A1/en/A1-219.webp';
+import EN_A1220 from '../../../assets/cards/A1/en/A1-220.webp';
+import EN_A1221 from '../../../assets/cards/A1/en/A1-221.webp';
+import EN_A1222 from '../../../assets/cards/A1/en/A1-222.webp';
+import EN_A1223 from '../../../assets/cards/A1/en/A1-223.webp';
+import EN_A1224 from '../../../assets/cards/A1/en/A1-224.webp';
+import EN_A1225 from '../../../assets/cards/A1/en/A1-225.webp';
+import EN_A1226 from '../../../assets/cards/A1/en/A1-226.webp';
+import EN_A1227 from '../../../assets/cards/A1/en/A1-227.webp';
+import EN_A1228 from '../../../assets/cards/A1/en/A1-228.webp';
+import EN_A1229 from '../../../assets/cards/A1/en/A1-229.webp';
+import EN_A1230 from '../../../assets/cards/A1/en/A1-230.webp';
+import EN_A1231 from '../../../assets/cards/A1/en/A1-231.webp';
+import EN_A1232 from '../../../assets/cards/A1/en/A1-232.webp';
+import EN_A1233 from '../../../assets/cards/A1/en/A1-233.webp';
+import EN_A1234 from '../../../assets/cards/A1/en/A1-234.webp';
+import EN_A1235 from '../../../assets/cards/A1/en/A1-235.webp';
+import EN_A1236 from '../../../assets/cards/A1/en/A1-236.webp';
+import EN_A1237 from '../../../assets/cards/A1/en/A1-237.webp';
+import EN_A1238 from '../../../assets/cards/A1/en/A1-238.webp';
+import EN_A1239 from '../../../assets/cards/A1/en/A1-239.webp';
+import EN_A1240 from '../../../assets/cards/A1/en/A1-240.webp';
+import EN_A1241 from '../../../assets/cards/A1/en/A1-241.webp';
+import EN_A1242 from '../../../assets/cards/A1/en/A1-242.webp';
+import EN_A1243 from '../../../assets/cards/A1/en/A1-243.webp';
+import EN_A1244 from '../../../assets/cards/A1/en/A1-244.webp';
+import EN_A1245 from '../../../assets/cards/A1/en/A1-245.webp';
+import EN_A1246 from '../../../assets/cards/A1/en/A1-246.webp';
+import EN_A1247 from '../../../assets/cards/A1/en/A1-247.webp';
+import EN_A1248 from '../../../assets/cards/A1/en/A1-248.webp';
+import EN_A1249 from '../../../assets/cards/A1/en/A1-249.webp';
+import EN_A1250 from '../../../assets/cards/A1/en/A1-250.webp';
+import EN_A1251 from '../../../assets/cards/A1/en/A1-251.webp';
+import EN_A1252 from '../../../assets/cards/A1/en/A1-252.webp';
+import EN_A1253 from '../../../assets/cards/A1/en/A1-253.webp';
+import EN_A1254 from '../../../assets/cards/A1/en/A1-254.webp';
+import EN_A1255 from '../../../assets/cards/A1/en/A1-255.webp';
+import EN_A1256 from '../../../assets/cards/A1/en/A1-256.webp';
+import EN_A1257 from '../../../assets/cards/A1/en/A1-257.webp';
+import EN_A1258 from '../../../assets/cards/A1/en/A1-258.webp';
+import EN_A1259 from '../../../assets/cards/A1/en/A1-259.webp';
+import EN_A1260 from '../../../assets/cards/A1/en/A1-260.webp';
+import EN_A1261 from '../../../assets/cards/A1/en/A1-261.webp';
+import EN_A1262 from '../../../assets/cards/A1/en/A1-262.webp';
+import EN_A1263 from '../../../assets/cards/A1/en/A1-263.webp';
+import EN_A1264 from '../../../assets/cards/A1/en/A1-264.webp';
+import EN_A1265 from '../../../assets/cards/A1/en/A1-265.webp';
+import EN_A1266 from '../../../assets/cards/A1/en/A1-266.webp';
+import EN_A1267 from '../../../assets/cards/A1/en/A1-267.webp';
+import EN_A1268 from '../../../assets/cards/A1/en/A1-268.webp';
+import EN_A1269 from '../../../assets/cards/A1/en/A1-269.webp';
+import EN_A1270 from '../../../assets/cards/A1/en/A1-270.webp';
+import EN_A1271 from '../../../assets/cards/A1/en/A1-271.webp';
+import EN_A1272 from '../../../assets/cards/A1/en/A1-272.webp';
+import EN_A1273 from '../../../assets/cards/A1/en/A1-273.webp';
+import EN_A1274 from '../../../assets/cards/A1/en/A1-274.webp';
+import EN_A1275 from '../../../assets/cards/A1/en/A1-275.webp';
+import EN_A1276 from '../../../assets/cards/A1/en/A1-276.webp';
+import EN_A1277 from '../../../assets/cards/A1/en/A1-277.webp';
+import EN_A1278 from '../../../assets/cards/A1/en/A1-278.webp';
+import EN_A1279 from '../../../assets/cards/A1/en/A1-279.webp';
+import EN_A1280 from '../../../assets/cards/A1/en/A1-280.webp';
+import EN_A1281 from '../../../assets/cards/A1/en/A1-281.webp';
+import EN_A1282 from '../../../assets/cards/A1/en/A1-282.webp';
+import EN_A1283 from '../../../assets/cards/A1/en/A1-283.webp';
+import EN_A1284 from '../../../assets/cards/A1/en/A1-284.webp';
+import EN_A1285 from '../../../assets/cards/A1/en/A1-285.webp';
+import EN_A1286 from '../../../assets/cards/A1/en/A1-286.webp';
+import JA_A1001 from '../../../assets/cards/A1/ja/A1-001.webp';
+import JA_A1002 from '../../../assets/cards/A1/ja/A1-002.webp';
+import JA_A1003 from '../../../assets/cards/A1/ja/A1-003.webp';
+import JA_A1004 from '../../../assets/cards/A1/ja/A1-004.webp';
+import JA_A1005 from '../../../assets/cards/A1/ja/A1-005.webp';
+import JA_A1006 from '../../../assets/cards/A1/ja/A1-006.webp';
+import JA_A1007 from '../../../assets/cards/A1/ja/A1-007.webp';
+import JA_A1008 from '../../../assets/cards/A1/ja/A1-008.webp';
+import JA_A1009 from '../../../assets/cards/A1/ja/A1-009.webp';
+import JA_A1010 from '../../../assets/cards/A1/ja/A1-010.webp';
+import JA_A1011 from '../../../assets/cards/A1/ja/A1-011.webp';
+import JA_A1012 from '../../../assets/cards/A1/ja/A1-012.webp';
+import JA_A1013 from '../../../assets/cards/A1/ja/A1-013.webp';
+import JA_A1014 from '../../../assets/cards/A1/ja/A1-014.webp';
+import JA_A1015 from '../../../assets/cards/A1/ja/A1-015.webp';
+import JA_A1016 from '../../../assets/cards/A1/ja/A1-016.webp';
+import JA_A1017 from '../../../assets/cards/A1/ja/A1-017.webp';
+import JA_A1018 from '../../../assets/cards/A1/ja/A1-018.webp';
+import JA_A1019 from '../../../assets/cards/A1/ja/A1-019.webp';
+import JA_A1020 from '../../../assets/cards/A1/ja/A1-020.webp';
+import JA_A1021 from '../../../assets/cards/A1/ja/A1-021.webp';
+import JA_A1022 from '../../../assets/cards/A1/ja/A1-022.webp';
+import JA_A1023 from '../../../assets/cards/A1/ja/A1-023.webp';
+import JA_A1024 from '../../../assets/cards/A1/ja/A1-024.webp';
+import JA_A1025 from '../../../assets/cards/A1/ja/A1-025.webp';
+import JA_A1026 from '../../../assets/cards/A1/ja/A1-026.webp';
+import JA_A1027 from '../../../assets/cards/A1/ja/A1-027.webp';
+import JA_A1028 from '../../../assets/cards/A1/ja/A1-028.webp';
+import JA_A1029 from '../../../assets/cards/A1/ja/A1-029.webp';
+import JA_A1030 from '../../../assets/cards/A1/ja/A1-030.webp';
+import JA_A1031 from '../../../assets/cards/A1/ja/A1-031.webp';
+import JA_A1032 from '../../../assets/cards/A1/ja/A1-032.webp';
+import JA_A1033 from '../../../assets/cards/A1/ja/A1-033.webp';
+import JA_A1034 from '../../../assets/cards/A1/ja/A1-034.webp';
+import JA_A1035 from '../../../assets/cards/A1/ja/A1-035.webp';
+import JA_A1036 from '../../../assets/cards/A1/ja/A1-036.webp';
+import JA_A1037 from '../../../assets/cards/A1/ja/A1-037.webp';
+import JA_A1038 from '../../../assets/cards/A1/ja/A1-038.webp';
+import JA_A1039 from '../../../assets/cards/A1/ja/A1-039.webp';
+import JA_A1040 from '../../../assets/cards/A1/ja/A1-040.webp';
+import JA_A1041 from '../../../assets/cards/A1/ja/A1-041.webp';
+import JA_A1042 from '../../../assets/cards/A1/ja/A1-042.webp';
+import JA_A1043 from '../../../assets/cards/A1/ja/A1-043.webp';
+import JA_A1044 from '../../../assets/cards/A1/ja/A1-044.webp';
+import JA_A1045 from '../../../assets/cards/A1/ja/A1-045.webp';
+import JA_A1046 from '../../../assets/cards/A1/ja/A1-046.webp';
+import JA_A1047 from '../../../assets/cards/A1/ja/A1-047.webp';
+import JA_A1048 from '../../../assets/cards/A1/ja/A1-048.webp';
+import JA_A1049 from '../../../assets/cards/A1/ja/A1-049.webp';
+import JA_A1050 from '../../../assets/cards/A1/ja/A1-050.webp';
+import JA_A1051 from '../../../assets/cards/A1/ja/A1-051.webp';
+import JA_A1052 from '../../../assets/cards/A1/ja/A1-052.webp';
+import JA_A1053 from '../../../assets/cards/A1/ja/A1-053.webp';
+import JA_A1054 from '../../../assets/cards/A1/ja/A1-054.webp';
+import JA_A1055 from '../../../assets/cards/A1/ja/A1-055.webp';
+import JA_A1056 from '../../../assets/cards/A1/ja/A1-056.webp';
+import JA_A1057 from '../../../assets/cards/A1/ja/A1-057.webp';
+import JA_A1058 from '../../../assets/cards/A1/ja/A1-058.webp';
+import JA_A1059 from '../../../assets/cards/A1/ja/A1-059.webp';
+import JA_A1060 from '../../../assets/cards/A1/ja/A1-060.webp';
+import JA_A1061 from '../../../assets/cards/A1/ja/A1-061.webp';
+import JA_A1062 from '../../../assets/cards/A1/ja/A1-062.webp';
+import JA_A1063 from '../../../assets/cards/A1/ja/A1-063.webp';
+import JA_A1064 from '../../../assets/cards/A1/ja/A1-064.webp';
+import JA_A1065 from '../../../assets/cards/A1/ja/A1-065.webp';
+import JA_A1066 from '../../../assets/cards/A1/ja/A1-066.webp';
+import JA_A1067 from '../../../assets/cards/A1/ja/A1-067.webp';
+import JA_A1068 from '../../../assets/cards/A1/ja/A1-068.webp';
+import JA_A1069 from '../../../assets/cards/A1/ja/A1-069.webp';
+import JA_A1070 from '../../../assets/cards/A1/ja/A1-070.webp';
+import JA_A1071 from '../../../assets/cards/A1/ja/A1-071.webp';
+import JA_A1072 from '../../../assets/cards/A1/ja/A1-072.webp';
+import JA_A1073 from '../../../assets/cards/A1/ja/A1-073.webp';
+import JA_A1074 from '../../../assets/cards/A1/ja/A1-074.webp';
+import JA_A1075 from '../../../assets/cards/A1/ja/A1-075.webp';
+import JA_A1076 from '../../../assets/cards/A1/ja/A1-076.webp';
+import JA_A1077 from '../../../assets/cards/A1/ja/A1-077.webp';
+import JA_A1078 from '../../../assets/cards/A1/ja/A1-078.webp';
+import JA_A1079 from '../../../assets/cards/A1/ja/A1-079.webp';
+import JA_A1080 from '../../../assets/cards/A1/ja/A1-080.webp';
+import JA_A1081 from '../../../assets/cards/A1/ja/A1-081.webp';
+import JA_A1082 from '../../../assets/cards/A1/ja/A1-082.webp';
+import JA_A1083 from '../../../assets/cards/A1/ja/A1-083.webp';
+import JA_A1084 from '../../../assets/cards/A1/ja/A1-084.webp';
+import JA_A1085 from '../../../assets/cards/A1/ja/A1-085.webp';
+import JA_A1086 from '../../../assets/cards/A1/ja/A1-086.webp';
+import JA_A1087 from '../../../assets/cards/A1/ja/A1-087.webp';
+import JA_A1088 from '../../../assets/cards/A1/ja/A1-088.webp';
+import JA_A1089 from '../../../assets/cards/A1/ja/A1-089.webp';
+import JA_A1090 from '../../../assets/cards/A1/ja/A1-090.webp';
+import JA_A1091 from '../../../assets/cards/A1/ja/A1-091.webp';
+import JA_A1092 from '../../../assets/cards/A1/ja/A1-092.webp';
+import JA_A1093 from '../../../assets/cards/A1/ja/A1-093.webp';
+import JA_A1094 from '../../../assets/cards/A1/ja/A1-094.webp';
+import JA_A1095 from '../../../assets/cards/A1/ja/A1-095.webp';
+import JA_A1096 from '../../../assets/cards/A1/ja/A1-096.webp';
+import JA_A1097 from '../../../assets/cards/A1/ja/A1-097.webp';
+import JA_A1098 from '../../../assets/cards/A1/ja/A1-098.webp';
+import JA_A1099 from '../../../assets/cards/A1/ja/A1-099.webp';
+import JA_A1100 from '../../../assets/cards/A1/ja/A1-100.webp';
+import JA_A1101 from '../../../assets/cards/A1/ja/A1-101.webp';
+import JA_A1102 from '../../../assets/cards/A1/ja/A1-102.webp';
+import JA_A1103 from '../../../assets/cards/A1/ja/A1-103.webp';
+import JA_A1104 from '../../../assets/cards/A1/ja/A1-104.webp';
+import JA_A1105 from '../../../assets/cards/A1/ja/A1-105.webp';
+import JA_A1106 from '../../../assets/cards/A1/ja/A1-106.webp';
+import JA_A1107 from '../../../assets/cards/A1/ja/A1-107.webp';
+import JA_A1108 from '../../../assets/cards/A1/ja/A1-108.webp';
+import JA_A1109 from '../../../assets/cards/A1/ja/A1-109.webp';
+import JA_A1110 from '../../../assets/cards/A1/ja/A1-110.webp';
+import JA_A1111 from '../../../assets/cards/A1/ja/A1-111.webp';
+import JA_A1112 from '../../../assets/cards/A1/ja/A1-112.webp';
+import JA_A1113 from '../../../assets/cards/A1/ja/A1-113.webp';
+import JA_A1114 from '../../../assets/cards/A1/ja/A1-114.webp';
+import JA_A1115 from '../../../assets/cards/A1/ja/A1-115.webp';
+import JA_A1116 from '../../../assets/cards/A1/ja/A1-116.webp';
+import JA_A1117 from '../../../assets/cards/A1/ja/A1-117.webp';
+import JA_A1118 from '../../../assets/cards/A1/ja/A1-118.webp';
+import JA_A1119 from '../../../assets/cards/A1/ja/A1-119.webp';
+import JA_A1120 from '../../../assets/cards/A1/ja/A1-120.webp';
+import JA_A1121 from '../../../assets/cards/A1/ja/A1-121.webp';
+import JA_A1122 from '../../../assets/cards/A1/ja/A1-122.webp';
+import JA_A1123 from '../../../assets/cards/A1/ja/A1-123.webp';
+import JA_A1124 from '../../../assets/cards/A1/ja/A1-124.webp';
+import JA_A1125 from '../../../assets/cards/A1/ja/A1-125.webp';
+import JA_A1126 from '../../../assets/cards/A1/ja/A1-126.webp';
+import JA_A1127 from '../../../assets/cards/A1/ja/A1-127.webp';
+import JA_A1128 from '../../../assets/cards/A1/ja/A1-128.webp';
+import JA_A1129 from '../../../assets/cards/A1/ja/A1-129.webp';
+import JA_A1130 from '../../../assets/cards/A1/ja/A1-130.webp';
+import JA_A1131 from '../../../assets/cards/A1/ja/A1-131.webp';
+import JA_A1132 from '../../../assets/cards/A1/ja/A1-132.webp';
+import JA_A1133 from '../../../assets/cards/A1/ja/A1-133.webp';
+import JA_A1134 from '../../../assets/cards/A1/ja/A1-134.webp';
+import JA_A1135 from '../../../assets/cards/A1/ja/A1-135.webp';
+import JA_A1136 from '../../../assets/cards/A1/ja/A1-136.webp';
+import JA_A1137 from '../../../assets/cards/A1/ja/A1-137.webp';
+import JA_A1138 from '../../../assets/cards/A1/ja/A1-138.webp';
+import JA_A1139 from '../../../assets/cards/A1/ja/A1-139.webp';
+import JA_A1140 from '../../../assets/cards/A1/ja/A1-140.webp';
+import JA_A1141 from '../../../assets/cards/A1/ja/A1-141.webp';
+import JA_A1142 from '../../../assets/cards/A1/ja/A1-142.webp';
+import JA_A1143 from '../../../assets/cards/A1/ja/A1-143.webp';
+import JA_A1144 from '../../../assets/cards/A1/ja/A1-144.webp';
+import JA_A1145 from '../../../assets/cards/A1/ja/A1-145.webp';
+import JA_A1146 from '../../../assets/cards/A1/ja/A1-146.webp';
+import JA_A1147 from '../../../assets/cards/A1/ja/A1-147.webp';
+import JA_A1148 from '../../../assets/cards/A1/ja/A1-148.webp';
+import JA_A1149 from '../../../assets/cards/A1/ja/A1-149.webp';
+import JA_A1150 from '../../../assets/cards/A1/ja/A1-150.webp';
+import JA_A1151 from '../../../assets/cards/A1/ja/A1-151.webp';
+import JA_A1152 from '../../../assets/cards/A1/ja/A1-152.webp';
+import JA_A1153 from '../../../assets/cards/A1/ja/A1-153.webp';
+import JA_A1154 from '../../../assets/cards/A1/ja/A1-154.webp';
+import JA_A1155 from '../../../assets/cards/A1/ja/A1-155.webp';
+import JA_A1156 from '../../../assets/cards/A1/ja/A1-156.webp';
+import JA_A1157 from '../../../assets/cards/A1/ja/A1-157.webp';
+import JA_A1158 from '../../../assets/cards/A1/ja/A1-158.webp';
+import JA_A1159 from '../../../assets/cards/A1/ja/A1-159.webp';
+import JA_A1160 from '../../../assets/cards/A1/ja/A1-160.webp';
+import JA_A1161 from '../../../assets/cards/A1/ja/A1-161.webp';
+import JA_A1162 from '../../../assets/cards/A1/ja/A1-162.webp';
+import JA_A1163 from '../../../assets/cards/A1/ja/A1-163.webp';
+import JA_A1164 from '../../../assets/cards/A1/ja/A1-164.webp';
+import JA_A1165 from '../../../assets/cards/A1/ja/A1-165.webp';
+import JA_A1166 from '../../../assets/cards/A1/ja/A1-166.webp';
+import JA_A1167 from '../../../assets/cards/A1/ja/A1-167.webp';
+import JA_A1168 from '../../../assets/cards/A1/ja/A1-168.webp';
+import JA_A1169 from '../../../assets/cards/A1/ja/A1-169.webp';
+import JA_A1170 from '../../../assets/cards/A1/ja/A1-170.webp';
+import JA_A1171 from '../../../assets/cards/A1/ja/A1-171.webp';
+import JA_A1172 from '../../../assets/cards/A1/ja/A1-172.webp';
+import JA_A1173 from '../../../assets/cards/A1/ja/A1-173.webp';
+import JA_A1174 from '../../../assets/cards/A1/ja/A1-174.webp';
+import JA_A1175 from '../../../assets/cards/A1/ja/A1-175.webp';
+import JA_A1176 from '../../../assets/cards/A1/ja/A1-176.webp';
+import JA_A1177 from '../../../assets/cards/A1/ja/A1-177.webp';
+import JA_A1178 from '../../../assets/cards/A1/ja/A1-178.webp';
+import JA_A1179 from '../../../assets/cards/A1/ja/A1-179.webp';
+import JA_A1180 from '../../../assets/cards/A1/ja/A1-180.webp';
+import JA_A1181 from '../../../assets/cards/A1/ja/A1-181.webp';
+import JA_A1182 from '../../../assets/cards/A1/ja/A1-182.webp';
+import JA_A1183 from '../../../assets/cards/A1/ja/A1-183.webp';
+import JA_A1184 from '../../../assets/cards/A1/ja/A1-184.webp';
+import JA_A1185 from '../../../assets/cards/A1/ja/A1-185.webp';
+import JA_A1186 from '../../../assets/cards/A1/ja/A1-186.webp';
+import JA_A1187 from '../../../assets/cards/A1/ja/A1-187.webp';
+import JA_A1188 from '../../../assets/cards/A1/ja/A1-188.webp';
+import JA_A1189 from '../../../assets/cards/A1/ja/A1-189.webp';
+import JA_A1190 from '../../../assets/cards/A1/ja/A1-190.webp';
+import JA_A1191 from '../../../assets/cards/A1/ja/A1-191.webp';
+import JA_A1192 from '../../../assets/cards/A1/ja/A1-192.webp';
+import JA_A1193 from '../../../assets/cards/A1/ja/A1-193.webp';
+import JA_A1194 from '../../../assets/cards/A1/ja/A1-194.webp';
+import JA_A1195 from '../../../assets/cards/A1/ja/A1-195.webp';
+import JA_A1196 from '../../../assets/cards/A1/ja/A1-196.webp';
+import JA_A1197 from '../../../assets/cards/A1/ja/A1-197.webp';
+import JA_A1198 from '../../../assets/cards/A1/ja/A1-198.webp';
+import JA_A1199 from '../../../assets/cards/A1/ja/A1-199.webp';
+import JA_A1200 from '../../../assets/cards/A1/ja/A1-200.webp';
+import JA_A1201 from '../../../assets/cards/A1/ja/A1-201.webp';
+import JA_A1202 from '../../../assets/cards/A1/ja/A1-202.webp';
+import JA_A1203 from '../../../assets/cards/A1/ja/A1-203.webp';
+import JA_A1204 from '../../../assets/cards/A1/ja/A1-204.webp';
+import JA_A1205 from '../../../assets/cards/A1/ja/A1-205.webp';
+import JA_A1206 from '../../../assets/cards/A1/ja/A1-206.webp';
+import JA_A1207 from '../../../assets/cards/A1/ja/A1-207.webp';
+import JA_A1208 from '../../../assets/cards/A1/ja/A1-208.webp';
+import JA_A1209 from '../../../assets/cards/A1/ja/A1-209.webp';
+import JA_A1210 from '../../../assets/cards/A1/ja/A1-210.webp';
+import JA_A1211 from '../../../assets/cards/A1/ja/A1-211.webp';
+import JA_A1212 from '../../../assets/cards/A1/ja/A1-212.webp';
+import JA_A1213 from '../../../assets/cards/A1/ja/A1-213.webp';
+import JA_A1214 from '../../../assets/cards/A1/ja/A1-214.webp';
+import JA_A1215 from '../../../assets/cards/A1/ja/A1-215.webp';
+import JA_A1216 from '../../../assets/cards/A1/ja/A1-216.webp';
+import JA_A1217 from '../../../assets/cards/A1/ja/A1-217.webp';
+import JA_A1218 from '../../../assets/cards/A1/ja/A1-218.webp';
+import JA_A1219 from '../../../assets/cards/A1/ja/A1-219.webp';
+import JA_A1220 from '../../../assets/cards/A1/ja/A1-220.webp';
+import JA_A1221 from '../../../assets/cards/A1/ja/A1-221.webp';
+import JA_A1222 from '../../../assets/cards/A1/ja/A1-222.webp';
+import JA_A1223 from '../../../assets/cards/A1/ja/A1-223.webp';
+import JA_A1224 from '../../../assets/cards/A1/ja/A1-224.webp';
+import JA_A1225 from '../../../assets/cards/A1/ja/A1-225.webp';
+import JA_A1226 from '../../../assets/cards/A1/ja/A1-226.webp';
+import JA_A1227 from '../../../assets/cards/A1/ja/A1-227.webp';
+import JA_A1228 from '../../../assets/cards/A1/ja/A1-228.webp';
+import JA_A1229 from '../../../assets/cards/A1/ja/A1-229.webp';
+import JA_A1230 from '../../../assets/cards/A1/ja/A1-230.webp';
+import JA_A1231 from '../../../assets/cards/A1/ja/A1-231.webp';
+import JA_A1232 from '../../../assets/cards/A1/ja/A1-232.webp';
+import JA_A1233 from '../../../assets/cards/A1/ja/A1-233.webp';
+import JA_A1234 from '../../../assets/cards/A1/ja/A1-234.webp';
+import JA_A1235 from '../../../assets/cards/A1/ja/A1-235.webp';
+import JA_A1236 from '../../../assets/cards/A1/ja/A1-236.webp';
+import JA_A1237 from '../../../assets/cards/A1/ja/A1-237.webp';
+import JA_A1238 from '../../../assets/cards/A1/ja/A1-238.webp';
+import JA_A1239 from '../../../assets/cards/A1/ja/A1-239.webp';
+import JA_A1240 from '../../../assets/cards/A1/ja/A1-240.webp';
+import JA_A1241 from '../../../assets/cards/A1/ja/A1-241.webp';
+import JA_A1242 from '../../../assets/cards/A1/ja/A1-242.webp';
+import JA_A1243 from '../../../assets/cards/A1/ja/A1-243.webp';
+import JA_A1244 from '../../../assets/cards/A1/ja/A1-244.webp';
+import JA_A1245 from '../../../assets/cards/A1/ja/A1-245.webp';
+import JA_A1246 from '../../../assets/cards/A1/ja/A1-246.webp';
+import JA_A1247 from '../../../assets/cards/A1/ja/A1-247.webp';
+import JA_A1248 from '../../../assets/cards/A1/ja/A1-248.webp';
+import JA_A1249 from '../../../assets/cards/A1/ja/A1-249.webp';
+import JA_A1250 from '../../../assets/cards/A1/ja/A1-250.webp';
+import JA_A1251 from '../../../assets/cards/A1/ja/A1-251.webp';
+import JA_A1252 from '../../../assets/cards/A1/ja/A1-252.webp';
+import JA_A1253 from '../../../assets/cards/A1/ja/A1-253.webp';
+import JA_A1254 from '../../../assets/cards/A1/ja/A1-254.webp';
+import JA_A1255 from '../../../assets/cards/A1/ja/A1-255.webp';
+import JA_A1256 from '../../../assets/cards/A1/ja/A1-256.webp';
+import JA_A1257 from '../../../assets/cards/A1/ja/A1-257.webp';
+import JA_A1258 from '../../../assets/cards/A1/ja/A1-258.webp';
+import JA_A1259 from '../../../assets/cards/A1/ja/A1-259.webp';
+import JA_A1260 from '../../../assets/cards/A1/ja/A1-260.webp';
+import JA_A1261 from '../../../assets/cards/A1/ja/A1-261.webp';
+import JA_A1262 from '../../../assets/cards/A1/ja/A1-262.webp';
+import JA_A1263 from '../../../assets/cards/A1/ja/A1-263.webp';
+import JA_A1264 from '../../../assets/cards/A1/ja/A1-264.webp';
+import JA_A1265 from '../../../assets/cards/A1/ja/A1-265.webp';
+import JA_A1266 from '../../../assets/cards/A1/ja/A1-266.webp';
+import JA_A1267 from '../../../assets/cards/A1/ja/A1-267.webp';
+import JA_A1268 from '../../../assets/cards/A1/ja/A1-268.webp';
+import JA_A1269 from '../../../assets/cards/A1/ja/A1-269.webp';
+import JA_A1270 from '../../../assets/cards/A1/ja/A1-270.webp';
+import JA_A1271 from '../../../assets/cards/A1/ja/A1-271.webp';
+import JA_A1272 from '../../../assets/cards/A1/ja/A1-272.webp';
+import JA_A1273 from '../../../assets/cards/A1/ja/A1-273.webp';
+import JA_A1274 from '../../../assets/cards/A1/ja/A1-274.webp';
+import JA_A1275 from '../../../assets/cards/A1/ja/A1-275.webp';
+import JA_A1276 from '../../../assets/cards/A1/ja/A1-276.webp';
+import JA_A1277 from '../../../assets/cards/A1/ja/A1-277.webp';
+import JA_A1278 from '../../../assets/cards/A1/ja/A1-278.webp';
+import JA_A1279 from '../../../assets/cards/A1/ja/A1-279.webp';
+import JA_A1280 from '../../../assets/cards/A1/ja/A1-280.webp';
+import JA_A1281 from '../../../assets/cards/A1/ja/A1-281.webp';
+import JA_A1282 from '../../../assets/cards/A1/ja/A1-282.webp';
+import JA_A1283 from '../../../assets/cards/A1/ja/A1-283.webp';
+import JA_A1284 from '../../../assets/cards/A1/ja/A1-284.webp';
+import JA_A1285 from '../../../assets/cards/A1/ja/A1-285.webp';
+import JA_A1286 from '../../../assets/cards/A1/ja/A1-286.webp';
+import KO_A1001 from '../../../assets/cards/A1/ko/A1-001.webp';
+import KO_A1002 from '../../../assets/cards/A1/ko/A1-002.webp';
+import KO_A1003 from '../../../assets/cards/A1/ko/A1-003.webp';
+import KO_A1004 from '../../../assets/cards/A1/ko/A1-004.webp';
+import KO_A1005 from '../../../assets/cards/A1/ko/A1-005.webp';
+import KO_A1006 from '../../../assets/cards/A1/ko/A1-006.webp';
+import KO_A1007 from '../../../assets/cards/A1/ko/A1-007.webp';
+import KO_A1008 from '../../../assets/cards/A1/ko/A1-008.webp';
+import KO_A1009 from '../../../assets/cards/A1/ko/A1-009.webp';
+import KO_A1010 from '../../../assets/cards/A1/ko/A1-010.webp';
+import KO_A1011 from '../../../assets/cards/A1/ko/A1-011.webp';
+import KO_A1012 from '../../../assets/cards/A1/ko/A1-012.webp';
+import KO_A1013 from '../../../assets/cards/A1/ko/A1-013.webp';
+import KO_A1014 from '../../../assets/cards/A1/ko/A1-014.webp';
+import KO_A1015 from '../../../assets/cards/A1/ko/A1-015.webp';
+import KO_A1016 from '../../../assets/cards/A1/ko/A1-016.webp';
+import KO_A1017 from '../../../assets/cards/A1/ko/A1-017.webp';
+import KO_A1018 from '../../../assets/cards/A1/ko/A1-018.webp';
+import KO_A1019 from '../../../assets/cards/A1/ko/A1-019.webp';
+import KO_A1020 from '../../../assets/cards/A1/ko/A1-020.webp';
+import KO_A1021 from '../../../assets/cards/A1/ko/A1-021.webp';
+import KO_A1022 from '../../../assets/cards/A1/ko/A1-022.webp';
+import KO_A1023 from '../../../assets/cards/A1/ko/A1-023.webp';
+import KO_A1024 from '../../../assets/cards/A1/ko/A1-024.webp';
+import KO_A1025 from '../../../assets/cards/A1/ko/A1-025.webp';
+import KO_A1026 from '../../../assets/cards/A1/ko/A1-026.webp';
+import KO_A1027 from '../../../assets/cards/A1/ko/A1-027.webp';
+import KO_A1028 from '../../../assets/cards/A1/ko/A1-028.webp';
+import KO_A1029 from '../../../assets/cards/A1/ko/A1-029.webp';
+import KO_A1030 from '../../../assets/cards/A1/ko/A1-030.webp';
+import KO_A1031 from '../../../assets/cards/A1/ko/A1-031.webp';
+import KO_A1032 from '../../../assets/cards/A1/ko/A1-032.webp';
+import KO_A1033 from '../../../assets/cards/A1/ko/A1-033.webp';
+import KO_A1034 from '../../../assets/cards/A1/ko/A1-034.webp';
+import KO_A1035 from '../../../assets/cards/A1/ko/A1-035.webp';
+import KO_A1036 from '../../../assets/cards/A1/ko/A1-036.webp';
+import KO_A1037 from '../../../assets/cards/A1/ko/A1-037.webp';
+import KO_A1038 from '../../../assets/cards/A1/ko/A1-038.webp';
+import KO_A1039 from '../../../assets/cards/A1/ko/A1-039.webp';
+import KO_A1040 from '../../../assets/cards/A1/ko/A1-040.webp';
+import KO_A1041 from '../../../assets/cards/A1/ko/A1-041.webp';
+import KO_A1042 from '../../../assets/cards/A1/ko/A1-042.webp';
+import KO_A1043 from '../../../assets/cards/A1/ko/A1-043.webp';
+import KO_A1044 from '../../../assets/cards/A1/ko/A1-044.webp';
+import KO_A1045 from '../../../assets/cards/A1/ko/A1-045.webp';
+import KO_A1046 from '../../../assets/cards/A1/ko/A1-046.webp';
+import KO_A1047 from '../../../assets/cards/A1/ko/A1-047.webp';
+import KO_A1048 from '../../../assets/cards/A1/ko/A1-048.webp';
+import KO_A1049 from '../../../assets/cards/A1/ko/A1-049.webp';
+import KO_A1050 from '../../../assets/cards/A1/ko/A1-050.webp';
+import KO_A1051 from '../../../assets/cards/A1/ko/A1-051.webp';
+import KO_A1052 from '../../../assets/cards/A1/ko/A1-052.webp';
+import KO_A1053 from '../../../assets/cards/A1/ko/A1-053.webp';
+import KO_A1054 from '../../../assets/cards/A1/ko/A1-054.webp';
+import KO_A1055 from '../../../assets/cards/A1/ko/A1-055.webp';
+import KO_A1056 from '../../../assets/cards/A1/ko/A1-056.webp';
+import KO_A1057 from '../../../assets/cards/A1/ko/A1-057.webp';
+import KO_A1058 from '../../../assets/cards/A1/ko/A1-058.webp';
+import KO_A1059 from '../../../assets/cards/A1/ko/A1-059.webp';
+import KO_A1060 from '../../../assets/cards/A1/ko/A1-060.webp';
+import KO_A1061 from '../../../assets/cards/A1/ko/A1-061.webp';
+import KO_A1062 from '../../../assets/cards/A1/ko/A1-062.webp';
+import KO_A1063 from '../../../assets/cards/A1/ko/A1-063.webp';
+import KO_A1064 from '../../../assets/cards/A1/ko/A1-064.webp';
+import KO_A1065 from '../../../assets/cards/A1/ko/A1-065.webp';
+import KO_A1066 from '../../../assets/cards/A1/ko/A1-066.webp';
+import KO_A1067 from '../../../assets/cards/A1/ko/A1-067.webp';
+import KO_A1068 from '../../../assets/cards/A1/ko/A1-068.webp';
+import KO_A1069 from '../../../assets/cards/A1/ko/A1-069.webp';
+import KO_A1070 from '../../../assets/cards/A1/ko/A1-070.webp';
+import KO_A1071 from '../../../assets/cards/A1/ko/A1-071.webp';
+import KO_A1072 from '../../../assets/cards/A1/ko/A1-072.webp';
+import KO_A1073 from '../../../assets/cards/A1/ko/A1-073.webp';
+import KO_A1074 from '../../../assets/cards/A1/ko/A1-074.webp';
+import KO_A1075 from '../../../assets/cards/A1/ko/A1-075.webp';
+import KO_A1076 from '../../../assets/cards/A1/ko/A1-076.webp';
+import KO_A1077 from '../../../assets/cards/A1/ko/A1-077.webp';
+import KO_A1078 from '../../../assets/cards/A1/ko/A1-078.webp';
+import KO_A1079 from '../../../assets/cards/A1/ko/A1-079.webp';
+import KO_A1080 from '../../../assets/cards/A1/ko/A1-080.webp';
+import KO_A1081 from '../../../assets/cards/A1/ko/A1-081.webp';
+import KO_A1082 from '../../../assets/cards/A1/ko/A1-082.webp';
+import KO_A1083 from '../../../assets/cards/A1/ko/A1-083.webp';
+import KO_A1084 from '../../../assets/cards/A1/ko/A1-084.webp';
+import KO_A1085 from '../../../assets/cards/A1/ko/A1-085.webp';
+import KO_A1086 from '../../../assets/cards/A1/ko/A1-086.webp';
+import KO_A1087 from '../../../assets/cards/A1/ko/A1-087.webp';
+import KO_A1088 from '../../../assets/cards/A1/ko/A1-088.webp';
+import KO_A1089 from '../../../assets/cards/A1/ko/A1-089.webp';
+import KO_A1090 from '../../../assets/cards/A1/ko/A1-090.webp';
+import KO_A1091 from '../../../assets/cards/A1/ko/A1-091.webp';
+import KO_A1092 from '../../../assets/cards/A1/ko/A1-092.webp';
+import KO_A1093 from '../../../assets/cards/A1/ko/A1-093.webp';
+import KO_A1094 from '../../../assets/cards/A1/ko/A1-094.webp';
+import KO_A1095 from '../../../assets/cards/A1/ko/A1-095.webp';
+import KO_A1096 from '../../../assets/cards/A1/ko/A1-096.webp';
+import KO_A1097 from '../../../assets/cards/A1/ko/A1-097.webp';
+import KO_A1098 from '../../../assets/cards/A1/ko/A1-098.webp';
+import KO_A1099 from '../../../assets/cards/A1/ko/A1-099.webp';
+import KO_A1100 from '../../../assets/cards/A1/ko/A1-100.webp';
+import KO_A1101 from '../../../assets/cards/A1/ko/A1-101.webp';
+import KO_A1102 from '../../../assets/cards/A1/ko/A1-102.webp';
+import KO_A1103 from '../../../assets/cards/A1/ko/A1-103.webp';
+import KO_A1104 from '../../../assets/cards/A1/ko/A1-104.webp';
+import KO_A1105 from '../../../assets/cards/A1/ko/A1-105.webp';
+import KO_A1106 from '../../../assets/cards/A1/ko/A1-106.webp';
+import KO_A1107 from '../../../assets/cards/A1/ko/A1-107.webp';
+import KO_A1108 from '../../../assets/cards/A1/ko/A1-108.webp';
+import KO_A1109 from '../../../assets/cards/A1/ko/A1-109.webp';
+import KO_A1110 from '../../../assets/cards/A1/ko/A1-110.webp';
+import KO_A1111 from '../../../assets/cards/A1/ko/A1-111.webp';
+import KO_A1112 from '../../../assets/cards/A1/ko/A1-112.webp';
+import KO_A1113 from '../../../assets/cards/A1/ko/A1-113.webp';
+import KO_A1114 from '../../../assets/cards/A1/ko/A1-114.webp';
+import KO_A1115 from '../../../assets/cards/A1/ko/A1-115.webp';
+import KO_A1116 from '../../../assets/cards/A1/ko/A1-116.webp';
+import KO_A1117 from '../../../assets/cards/A1/ko/A1-117.webp';
+import KO_A1118 from '../../../assets/cards/A1/ko/A1-118.webp';
+import KO_A1119 from '../../../assets/cards/A1/ko/A1-119.webp';
+import KO_A1120 from '../../../assets/cards/A1/ko/A1-120.webp';
+import KO_A1121 from '../../../assets/cards/A1/ko/A1-121.webp';
+import KO_A1122 from '../../../assets/cards/A1/ko/A1-122.webp';
+import KO_A1123 from '../../../assets/cards/A1/ko/A1-123.webp';
+import KO_A1124 from '../../../assets/cards/A1/ko/A1-124.webp';
+import KO_A1125 from '../../../assets/cards/A1/ko/A1-125.webp';
+import KO_A1126 from '../../../assets/cards/A1/ko/A1-126.webp';
+import KO_A1127 from '../../../assets/cards/A1/ko/A1-127.webp';
+import KO_A1128 from '../../../assets/cards/A1/ko/A1-128.webp';
+import KO_A1129 from '../../../assets/cards/A1/ko/A1-129.webp';
+import KO_A1130 from '../../../assets/cards/A1/ko/A1-130.webp';
+import KO_A1131 from '../../../assets/cards/A1/ko/A1-131.webp';
+import KO_A1132 from '../../../assets/cards/A1/ko/A1-132.webp';
+import KO_A1133 from '../../../assets/cards/A1/ko/A1-133.webp';
+import KO_A1134 from '../../../assets/cards/A1/ko/A1-134.webp';
+import KO_A1135 from '../../../assets/cards/A1/ko/A1-135.webp';
+import KO_A1136 from '../../../assets/cards/A1/ko/A1-136.webp';
+import KO_A1137 from '../../../assets/cards/A1/ko/A1-137.webp';
+import KO_A1138 from '../../../assets/cards/A1/ko/A1-138.webp';
+import KO_A1139 from '../../../assets/cards/A1/ko/A1-139.webp';
+import KO_A1140 from '../../../assets/cards/A1/ko/A1-140.webp';
+import KO_A1141 from '../../../assets/cards/A1/ko/A1-141.webp';
+import KO_A1142 from '../../../assets/cards/A1/ko/A1-142.webp';
+import KO_A1143 from '../../../assets/cards/A1/ko/A1-143.webp';
+import KO_A1144 from '../../../assets/cards/A1/ko/A1-144.webp';
+import KO_A1145 from '../../../assets/cards/A1/ko/A1-145.webp';
+import KO_A1146 from '../../../assets/cards/A1/ko/A1-146.webp';
+import KO_A1147 from '../../../assets/cards/A1/ko/A1-147.webp';
+import KO_A1148 from '../../../assets/cards/A1/ko/A1-148.webp';
+import KO_A1149 from '../../../assets/cards/A1/ko/A1-149.webp';
+import KO_A1150 from '../../../assets/cards/A1/ko/A1-150.webp';
+import KO_A1151 from '../../../assets/cards/A1/ko/A1-151.webp';
+import KO_A1152 from '../../../assets/cards/A1/ko/A1-152.webp';
+import KO_A1153 from '../../../assets/cards/A1/ko/A1-153.webp';
+import KO_A1154 from '../../../assets/cards/A1/ko/A1-154.webp';
+import KO_A1155 from '../../../assets/cards/A1/ko/A1-155.webp';
+import KO_A1156 from '../../../assets/cards/A1/ko/A1-156.webp';
+import KO_A1157 from '../../../assets/cards/A1/ko/A1-157.webp';
+import KO_A1158 from '../../../assets/cards/A1/ko/A1-158.webp';
+import KO_A1159 from '../../../assets/cards/A1/ko/A1-159.webp';
+import KO_A1160 from '../../../assets/cards/A1/ko/A1-160.webp';
+import KO_A1161 from '../../../assets/cards/A1/ko/A1-161.webp';
+import KO_A1162 from '../../../assets/cards/A1/ko/A1-162.webp';
+import KO_A1163 from '../../../assets/cards/A1/ko/A1-163.webp';
+import KO_A1164 from '../../../assets/cards/A1/ko/A1-164.webp';
+import KO_A1165 from '../../../assets/cards/A1/ko/A1-165.webp';
+import KO_A1166 from '../../../assets/cards/A1/ko/A1-166.webp';
+import KO_A1167 from '../../../assets/cards/A1/ko/A1-167.webp';
+import KO_A1168 from '../../../assets/cards/A1/ko/A1-168.webp';
+import KO_A1169 from '../../../assets/cards/A1/ko/A1-169.webp';
+import KO_A1170 from '../../../assets/cards/A1/ko/A1-170.webp';
+import KO_A1171 from '../../../assets/cards/A1/ko/A1-171.webp';
+import KO_A1172 from '../../../assets/cards/A1/ko/A1-172.webp';
+import KO_A1173 from '../../../assets/cards/A1/ko/A1-173.webp';
+import KO_A1174 from '../../../assets/cards/A1/ko/A1-174.webp';
+import KO_A1175 from '../../../assets/cards/A1/ko/A1-175.webp';
+import KO_A1176 from '../../../assets/cards/A1/ko/A1-176.webp';
+import KO_A1177 from '../../../assets/cards/A1/ko/A1-177.webp';
+import KO_A1178 from '../../../assets/cards/A1/ko/A1-178.webp';
+import KO_A1179 from '../../../assets/cards/A1/ko/A1-179.webp';
+import KO_A1180 from '../../../assets/cards/A1/ko/A1-180.webp';
+import KO_A1181 from '../../../assets/cards/A1/ko/A1-181.webp';
+import KO_A1182 from '../../../assets/cards/A1/ko/A1-182.webp';
+import KO_A1183 from '../../../assets/cards/A1/ko/A1-183.webp';
+import KO_A1184 from '../../../assets/cards/A1/ko/A1-184.webp';
+import KO_A1185 from '../../../assets/cards/A1/ko/A1-185.webp';
+import KO_A1186 from '../../../assets/cards/A1/ko/A1-186.webp';
+import KO_A1187 from '../../../assets/cards/A1/ko/A1-187.webp';
+import KO_A1188 from '../../../assets/cards/A1/ko/A1-188.webp';
+import KO_A1189 from '../../../assets/cards/A1/ko/A1-189.webp';
+import KO_A1190 from '../../../assets/cards/A1/ko/A1-190.webp';
+import KO_A1191 from '../../../assets/cards/A1/ko/A1-191.webp';
+import KO_A1192 from '../../../assets/cards/A1/ko/A1-192.webp';
+import KO_A1193 from '../../../assets/cards/A1/ko/A1-193.webp';
+import KO_A1194 from '../../../assets/cards/A1/ko/A1-194.webp';
+import KO_A1195 from '../../../assets/cards/A1/ko/A1-195.webp';
+import KO_A1196 from '../../../assets/cards/A1/ko/A1-196.webp';
+import KO_A1197 from '../../../assets/cards/A1/ko/A1-197.webp';
+import KO_A1198 from '../../../assets/cards/A1/ko/A1-198.webp';
+import KO_A1199 from '../../../assets/cards/A1/ko/A1-199.webp';
+import KO_A1200 from '../../../assets/cards/A1/ko/A1-200.webp';
+import KO_A1201 from '../../../assets/cards/A1/ko/A1-201.webp';
+import KO_A1202 from '../../../assets/cards/A1/ko/A1-202.webp';
+import KO_A1203 from '../../../assets/cards/A1/ko/A1-203.webp';
+import KO_A1204 from '../../../assets/cards/A1/ko/A1-204.webp';
+import KO_A1205 from '../../../assets/cards/A1/ko/A1-205.webp';
+import KO_A1206 from '../../../assets/cards/A1/ko/A1-206.webp';
+import KO_A1207 from '../../../assets/cards/A1/ko/A1-207.webp';
+import KO_A1208 from '../../../assets/cards/A1/ko/A1-208.webp';
+import KO_A1209 from '../../../assets/cards/A1/ko/A1-209.webp';
+import KO_A1210 from '../../../assets/cards/A1/ko/A1-210.webp';
+import KO_A1211 from '../../../assets/cards/A1/ko/A1-211.webp';
+import KO_A1212 from '../../../assets/cards/A1/ko/A1-212.webp';
+import KO_A1213 from '../../../assets/cards/A1/ko/A1-213.webp';
+import KO_A1214 from '../../../assets/cards/A1/ko/A1-214.webp';
+import KO_A1215 from '../../../assets/cards/A1/ko/A1-215.webp';
+import KO_A1216 from '../../../assets/cards/A1/ko/A1-216.webp';
+import KO_A1217 from '../../../assets/cards/A1/ko/A1-217.webp';
+import KO_A1218 from '../../../assets/cards/A1/ko/A1-218.webp';
+import KO_A1219 from '../../../assets/cards/A1/ko/A1-219.webp';
+import KO_A1220 from '../../../assets/cards/A1/ko/A1-220.webp';
+import KO_A1221 from '../../../assets/cards/A1/ko/A1-221.webp';
+import KO_A1222 from '../../../assets/cards/A1/ko/A1-222.webp';
+import KO_A1223 from '../../../assets/cards/A1/ko/A1-223.webp';
+import KO_A1224 from '../../../assets/cards/A1/ko/A1-224.webp';
+import KO_A1225 from '../../../assets/cards/A1/ko/A1-225.webp';
+import KO_A1226 from '../../../assets/cards/A1/ko/A1-226.webp';
+import KO_A1227 from '../../../assets/cards/A1/ko/A1-227.webp';
+import KO_A1228 from '../../../assets/cards/A1/ko/A1-228.webp';
+import KO_A1229 from '../../../assets/cards/A1/ko/A1-229.webp';
+import KO_A1230 from '../../../assets/cards/A1/ko/A1-230.webp';
+import KO_A1231 from '../../../assets/cards/A1/ko/A1-231.webp';
+import KO_A1232 from '../../../assets/cards/A1/ko/A1-232.webp';
+import KO_A1233 from '../../../assets/cards/A1/ko/A1-233.webp';
+import KO_A1234 from '../../../assets/cards/A1/ko/A1-234.webp';
+import KO_A1235 from '../../../assets/cards/A1/ko/A1-235.webp';
+import KO_A1236 from '../../../assets/cards/A1/ko/A1-236.webp';
+import KO_A1237 from '../../../assets/cards/A1/ko/A1-237.webp';
+import KO_A1238 from '../../../assets/cards/A1/ko/A1-238.webp';
+import KO_A1239 from '../../../assets/cards/A1/ko/A1-239.webp';
+import KO_A1240 from '../../../assets/cards/A1/ko/A1-240.webp';
+import KO_A1241 from '../../../assets/cards/A1/ko/A1-241.webp';
+import KO_A1242 from '../../../assets/cards/A1/ko/A1-242.webp';
+import KO_A1243 from '../../../assets/cards/A1/ko/A1-243.webp';
+import KO_A1244 from '../../../assets/cards/A1/ko/A1-244.webp';
+import KO_A1245 from '../../../assets/cards/A1/ko/A1-245.webp';
+import KO_A1246 from '../../../assets/cards/A1/ko/A1-246.webp';
+import KO_A1247 from '../../../assets/cards/A1/ko/A1-247.webp';
+import KO_A1248 from '../../../assets/cards/A1/ko/A1-248.webp';
+import KO_A1249 from '../../../assets/cards/A1/ko/A1-249.webp';
+import KO_A1250 from '../../../assets/cards/A1/ko/A1-250.webp';
+import KO_A1251 from '../../../assets/cards/A1/ko/A1-251.webp';
+import KO_A1252 from '../../../assets/cards/A1/ko/A1-252.webp';
+import KO_A1253 from '../../../assets/cards/A1/ko/A1-253.webp';
+import KO_A1254 from '../../../assets/cards/A1/ko/A1-254.webp';
+import KO_A1255 from '../../../assets/cards/A1/ko/A1-255.webp';
+import KO_A1256 from '../../../assets/cards/A1/ko/A1-256.webp';
+import KO_A1257 from '../../../assets/cards/A1/ko/A1-257.webp';
+import KO_A1258 from '../../../assets/cards/A1/ko/A1-258.webp';
+import KO_A1259 from '../../../assets/cards/A1/ko/A1-259.webp';
+import KO_A1260 from '../../../assets/cards/A1/ko/A1-260.webp';
+import KO_A1261 from '../../../assets/cards/A1/ko/A1-261.webp';
+import KO_A1262 from '../../../assets/cards/A1/ko/A1-262.webp';
+import KO_A1263 from '../../../assets/cards/A1/ko/A1-263.webp';
+import KO_A1264 from '../../../assets/cards/A1/ko/A1-264.webp';
+import KO_A1265 from '../../../assets/cards/A1/ko/A1-265.webp';
+import KO_A1266 from '../../../assets/cards/A1/ko/A1-266.webp';
+import KO_A1267 from '../../../assets/cards/A1/ko/A1-267.webp';
+import KO_A1268 from '../../../assets/cards/A1/ko/A1-268.webp';
+import KO_A1269 from '../../../assets/cards/A1/ko/A1-269.webp';
+import KO_A1270 from '../../../assets/cards/A1/ko/A1-270.webp';
+import KO_A1271 from '../../../assets/cards/A1/ko/A1-271.webp';
+import KO_A1272 from '../../../assets/cards/A1/ko/A1-272.webp';
+import KO_A1273 from '../../../assets/cards/A1/ko/A1-273.webp';
+import KO_A1274 from '../../../assets/cards/A1/ko/A1-274.webp';
+import KO_A1275 from '../../../assets/cards/A1/ko/A1-275.webp';
+import KO_A1276 from '../../../assets/cards/A1/ko/A1-276.webp';
+import KO_A1277 from '../../../assets/cards/A1/ko/A1-277.webp';
+import KO_A1278 from '../../../assets/cards/A1/ko/A1-278.webp';
+import KO_A1279 from '../../../assets/cards/A1/ko/A1-279.webp';
+import KO_A1280 from '../../../assets/cards/A1/ko/A1-280.webp';
+import KO_A1281 from '../../../assets/cards/A1/ko/A1-281.webp';
+import KO_A1282 from '../../../assets/cards/A1/ko/A1-282.webp';
+import KO_A1283 from '../../../assets/cards/A1/ko/A1-283.webp';
+import KO_A1284 from '../../../assets/cards/A1/ko/A1-284.webp';
+import KO_A1285 from '../../../assets/cards/A1/ko/A1-285.webp';
+import KO_A1286 from '../../../assets/cards/A1/ko/A1-286.webp';
+import KO_MISSING_NO from '../../../assets/cards/KO-MiSS-000.png';
 
 export const MISSING_NO_CARD: CardInfo = {
   id: 'MISS-000',
@@ -5472,604 +5472,3 @@ export const A1_CARD_LIST: CardInfo[] = [
 export const A1_CARD_ID_MAP = new Map<string | number, CardInfo>();
 
 A1_CARD_LIST.forEach(cardInfo => A1_CARD_ID_MAP.set(cardInfo.id, cardInfo));
-
-const CHARIZARD_R1: CardId[] = [
-  'A1-011',
-  'A1-018',
-  'A1-021',
-  'A1-024',
-  'A1-027',
-  'A1-029',
-  'A1-031',
-  'A1-032',
-  'A1-033',
-  'A1-037',
-  'A1-042',
-  'A1-044',
-  'A1-048',
-  'A1-051',
-  'A1-057',
-  'A1-059',
-  'A1-074',
-  'A1-085',
-  'A1-087',
-  'A1-090',
-  'A1-092',
-  'A1-105',
-  'A1-110',
-  'A1-111',
-  'A1-115',
-  'A1-118',
-  'A1-133',
-  'A1-134',
-  'A1-135',
-  'A1-137',
-  'A1-141',
-  'A1-143',
-  'A1-155',
-  'A1-162',
-  'A1-164',
-  'A1-178',
-  'A1-179',
-  'A1-181',
-  'A1-189',
-  'A1-190',
-  'A1-191',
-  'A1-192',
-  'A1-196',
-  'A1-198',
-  'A1-199',
-  'A1-206',
-  'A1-212',
-  'A1-214',
-  'A1-215',
-  'A1-217',
-];
-const PIKACHU_R1: CardId[] = [
-  'A1-005',
-  'A1-006',
-  'A1-014',
-  'A1-027',
-  'A1-029',
-  'A1-039',
-  'A1-042',
-  'A1-048',
-  'A1-051',
-  'A1-053',
-  'A1-057',
-  'A1-064',
-  'A1-070',
-  'A1-072',
-  'A1-073',
-  'A1-077',
-  'A1-092',
-  'A1-094',
-  'A1-097',
-  'A1-099',
-  'A1-101',
-  'A1-105',
-  'A1-110',
-  'A1-111',
-  'A1-113',
-  'A1-118',
-  'A1-124',
-  'A1-133',
-  'A1-134',
-  'A1-135',
-  'A1-137',
-  'A1-139',
-  'A1-147',
-  'A1-160',
-  'A1-162',
-  'A1-164',
-  'A1-166',
-  'A1-169',
-  'A1-179',
-  'A1-189',
-  'A1-190',
-  'A1-193',
-  'A1-194',
-  'A1-198',
-  'A1-199',
-  'A1-208',
-  'A1-212',
-  'A1-214',
-  'A1-215',
-  'A1-216',
-];
-const MEWTWO_R1: CardId[] = [
-  'A1-001',
-  'A1-008',
-  'A1-009',
-  'A1-016',
-  'A1-025',
-  'A1-027',
-  'A1-029',
-  'A1-042',
-  'A1-048',
-  'A1-049',
-  'A1-050',
-  'A1-051',
-  'A1-057',
-  'A1-062',
-  'A1-066',
-  'A1-068',
-  'A1-092',
-  'A1-105',
-  'A1-107',
-  'A1-110',
-  'A1-111',
-  'A1-118',
-  'A1-120',
-  'A1-127',
-  'A1-130',
-  'A1-133',
-  'A1-134',
-  'A1-135',
-  'A1-137',
-  'A1-151',
-  'A1-154',
-  'A1-156',
-  'A1-162',
-  'A1-164',
-  'A1-172',
-  'A1-174',
-  'A1-176',
-  'A1-179',
-  'A1-183',
-  'A1-186',
-  'A1-187',
-  'A1-189',
-  'A1-190',
-  'A1-198',
-  'A1-199',
-  'A1-207',
-  'A1-212',
-  'A1-214',
-  'A1-215',
-  'A1-218',
-];
-
-const CHARIZARD_R2: CardId[] = [
-  'A1-012',
-  'A1-019',
-  'A1-026',
-  'A1-028',
-  'A1-030',
-  'A1-034',
-  'A1-038',
-  'A1-043',
-  'A1-052',
-  'A1-058',
-  'A1-060',
-  'A1-075',
-  'A1-086',
-  'A1-088',
-  'A1-091',
-  'A1-093',
-  'A1-106',
-  'A1-112',
-  'A1-116',
-  'A1-119',
-  'A1-136',
-  'A1-138',
-  'A1-142',
-  'A1-144',
-  'A1-158',
-  'A1-163',
-  'A1-165',
-  'A1-180',
-  'A1-197',
-  'A1-200',
-  'A1-204',
-  'A1-213',
-  'A1-219',
-  'A1-221',
-  'A1-225',
-];
-
-const PIKACHU_R2: CardId[] = [
-  'A1-015',
-  'A1-026',
-  'A1-028',
-  'A1-030',
-  'A1-043',
-  'A1-052',
-  'A1-054',
-  'A1-058',
-  'A1-065',
-  'A1-071',
-  'A1-081',
-  'A1-091',
-  'A1-093',
-  'A1-100',
-  'A1-106',
-  'A1-112',
-  'A1-114',
-  'A1-119',
-  'A1-136',
-  'A1-138',
-  'A1-140',
-  'A1-148',
-  'A1-150',
-  'A1-161',
-  'A1-163',
-  'A1-165',
-  'A1-167',
-  'A1-170',
-  'A1-180',
-  'A1-200',
-  'A1-202',
-  'A1-213',
-  'A1-220',
-  'A1-224',
-  'A1-226',
-];
-const MEWTWO_R2: CardId[] = [
-  'A1-002',
-  'A1-017',
-  'A1-026',
-  'A1-028',
-  'A1-030',
-  'A1-043',
-  'A1-052',
-  'A1-058',
-  'A1-063',
-  'A1-067',
-  'A1-069',
-  'A1-091',
-  'A1-093',
-  'A1-106',
-  'A1-108',
-  'A1-112',
-  'A1-119',
-  'A1-121',
-  'A1-126',
-  'A1-131',
-  'A1-136',
-  'A1-138',
-  'A1-152',
-  'A1-157',
-  'A1-163',
-  'A1-165',
-  'A1-173',
-  'A1-180',
-  'A1-184',
-  'A1-200',
-  'A1-201',
-  'A1-209',
-  'A1-213',
-  'A1-222',
-  'A1-223',
-];
-
-const CHARIZARD_R3: CardId[] = [
-  'A1-013',
-  'A1-020',
-  'A1-022',
-  'A1-035',
-  'A1-045',
-  'A1-046',
-  'A1-061',
-  'A1-079',
-  'A1-089',
-  'A1-117',
-  'A1-145',
-  'A1-159',
-  'A1-182',
-  'A1-203',
-];
-const PIKACHU_R3: CardId[] = [
-  'A1-007',
-  'A1-040',
-  'A1-055',
-  'A1-078',
-  'A1-082',
-  'A1-095',
-  'A1-098',
-  'A1-102',
-  'A1-103',
-  'A1-125',
-  'A1-149',
-  'A1-168',
-  'A1-171',
-  'A1-211',
-];
-const MEWTWO_R3: CardId[] = [
-  'A1-003',
-  'A1-010',
-  'A1-080',
-  'A1-083',
-  'A1-109',
-  'A1-122',
-  'A1-128',
-  'A1-132',
-  'A1-175',
-  'A1-177',
-  'A1-185',
-  'A1-188',
-  'A1-205',
-  'A1-210',
-];
-
-const CHARIZARD_R4: CardId[] = [
-  'A1-023',
-  'A1-036',
-  'A1-047',
-  'A1-076',
-  'A1-146',
-];
-const PIKACHU_R4: CardId[] = ['A1-041', 'A1-056', 'A1-096', 'A1-104', 'A1-195'];
-const MEWTWO_R4: CardId[] = ['A1-004', 'A1-084', 'A1-123', 'A1-129', 'A1-153'];
-
-const CHARIZARD_S1: CardId[] = [
-  'A1-228',
-  'A1-229',
-  'A1-230',
-  'A1-231',
-  'A1-234',
-  'A1-236',
-  'A1-237',
-  'A1-246',
-];
-const PIKACHU_S1: CardId[] = [
-  'A1-232',
-  'A1-233',
-  'A1-235',
-  'A1-238',
-  'A1-240',
-  'A1-241',
-  'A1-248',
-  'A1-250',
-];
-const MEWTWO_S1: CardId[] = [
-  'A1-227',
-  'A1-239',
-  'A1-242',
-  'A1-243',
-  'A1-244',
-  'A1-245',
-  'A1-247',
-  'A1-249',
-];
-
-const CHARIZARD_S2: CardId[] = [
-  'A1-252',
-  'A1-253',
-  'A1-255',
-  'A1-257',
-  'A1-263',
-  'A1-266',
-  'A1-268',
-  'A1-272',
-  'A1-274',
-  'A1-278',
-];
-const PIKACHU_S2: CardId[] = [
-  'A1-254',
-  'A1-256',
-  'A1-259',
-  'A1-260',
-  'A1-265',
-  'A1-267',
-  'A1-271',
-  'A1-273',
-  'A1-276',
-  'A1-279',
-];
-const MEWTWO_S2: CardId[] = [
-  'A1-251',
-  'A1-258',
-  'A1-261',
-  'A1-262',
-  'A1-264',
-  'A1-269',
-  'A1-270',
-  'A1-275',
-  'A1-277',
-];
-
-const CHARIZARD_S3: CardId[] = ['A1-280'];
-const PIKACHU_S3: CardId[] = ['A1-281'];
-const MEWTWO_S3: CardId[] = ['A1-282'];
-
-const ALL_CROWN: CardId[] = ['A1-284', 'A1-285', 'A1-286'];
-
-export const A1_CHARIZARD_PACK_ID_SET = new Set(
-  ...CHARIZARD_R1,
-  ...CHARIZARD_R2,
-  ...CHARIZARD_R3,
-  ...CHARIZARD_R4,
-  ...CHARIZARD_S1,
-  ...CHARIZARD_S2,
-  ...CHARIZARD_S3,
-  ALL_CROWN
-);
-export const A1_PIKACHU_PACK_ID_SET = new Set(
-  ...PIKACHU_R1,
-  ...PIKACHU_R2,
-  ...PIKACHU_R3,
-  ...PIKACHU_R4,
-  ...PIKACHU_S1,
-  ...PIKACHU_S2,
-  ...PIKACHU_S3,
-  ALL_CROWN
-);
-export const A1_MEWTWO_PACK_ID_SET = new Set(
-  ...MEWTWO_R1,
-  ...MEWTWO_R2,
-  ...MEWTWO_R3,
-  ...MEWTWO_R4,
-  ...MEWTWO_S1,
-  ...MEWTWO_S2,
-  ...MEWTWO_S3,
-  ALL_CROWN
-);
-
-export const PIKACHU_PACK_CARD_ID_LIST: Record<Rarity, CardId[]>[] = [
-  {
-    crown: [],
-    s3: [],
-    s2: [],
-    s1: [],
-    r4: [],
-    r3: [],
-    r2: [],
-    r1: PIKACHU_R1,
-  },
-  {
-    crown: [],
-    s3: [],
-    s2: [],
-    s1: [],
-    r4: [],
-    r3: [],
-    r2: [],
-    r1: PIKACHU_R1,
-  },
-  {
-    crown: [],
-    s3: [],
-    s2: [],
-    s1: [],
-    r4: [],
-    r3: [],
-    r2: [],
-    r1: PIKACHU_R1,
-  },
-  {
-    crown: ALL_CROWN,
-    s3: PIKACHU_S3,
-    s2: PIKACHU_S2,
-    s1: PIKACHU_S1,
-    r4: PIKACHU_R4,
-    r3: PIKACHU_R3,
-    r2: PIKACHU_R2,
-    r1: [],
-  },
-  {
-    crown: ALL_CROWN,
-    s3: PIKACHU_S3,
-    s2: PIKACHU_S2,
-    s1: PIKACHU_S1,
-    r4: PIKACHU_R4,
-    r3: PIKACHU_R3,
-    r2: PIKACHU_R2,
-    r1: [],
-  },
-];
-
-export const MEWTWO_PACK_CARD_ID_LIST: Record<Rarity, CardId[]>[] = [
-  {
-    crown: [],
-    s3: [],
-    s2: [],
-    s1: [],
-    r4: [],
-    r3: [],
-    r2: [],
-    r1: MEWTWO_R1,
-  },
-  {
-    crown: [],
-    s3: [],
-    s2: [],
-    s1: [],
-    r4: [],
-    r3: [],
-    r2: [],
-    r1: MEWTWO_R1,
-  },
-  {
-    crown: [],
-    s3: [],
-    s2: [],
-    s1: [],
-    r4: [],
-    r3: [],
-    r2: [],
-    r1: MEWTWO_R1,
-  },
-  {
-    crown: ALL_CROWN,
-    s3: MEWTWO_S3,
-    s2: MEWTWO_S2,
-    s1: MEWTWO_S1,
-    r4: MEWTWO_R4,
-    r3: MEWTWO_R3,
-    r2: MEWTWO_R2,
-    r1: [],
-  },
-  {
-    crown: ALL_CROWN,
-    s3: MEWTWO_S3,
-    s2: MEWTWO_S2,
-    s1: MEWTWO_S1,
-    r4: MEWTWO_R4,
-    r3: MEWTWO_R3,
-    r2: MEWTWO_R2,
-    r1: [],
-  },
-];
-
-export const CHARIZARD_PACK_CARD_ID_LIST: Record<Rarity, CardId[]>[] = [
-  {
-    crown: [],
-    s3: [],
-    s2: [],
-    s1: [],
-    r4: [],
-    r3: [],
-    r2: [],
-    r1: CHARIZARD_R1,
-  },
-  {
-    crown: [],
-    s3: [],
-    s2: [],
-    s1: [],
-    r4: [],
-    r3: [],
-    r2: [],
-    r1: CHARIZARD_R1,
-  },
-  {
-    crown: [],
-    s3: [],
-    s2: [],
-    s1: [],
-    r4: [],
-    r3: [],
-    r2: [],
-    r1: CHARIZARD_R1,
-  },
-  {
-    crown: ALL_CROWN,
-    s3: CHARIZARD_S3,
-    s2: CHARIZARD_S2,
-    s1: CHARIZARD_S1,
-    r4: CHARIZARD_R4,
-    r3: CHARIZARD_R3,
-    r2: CHARIZARD_R2,
-    r1: [],
-  },
-  {
-    crown: ALL_CROWN,
-    s3: CHARIZARD_S3,
-    s2: CHARIZARD_S2,
-    s1: CHARIZARD_S1,
-    r4: CHARIZARD_R4,
-    r3: CHARIZARD_R3,
-    r2: CHARIZARD_R2,
-    r1: [],
-  },
-];
-
-export const A1_CARD_POOL_ID_LIST: Record<
-  A1PackType,
-  Record<Rarity, CardId[]>[]
-> = {
-  charizard: CHARIZARD_PACK_CARD_ID_LIST,
-  pikachu: PIKACHU_PACK_CARD_ID_LIST,
-  mewtwo: MEWTWO_PACK_CARD_ID_LIST,
-};

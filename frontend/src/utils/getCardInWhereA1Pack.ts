@@ -2,7 +2,7 @@ import {
   A1_CHARIZARD_PACK_ID_SET,
   A1_MEWTWO_PACK_ID_SET,
   A1_PIKACHU_PACK_ID_SET,
-} from '../constant/card';
+} from '../server/constants/packs/a1';
 
 export function getCardInWhereA1Pack(id: string) {
   const packList: A1PackType[] = [];

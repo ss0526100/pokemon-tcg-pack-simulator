@@ -2,7 +2,7 @@ import * as S from './ChooseChallenge.style';
 
 import { forwardRef, useState } from 'react';
 
-import { A1_CARD_LIST } from '../../../constant/card';
+import { A1_CARD_LIST } from '../../../server/constants/cards/a1';
 import Button from '../../../components/Button/Button';
 import COLOR from '../../../constant/colors';
 import Card from '../../../components/Card/Card';

@@ -1,10 +1,10 @@
 import {
   A1_CARD_ID_MAP,
-  A1_CARD_POOL_ID_LIST,
   MISSING_NO_CARD,
-} from '../../constant/card';
+} from '../../server/constants/cards/a1';
 import { useEffect, useRef, useState } from 'react';
 
+import { A1_CARD_POOL_ID_LIST } from '../../server/constants/packs/a1';
 import COLOR from '../../constant/colors';
 import ChooseChallenge from './ChooseChallenge/ChooseChallenge';
 import { GET_CHALLENGE_RARITY_PERCENTAGE_LIST_BY_INDEX } from '../../constant/service';
