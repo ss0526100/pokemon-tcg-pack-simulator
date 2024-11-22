@@ -7,11 +7,13 @@ import BGMSvg from '../../../components/SoundSvg/SoundSvg';
 import Button from '../../../components/Button/Button';
 import COLOR from '../../../constant/colors';
 import Card from '../../../components/Card/Card';
+import CollectionContent from '../../CollectionContent/CollectionContent';
 import ConfirmContent from './ConfirmContent/ConfirmContent';
 import ItemDisplay from '../../../components/ItemDisplay/ItemDisplay';
 import MobileTopRightHamburger from '../../../components/MobileTopRightHamburger/MobileTopRightHamburger';
 import Modal from '../../../components/Modal/Modal';
 import PokeBallSvg from '../../../components/svgs/PokeBallSvg';
+import SixPacksSvg from '../../../components/svgs/SixPacksSvg';
 import StatisticContent from '../../PackSimulator/StatisticsInfo/StatisticContent/StatisticContent';
 import StatisticsSvg from '../../../components/svgs/StatisticsSvg';
 import i18n from '../../../locales/i18n';
@@ -57,6 +59,8 @@ const ChooseChallenge = forwardRef<HTMLDivElement, ChooseChallengeProps>(
     const [isPlayingBGM] = useIsPlayingBGM();
     const { packs, refreshPacks, onSelect } = props;
     const [nowPack, setNowPack] = useState<Pack>(initPack);
+    const [isCollectionContentViewed, setIsCollectionContentViewed] =
+      useState(false);
 
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [modalContent, setModalContent] =
@@ -77,13 +81,10 @@ const ChooseChallenge = forwardRef<HTMLDivElement, ChooseChallengeProps>(
       <>
         <MobileTopRightHamburger>
           <MobileTopRightHamburger.Option
-            icon={<BGMSvg fill={COLOR.PRIMARY_COLOR} size={20} />}
-            description={
-              isPlayingBGM ? t('toolbar.sound-off') : t('toolbar.sound-on')
-            }
-            onClick={e => {
-              e.stopPropagation();
-              toggleBGM();
+            icon={<SixPacksSvg fill={COLOR.PRIMARY_COLOR} size={18} />}
+            description={t('toolbar.card-list')}
+            onClick={() => {
+              setIsCollectionContentViewed(true);
             }}
           />
           <MobileTopRightHamburger.Option
@@ -95,11 +96,43 @@ const ChooseChallenge = forwardRef<HTMLDivElement, ChooseChallengeProps>(
             }}
           />
           <MobileTopRightHamburger.Option
+            icon={<BGMSvg fill={COLOR.PRIMARY_COLOR} size={20} />}
+            description={
+              isPlayingBGM ? t('toolbar.sound-off') : t('toolbar.sound-on')
+            }
+            onClick={e => {
+              e.stopPropagation();
+              toggleBGM();
+            }}
+          />
+          <MobileTopRightHamburger.Option
             icon={<PokeBallSvg fill={COLOR.PRIMARY_COLOR} size={25} />}
-            description={t('get-challenge.toolbar.go-pack-simulator')}
-            onClick={() => navigate('/')}
+            description={t('pack-simulator.toolbar.go-get-challenge')}
+            onClick={() => navigate('/get-challenge')}
           />
         </MobileTopRightHamburger>
+        <MobileTopRightHamburger.OptionPlace>
+          {isModalOpen && (
+            <Modal onClose={() => setIsModalOpen(false)}>
+              {modalContent === 'Statistics' && (
+                <StatisticContent onClose={() => setIsModalOpen(false)} />
+              )}
+              {modalContent === 'ChallengeConfirm' && (
+                <ConfirmContent
+                  pack={nowPack}
+                  onClose={() => setIsModalOpen(false)}
+                  onConfirm={modalConfirm}
+                />
+              )}
+            </Modal>
+          )}
+
+          {isCollectionContentViewed && (
+            <CollectionContent
+              onClose={() => setIsCollectionContentViewed(false)}
+            />
+          )}
+        </MobileTopRightHamburger.OptionPlace>
         <div css={S.container} ref={ref}>
           {packs.map((pack, idx) => (
             <ChallengeBox
@@ -117,20 +150,6 @@ const ChooseChallenge = forwardRef<HTMLDivElement, ChooseChallengeProps>(
               )}
           </Button>
         </div>
-        {isModalOpen && (
-          <Modal onClose={() => setIsModalOpen(false)}>
-            {modalContent === 'Statistics' && (
-              <StatisticContent onClose={() => setIsModalOpen(false)} />
-            )}
-            {modalContent === 'ChallengeConfirm' && (
-              <ConfirmContent
-                pack={nowPack}
-                onClose={() => setIsModalOpen(false)}
-                onConfirm={modalConfirm}
-              />
-            )}
-          </Modal>
-        )}
       </>
     );
   }

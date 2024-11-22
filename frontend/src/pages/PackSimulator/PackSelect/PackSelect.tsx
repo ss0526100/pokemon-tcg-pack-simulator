@@ -8,6 +8,7 @@ import BGMSvg from '../../../components/SoundSvg/SoundSvg';
 import BottomButtonContainer from '../../../components/BottomButtonContainer/BottomButtonContainer';
 import Button from '../../../components/Button/Button';
 import COLOR from '../../../constant/colors';
+import CollectionContent from '../../CollectionContent/CollectionContent';
 import LeftArrowSvg from '../../../components/svgs/LeftArrowSvg';
 import MobileTopRightHamburger from '../../../components/MobileTopRightHamburger/MobileTopRightHamburger';
 import Modal from '../../../components/Modal/Modal';
@@ -15,6 +16,7 @@ import Pack from './components/Pack/Pack';
 import PlusMinusSvg from '../../../components/svgs/PlusMinusSvg';
 import PokeBallSvg from '../../../components/svgs/PokeBallSvg';
 import RightArrowSvg from '../../../components/svgs/RightArrowSvg';
+import SixPacksSvg from '../../../components/svgs/SixPacksSvg';
 import StatisticContent from '../StatisticsInfo/StatisticContent/StatisticContent';
 import StatisticsSvg from '../../../components/svgs/StatisticsSvg';
 import SwipeXDetector from '../../../components/SwipeXDetector/SwipeXDetector';
@@ -87,6 +89,8 @@ export default function PackSelect(props: PackSelectProps) {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalContent, setModalContent] = useState<ModalContent>('Statistics');
+  const [isCollectionContentViewed, setIsCollectionContentViewed] =
+    useState(false);
 
   const [packTypeIndex, setPackTypeIndex] = useState(() => {
     if (!startPackType) return 0;
@@ -155,16 +159,12 @@ export default function PackSelect(props: PackSelectProps) {
             setModalContent('PackCount');
           }}
         />
-
-        <MobileTopRightHamburger.Line />
+        <MobileTopRightHamburger.Line />{' '}
         <MobileTopRightHamburger.Option
-          icon={<BGMSvg fill={COLOR.PRIMARY_COLOR} size={20} />}
-          description={
-            isPlayingBGM ? t('toolbar.sound-off') : t('toolbar.sound-on')
-          }
-          onClick={e => {
-            e.stopPropagation();
-            toggleBGM();
+          icon={<SixPacksSvg fill={COLOR.PRIMARY_COLOR} size={18} />}
+          description={t('toolbar.card-list')}
+          onClick={() => {
+            setIsCollectionContentViewed(true);
           }}
         />
         <MobileTopRightHamburger.Option
@@ -176,11 +176,44 @@ export default function PackSelect(props: PackSelectProps) {
           }}
         />
         <MobileTopRightHamburger.Option
+          icon={<BGMSvg fill={COLOR.PRIMARY_COLOR} size={20} />}
+          description={
+            isPlayingBGM ? t('toolbar.sound-off') : t('toolbar.sound-on')
+          }
+          onClick={e => {
+            e.stopPropagation();
+            toggleBGM();
+          }}
+        />
+        <MobileTopRightHamburger.Option
           icon={<PokeBallSvg fill={COLOR.PRIMARY_COLOR} size={25} />}
           description={t('pack-simulator.toolbar.go-get-challenge')}
           onClick={() => navigate('/get-challenge')}
         />
       </MobileTopRightHamburger>
+      <MobileTopRightHamburger.OptionPlace>
+        {isModalOpen && (
+          <Modal
+            onClose={() => {
+              setIsModalOpen(false);
+            }}
+          >
+            {modalContent === 'Statistics' && (
+              <StatisticContent onClose={() => setIsModalOpen(false)} />
+            )}
+
+            {modalContent === 'PackCount' && (
+              <AdjustPackCountContent onClose={() => setIsModalOpen(false)} />
+            )}
+          </Modal>
+        )}
+
+        {isCollectionContentViewed && (
+          <CollectionContent
+            onClose={() => setIsCollectionContentViewed(false)}
+          />
+        )}
+      </MobileTopRightHamburger.OptionPlace>
       <div css={S.contentContainer}>
         <div css={S.selectContainer} onClick={moveBeforeIndex}>
           <div css={S.svgContainer}>
@@ -209,21 +242,6 @@ export default function PackSelect(props: PackSelectProps) {
           {getOnePackStr(language)}
         </Button>
       </BottomButtonContainer>
-      {isModalOpen && (
-        <Modal
-          onClose={() => {
-            setIsModalOpen(false);
-          }}
-        >
-          {modalContent === 'Statistics' && (
-            <StatisticContent onClose={() => setIsModalOpen(false)} />
-          )}
-
-          {modalContent === 'PackCount' && (
-            <AdjustPackCountContent onClose={() => setIsModalOpen(false)} />
-          )}
-        </Modal>
-      )}
     </>
   );
 }
