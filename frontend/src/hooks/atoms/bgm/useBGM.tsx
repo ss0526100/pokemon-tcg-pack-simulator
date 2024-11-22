@@ -13,9 +13,10 @@ const bgmMapper: Record<Page, string> = {
   playChallenge: playChallenge,
 };
 const audio = new Audio();
+
 export default function useBGM(page?: Page) {
   const [nowBGM, setNowBGM] = useNowBGM();
-  const [isPlayingBGM, setIsPlayingBGM] = useIsPlayingBGM();
+  const [isPlayingBGM] = useIsPlayingBGM();
 
   useEffect(() => {
     if (page) setNowBGM(page);
@@ -47,26 +48,4 @@ export default function useBGM(page?: Page) {
       document.removeEventListener('visibilitychange', handleVisibilityChange);
     };
   }, [nowBGM, isPlayingBGM, page, setNowBGM]);
-
-  const changeBGM = (page: Page) => {
-    setNowBGM(page);
-  };
-
-  const pauseBGM = () => {
-    setIsPlayingBGM(false);
-  };
-
-  const playBGM = () => {
-    setIsPlayingBGM(true);
-  };
-
-  const cutBGM = () => {
-    setNowBGM(null);
-  };
-
-  const toggleBGM = () => {
-    setIsPlayingBGM(prev => !prev);
-  };
-
-  return { changeBGM, pauseBGM, playBGM, cutBGM, toggleBGM, isPlayingBGM };
 }

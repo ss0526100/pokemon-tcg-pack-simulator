@@ -2,6 +2,7 @@ import * as S from './PlayChallenge.styles';
 
 import { useRef, useState } from 'react';
 
+import BGMSvg from '../../../components/SoundSvg/SoundSvg';
 import BottomButtonContainer from '../../../components/BottomButtonContainer/BottomButtonContainer';
 import Button from '../../../components/Button/Button';
 import COLOR from '../../../constant/colors';
@@ -10,14 +11,13 @@ import ItemDisplay from '../../../components/ItemDisplay/ItemDisplay';
 import MobileTopRightHamburger from '../../../components/MobileTopRightHamburger/MobileTopRightHamburger';
 import Modal from '../../../components/Modal/Modal';
 import PokeBallSvg from '../../../components/svgs/PokeBallSvg';
-import SoundSvg from '../../../components/SoundSvg/SoundSvg';
 import StatisticContent from '../../PackSimulator/StatisticsInfo/StatisticContent/StatisticContent';
 import StatisticsSvg from '../../../components/svgs/StatisticsSvg';
 import { css } from '@emotion/react';
 import fisherShuffle from '../../../utils/fisherShuffle';
 import useBGM from '../../../hooks/atoms/bgm/useBGM';
+import useBGMUtils from '../../../hooks/atoms/bgm/useBGMUtils';
 import useGetChallengeCnt from '../../../hooks/atoms/packs/useGetChallengeCnt';
-import useIsPlayingBGM from '../../../hooks/atoms/bgm/useIsPlayingBGM';
 import { useNavigate } from 'react-router-dom';
 import usePackUtil from '../../../hooks/atoms/packs/usePackUtil';
 import { useTranslation } from 'react-i18next';
@@ -31,8 +31,8 @@ type ModalContent = 'Statistics';
 export default function PlayChallenge(props: PlayChallengeProps) {
   const { pack, goSelect } = props;
 
-  const { toggleBGM } = useBGM('playChallenge');
-  const [isPlayingBGM] = useIsPlayingBGM();
+  useBGM('playChallenge');
+  const { isPlayingBGM, toggleBGM } = useBGMUtils();
   const { t } = useTranslation();
   const navigate = useNavigate();
 
@@ -81,7 +81,7 @@ export default function PlayChallenge(props: PlayChallengeProps) {
     <>
       <MobileTopRightHamburger>
         <MobileTopRightHamburger.Option
-          icon={<SoundSvg fill={COLOR.PRIMARY_COLOR} size={20} />}
+          icon={<BGMSvg fill={COLOR.PRIMARY_COLOR} size={20} />}
           description={
             isPlayingBGM ? t('toolbar.sound-off') : t('toolbar.sound-on')
           }

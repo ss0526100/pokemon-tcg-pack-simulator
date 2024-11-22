@@ -34,6 +34,7 @@ const getTouchEventOffsetXPercent = (e: TouchEvent<HTMLDivElement>) => {
 };
 
 const initOffsetXPercent = 101;
+const initOnDetect = () => {};
 export default function SwipeXDetector(
   props:
     | SwipeToXContainerLeftProps
@@ -45,8 +46,11 @@ export default function SwipeXDetector(
     finishOffsetXPercent = 100,
     criteria = 30,
     children,
+    direction,
+    onRightDetect,
+    onLeftDetect,
     ...restProps
-  } = props;
+  } = { onLeftDetect: initOnDetect, onRightDetect: initOnDetect, ...props };
 
   const swipeStartedOffsetXPercent = useRef(initOffsetXPercent);
   const swipeLastOffsetX = useRef(initOffsetXPercent);
@@ -80,15 +84,15 @@ export default function SwipeXDetector(
       const lastOffsetXPercent = (offsetX / width) * 100;
       const diffOffsetXPercent =
         lastOffsetXPercent - swipeStartedOffsetXPercent.current;
-      if (props.direction === 'both' || props.direction === 'left') {
-        if (diffOffsetXPercent <= -criteria) props.onLeftDetect();
+      if (direction === 'both' || direction === 'left') {
+        if (diffOffsetXPercent <= -criteria) onLeftDetect();
       }
 
-      if (props.direction === 'both' || props.direction === 'right') {
-        if (diffOffsetXPercent >= criteria) props.onRightDetect();
+      if (direction === 'both' || direction === 'right') {
+        if (diffOffsetXPercent >= criteria) onRightDetect();
       }
     },
-    [props, criteria]
+    [direction, onLeftDetect, onRightDetect, criteria]
   );
 
   return (

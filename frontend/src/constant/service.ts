@@ -9,8 +9,6 @@ export const RARITY_GRADE_LIST: Rarity[] = [
   'r1',
 ];
 
-type RarityPercentTuple = [Rarity, number][];
-
 export const NORMAL_PACK_RARITY_PERCENTAGE_LIST_BY_INDEX: RarityPercentTuple[] =
   [
     [['r1', 100]],
