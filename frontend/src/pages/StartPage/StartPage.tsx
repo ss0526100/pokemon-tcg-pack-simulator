@@ -2,13 +2,13 @@ import * as S from './StartPage.style';
 
 import { useEffect, useState } from 'react';
 
-import useBGM from '../../hooks/atoms/bgm/useBGM';
+import useBGMUtils from '../../hooks/atoms/bgm/useBGMUtils';
 import { useTranslation } from 'react-i18next';
 
 export default function StartPage() {
   const { t } = useTranslation();
   const [isInteracted, setIsInteracted] = useState(false);
-  const { playBGM, pauseBGM } = useBGM();
+  const { playBGM, pauseBGM } = useBGMUtils();
   useEffect(() => {
     if (isInteracted) return;
     if (!localStorage.getItem('isPlaying'))

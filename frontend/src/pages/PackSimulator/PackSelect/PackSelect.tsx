@@ -20,6 +20,7 @@ import StatisticsSvg from '../../../components/svgs/StatisticsSvg';
 import SwipeXDetector from '../../../components/SwipeXDetector/SwipeXDetector';
 import i18n from '../../../locales/i18n';
 import useBGM from '../../../hooks/atoms/bgm/useBGM';
+import useBGMUtils from '../../../hooks/atoms/bgm/useBGMUtils';
 import { useNavigate } from 'react-router-dom';
 import usePackCount from '../../../hooks/atoms/packs/usePackCount';
 import { useTranslation } from 'react-i18next';
@@ -81,7 +82,8 @@ export default function PackSelect(props: PackSelectProps) {
   const navigate = useNavigate();
   const { onSelect, startPackType } = props;
 
-  const { playBGM, toggleBGM, isPlayingBGM } = useBGM('packSelect');
+  useBGM('packSelect');
+  const { playBGM, toggleBGM, isPlayingBGM } = useBGMUtils();
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalContent, setModalContent] = useState<ModalContent>('Statistics');

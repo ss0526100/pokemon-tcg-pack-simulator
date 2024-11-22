@@ -16,6 +16,7 @@ import StatisticContent from '../../PackSimulator/StatisticsInfo/StatisticConten
 import StatisticsSvg from '../../../components/svgs/StatisticsSvg';
 import i18n from '../../../locales/i18n';
 import useBGM from '../../../hooks/atoms/bgm/useBGM';
+import useBGMUtils from '../../../hooks/atoms/bgm/useBGMUtils';
 import useIsPlayingBGM from '../../../hooks/atoms/bgm/useIsPlayingBGM';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -51,7 +52,8 @@ const ChooseChallenge = forwardRef<HTMLDivElement, ChooseChallengeProps>(
     const { t } = useTranslation();
     const navigate = useNavigate();
 
-    const { toggleBGM } = useBGM('chooseChallenge');
+    useBGM('chooseChallenge');
+    const { toggleBGM } = useBGMUtils();
     const [isPlayingBGM] = useIsPlayingBGM();
     const { packs, refreshPacks, onSelect } = props;
     const [nowPack, setNowPack] = useState<Pack>(initPack);

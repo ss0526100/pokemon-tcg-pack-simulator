@@ -18,6 +18,7 @@ import StatisticsSvg from '../../../components/svgs/StatisticsSvg';
 import ThreePacksSvg from '../../../components/svgs/ThreePacksSvg';
 import i18n from '../../../locales/i18n';
 import useBGM from '../../../hooks/atoms/bgm/useBGM';
+import useBGMUtils from '../../../hooks/atoms/bgm/useBGMUtils';
 import useIsPlayingBGM from '../../../hooks/atoms/bgm/useIsPlayingBGM';
 import { useNavigate } from 'react-router-dom';
 import usePackCount from '../../../hooks/atoms/packs/usePackCount';
@@ -60,7 +61,8 @@ export default function PackOpen(props: PackOpenProps) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalContent, setModalContent] = useState<ModalContent>('Statistics');
 
-  const { toggleBGM } = useBGM('packOpen');
+  useBGM('packOpen');
+  const { toggleBGM } = useBGMUtils();
   const [isPlayingBGM] = useIsPlayingBGM();
 
   const {

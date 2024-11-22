@@ -16,8 +16,8 @@ import StatisticsSvg from '../../../components/svgs/StatisticsSvg';
 import { css } from '@emotion/react';
 import fisherShuffle from '../../../utils/fisherShuffle';
 import useBGM from '../../../hooks/atoms/bgm/useBGM';
+import useBGMUtils from '../../../hooks/atoms/bgm/useBGMUtils';
 import useGetChallengeCnt from '../../../hooks/atoms/packs/useGetChallengeCnt';
-import useIsPlayingBGM from '../../../hooks/atoms/bgm/useIsPlayingBGM';
 import { useNavigate } from 'react-router-dom';
 import usePackUtil from '../../../hooks/atoms/packs/usePackUtil';
 import { useTranslation } from 'react-i18next';
@@ -31,8 +31,8 @@ type ModalContent = 'Statistics';
 export default function PlayChallenge(props: PlayChallengeProps) {
   const { pack, goSelect } = props;
 
-  const { toggleBGM } = useBGM('playChallenge');
-  const [isPlayingBGM] = useIsPlayingBGM();
+  useBGM('playChallenge');
+  const { isPlayingBGM, toggleBGM } = useBGMUtils();
   const { t } = useTranslation();
   const navigate = useNavigate();
 
