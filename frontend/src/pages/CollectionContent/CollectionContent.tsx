@@ -9,41 +9,47 @@ import Button from '../../components/Button/Button';
 import Card from '../../components/Card/Card';
 import useCardIdCntMap from '../../hooks/atoms/packs/useCardCollections';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface CollectionContentProps {
   onClose: () => void;
 }
 
 export default function CollectionContent(props: CollectionContentProps) {
+  const { t } = useTranslation();
   const { onClose } = props;
   const cardIdCntMap = useCardIdCntMap()[0];
   const [isCardDetailViewed, setIsCardDetailViewed] = useState(false);
   const [cardId, setCardId] = useState('');
   return (
     <>
-      <div></div>
       <div css={S.layout}>
-        <div css={S.title}>카드 목록</div>
-        <ul css={S.cardList}>
-          {[...cardIdCntMap].sort().map(([id, value]) => {
-            return (
-              <li
-                css={S.cardContainer}
-                key={id}
-                onClick={() => {
-                  setCardId(id);
-                  setIsCardDetailViewed(true);
-                }}
-              >
-                <Card cardInfo={A1_CARD_ID_MAP.get(id) || MISSING_NO_CARD} />
-                <div css={S.cardCount}>{value}</div>
-              </li>
-            );
-          })}
-        </ul>
+        <div css={S.title}>{t('toolbar.card-list')}</div>
+        {cardIdCntMap.size === 0 && (
+          <span css={S.emptyCardFallback}>{t('modal.collection.no-card')}</span>
+        )}
+        {cardIdCntMap.size > 0 && (
+          <ul css={S.cardList}>
+            {[...cardIdCntMap].sort().map(([id, value]) => {
+              return (
+                <li
+                  css={S.cardContainer}
+                  key={id}
+                  onClick={() => {
+                    setCardId(id);
+                    setIsCardDetailViewed(true);
+                  }}
+                >
+                  <Card cardInfo={A1_CARD_ID_MAP.get(id) || MISSING_NO_CARD} />
+                  <div css={S.cardCount}>{value}</div>
+                </li>
+              );
+            })}
+          </ul>
+        )}
         <div css={S.bottomButtonContainer}>
           <Button secondary onClick={onClose}>
-            확인
+            {t('modal.confirm')}
           </Button>
         </div>
       </div>
@@ -58,7 +64,7 @@ export default function CollectionContent(props: CollectionContentProps) {
                 setIsCardDetailViewed(false);
               }}
             >
-              닫기
+              {t('modal.confirm')}
             </Button>
           </div>
         </div>

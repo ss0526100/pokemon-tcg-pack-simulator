@@ -63,7 +63,8 @@
   "toolbar": {
     "statistic": "統計",
     "sound-on": "音楽オン",
-    "sound-off": " 音楽オフ"
+    "sound-off": " 音楽オフ",
+    "card-list": "カードコレクション"
   },
   "modal": {
     "statistic": {
@@ -73,7 +74,11 @@
       "gain-cards": "獲得カード",
       "reset": "リセット",
       "confirm": "確認"
-    }
+    },
+    "collection": {
+      "no-card": "獲得したカードはありません。"
+    },
+    "confirm": "確認"
   },
   "constant": {
     "pack": {

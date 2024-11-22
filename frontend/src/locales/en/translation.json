@@ -63,7 +63,8 @@
   "toolbar": {
     "statistic": "Statistics",
     "sound-on": "Master Volume On",
-    "sound-off": "Master Volume Off"
+    "sound-off": "Master Volume Off",
+    "card-list": "Card Collection"
   },
   "modal": {
     "statistic": {
@@ -73,7 +74,11 @@
       "gain-cards": "Obtained Cards",
       "reset": "Reset",
       "confirm": "OK"
-    }
+    },
+    "collection": {
+      "no-card": "You have no cards obtained."
+    },
+    "confirm": "OK"
   },
   "constant": {
     "pack": {
