@@ -2,6 +2,7 @@ import * as S from './PlayChallenge.styles';
 
 import { useRef, useState } from 'react';
 
+import BGMSvg from '../../../components/SoundSvg/SoundSvg';
 import BottomButtonContainer from '../../../components/BottomButtonContainer/BottomButtonContainer';
 import Button from '../../../components/Button/Button';
 import COLOR from '../../../constant/colors';
@@ -10,7 +11,6 @@ import ItemDisplay from '../../../components/ItemDisplay/ItemDisplay';
 import MobileTopRightHamburger from '../../../components/MobileTopRightHamburger/MobileTopRightHamburger';
 import Modal from '../../../components/Modal/Modal';
 import PokeBallSvg from '../../../components/svgs/PokeBallSvg';
-import SoundSvg from '../../../components/SoundSvg/SoundSvg';
 import StatisticContent from '../../PackSimulator/StatisticsInfo/StatisticContent/StatisticContent';
 import StatisticsSvg from '../../../components/svgs/StatisticsSvg';
 import { css } from '@emotion/react';
@@ -81,7 +81,7 @@ export default function PlayChallenge(props: PlayChallengeProps) {
     <>
       <MobileTopRightHamburger>
         <MobileTopRightHamburger.Option
-          icon={<SoundSvg fill={COLOR.PRIMARY_COLOR} size={20} />}
+          icon={<BGMSvg fill={COLOR.PRIMARY_COLOR} size={20} />}
           description={
             isPlayingBGM ? t('toolbar.sound-off') : t('toolbar.sound-on')
           }

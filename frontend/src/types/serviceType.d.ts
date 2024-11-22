@@ -45,5 +45,6 @@ interface PackInfo {
   packType: A1PackType;
   imgSrc: Record<Language | 'default', string>;
 }
-
-type Page = 'chooseChallenge' | 'playChallenge' | 'packOpen' | 'packSelect';
+type PackSimulatorPage = 'packOpen' | 'packSelect';
+type GetChallengePage = 'chooseChallenge' | 'playChallenge';
+type Page = PackSimulatorPage | GetChallengePage;

@@ -4,6 +4,7 @@ import { useCallback, useEffect, useState } from 'react';
 
 import { A1_PACK_INFOS } from '../../../constant/pack';
 import AdjustPackCountContent from '../AdjustPackCount/AdjustPackCountContent';
+import BGMSvg from '../../../components/SoundSvg/SoundSvg';
 import BottomButtonContainer from '../../../components/BottomButtonContainer/BottomButtonContainer';
 import Button from '../../../components/Button/Button';
 import COLOR from '../../../constant/colors';
@@ -14,7 +15,6 @@ import Pack from './components/Pack/Pack';
 import PlusMinusSvg from '../../../components/svgs/PlusMinusSvg';
 import PokeBallSvg from '../../../components/svgs/PokeBallSvg';
 import RightArrowSvg from '../../../components/svgs/RightArrowSvg';
-import SoundSvg from '../../../components/SoundSvg/SoundSvg';
 import StatisticContent from '../StatisticsInfo/StatisticContent/StatisticContent';
 import StatisticsSvg from '../../../components/svgs/StatisticsSvg';
 import SwipeXDetector from '../../../components/SwipeXDetector/SwipeXDetector';
@@ -158,7 +158,7 @@ export default function PackSelect(props: PackSelectProps) {
 
         <MobileTopRightHamburger.Line />
         <MobileTopRightHamburger.Option
-          icon={<SoundSvg fill={COLOR.PRIMARY_COLOR} size={20} />}
+          icon={<BGMSvg fill={COLOR.PRIMARY_COLOR} size={20} />}
           description={
             isPlayingBGM ? t('toolbar.sound-off') : t('toolbar.sound-on')
           }
