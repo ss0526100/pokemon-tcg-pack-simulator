@@ -3,7 +3,9 @@ import * as S from './PackSimulator.style';
 import { useCallback, useEffect, useState } from 'react';
 
 import AdjustPackCount from './AdjustPackCount/AdjustPackCount';
+import BGMOnOffToolbar from '../ToolbarItems/BGMOnOffToolbar';
 import COLOR from '../../constant/colors';
+import CardCollectionToolbar from '../ToolbarItems/CardCollectionToolbar';
 import GameLayout from '../../layouts/GameLayout/GameLayout';
 import PackOpen from './PackOpen/PackOpen';
 import PackSelect from './PackSelect/PackSelect';
@@ -81,8 +83,9 @@ export default function PackSimulator() {
             description={t('pack-simulator.toolbar.go-get-challenge')}
             onClick={() => navigate('/get-challenge')}
           />
-
+          <BGMOnOffToolbar />
           <StatisticsInfo />
+          <CardCollectionToolbar />
         </GameLayout.Toolbar.ToolbarItemContainer>
         <GameLayout.Toolbar.ToolbarItemContainer>
           {phase === 'select' && <AdjustPackCount />}
