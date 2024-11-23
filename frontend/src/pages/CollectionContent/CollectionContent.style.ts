@@ -25,6 +25,44 @@ export const title = css`
   font-weight: 700;
 `;
 
+export const selectRow = css`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 100%;
+  padding: 0 5% 2rem;
+`;
+
+export const selectItem = css`
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+
+  width: 30%;
+  height: 22px;
+
+  font-size: 1rem;
+
+  border-radius: 10px;
+  box-shadow: inset 0 2px 5px rgb(0 0 0 / 20%);
+`;
+
+export const selectSpan = css`
+  font-size: 10px;
+`;
+
+export const rarityContainer = css`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  height: 18px;
+`;
 export const cardList = css`
   overflow-y: scroll;
   display: flex;
