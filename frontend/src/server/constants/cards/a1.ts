@@ -5472,3 +5472,7 @@ export const A1_CARD_LIST: CardInfo[] = [
 export const A1_CARD_ID_MAP = new Map<string | number, CardInfo>();
 
 A1_CARD_LIST.forEach(cardInfo => A1_CARD_ID_MAP.set(cardInfo.id, cardInfo));
+
+export const A1_RARITY_CARD_COUNT = 226;
+export const A1_STAR_CARD_COUNT = 56;
+export const A1_CROWN_CARD_COUNT = 3;

@@ -6,11 +6,13 @@ import BGMSvg from '../../../components/SoundSvg/SoundSvg';
 import BottomButtonContainer from '../../../components/BottomButtonContainer/BottomButtonContainer';
 import Button from '../../../components/Button/Button';
 import COLOR from '../../../constant/colors';
+import CollectionContent from '../../CollectionContent/CollectionContent';
 import FlippingCard from '../../../components/FilppingCard/FlippingCard';
 import ItemDisplay from '../../../components/ItemDisplay/ItemDisplay';
 import MobileTopRightHamburger from '../../../components/MobileTopRightHamburger/MobileTopRightHamburger';
 import Modal from '../../../components/Modal/Modal';
 import PokeBallSvg from '../../../components/svgs/PokeBallSvg';
+import SixPacksSvg from '../../../components/svgs/SixPacksSvg';
 import StatisticContent from '../../PackSimulator/StatisticsInfo/StatisticContent/StatisticContent';
 import StatisticsSvg from '../../../components/svgs/StatisticsSvg';
 import { css } from '@emotion/react';
@@ -39,6 +41,9 @@ export default function PlayChallenge(props: PlayChallengeProps) {
   const [shuffledPack, setShuffledPack] = useState(() =>
     fisherShuffle(pack.slice())
   );
+
+  const [isCollectionContentViewed, setIsCollectionContentViewed] =
+    useState(false);
 
   // id로 관리시 같은 카드가 중복으로 오면 한 카드 선택시 여러개 돌아감
   const [flippedIndex, setFlippedIndex] = useState<number[]>([]);
@@ -81,13 +86,10 @@ export default function PlayChallenge(props: PlayChallengeProps) {
     <>
       <MobileTopRightHamburger>
         <MobileTopRightHamburger.Option
-          icon={<BGMSvg fill={COLOR.PRIMARY_COLOR} size={20} />}
-          description={
-            isPlayingBGM ? t('toolbar.sound-off') : t('toolbar.sound-on')
-          }
-          onClick={e => {
-            e.stopPropagation();
-            toggleBGM();
+          icon={<SixPacksSvg fill={COLOR.PRIMARY_COLOR} size={18} />}
+          description={t('toolbar.card-list')}
+          onClick={() => {
+            setIsCollectionContentViewed(true);
           }}
         />
         <MobileTopRightHamburger.Option
@@ -99,11 +101,36 @@ export default function PlayChallenge(props: PlayChallengeProps) {
           }}
         />
         <MobileTopRightHamburger.Option
+          icon={<BGMSvg fill={COLOR.PRIMARY_COLOR} size={20} />}
+          description={
+            isPlayingBGM ? t('toolbar.sound-off') : t('toolbar.sound-on')
+          }
+          onClick={e => {
+            e.stopPropagation();
+            toggleBGM();
+          }}
+        />
+        <MobileTopRightHamburger.Option
           icon={<PokeBallSvg fill={COLOR.PRIMARY_COLOR} size={25} />}
-          description={t('get-challenge.toolbar.go-pack-simulator')}
-          onClick={() => navigate('/')}
+          description={t('pack-simulator.toolbar.go-get-challenge')}
+          onClick={() => navigate('/get-challenge')}
         />
       </MobileTopRightHamburger>
+      <MobileTopRightHamburger.OptionPlace>
+        {isModalOpen && (
+          <Modal onClose={() => setIsModalOpen(false)}>
+            {modalContent === 'Statistics' && (
+              <StatisticContent onClose={() => setIsModalOpen(false)} />
+            )}
+          </Modal>
+        )}
+
+        {isCollectionContentViewed && (
+          <CollectionContent
+            onClose={() => setIsCollectionContentViewed(false)}
+          />
+        )}
+      </MobileTopRightHamburger.OptionPlace>
       <div css={S.displaySection}>
         <ItemDisplay>
           {shuffledPack.map((card, idx) => (
@@ -137,13 +164,6 @@ export default function PlayChallenge(props: PlayChallengeProps) {
           {t('get-challenge.play-challenge.chooseChallenge')}
         </Button>
       </BottomButtonContainer>
-      {isModalOpen && (
-        <Modal onClose={() => isModalOpen}>
-          {modalContent === 'Statistics' && (
-            <StatisticContent onClose={() => setIsModalOpen(false)} />
-          )}
-        </Modal>
-      )}
     </>
   );
 }

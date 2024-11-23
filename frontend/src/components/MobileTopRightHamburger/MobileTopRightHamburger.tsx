@@ -1,6 +1,13 @@
 import * as S from './MobileTopRightHamburger.style';
 
-import { HTMLProps, ReactNode, SVGProps, useEffect, useState } from 'react';
+import {
+  HTMLProps,
+  PropsWithChildren,
+  ReactNode,
+  SVGProps,
+  useEffect,
+  useState,
+} from 'react';
 
 import Button from '../Button/Button';
 import HamburgerSvg from '../svgs/HamgurgerSvg';
@@ -68,4 +75,10 @@ MobileTopRightHamburger.Option = function Option(props: OptionProps) {
 
 MobileTopRightHamburger.Line = function Line() {
   return <div css={S.line} />;
+};
+
+MobileTopRightHamburger.OptionPlace = function OptionPlace({
+  children,
+}: PropsWithChildren) {
+  return <>{children}</>;
 };

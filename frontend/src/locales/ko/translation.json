@@ -64,8 +64,10 @@
   "toolbar": {
     "statistic": "통계",
     "sound-on": "소리 켜기",
-    "sound-off": "소리 끄기"
+    "sound-off": "소리 끄기",
+    "card-list": "얻은 카드 목록"
   },
+
   "modal": {
     "statistic": {
       "title": "통계",
@@ -74,7 +76,11 @@
       "gain-cards": "얻은 카드",
       "reset": "초기화",
       "confirm": "확인"
-    }
+    },
+    "collection": {
+      "no-card": "얻은 카드가 없습니다."
+    },
+    "confirm": "확인"
   },
 
   "constant": {

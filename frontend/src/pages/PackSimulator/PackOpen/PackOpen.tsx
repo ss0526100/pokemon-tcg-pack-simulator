@@ -6,6 +6,7 @@ import BGMSvg from '../../../components/SoundSvg/SoundSvg';
 import BottomButtonContainer from '../../../components/BottomButtonContainer/BottomButtonContainer';
 import Button from '../../../components/Button/Button';
 import COLOR from '../../../constant/colors';
+import CollectionContent from '../../CollectionContent/CollectionContent';
 import LeftArrowSvg from '../../../components/svgs/LeftArrowSvg';
 import MobileTopRightHamburger from '../../../components/MobileTopRightHamburger/MobileTopRightHamburger';
 import Modal from '../../../components/Modal/Modal';
@@ -13,6 +14,7 @@ import OpenedPack from './OpenedPack/OpenedPack';
 import PokeBallSvg from '../../../components/svgs/PokeBallSvg';
 import Rarity from '../../../components/Rarity/Rarity';
 import RightArrowSvg from '../../../components/svgs/RightArrowSvg';
+import SixPacksSvg from '../../../components/svgs/SixPacksSvg';
 import StatisticContent from '../StatisticsInfo/StatisticContent/StatisticContent';
 import StatisticsSvg from '../../../components/svgs/StatisticsSvg';
 import ThreePacksSvg from '../../../components/svgs/ThreePacksSvg';
@@ -62,6 +64,9 @@ export default function PackOpen(props: PackOpenProps) {
 
   useBGM('packOpen');
   const { toggleBGM, isPlayingBGM } = useBGMUtils();
+
+  const [isCollectionContentViewed, setIsCollectionContentViewed] =
+    useState(false);
 
   const {
     cardLength,
@@ -136,16 +141,12 @@ export default function PackOpen(props: PackOpenProps) {
           description={t('pack-simulator.open-pack.choose-pack')}
           onClick={handleGoSelect}
         />
-
-        <MobileTopRightHamburger.Line />
+        <MobileTopRightHamburger.Line />{' '}
         <MobileTopRightHamburger.Option
-          icon={<BGMSvg fill={COLOR.PRIMARY_COLOR} size={20} />}
-          description={
-            isPlayingBGM ? t('toolbar.sound-off') : t('toolbar.sound-on')
-          }
-          onClick={e => {
-            e.stopPropagation();
-            toggleBGM();
+          icon={<SixPacksSvg fill={COLOR.PRIMARY_COLOR} size={18} />}
+          description={t('toolbar.card-list')}
+          onClick={() => {
+            setIsCollectionContentViewed(true);
           }}
         />
         <MobileTopRightHamburger.Option
@@ -157,11 +158,36 @@ export default function PackOpen(props: PackOpenProps) {
           }}
         />
         <MobileTopRightHamburger.Option
+          icon={<BGMSvg fill={COLOR.PRIMARY_COLOR} size={20} />}
+          description={
+            isPlayingBGM ? t('toolbar.sound-off') : t('toolbar.sound-on')
+          }
+          onClick={e => {
+            e.stopPropagation();
+            toggleBGM();
+          }}
+        />
+        <MobileTopRightHamburger.Option
           icon={<PokeBallSvg fill={COLOR.PRIMARY_COLOR} size={25} />}
           description={t('pack-simulator.toolbar.go-get-challenge')}
           onClick={() => navigate('/get-challenge')}
         />
       </MobileTopRightHamburger>
+      <MobileTopRightHamburger.OptionPlace>
+        {isModalOpen && (
+          <Modal onClose={() => setIsModalOpen(false)}>
+            {modalContent === 'Statistics' && (
+              <StatisticContent onClose={() => setIsModalOpen(false)} />
+            )}
+          </Modal>
+        )}
+
+        {isCollectionContentViewed && (
+          <CollectionContent
+            onClose={() => setIsCollectionContentViewed(false)}
+          />
+        )}
+      </MobileTopRightHamburger.OptionPlace>
       <div css={S.sectionContainer}>
         <div css={S.selectContainer(!isFirstCard)} onClick={setBeforeCard}>
           {!isFirstCard && (
@@ -229,13 +255,6 @@ export default function PackOpen(props: PackOpenProps) {
           {t('pack-simulator.open-pack.choose-pack')}
         </Button>
       </BottomButtonContainer>
-      {isModalOpen && (
-        <Modal onClose={() => setIsModalOpen(false)}>
-          {modalContent === 'Statistics' && (
-            <StatisticContent onClose={() => setIsModalOpen(false)} />
-          )}
-        </Modal>
-      )}
     </section>
   );
 }
