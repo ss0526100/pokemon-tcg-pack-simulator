@@ -1,14 +1,14 @@
 import { SVGProps } from 'react';
 import SoundOffSvg from '../svgs/SoundOffSvg';
 import SoundOnSvg from '../svgs/SoundOnSvg';
-import useIsPlayingBGM from '../../hooks/atoms/bgm/useIsPlayingBGM';
+import useBGMUtils from '../../hooks/atoms/bgm/useBGMUtils';
 
-interface SoundSvg extends SVGProps<SVGSVGElement> {
+interface BGMSvgProps extends SVGProps<SVGSVGElement> {
   fill?: string;
   size?: number;
 }
-export default function SoundSvg(props: SoundSvg) {
-  const isPlayingBGM = useIsPlayingBGM()[0];
+export default function BGMSvg(props: BGMSvgProps) {
+  const { isPlayingBGM } = useBGMUtils();
 
   if (isPlayingBGM) return <SoundOnSvg {...props} />;
   return <SoundOffSvg {...props} />;

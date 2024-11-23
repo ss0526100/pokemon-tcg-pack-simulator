@@ -6,6 +6,7 @@ import StatisticItem from './StatisticItem';
 import useCardCount from '../../../../hooks/atoms/packs/useCardCount';
 import useGetChallengeCnt from '../../../../hooks/atoms/packs/useGetChallengeCnt';
 import useOpenedPackCount from '../../../../hooks/atoms/packs/useOpenedPackCount';
+import usePackUtil from '../../../../hooks/atoms/packs/usePackUtil';
 import useRarityCntMap from '../../../../hooks/atoms/packs/useRarityCntMap';
 import { useTranslation } from 'react-i18next';
 
@@ -15,9 +16,10 @@ interface StatisticContentProps {
 export default function StatisticContent(props: StatisticContentProps) {
   const { t } = useTranslation();
   const { onClose } = props;
-  const [rarityCntMap, setRarityCntMap] = useRarityCntMap();
-  const [packCount, setPackCount] = useOpenedPackCount();
-  const [cardCount, setCardCount] = useCardCount();
+  const [rarityCntMap] = useRarityCntMap();
+  const [packCount] = useOpenedPackCount();
+  const [cardCount] = useCardCount();
+  const { resetPack } = usePackUtil();
   const getChallengeCnt = useGetChallengeCnt()[0];
 
   const crownCnt = rarityCntMap.get('crown') || 0;
@@ -30,9 +32,7 @@ export default function StatisticContent(props: StatisticContentProps) {
   const r1Cnt = rarityCntMap.get('r1') || 0;
 
   const resetRecord = () => {
-    setRarityCntMap(new Map());
-    setPackCount(0);
-    setCardCount(0);
+    resetPack();
   };
 
   return (

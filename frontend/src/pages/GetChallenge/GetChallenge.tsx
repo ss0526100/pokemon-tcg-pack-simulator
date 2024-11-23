@@ -1,11 +1,13 @@
 import {
   A1_CARD_ID_MAP,
-  A1_CARD_POOL_ID_LIST,
   MISSING_NO_CARD,
-} from '../../constant/card';
+} from '../../server/constants/cards/a1';
 import { useEffect, useRef, useState } from 'react';
 
+import { A1_CARD_POOL_ID_LIST } from '../../server/constants/packs/a1';
+import BGMOnOffToolbar from '../ToolbarItems/BGMOnOffToolbar';
 import COLOR from '../../constant/colors';
+import CardCollectionToolbar from '../ToolbarItems/CardCollectionToolbar';
 import ChooseChallenge from './ChooseChallenge/ChooseChallenge';
 import { GET_CHALLENGE_RARITY_PERCENTAGE_LIST_BY_INDEX } from '../../constant/service';
 import GameLayout from '../../layouts/GameLayout/GameLayout';
@@ -120,7 +122,9 @@ export default function GetChallenge() {
             description={t('get-challenge.toolbar.go-pack-simulator')}
             onClick={() => navigate('/')}
           />
+          <BGMOnOffToolbar />
           <StatisticsInfo />
+          <CardCollectionToolbar />
         </GameLayout.Toolbar.ToolbarItemContainer>
 
         <GameLayout.Toolbar.ToolbarItemContainer>

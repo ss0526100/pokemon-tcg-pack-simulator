@@ -1,0 +1,32 @@
+interface SixPacksSvgProps {
+  size?: number;
+  fill?: string;
+}
+
+export default function SixPacksSvg(props: SixPacksSvgProps) {
+  const { size = 20, fill = 'white', ...restProps } = props;
+
+  return (
+    <svg
+      version='1.1'
+      id='Capa_1'
+      viewBox='0 0 35 35'
+      xmlSpace='preserve'
+      fill={fill}
+      width={`${size}px`}
+      height={`${size}px`}
+      {...restProps}
+    >
+      <g>
+        <g>
+          <rect y='3.016' width='9.426' height='14' />
+          <rect x='12.787' y='3.016' width='9.426' height='14' />
+          <rect x='25.574' y='3.016' width='9.426' height='14' />
+          <rect y='20.016' width='9.426' height='14' />
+          <rect x='12.787' y='20.016' width='9.426' height='14' />
+          <rect x='25.574' y='20.016' width='9.426' height='14' />
+        </g>
+      </g>
+    </svg>
+  );
+}
