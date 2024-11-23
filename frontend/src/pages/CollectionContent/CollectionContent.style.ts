@@ -51,6 +51,7 @@ export const emptyCardFallback = css`
 
 export const cardContainer = css`
   position: relative;
+  align-content: flex-start;
   width: 23%;
 
   & > img {
