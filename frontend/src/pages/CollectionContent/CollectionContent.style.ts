@@ -120,6 +120,7 @@ export const bottomButtonContainer = css`
 
 export const cardDetailCardContainer = css`
   width: 80vw;
+  max-width: 480px;
 
   & > img {
     width: 100%;
