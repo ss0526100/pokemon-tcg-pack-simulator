@@ -873,6 +873,7 @@ export const MISSING_NO_CARD: CardInfo = {
   rarity: 'crown',
   expansion: 'A1',
   category: 'normal',
+  type: 'Colorless',
 };
 export const A1_CARD_LIST: CardInfo[] = [
   {
@@ -890,6 +891,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Grass',
   },
   {
     id: 'A1-002',
@@ -906,6 +908,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Grass',
   },
   {
     id: 'A1-003',
@@ -922,6 +925,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r3',
     expansion: 'A1',
     category: 'ev2',
+    type: 'Grass',
   },
   {
     id: 'A1-004',
@@ -938,6 +942,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r4',
     expansion: 'A1',
     category: 'ev2',
+    type: 'Grass',
   },
   {
     id: 'A1-005',
@@ -954,6 +959,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Grass',
   },
   {
     id: 'A1-006',
@@ -970,6 +976,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Grass',
   },
   {
     id: 'A1-007',
@@ -986,6 +993,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r3',
     expansion: 'A1',
     category: 'ev2',
+    type: 'Grass',
   },
   {
     id: 'A1-008',
@@ -1002,6 +1010,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Grass',
   },
   {
     id: 'A1-009',
@@ -1018,6 +1027,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Grass',
   },
   {
     id: 'A1-010',
@@ -1034,6 +1044,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r3',
     expansion: 'A1',
     category: 'ev2',
+    type: 'Grass',
   },
   {
     id: 'A1-011',
@@ -1050,6 +1061,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Grass',
   },
   {
     id: 'A1-012',
@@ -1066,6 +1078,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Grass',
   },
   {
     id: 'A1-013',
@@ -1082,6 +1095,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r3',
     expansion: 'A1',
     category: 'ev2',
+    type: 'Grass',
   },
   {
     id: 'A1-014',
@@ -1098,6 +1112,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Grass',
   },
   {
     id: 'A1-015',
@@ -1114,6 +1129,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Grass',
   },
   {
     id: 'A1-016',
@@ -1130,6 +1146,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Grass',
   },
   {
     id: 'A1-017',
@@ -1146,6 +1163,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Grass',
   },
   {
     id: 'A1-018',
@@ -1162,6 +1180,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Grass',
   },
   {
     id: 'A1-019',
@@ -1178,6 +1197,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Grass',
   },
   {
     id: 'A1-020',
@@ -1194,6 +1214,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r3',
     expansion: 'A1',
     category: 'ev2',
+    type: 'Grass',
   },
   {
     id: 'A1-021',
@@ -1210,6 +1231,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Grass',
   },
   {
     id: 'A1-022',
@@ -1226,6 +1248,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r3',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Grass',
   },
   {
     id: 'A1-023',
@@ -1242,6 +1265,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r4',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Grass',
   },
   {
     id: 'A1-024',
@@ -1258,6 +1282,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Grass',
   },
   {
     id: 'A1-025',
@@ -1274,6 +1299,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Grass',
   },
   {
     id: 'A1-026',
@@ -1290,6 +1316,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'normal',
+    type: 'Grass',
   },
   {
     id: 'A1-027',
@@ -1306,6 +1333,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Grass',
   },
   {
     id: 'A1-028',
@@ -1322,6 +1350,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Grass',
   },
   {
     id: 'A1-029',
@@ -1338,6 +1367,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Grass',
   },
   {
     id: 'A1-030',
@@ -1354,6 +1384,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Grass',
   },
   {
     id: 'A1-031',
@@ -1370,6 +1401,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Grass',
   },
   {
     id: 'A1-032',
@@ -1386,6 +1418,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Grass',
   },
   {
     id: 'A1-033',
@@ -1402,6 +1435,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Fire',
   },
   {
     id: 'A1-034',
@@ -1418,6 +1452,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Fire',
   },
   {
     id: 'A1-035',
@@ -1434,6 +1469,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r3',
     expansion: 'A1',
     category: 'ev2',
+    type: 'Fire',
   },
   {
     id: 'A1-036',
@@ -1450,6 +1486,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r4',
     expansion: 'A1',
     category: 'ev2',
+    type: 'Fire',
   },
   {
     id: 'A1-037',
@@ -1466,6 +1503,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Fire',
   },
   {
     id: 'A1-038',
@@ -1482,6 +1520,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Fire',
   },
   {
     id: 'A1-039',
@@ -1498,6 +1537,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Fire',
   },
   {
     id: 'A1-040',
@@ -1514,6 +1554,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r3',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Fire',
   },
   {
     id: 'A1-041',
@@ -1530,6 +1571,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r4',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Fire',
   },
   {
     id: 'A1-042',
@@ -1546,6 +1588,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Fire',
   },
   {
     id: 'A1-043',
@@ -1562,6 +1605,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Fire',
   },
   {
     id: 'A1-044',
@@ -1578,6 +1622,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Fire',
   },
   {
     id: 'A1-045',
@@ -1594,6 +1639,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r3',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Fire',
   },
   {
     id: 'A1-046',
@@ -1610,6 +1656,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r3',
     expansion: 'A1',
     category: 'normal',
+    type: 'Fire',
   },
   {
     id: 'A1-047',
@@ -1626,6 +1673,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r4',
     expansion: 'A1',
     category: 'normal',
+    type: 'Fire',
   },
   {
     id: 'A1-048',
@@ -1642,6 +1690,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Fire',
   },
   {
     id: 'A1-049',
@@ -1658,6 +1707,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Fire',
   },
   {
     id: 'A1-050',
@@ -1674,6 +1724,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Fire',
   },
   {
     id: 'A1-051',
@@ -1690,6 +1741,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Fire',
   },
   {
     id: 'A1-052',
@@ -1706,6 +1758,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Fire',
   },
   {
     id: 'A1-053',
@@ -1722,6 +1775,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Water',
   },
   {
     id: 'A1-054',
@@ -1738,6 +1792,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Water',
   },
   {
     id: 'A1-055',
@@ -1754,6 +1809,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r3',
     expansion: 'A1',
     category: 'ev2',
+    type: 'Water',
   },
   {
     id: 'A1-056',
@@ -1770,6 +1826,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r4',
     expansion: 'A1',
     category: 'ev2',
+    type: 'Water',
   },
   {
     id: 'A1-057',
@@ -1786,6 +1843,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Water',
   },
   {
     id: 'A1-058',
@@ -1802,6 +1860,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Water',
   },
   {
     id: 'A1-059',
@@ -1818,6 +1877,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Water',
   },
   {
     id: 'A1-060',
@@ -1834,6 +1894,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Water',
   },
   {
     id: 'A1-061',
@@ -1850,6 +1911,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r3',
     expansion: 'A1',
     category: 'ev2',
+    type: 'Water',
   },
   {
     id: 'A1-062',
@@ -1866,6 +1928,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Water',
   },
   {
     id: 'A1-063',
@@ -1882,6 +1945,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Water',
   },
   {
     id: 'A1-064',
@@ -1898,6 +1962,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Water',
   },
   {
     id: 'A1-065',
@@ -1914,6 +1979,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Water',
   },
   {
     id: 'A1-066',
@@ -1930,6 +1996,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Water',
   },
   {
     id: 'A1-067',
@@ -1946,6 +2013,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Water',
   },
   {
     id: 'A1-068',
@@ -1962,6 +2030,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Water',
   },
   {
     id: 'A1-069',
@@ -1978,6 +2047,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Water',
   },
   {
     id: 'A1-070',
@@ -1994,6 +2064,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Water',
   },
   {
     id: 'A1-071',
@@ -2010,6 +2081,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Water',
   },
   {
     id: 'A1-072',
@@ -2026,6 +2098,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Water',
   },
   {
     id: 'A1-073',
@@ -2042,6 +2115,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Water',
   },
   {
     id: 'A1-074',
@@ -2058,6 +2132,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Water',
   },
   {
     id: 'A1-075',
@@ -2074,6 +2149,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Water',
   },
   {
     id: 'A1-076',
@@ -2090,6 +2166,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r4',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Water',
   },
   {
     id: 'A1-077',
@@ -2106,6 +2183,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Water',
   },
   {
     id: 'A1-078',
@@ -2122,6 +2200,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r3',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Water',
   },
   {
     id: 'A1-079',
@@ -2138,6 +2217,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r3',
     expansion: 'A1',
     category: 'normal',
+    type: 'Water',
   },
   {
     id: 'A1-080',
@@ -2154,6 +2234,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r3',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Water',
   },
   {
     id: 'A1-081',
@@ -2170,6 +2251,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Water',
   },
   {
     id: 'A1-082',
@@ -2186,6 +2268,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r3',
     expansion: 'A1',
     category: 'ev2',
+    type: 'Water',
   },
   {
     id: 'A1-083',
@@ -2202,6 +2285,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r3',
     expansion: 'A1',
     category: 'normal',
+    type: 'Water',
   },
   {
     id: 'A1-084',
@@ -2218,6 +2302,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r4',
     expansion: 'A1',
     category: 'normal',
+    type: 'Water',
   },
   {
     id: 'A1-085',
@@ -2234,6 +2319,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Water',
   },
   {
     id: 'A1-086',
@@ -2250,6 +2336,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Water',
   },
   {
     id: 'A1-087',
@@ -2266,6 +2353,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Water',
   },
   {
     id: 'A1-088',
@@ -2282,6 +2370,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Water',
   },
   {
     id: 'A1-089',
@@ -2298,6 +2387,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r3',
     expansion: 'A1',
     category: 'ev2',
+    type: 'Water',
   },
   {
     id: 'A1-090',
@@ -2314,6 +2404,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Water',
   },
   {
     id: 'A1-091',
@@ -2330,6 +2421,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'normal',
+    type: 'Water',
   },
   {
     id: 'A1-092',
@@ -2346,6 +2438,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Water',
   },
   {
     id: 'A1-093',
@@ -2362,6 +2455,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Water',
   },
   {
     id: 'A1-094',
@@ -2378,6 +2472,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Lightning',
   },
   {
     id: 'A1-095',
@@ -2394,6 +2489,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r3',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Lightning',
   },
   {
     id: 'A1-096',
@@ -2410,6 +2506,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r4',
     expansion: 'A1',
     category: 'normal',
+    type: 'Lightning',
   },
   {
     id: 'A1-097',
@@ -2426,6 +2523,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Lightning',
   },
   {
     id: 'A1-098',
@@ -2442,6 +2540,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r3',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Lightning',
   },
   {
     id: 'A1-099',
@@ -2458,6 +2557,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Lightning',
   },
   {
     id: 'A1-100',
@@ -2474,6 +2574,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     category: 'ev1',
     expansion: 'A1',
+    type: 'Lightning',
   },
   {
     id: 'A1-101',
@@ -2490,6 +2591,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     category: 'normal',
     expansion: 'A1',
+    type: 'Lightning',
   },
   {
     id: 'A1-102',
@@ -2506,6 +2608,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r3',
     category: 'ev1',
     expansion: 'A1',
+    type: 'Lightning',
   },
   {
     id: 'A1-103',
@@ -2522,6 +2625,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r3',
     category: 'normal',
     expansion: 'A1',
+    type: 'Lightning',
   },
   {
     id: 'A1-104',
@@ -2538,6 +2642,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r4',
     category: 'ex',
     expansion: 'A1',
+    type: 'Lightning',
   },
   {
     id: 'A1-105',
@@ -2554,6 +2659,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     category: 'normal',
     expansion: 'A1',
+    type: 'Lightning',
   },
   {
     id: 'A1-106',
@@ -2570,6 +2676,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     category: 'ev1',
     expansion: 'A1',
+    type: 'Lightning',
   },
   {
     id: 'A1-107',
@@ -2586,6 +2693,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     category: 'normal',
     expansion: 'A1',
+    type: 'Lightning',
   },
   {
     id: 'A1-108',
@@ -2602,6 +2710,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     category: 'ev1',
     expansion: 'A1',
+    type: 'Lightning',
   },
   {
     id: 'A1-109',
@@ -2618,6 +2727,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r3',
     category: 'ev2',
     expansion: 'A1',
+    type: 'Lightning',
   },
   {
     id: 'A1-110',
@@ -2634,6 +2744,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     category: 'normal',
     expansion: 'A1',
+    type: 'Lightning',
   },
   {
     id: 'A1-111',
@@ -2650,6 +2761,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     category: 'ev1',
     expansion: 'A1',
+    type: 'Lightning',
   },
   {
     id: 'A1-112',
@@ -2666,6 +2778,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     category: 'normal',
     expansion: 'A1',
+    type: 'Lightning',
   },
   {
     id: 'A1-113',
@@ -2682,6 +2795,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     category: 'normal',
     expansion: 'A1',
+    type: 'Psychic',
   },
   {
     id: 'A1-114',
@@ -2698,6 +2812,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     category: 'ev1',
     expansion: 'A1',
+    type: 'Psychic',
   },
   {
     id: 'A1-115',
@@ -2714,6 +2829,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     category: 'normal',
     expansion: 'A1',
+    type: 'Psychic',
   },
   {
     id: 'A1-116',
@@ -2730,6 +2846,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     category: 'ev1',
     expansion: 'A1',
+    type: 'Psychic',
   },
   {
     id: 'A1-117',
@@ -2746,6 +2863,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r3',
     category: 'ev2',
     expansion: 'A1',
+    type: 'Psychic',
   },
   {
     id: 'A1-118',
@@ -2762,6 +2880,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     category: 'normal',
     expansion: 'A1',
+    type: 'Psychic',
   },
   {
     id: 'A1-119',
@@ -2778,6 +2897,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     category: 'ev1',
     expansion: 'A1',
+    type: 'Psychic',
   },
   {
     id: 'A1-120',
@@ -2794,6 +2914,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     category: 'normal',
     expansion: 'A1',
+    type: 'Psychic',
   },
   {
     id: 'A1-121',
@@ -2810,6 +2931,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     category: 'ev1',
     expansion: 'A1',
+    type: 'Psychic',
   },
   {
     id: 'A1-122',
@@ -2826,6 +2948,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r3',
     category: 'ev2',
     expansion: 'A1',
+    type: 'Psychic',
   },
   {
     id: 'A1-123',
@@ -2842,6 +2965,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r4',
     category: 'ex',
     expansion: 'A1',
+    type: 'Psychic',
   },
   {
     id: 'A1-124',
@@ -2858,6 +2982,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     category: 'normal',
     expansion: 'A1',
+    type: 'Psychic',
   },
   {
     id: 'A1-125',
@@ -2874,6 +2999,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r3',
     category: 'ev1',
     expansion: 'A1',
+    type: 'Psychic',
   },
   {
     id: 'A1-126',
@@ -2890,6 +3016,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     category: 'normal',
     expansion: 'A1',
+    type: 'Psychic',
   },
   {
     id: 'A1-127',
@@ -2906,6 +3033,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     category: 'normal',
     expansion: 'A1',
+    type: 'Psychic',
   },
   {
     id: 'A1-128',
@@ -2922,6 +3050,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r3',
     category: 'normal',
     expansion: 'A1',
+    type: 'Psychic',
   },
   {
     id: 'A1-129',
@@ -2938,6 +3067,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r4',
     category: 'ex',
     expansion: 'A1',
+    type: 'Psychic',
   },
   {
     id: 'A1-130',
@@ -2954,6 +3084,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     category: 'normal',
     expansion: 'A1',
+    type: 'Psychic',
   },
   {
     id: 'A1-131',
@@ -2970,6 +3101,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     category: 'ev1',
     expansion: 'A1',
+    type: 'Psychic',
   },
   {
     id: 'A1-132',
@@ -2986,6 +3118,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r3',
     category: 'ev2',
     expansion: 'A1',
+    type: 'Psychic',
   },
   {
     id: 'A1-133',
@@ -3002,6 +3135,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     category: 'normal',
     expansion: 'A1',
+    type: 'Psychic',
   },
   {
     id: 'A1-134',
@@ -3018,6 +3152,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     category: 'ev1',
     expansion: 'A1',
+    type: 'Psychic',
   },
   {
     id: 'A1-135',
@@ -3034,6 +3169,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     category: 'normal',
     expansion: 'A1',
+    type: 'Psychic',
   },
   {
     id: 'A1-136',
@@ -3050,6 +3186,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     category: 'ev1',
     expansion: 'A1',
+    type: 'Psychic',
   },
   {
     id: 'A1-137',
@@ -3066,6 +3203,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     category: 'normal',
     expansion: 'A1',
+    type: 'Fighting',
   },
   {
     id: 'A1-138',
@@ -3082,6 +3220,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     category: 'ev1',
     expansion: 'A1',
+    type: 'Fighting',
   },
   {
     id: 'A1-139',
@@ -3098,6 +3237,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     category: 'normal',
     expansion: 'A1',
+    type: 'Fighting',
   },
   {
     id: 'A1-140',
@@ -3114,6 +3254,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Fighting',
   },
   {
     id: 'A1-141',
@@ -3130,6 +3271,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Fighting',
   },
   {
     id: 'A1-142',
@@ -3146,6 +3288,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Fighting',
   },
   {
     id: 'A1-143',
@@ -3162,6 +3305,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Fighting',
   },
   {
     id: 'A1-144',
@@ -3178,6 +3322,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Fighting',
   },
   {
     id: 'A1-145',
@@ -3194,6 +3339,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r3',
     expansion: 'A1',
     category: 'ev2',
+    type: 'Fighting',
   },
   {
     id: 'A1-146',
@@ -3210,6 +3356,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r4',
     expansion: 'A1',
     category: 'ev2',
+    type: 'Fighting',
   },
   {
     id: 'A1-147',
@@ -3226,6 +3373,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Fighting',
   },
   {
     id: 'A1-148',
@@ -3242,6 +3390,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Fighting',
   },
   {
     id: 'A1-149',
@@ -3258,6 +3407,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r3',
     expansion: 'A1',
     category: 'ev2',
+    type: 'Fighting',
   },
   {
     id: 'A1-150',
@@ -3274,6 +3424,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'normal',
+    type: 'Fighting',
   },
   {
     id: 'A1-151',
@@ -3290,6 +3441,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Fighting',
   },
   {
     id: 'A1-152',
@@ -3306,6 +3458,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Fighting',
   },
   {
     id: 'A1-153',
@@ -3322,6 +3475,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r4',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Fighting',
   },
   {
     id: 'A1-154',
@@ -3338,6 +3492,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Fighting',
   },
   {
     id: 'A1-155',
@@ -3354,6 +3509,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Fighting',
   },
   {
     id: 'A1-156',
@@ -3370,6 +3526,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Fighting',
   },
   {
     id: 'A1-157',
@@ -3386,6 +3543,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Fighting',
   },
   {
     id: 'A1-158',
@@ -3402,6 +3560,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Fighting',
   },
   {
     id: 'A1-159',
@@ -3418,6 +3577,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r3',
     expansion: 'A1',
     category: 'ev2',
+    type: 'Fighting',
   },
   {
     id: 'A1-160',
@@ -3434,6 +3594,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Fighting',
   },
   {
     id: 'A1-161',
@@ -3450,6 +3611,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Fighting',
   },
   {
     id: 'A1-162',
@@ -3466,6 +3628,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Fighting',
   },
   {
     id: 'A1-163',
@@ -3482,6 +3645,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Fighting',
   },
   {
     id: 'A1-164',
@@ -3498,6 +3662,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Darkness',
   },
   {
     id: 'A1-165',
@@ -3514,6 +3679,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Darkness',
   },
   {
     id: 'A1-166',
@@ -3530,6 +3696,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Darkness',
   },
   {
     id: 'A1-167',
@@ -3546,6 +3713,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Darkness',
   },
   {
     id: 'A1-168',
@@ -3562,6 +3730,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r3',
     expansion: 'A1',
     category: 'ev2',
+    type: 'Darkness',
   },
   {
     id: 'A1-169',
@@ -3578,6 +3747,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Darkness',
   },
   {
     id: 'A1-170',
@@ -3594,6 +3764,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Darkness',
   },
   {
     id: 'A1-171',
@@ -3610,6 +3781,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r3',
     expansion: 'A1',
     category: 'ev2',
+    type: 'Darkness',
   },
   {
     id: 'A1-172',
@@ -3626,6 +3798,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Darkness',
   },
   {
     id: 'A1-173',
@@ -3642,6 +3815,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Darkness',
   },
   {
     id: 'A1-174',
@@ -3658,6 +3832,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Darkness',
   },
   {
     id: 'A1-175',
@@ -3674,6 +3849,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r3',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Darkness',
   },
   {
     id: 'A1-176',
@@ -3690,6 +3866,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Darkness',
   },
   {
     id: 'A1-177',
@@ -3706,6 +3883,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r3',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Darkness',
   },
   {
     id: 'A1-178',
@@ -3722,6 +3900,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Metal',
   },
   {
     id: 'A1-179',
@@ -3738,6 +3917,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Metal',
   },
   {
     id: 'A1-180',
@@ -3754,6 +3934,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Metal',
   },
   {
     id: 'A1-181',
@@ -3770,6 +3951,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Metal',
   },
   {
     id: 'A1-182',
@@ -3786,6 +3968,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r3',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Metal',
   },
   {
     id: 'A1-183',
@@ -3802,6 +3985,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Dragon',
   },
   {
     id: 'A1-184',
@@ -3818,6 +4002,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Dragon',
   },
   {
     id: 'A1-185',
@@ -3834,6 +4019,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r3',
     expansion: 'A1',
     category: 'ev2',
+    type: 'Dragon',
   },
   {
     id: 'A1-186',
@@ -3850,6 +4036,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Colorless',
   },
   {
     id: 'A1-187',
@@ -3866,6 +4053,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Colorless',
   },
   {
     id: 'A1-188',
@@ -3882,6 +4070,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r3',
     expansion: 'A1',
     category: 'ev2',
+    type: 'Colorless',
   },
   {
     id: 'A1-189',
@@ -3898,6 +4087,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Colorless',
   },
   {
     id: 'A1-190',
@@ -3914,6 +4104,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Colorless',
   },
   {
     id: 'A1-191',
@@ -3930,6 +4121,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Colorless',
   },
   {
     id: 'A1-192',
@@ -3946,6 +4138,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Colorless',
   },
   {
     id: 'A1-193',
@@ -3962,6 +4155,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Colorless',
   },
   {
     id: 'A1-194',
@@ -3978,6 +4172,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Colorless',
   },
   {
     id: 'A1-195',
@@ -3994,6 +4189,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r4',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Colorless',
   },
   {
     id: 'A1-196',
@@ -4010,6 +4206,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Colorless',
   },
   {
     id: 'A1-197',
@@ -4026,6 +4223,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Colorless',
   },
   {
     id: 'A1-198',
@@ -4042,6 +4240,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Colorless',
   },
   {
     id: 'A1-199',
@@ -4058,6 +4257,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Colorless',
   },
   {
     id: 'A1-200',
@@ -4074,6 +4274,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Colorless',
   },
   {
     id: 'A1-201',
@@ -4090,6 +4291,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'normal',
+    type: 'Colorless',
   },
   {
     id: 'A1-202',
@@ -4106,6 +4308,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'normal',
+    type: 'Colorless',
   },
   {
     id: 'A1-203',
@@ -4122,6 +4325,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r3',
     expansion: 'A1',
     category: 'normal',
+    type: 'Colorless',
   },
   {
     id: 'A1-204',
@@ -4138,6 +4342,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'normal',
+    type: 'Colorless',
   },
   {
     id: 'A1-205',
@@ -4154,6 +4359,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r3',
     expansion: 'A1',
     category: 'normal',
+    type: 'Colorless',
   },
   {
     id: 'A1-206',
@@ -4170,6 +4376,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Colorless',
   },
   {
     id: 'A1-207',
@@ -4186,6 +4393,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Colorless',
   },
   {
     id: 'A1-208',
@@ -4202,6 +4410,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Colorless',
   },
   {
     id: 'A1-209',
@@ -4218,6 +4427,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'normal',
+    type: 'Colorless',
   },
   {
     id: 'A1-210',
@@ -4234,6 +4444,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r3',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Colorless',
   },
   {
     id: 'A1-211',
@@ -4250,6 +4461,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r3',
     expansion: 'A1',
     category: 'normal',
+    type: 'Colorless',
   },
   {
     id: 'A1-212',
@@ -4266,6 +4478,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Colorless',
   },
   {
     id: 'A1-213',
@@ -4282,6 +4495,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Colorless',
   },
   {
     id: 'A1-214',
@@ -4298,6 +4512,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'normal',
+    type: 'Colorless',
   },
   {
     id: 'A1-215',
@@ -4314,6 +4529,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'ev1',
+    type: 'Colorless',
   },
   {
     id: 'A1-216',
@@ -4330,6 +4546,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'item',
+    type: 'nonPokemon',
   },
   {
     id: 'A1-217',
@@ -4346,6 +4563,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'item',
+    type: 'nonPokemon',
   },
   {
     id: 'A1-218',
@@ -4362,6 +4580,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r1',
     expansion: 'A1',
     category: 'item',
+    type: 'nonPokemon',
   },
   {
     id: 'A1-219',
@@ -4378,6 +4597,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'supporter',
+    type: 'nonPokemon',
   },
   {
     id: 'A1-220',
@@ -4394,6 +4614,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'supporter',
+    type: 'nonPokemon',
   },
   {
     id: 'A1-221',
@@ -4410,6 +4631,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'supporter',
+    type: 'nonPokemon',
   },
   {
     id: 'A1-222',
@@ -4426,6 +4648,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'supporter',
+    type: 'nonPokemon',
   },
   {
     id: 'A1-223',
@@ -4442,6 +4665,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'supporter',
+    type: 'nonPokemon',
   },
   {
     id: 'A1-224',
@@ -4458,6 +4682,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'supporter',
+    type: 'nonPokemon',
   },
   {
     id: 'A1-225',
@@ -4474,6 +4699,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'supporter',
+    type: 'nonPokemon',
   },
   {
     id: 'A1-226',
@@ -4490,6 +4716,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'r2',
     expansion: 'A1',
     category: 'supporter',
+    type: 'nonPokemon',
   },
   {
     id: 'A1-227',
@@ -4506,6 +4733,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's1', // ☆가 1개이므로 s1
     expansion: 'A1',
     category: 'normal',
+    type: 'Grass',
   },
   {
     id: 'A1-228',
@@ -4522,6 +4750,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's1', // ☆가 1개이므로 s1
     expansion: 'A1',
     category: 'ev1',
+    type: 'Grass',
   },
   {
     id: 'A1-229',
@@ -4538,6 +4767,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's1', // ☆가 1개이므로 s1
     expansion: 'A1',
     category: 'normal',
+    type: 'Grass',
   },
   {
     id: 'A1-230',
@@ -4554,6 +4784,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's1', // ☆가 1개이므로 s1
     expansion: 'A1',
     category: 'normal',
+    type: 'Fire',
   },
   {
     id: 'A1-231',
@@ -4570,6 +4801,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's1', // ☆가 1개이므로 s1
     expansion: 'A1',
     category: 'ev1',
+    type: 'Fire',
   },
   {
     id: 'A1-232',
@@ -4586,6 +4818,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's1', // ☆가 1개이므로 s1
     expansion: 'A1',
     category: 'normal',
+    type: 'Water',
   },
   {
     id: 'A1-233',
@@ -4602,6 +4835,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's1', // ☆가 1개이므로 s1
     expansion: 'A1',
     category: 'ev1',
+    type: 'Water',
   },
   {
     id: 'A1-234',
@@ -4618,6 +4852,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's1', // ☆가 1개이므로 s1
     expansion: 'A1',
     category: 'normal',
+    type: 'Water',
   },
   {
     id: 'A1-235',
@@ -4634,6 +4869,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's1', // ☆가 1개이므로 s1
     expansion: 'A1',
     category: 'ev1',
+    type: 'Lightning',
   },
   {
     id: 'A1-236',
@@ -4650,6 +4886,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's1', // ☆가 1개이므로 s1
     expansion: 'A1',
     category: 'ev2',
+    type: 'Psychic',
   },
   {
     id: 'A1-237',
@@ -4666,6 +4903,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's1', // ☆가 1개이므로 s1
     expansion: 'A1',
     category: 'normal',
+    type: 'Psychic',
   },
   {
     id: 'A1-238',
@@ -4682,6 +4920,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's1', // ☆가 1개이므로 s1
     expansion: 'A1',
     category: 'normal',
+    type: 'Fighting',
   },
   {
     id: 'A1-239',
@@ -4698,6 +4937,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's1', // ☆가 1개이므로 s1
     expansion: 'A1',
     category: 'normal',
+    type: 'Fighting',
   },
   {
     id: 'A1-240',
@@ -4714,6 +4954,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's1', // ☆가 1개이므로 s1
     expansion: 'A1',
     category: 'ev2',
+    type: 'Darkness',
   },
   {
     id: 'A1-241',
@@ -4730,6 +4971,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's1', // ☆가 1개이므로 s1
     expansion: 'A1',
     category: 'ev2',
+    type: 'Darkness',
   },
   {
     id: 'A1-242',
@@ -4746,6 +4988,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's1', // ☆가 1개이므로 s1
     expansion: 'A1',
     category: 'ev1',
+    type: 'Darkness',
   },
   {
     id: 'A1-243',
@@ -4762,6 +5005,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's1', // ☆가 1개이므로 s1
     expansion: 'A1',
     category: 'ev1',
+    type: 'Darkness',
   },
   {
     id: 'A1-244',
@@ -4778,6 +5022,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's1', // ☆가 1개이므로 s1
     expansion: 'A1',
     category: 'ev2',
+    type: 'Dragon',
   },
   {
     id: 'A1-245',
@@ -4794,6 +5039,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's1', // ☆가 1개이므로 s1
     expansion: 'A1',
     category: 'ev2',
+    type: 'Colorless',
   },
   {
     id: 'A1-246',
@@ -4810,6 +5056,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's1', // ☆가 1개이므로 s1
     expansion: 'A1',
     category: 'normal',
+    type: 'Colorless',
   },
   {
     id: 'A1-247',
@@ -4826,6 +5073,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's1', // ☆가 1개이므로 s1
     expansion: 'A1',
     category: 'normal',
+    type: 'Colorless',
   },
   {
     id: 'A1-248',
@@ -4842,6 +5090,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's1', // ☆가 1개이므로 s1
     expansion: 'A1',
     category: 'normal',
+    type: 'Colorless',
   },
   {
     id: 'A1-249',
@@ -4858,6 +5107,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's1', // ☆가 1개이므로 s1
     expansion: 'A1',
     category: 'normal',
+    type: 'Colorless',
   },
   {
     id: 'A1-250',
@@ -4874,6 +5124,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's1', // ☆가 1개이므로 s1
     expansion: 'A1',
     category: 'normal',
+    type: 'Colorless',
   },
   {
     id: 'A1-251',
@@ -4890,6 +5141,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's2', // ☆가 2개이므로 s2
     expansion: 'A1',
     category: 'ev2',
+    type: 'Grass',
   },
   {
     id: 'A1-252',
@@ -4906,6 +5158,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's2', // ☆가 2개이므로 s2
     expansion: 'A1',
     category: 'ev1',
+    type: 'Grass',
   },
   {
     id: 'A1-253',
@@ -4922,6 +5175,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's2', // ☆가 2개이므로 s2
     expansion: 'A1',
     category: 'ev2',
+    type: 'Fire',
   },
   {
     id: 'A1-254',
@@ -4938,6 +5192,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's2', // ☆가 2개이므로 s2
     expansion: 'A1',
     category: 'ev1',
+    type: 'Fire',
   },
   {
     id: 'A1-255',
@@ -4954,6 +5209,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's2', // ☆가 2개이므로 s2
     expansion: 'A1',
     category: 'normal',
+    type: 'Fire',
   },
   {
     id: 'A1-256',
@@ -4970,6 +5226,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's2', // ☆가 2개이므로 s2
     expansion: 'A1',
     category: 'ev2',
+    type: 'Water',
   },
   {
     id: 'A1-257',
@@ -4986,6 +5243,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's2', // ☆가 2개이므로 s2
     expansion: 'A1',
     category: 'ev1',
+    type: 'Water',
   },
   {
     id: 'A1-258',
@@ -5002,6 +5260,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's2', // ☆가 2개이므로 s2
     expansion: 'A1',
     category: 'normal',
+    type: 'Water',
   },
   {
     id: 'A1-259',
@@ -5018,6 +5277,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's2', // ☆가 2개이므로 s2
     expansion: 'A1',
     category: 'normal',
+    type: 'Lightning',
   },
   {
     id: 'A1-260',
@@ -5034,6 +5294,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's2', // ☆가 2개이므로 s2
     expansion: 'A1',
     category: 'normal',
+    type: 'Lightning',
   },
   {
     id: 'A1-260',
@@ -5050,6 +5311,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's2', // ☆가 2개이므로 s2
     expansion: 'A1',
     category: 'normal',
+    type: 'Lightning',
   },
   {
     id: 'A1-261',
@@ -5066,6 +5328,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's2', // ☆가 2개이므로 s2
     expansion: 'A1',
     category: 'ev2',
+    type: 'Psychic',
   },
   {
     id: 'A1-262',
@@ -5082,6 +5345,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's2', // ☆가 2개이므로 s2
     expansion: 'A1',
     category: 'normal',
+    type: 'Psychic',
   },
   {
     id: 'A1-263',
@@ -5098,6 +5362,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's2', // ☆가 2개이므로 s2
     expansion: 'A1',
     category: 'ev2',
+    type: 'Fighting',
   },
   {
     id: 'A1-264',
@@ -5114,6 +5379,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's2', // ☆가 2개이므로 s2
     expansion: 'A1',
     category: 'ev1',
+    type: 'Fighting',
   },
   {
     id: 'A1-265',
@@ -5130,6 +5396,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's2', // ☆가 2개이므로 s2
     expansion: 'A1',
     category: 'ev1',
+    type: 'Colorless',
   },
   {
     id: 'A1-266',
@@ -5146,6 +5413,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's2', // ☆가 2개이므로 s2
     expansion: 'A1',
     category: 'supporter',
+    type: 'nonPokemon',
   },
   {
     id: 'A1-267',
@@ -5162,6 +5430,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's2', // ☆가 2개이므로 s2
     expansion: 'A1',
     category: 'supporter',
+    type: 'nonPokemon',
   },
   {
     id: 'A1-268',
@@ -5178,6 +5447,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's2', // ☆가 2개이므로 s2
     expansion: 'A1',
     category: 'supporter',
+    type: 'nonPokemon',
   },
   {
     id: 'A1-269',
@@ -5194,6 +5464,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's2', // ☆가 2개이므로 s2
     expansion: 'A1',
     category: 'supporter',
+    type: 'nonPokemon',
   },
   {
     id: 'A1-270',
@@ -5210,6 +5481,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's2', // ☆가 2개이므로 s2
     expansion: 'A1',
     category: 'supporter',
+    type: 'nonPokemon',
   },
   {
     id: 'A1-271',
@@ -5226,6 +5498,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's2', // ☆가 2개이므로 s2
     expansion: 'A1',
     category: 'supporter',
+    type: 'nonPokemon',
   },
   {
     id: 'A1-272',
@@ -5242,6 +5515,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's2', // ☆가 2개이므로 s2
     expansion: 'A1',
     category: 'supporter',
+    type: 'nonPokemon',
   },
   {
     id: 'A1-273',
@@ -5258,6 +5532,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's2', // ☆가 2개이므로 s2
     expansion: 'A1',
     category: 'supporter',
+    type: 'nonPokemon',
   },
   {
     id: 'A1-274',
@@ -5274,6 +5549,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's2', // ☆가 2개이므로 s2
     expansion: 'A1',
     category: 'normal',
+    type: 'Fire',
   },
   {
     id: 'A1-275',
@@ -5290,6 +5566,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's2', // ☆가 2개이므로 s2
     expansion: 'A1',
     category: 'normal',
+    type: 'Water',
   },
   {
     id: 'A1-276',
@@ -5306,6 +5583,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's2', // ☆가 2개이므로 s2
     expansion: 'A1',
     category: 'normal',
+    type: 'Lightning',
   },
   {
     id: 'A1-277',
@@ -5322,6 +5600,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's2', // ☆가 2개이므로 s2
     expansion: 'A1',
     category: 'ev2',
+    type: 'Psychic',
   },
   {
     id: 'A1-278',
@@ -5338,6 +5617,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's2', // ☆가 2개이므로 s2
     expansion: 'A1',
     category: 'ev2',
+    type: 'Fighting',
   },
   {
     id: 'A1-279',
@@ -5354,6 +5634,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's2', // ☆가 2개이므로 s2
     expansion: 'A1',
     category: 'ev1',
+    type: 'Colorless',
   },
   {
     id: 'A1-280',
@@ -5370,6 +5651,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's3', // ☆가 3개이므로 s3
     expansion: 'A1',
     category: 'ev2',
+    type: 'Fire',
   },
   {
     id: 'A1-281',
@@ -5386,6 +5668,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's3', // ☆가 3개이므로 s3
     expansion: 'A1',
     category: 'normal',
+    type: 'Lightning',
   },
   {
     id: 'A1-282',
@@ -5402,6 +5685,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's3', // ☆가 3개이므로 s3
     expansion: 'A1',
     category: 'normal',
+    type: 'Psychic',
   },
   {
     id: 'A1-283',
@@ -5418,6 +5702,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 's3', // ☆가 3개이므로 s3
     expansion: 'A1',
     category: 'normal',
+    type: 'Psychic',
   },
   {
     id: 'A1-284',
@@ -5434,6 +5719,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'crown', // ♕은 왕관 등급
     expansion: 'A1',
     category: 'ev2',
+    type: 'Fire',
   },
   {
     id: 'A1-285',
@@ -5450,6 +5736,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'crown', // ♕은 왕관 등급
     expansion: 'A1',
     category: 'normal',
+    type: 'Lightning',
   },
   {
     id: 'A1-286',
@@ -5466,6 +5753,7 @@ export const A1_CARD_LIST: CardInfo[] = [
     rarity: 'crown', // ♕은 왕관 등급
     expansion: 'A1',
     category: 'normal',
+    type: 'Psychic',
   },
 ];
 

@@ -11,18 +11,18 @@ type TrainersCategory = 'supporter' | 'item' | 'item-fossil';
 
 type Category = PokemonCategory | TrainersCategory;
 
-// type PokemonType =
-//   | 'Grass'
-//   | 'Fire'
-//   | 'Water'
-//   | 'Lightning'
-//   | 'Psychic'
-//   | 'Fighting'
-//   | 'Darkness'
-//   | 'Metal'
-//   | 'Dragon'
-//   | 'Colorless'
-//   | 'nonPokemon';
+type PokemonType =
+  | 'Grass'
+  | 'Fire'
+  | 'Water'
+  | 'Lightning'
+  | 'Psychic'
+  | 'Fighting'
+  | 'Darkness'
+  | 'Metal'
+  | 'Dragon'
+  | 'Colorless'
+  | 'nonPokemon';
 
 type CardId = string;
 
@@ -35,6 +35,7 @@ interface CardInfo {
   rarity: Rarity;
   expansion: Expansion;
   category: Category;
+  type: PokemonType;
 }
 
 type Pack = CardInfo[];
