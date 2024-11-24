@@ -16,13 +16,15 @@ export const layout = css`
 
 export const contentContainer = css`
   position: relative;
+
   display: flex;
   gap: 0.5rem;
+  align-items: center;
+  justify-content: space-around;
+
+  height: 80%;
 
   @media (width <= 600px) {
-    align-items: center;
-    justify-content: space-around;
-
     width: 90%;
     height: 80vh;
     padding: 40px 0 0;
@@ -70,9 +72,18 @@ export const packContainer = css`
   flex-direction: column;
   align-items: center;
 
-  width: 60%;
+  height: 80%;
 
   animation: ${bounce} 3.5s ease-in-out infinite;
+
+  & > img {
+    aspect-ratio: 334/644;
+    width: auto;
+    max-width: 100vw;
+    height: 100%;
+
+    object-fit: fill;
+  }
 
   @media (width <= 600px) {
     & > img {
@@ -107,7 +118,7 @@ export const checkboxContainer = css`
 `;
 
 export const checkbox = css`
-  margin: 0 10px;
+  margin: 0 10px 0 0;
 `;
 
 export const buttonContainer = css`
