@@ -233,6 +233,10 @@ export default function PackSelect(props: PackSelectProps) {
             <RightArrowSvg size={30} />
           </div>
         </div>
+        <div css={S.checkboxContainer}>
+          <input css={S.checkbox} type='checkbox' name='' id='' />팩 한 번에
+          개봉하기
+        </div>
       </div>
       <BottomButtonContainer css={S.buttonContainer} direction='row'>
         <Button css={S.button} onClick={() => onSelect(nowPackType, packCount)}>
