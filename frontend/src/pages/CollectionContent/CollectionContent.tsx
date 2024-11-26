@@ -15,6 +15,7 @@ import {
 
 import Button from '../../components/Button/Button';
 import Card from '../../components/Card/Card';
+import Dropdown from '../../components/Dropdown/Dropdown';
 import Rarity from '../../components/Rarity/Rarity';
 import useCardIdCntMap from '../../hooks/atoms/packs/useCardCollections';
 import { useState } from 'react';
@@ -63,6 +64,49 @@ export default function CollectionContent(props: CollectionContentProps) {
             >{`${crownSet.size}/${A1_CROWN_CARD_COUNT}`}</span>
           </div>
         </div>
+        <div css={S.dropdownRow}>
+          <Dropdown
+            defaultValue={'All'}
+            values={
+              [
+                'All',
+                'crown',
+                's3',
+                's2',
+                's1',
+                'r4',
+                'r3',
+                'r2',
+                'r1',
+              ] as SelectType<Rarity>[]
+            }
+            render={rarity =>
+              rarity === 'All' ? '전체' : <Rarity rarity={rarity} />
+            }
+            onChange={() => {}}
+          />
+          <Dropdown
+            defaultValue={'All'}
+            values={
+              [
+                'All',
+                'crown',
+                's3',
+                's2',
+                's1',
+                'r4',
+                'r3',
+                'r2',
+                'r1',
+              ] as SelectType<Rarity>[]
+            }
+            render={rarity =>
+              rarity === 'All' ? '전체' : <Rarity rarity={rarity} />
+            }
+            onChange={() => {}}
+          />
+        </div>
+
         {/* <div css={S.selectRow}>
           <div>타입</div>
           <div>등급</div>

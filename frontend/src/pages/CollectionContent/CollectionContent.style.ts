@@ -34,6 +34,16 @@ export const selectRow = css`
   padding: 0 5% 2rem;
 `;
 
+export const dropdownRow = css`
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-between;
+
+  width: 100%;
+  padding: 0 5% 2rem;
+`;
+
 export const selectItem = css`
   position: relative;
 
