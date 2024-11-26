@@ -1,28 +1,28 @@
-import DropdownProvider, { DropDownContext } from './DropDownProvider';
-import { HTMLProps, ReactNode, useContext, useState } from 'react';
+import { HTMLProps, ReactNode, useEffect, useState } from 'react';
 
 interface DropdownHeaderProps {
   onToggle: () => void;
   render?: (value: string | number) => ReactNode;
+  value: string | number;
 }
 
 function DropdownHeader(props: DropdownHeaderProps) {
-  const { render, onToggle } = props;
-  const { value } = useContext(DropDownContext);
+  const { render, onToggle, value } = props;
   if (!render) return <div onClick={onToggle}>{value}</div>;
   return <div onClick={onToggle}>{render(value)}</div>;
 }
 
 interface DropdownOptionProps {
   value: string | number;
+  selectedValue: string | number;
+  onClick: () => void;
   render?: (value: string | number) => ReactNode;
 }
 
 function DropdownOption(props: DropdownOptionProps) {
-  const { value, render } = props;
-  const { handleChange } = useContext(DropDownContext);
-  if (!render) return <div onClick={() => handleChange(value)}>{value}</div>;
-  return <div onClick={() => handleChange(value)}>{render(value)}</div>;
+  const { value, render, onClick } = props;
+  if (!render) return <div onClick={onClick}>{value}</div>;
+  return <div onClick={onClick}>{render(value)}</div>;
 }
 
 interface DropDownProps<>extends Omit<HTMLProps<HTMLDivElement>, 'onChange'> {
@@ -33,23 +33,38 @@ interface DropDownProps<>extends Omit<HTMLProps<HTMLDivElement>, 'onChange'> {
 }
 
 export default function DropDown(props: DropDownProps) {
-  const { defaultValue, values, onChange, render } = props;
+  const { defaultValue, values, onChange, render, ...restProps } = props;
+  const [selectedValue, setSelectedValue] = useState<string | number>(
+    defaultValue
+  );
   const [isOpened, setIsOpened] = useState(false);
 
   const handleHeaderClick = () => setIsOpened(prev => !prev);
 
+  useEffect(() => {
+    setSelectedValue(defaultValue);
+  }, [defaultValue]);
+
   return (
-    <DropdownProvider defaultValue={defaultValue} onChange={onChange}>
-      <div onClick={handleHeaderClick}>
-        <DropdownHeader render={render} onToggle={handleHeaderClick} />
-      </div>
+    <div {...restProps}>
+      <DropdownHeader
+        render={render}
+        onToggle={handleHeaderClick}
+        value={selectedValue}
+      />
       {isOpened && (
         <div>
           {values.map((value, idx) => (
-            <DropdownOption render={render} value={value} key={idx} />
+            <DropdownOption
+              render={render}
+              value={value}
+              key={idx}
+              selectedValue={selectedValue}
+              onClick={() => onChange(value)}
+            />
           ))}
         </div>
       )}
-    </DropdownProvider>
+    </div>
   );
 }
