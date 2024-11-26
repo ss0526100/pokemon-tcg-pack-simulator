@@ -1,16 +1,21 @@
-import { HTMLProps, ReactNode, useEffect, useState } from 'react';
 import * as S from './Dropdown.style';
-import UpArrowSvg from '../svgs/UpArrowSvg';
-import DownArrowSvg from '../svgs/DownArrowSVG';
+
+import { HTMLProps, ReactNode, useEffect, useState } from 'react';
+
 import COLOR from '../../constant/colors';
-interface DropdownHeaderProps {
+import DownArrowSvg from '../svgs/DownArrowSVG';
+import UpArrowSvg from '../svgs/UpArrowSvg';
+
+interface DropdownHeaderProps<ValueType extends string | number> {
   onToggle: () => void;
-  render?: (value: string | number) => ReactNode;
-  value: string | number;
+  render?: (value: ValueType) => ReactNode;
+  value: ValueType;
   isOpened: boolean;
 }
 
-function DropdownHeader(props: DropdownHeaderProps) {
+function DropdownHeader<ValueType extends string | number>(
+  props: DropdownHeaderProps<ValueType>
+) {
   const { render, onToggle, value, isOpened } = props;
 
   return (
@@ -25,14 +30,16 @@ function DropdownHeader(props: DropdownHeaderProps) {
   );
 }
 
-interface DropdownOptionProps {
-  value: string | number;
-  selectedValue: string | number;
+interface DropdownOptionProps<ValueType extends string | number> {
+  value: ValueType;
+  selectedValue: ValueType;
   onClick: () => void;
-  render?: (value: string | number) => ReactNode;
+  render?: (value: ValueType) => ReactNode;
 }
 
-function DropdownOption(props: DropdownOptionProps) {
+function DropdownOption<ValueType extends string | number>(
+  props: DropdownOptionProps<ValueType>
+) {
   const { value, selectedValue, render, onClick } = props;
   const isSelected = selectedValue === value;
   if (!render)
@@ -48,23 +55,24 @@ function DropdownOption(props: DropdownOptionProps) {
   );
 }
 
-interface DropDownProps<>extends Omit<HTMLProps<HTMLDivElement>, 'onChange'> {
-  defaultValue: string | number;
-  values: (string | number)[];
-  onChange: (value: string | number) => void;
-  render?: (value: string | number) => ReactNode;
+interface DropDownProps<ValueType extends string | number>
+  extends Omit<HTMLProps<HTMLDivElement>, 'onChange'> {
+  defaultValue: ValueType;
+  values: ValueType[];
+  onChange: (value: ValueType) => void;
+  render?: (value: ValueType) => ReactNode;
 }
 
-export default function Dropdown(props: DropDownProps) {
+export default function Dropdown<ValueType extends string | number>(
+  props: DropDownProps<ValueType>
+) {
   const { defaultValue, values, onChange, render, ...restProps } = props;
-  const [selectedValue, setSelectedValue] = useState<string | number>(
-    defaultValue
-  );
+  const [selectedValue, setSelectedValue] = useState<ValueType>(defaultValue);
   const [isOpened, setIsOpened] = useState(false);
 
   const handleHeaderClick = () => setIsOpened(prev => !prev);
 
-  const handleOptionClick = (value: string | number) => {
+  const handleOptionClick = (value: ValueType) => {
     onChange(value);
     setSelectedValue(value);
     setIsOpened(false);
