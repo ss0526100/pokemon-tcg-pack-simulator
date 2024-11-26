@@ -47,7 +47,8 @@
       "choose-pack": "パックを選び直す"
     },
     "select-pack": {
-      "open-pack": "パック開封"
+      "open-pack": "パック開封",
+      "open-one-time": "パック一括開封"
     },
     "description": {
       "pc-span-1": "キーボードで操作できます。",
@@ -76,7 +77,9 @@
       "confirm": "確認"
     },
     "collection": {
-      "no-card": "獲得したカードはありません。"
+      "no-card": "獲得したカードはありません。",
+      "entire-rarity": "すべてのレアリティ",
+      "entire-type": "すべてのタイプ"
     },
     "confirm": "確認"
   },

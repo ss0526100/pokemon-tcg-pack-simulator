@@ -85,7 +85,11 @@ export default function CollectionContent(props: CollectionContentProps) {
               ] as SelectType<Rarity>[]
             }
             render={rarity =>
-              rarity === 'All' ? '전체' : <Rarity rarity={rarity} />
+              rarity === 'All' ? (
+                t('modal.collection.entire-rarity')
+              ) : (
+                <Rarity rarity={rarity} />
+              )
             }
             onChange={rarity => setTargetRarity(rarity)}
           />
@@ -107,7 +111,11 @@ export default function CollectionContent(props: CollectionContentProps) {
               ] as SelectType<PokemonType>[]
             }
             render={type =>
-              type === 'All' ? '전체' : <PokemonType pokemonType={type} />
+              type === 'All' ? (
+                t('modal.collection.entire-type')
+              ) : (
+                <PokemonType pokemonType={type} />
+              )
             }
             onChange={type => setTargetPokemonType(type)}
           />
