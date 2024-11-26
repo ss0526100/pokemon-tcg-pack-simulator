@@ -7,5 +7,5 @@ export const card = css`
   height: 100%;
 
   background-size: cover;
-  border-radius: 11px;
+  border-radius: 5px;
 `;
