@@ -71,6 +71,8 @@ export const option = (isSelected: boolean) => css`
 export const dimmer = css`
   position: fixed;
   z-index: 9999999998;
+  top: 0;
+  left: 0;
 
   width: 100vw;
   height: 100vh;
