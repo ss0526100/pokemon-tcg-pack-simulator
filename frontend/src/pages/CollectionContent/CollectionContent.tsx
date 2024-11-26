@@ -16,6 +16,7 @@ import {
 import Button from '../../components/Button/Button';
 import Card from '../../components/Card/Card';
 import Dropdown from '../../components/Dropdown/Dropdown';
+import PokemonType from '../../components/PokemonType/CardType';
 import Rarity from '../../components/Rarity/Rarity';
 import useCardIdCntMap from '../../hooks/atoms/packs/useCardCollections';
 import { useState } from 'react';
@@ -33,6 +34,9 @@ export default function CollectionContent(props: CollectionContentProps) {
   const [starSet] = useStarIdSet();
   const [crownSet] = useCrownIdSet();
   const [isCardDetailViewed, setIsCardDetailViewed] = useState(false);
+  const [targetRarity, setTargetRarity] = useState<SelectType<Rarity>>('All');
+  const [targetPokemonType, setTargetPokemonType] =
+    useState<SelectType<PokemonType>>('All');
   const [cardId, setCardId] = useState('');
   return (
     <>
@@ -83,27 +87,29 @@ export default function CollectionContent(props: CollectionContentProps) {
             render={rarity =>
               rarity === 'All' ? '전체' : <Rarity rarity={rarity} />
             }
-            onChange={() => {}}
+            onChange={rarity => setTargetRarity(rarity)}
           />
           <Dropdown
             defaultValue={'All'}
             values={
               [
                 'All',
-                'crown',
-                's3',
-                's2',
-                's1',
-                'r4',
-                'r3',
-                'r2',
-                'r1',
-              ] as SelectType<Rarity>[]
+                'Grass',
+                'Fire',
+                'Water',
+                'Lightning',
+                'Psychic',
+                'Fighting',
+                'Darkness',
+                'Metal',
+                'Dragon',
+                'Colorless',
+              ] as SelectType<PokemonType>[]
             }
-            render={rarity =>
-              rarity === 'All' ? '전체' : <Rarity rarity={rarity} />
+            render={type =>
+              type === 'All' ? '전체' : <PokemonType pokemonType={type} />
             }
-            onChange={() => {}}
+            onChange={type => setTargetPokemonType(type)}
           />
         </div>
 

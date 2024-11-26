@@ -28,7 +28,7 @@ const typeSrcRecord: Record<Exclude<PokemonType, 'nonPokemon'>, string> = {
   Psychic: PsychicPng,
   Water: WaterPng,
 };
-export default function CardType(props: CardTypeProps) {
+export default function PokemonType(props: CardTypeProps) {
   const { pokemonType, size = 15 } = props;
 
   return (
