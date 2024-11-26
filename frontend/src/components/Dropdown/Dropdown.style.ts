@@ -3,7 +3,7 @@ import { css } from '@emotion/react';
 
 export const dropdown = css`
   position: relative;
-  width: 30%;
+  width: 100%;
 `;
 
 export const header = css`
