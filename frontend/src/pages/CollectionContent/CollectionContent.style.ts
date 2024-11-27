@@ -70,6 +70,7 @@ export const cardList = css`
   /* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
   flex-wrap: wrap;
   gap: 2%;
+  align-content: flex-start;
 
   width: 90%;
   height: 80%;
@@ -89,7 +90,6 @@ export const emptyCardFallback = css`
 
 export const cardContainer = css`
   position: relative;
-  align-content: flex-start;
   width: 23%;
 
   & > img {

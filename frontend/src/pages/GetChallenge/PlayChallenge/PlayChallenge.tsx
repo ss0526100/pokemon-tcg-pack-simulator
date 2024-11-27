@@ -112,8 +112,8 @@ export default function PlayChallenge(props: PlayChallengeProps) {
         />
         <MobileTopRightHamburger.Option
           icon={<PokeBallSvg fill={COLOR.PRIMARY_COLOR} size={25} />}
-          description={t('pack-simulator.toolbar.go-get-challenge')}
-          onClick={() => navigate('/get-challenge')}
+          description={t('get-challenge.toolbar.go-pack-simulator')}
+          onClick={() => navigate('/')}
         />
       </MobileTopRightHamburger>
       <MobileTopRightHamburger.OptionPlace>

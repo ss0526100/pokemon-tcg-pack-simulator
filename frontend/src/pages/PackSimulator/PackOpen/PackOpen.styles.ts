@@ -1,5 +1,7 @@
 import { css, keyframes } from '@emotion/react';
 
+import COLOR from '../../../constant/colors';
+
 export const layout = css`
   transform: translateY(-40px);
 
@@ -109,6 +111,53 @@ export const cardContainer = css`
   }
 `;
 
+export const packOpenOneTimeContainer = css`
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+  padding: 40px 0 100px;
+
+  @media (width<=600px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+  }
+`;
+
+export const packOpenOneTimePackContainer = css`
+  flex-shrink: 0;
+
+  aspect-ratio: 1 / 1;
+  width: 80%;
+  padding: 0.5rem;
+
+  background-color: ${COLOR.MAIN_BACKGROUND};
+  border-radius: 20px;
+
+  @media (width<=600px) {
+    width: 80%;
+  }
+`;
+
+export const packOpenOneTimeCardContainer = css`
+  width: 90%;
+  height: 100%;
+
+  & > img {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+  }
+`;
 export const bottomContainer = css`
   @media (width<=600px) {
     position: fixed;
