@@ -68,7 +68,7 @@ export default function CollectionContent(props: CollectionContentProps) {
             >{`${crownSet.size}/${A1_CROWN_CARD_COUNT}`}</span>
           </div>
         </div>
-        <div css={S.dropdownRow}>
+        {/* <div css={S.dropdownRow}>
           <Dropdown
             defaultValue={'All'}
             values={
@@ -119,7 +119,7 @@ export default function CollectionContent(props: CollectionContentProps) {
             }
             onChange={type => setTargetPokemonType(type)}
           />
-        </div>
+        </div> */}
 
         {/* <div css={S.selectRow}>
           <div>타입</div>
