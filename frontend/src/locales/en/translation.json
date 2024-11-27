@@ -47,7 +47,8 @@
       "choose-pack": "Choose Different Pack"
     },
     "select-pack": {
-      "open-pack": "Open"
+      "open-pack": "Open",
+      "open-one-time": "Open Pack(s) at Once"
     },
     "description": {
       "pc-span-1": "You can use the keyboard on PC,",
@@ -76,7 +77,9 @@
       "confirm": "OK"
     },
     "collection": {
-      "no-card": "You have no cards obtained."
+      "no-card": "You have no cards obtained.",
+      "entire-rarity": "All Rarities",
+      "entire-type": "All Types"
     },
     "confirm": "OK"
   },

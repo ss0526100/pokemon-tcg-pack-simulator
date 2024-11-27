@@ -246,7 +246,7 @@ export default function PackSelect(props: PackSelectProps) {
             css={S.checkbox}
             size={30}
           />
-          팩 한 번에 개봉하기
+          {t('pack-simulator.select-pack.open-one-time')}
         </div>
       </div>
       <BottomButtonContainer css={S.buttonContainer} direction='row'>

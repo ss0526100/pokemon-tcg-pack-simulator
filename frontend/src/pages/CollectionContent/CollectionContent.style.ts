@@ -34,6 +34,16 @@ export const selectRow = css`
   padding: 0 5% 2rem;
 `;
 
+export const dropdownRow = css`
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-between;
+
+  width: 100%;
+  padding: 0 5% 2rem;
+`;
+
 export const selectItem = css`
   position: relative;
 
@@ -100,8 +110,8 @@ export const cardContainer = css`
 
 export const cardCount = css`
   position: absolute;
+  right: 0;
   bottom: 0;
-  left: 0;
 
   width: 30px;
 
@@ -110,7 +120,7 @@ export const cardCount = css`
   text-align: center;
 
   background-color: grey;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 `;
 
 export const bottomButtonContainer = css`
