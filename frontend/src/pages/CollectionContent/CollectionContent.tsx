@@ -15,12 +15,13 @@ import {
 
 import Button from '../../components/Button/Button';
 import Card from '../../components/Card/Card';
-import Dropdown from '../../components/Dropdown/Dropdown';
-import PokemonType from '../../components/PokemonType/CardType';
 import Rarity from '../../components/Rarity/Rarity';
 import useCardIdCntMap from '../../hooks/atoms/packs/useCardCollections';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+
+// import Dropdown from '../../components/Dropdown/Dropdown';
+// import PokemonType from '../../components/PokemonType/CardType';
 
 interface CollectionContentProps {
   onClose: () => void;
@@ -34,9 +35,9 @@ export default function CollectionContent(props: CollectionContentProps) {
   const [starSet] = useStarIdSet();
   const [crownSet] = useCrownIdSet();
   const [isCardDetailViewed, setIsCardDetailViewed] = useState(false);
-  const [targetRarity, setTargetRarity] = useState<SelectType<Rarity>>('All');
-  const [targetPokemonType, setTargetPokemonType] =
-    useState<SelectType<PokemonType>>('All');
+  // const [targetRarity, setTargetRarity] = useState<SelectType<Rarity>>('All');
+  // const [targetPokemonType, setTargetPokemonType] =
+  //   useState<SelectType<PokemonType>>('All');
   const [cardId, setCardId] = useState('');
   return (
     <>
