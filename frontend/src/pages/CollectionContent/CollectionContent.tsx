@@ -20,6 +20,9 @@ import useCardIdCntMap from '../../hooks/atoms/packs/useCardCollections';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
+// import Dropdown from '../../components/Dropdown/Dropdown';
+// import PokemonType from '../../components/PokemonType/CardType';
+
 interface CollectionContentProps {
   onClose: () => void;
 }
@@ -32,6 +35,9 @@ export default function CollectionContent(props: CollectionContentProps) {
   const [starSet] = useStarIdSet();
   const [crownSet] = useCrownIdSet();
   const [isCardDetailViewed, setIsCardDetailViewed] = useState(false);
+  // const [targetRarity, setTargetRarity] = useState<SelectType<Rarity>>('All');
+  // const [targetPokemonType, setTargetPokemonType] =
+  //   useState<SelectType<PokemonType>>('All');
   const [cardId, setCardId] = useState('');
   return (
     <>
@@ -63,6 +69,59 @@ export default function CollectionContent(props: CollectionContentProps) {
             >{`${crownSet.size}/${A1_CROWN_CARD_COUNT}`}</span>
           </div>
         </div>
+        {/* <div css={S.dropdownRow}>
+          <Dropdown
+            defaultValue={'All'}
+            values={
+              [
+                'All',
+                'crown',
+                's3',
+                's2',
+                's1',
+                'r4',
+                'r3',
+                'r2',
+                'r1',
+              ] as SelectType<Rarity>[]
+            }
+            render={rarity =>
+              rarity === 'All' ? (
+                t('modal.collection.entire-rarity')
+              ) : (
+                <Rarity rarity={rarity} />
+              )
+            }
+            onChange={rarity => setTargetRarity(rarity)}
+          />
+          <Dropdown
+            defaultValue={'All'}
+            values={
+              [
+                'All',
+                'Grass',
+                'Fire',
+                'Water',
+                'Lightning',
+                'Psychic',
+                'Fighting',
+                'Darkness',
+                'Metal',
+                'Dragon',
+                'Colorless',
+              ] as SelectType<PokemonType>[]
+            }
+            render={type =>
+              type === 'All' ? (
+                t('modal.collection.entire-type')
+              ) : (
+                <PokemonType pokemonType={type} />
+              )
+            }
+            onChange={type => setTargetPokemonType(type)}
+          />
+        </div> */}
+
         {/* <div css={S.selectRow}>
           <div>타입</div>
           <div>등급</div>

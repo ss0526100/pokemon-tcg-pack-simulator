@@ -9,6 +9,7 @@ import BottomButtonContainer from '../../../components/BottomButtonContainer/Bot
 import Button from '../../../components/Button/Button';
 import COLOR from '../../../constant/colors';
 import CollectionContent from '../../CollectionContent/CollectionContent';
+import ControlledCheckbox from '../../../components/ControlledCheckbox/ControlledCheckbox';
 import LeftArrowSvg from '../../../components/svgs/LeftArrowSvg';
 import MobileTopRightHamburger from '../../../components/MobileTopRightHamburger/MobileTopRightHamburger';
 import Modal from '../../../components/Modal/Modal';
@@ -25,6 +26,7 @@ import useBGM from '../../../hooks/atoms/bgm/useBGM';
 import useBGMUtils from '../../../hooks/atoms/bgm/useBGMUtils';
 import { useNavigate } from 'react-router-dom';
 import usePackCount from '../../../hooks/atoms/packs/usePackCount';
+import usePackOpenOneTime from '../../../hooks/atoms/packs/usePackOpenOneTime';
 import { useTranslation } from 'react-i18next';
 
 interface PackSelectProps {
@@ -91,6 +93,7 @@ export default function PackSelect(props: PackSelectProps) {
   const [modalContent, setModalContent] = useState<ModalContent>('Statistics');
   const [isCollectionContentViewed, setIsCollectionContentViewed] =
     useState(false);
+  const [packOpenOneTime, setPackOpenOneTime] = usePackOpenOneTime();
 
   const [packTypeIndex, setPackTypeIndex] = useState(() => {
     if (!startPackType) return 0;
@@ -232,6 +235,18 @@ export default function PackSelect(props: PackSelectProps) {
           <div css={S.svgContainer}>
             <RightArrowSvg size={30} />
           </div>
+        </div>
+        <div
+          css={S.checkboxContainer}
+          onClick={() => setPackOpenOneTime(prev => !prev)}
+        >
+          <ControlledCheckbox
+            checked={packOpenOneTime}
+            fill={COLOR.PRIMARY_COLOR}
+            css={S.checkbox}
+            size={30}
+          />
+          {t('pack-simulator.select-pack.open-one-time')}
         </div>
       </div>
       <BottomButtonContainer css={S.buttonContainer} direction='row'>

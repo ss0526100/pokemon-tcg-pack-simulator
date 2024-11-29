@@ -23,6 +23,11 @@ export const rowContainer = css`
 
   width: 100%;
   height: 45%;
+
+  & > * {
+    aspect-ratio: 1 / 1.395;
+    width: 33%;
+  }
 `;
 
 export const firstRow = css`

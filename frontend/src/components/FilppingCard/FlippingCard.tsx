@@ -48,6 +48,7 @@ export default function FlippingCard(props: FlippingCard) {
             rarity: 's3',
             expansion: 'A1',
             category: 'normal',
+            type: 'nonPokemon',
           }}
         />
       </div>

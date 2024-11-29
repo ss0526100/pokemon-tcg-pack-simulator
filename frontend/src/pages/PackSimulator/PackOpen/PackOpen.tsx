@@ -6,7 +6,9 @@ import BGMSvg from '../../../components/SoundSvg/SoundSvg';
 import BottomButtonContainer from '../../../components/BottomButtonContainer/BottomButtonContainer';
 import Button from '../../../components/Button/Button';
 import COLOR from '../../../constant/colors';
+import Card from '../../../components/Card/Card';
 import CollectionContent from '../../CollectionContent/CollectionContent';
+import ItemDisplay from '../../../components/ItemDisplay/ItemDisplay';
 import LeftArrowSvg from '../../../components/svgs/LeftArrowSvg';
 import MobileTopRightHamburger from '../../../components/MobileTopRightHamburger/MobileTopRightHamburger';
 import Modal from '../../../components/Modal/Modal';
@@ -23,6 +25,7 @@ import useBGM from '../../../hooks/atoms/bgm/useBGM';
 import useBGMUtils from '../../../hooks/atoms/bgm/useBGMUtils';
 import { useNavigate } from 'react-router-dom';
 import usePackCount from '../../../hooks/atoms/packs/usePackCount';
+import usePackOpenOneTime from '../../../hooks/atoms/packs/usePackOpenOneTime';
 import usePacksIndex from './usePacksIndex';
 import { useTranslation } from 'react-i18next';
 
@@ -67,6 +70,8 @@ export default function PackOpen(props: PackOpenProps) {
 
   const [isCollectionContentViewed, setIsCollectionContentViewed] =
     useState(false);
+
+  const [packOpenOneTime] = usePackOpenOneTime();
 
   const {
     cardLength,
@@ -133,8 +138,9 @@ export default function PackOpen(props: PackOpenProps) {
     handleGoSelect,
     reopen,
   ]);
-  return (
-    <section css={S.layout}>
+
+  const mobileHamburger = (
+    <>
       <MobileTopRightHamburger>
         <MobileTopRightHamburger.Option
           icon={<ThreePacksSvg fill={COLOR.PRIMARY_COLOR} size={17} />}
@@ -188,6 +194,61 @@ export default function PackOpen(props: PackOpenProps) {
           />
         )}
       </MobileTopRightHamburger.OptionPlace>
+    </>
+  );
+  if (packOpenOneTime) {
+    return (
+      <section css={S.layout}>
+        {mobileHamburger}
+        <div css={S.packOpenOneTimeContainer}>
+          {packs.map((pack, idx) => (
+            <div css={S.packOpenOneTimePackContainer} key={idx}>
+              <ItemDisplay>
+                {pack.map((card, idx) => (
+                  <div css={S.packOpenOneTimeCardContainer} key={idx}>
+                    <Card cardInfo={card} />
+                  </div>
+                ))}
+              </ItemDisplay>
+            </div>
+          ))}
+        </div>
+
+        <BottomButtonContainer direction='row' css={S.mobileBottomFixed}>
+          <Button
+            css={S.buttonAnimation}
+            onClick={handleGoSelect}
+            key={'selectButton'}
+          >
+            {t('pack-simulator.open-pack.choose-pack')}
+          </Button>
+        </BottomButtonContainer>
+
+        <BottomButtonContainer direction='column' css={S.bottomContainer}>
+          <Button css={S.buttonAnimation} primary onClick={reopen}>
+            {t('pack-simulator.open-pack.reopen')}
+            {` (${getPackDescription(
+              language,
+              nowPackType,
+              isOnePack ? 1 : packCount
+            )})`}
+          </Button>
+
+          <Button
+            css={S.buttonAnimation}
+            secondary
+            onClick={handleGoSelect}
+            key={'selectButton'}
+          >
+            {t('pack-simulator.open-pack.choose-pack')}
+          </Button>
+        </BottomButtonContainer>
+      </section>
+    );
+  }
+  return (
+    <section css={S.layout}>
+      {mobileHamburger}
       <div css={S.sectionContainer}>
         <div css={S.selectContainer(!isFirstCard)} onClick={setBeforeCard}>
           {!isFirstCard && (

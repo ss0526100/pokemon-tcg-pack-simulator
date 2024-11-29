@@ -1,10 +1,10 @@
 import getRandom from '../../utils/getRandom';
 
 export default class RandomPickerByTuple<T> {
-  private nameList: T[];
+  private valueList: T[];
   private accList: number[];
   constructor(percentTuple: PercentTuple<T>) {
-    this.nameList = percentTuple.map(c => c[0]);
+    this.valueList = percentTuple.map(c => c[0]);
 
     this.accList = this.getAccList(percentTuple);
   }
@@ -13,8 +13,8 @@ export default class RandomPickerByTuple<T> {
     const sumOfPercent = this.accList[this.accList.length - 1];
     const nowPercent = getRandom() * sumOfPercent;
     const nowIndex = this.accList.findIndex(c => nowPercent <= c);
-    if (nowIndex === -1) return this.nameList[this.nameList.length - 1];
-    return this.nameList[nowIndex];
+    if (nowIndex === -1) return this.valueList[this.valueList.length - 1];
+    return this.valueList[nowIndex];
   }
 
   private getAccList(percentTuple: PercentTuple<T>) {

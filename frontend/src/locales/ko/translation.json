@@ -47,7 +47,8 @@
       "choose-pack": "팩 선택하러 가기"
     },
     "select-pack": {
-      "open-pack": "팩 개봉하기"
+      "open-pack": "팩 개봉하기",
+      "open-one-time": "팩 한 번에 개봉하기"
     },
     "description": {
       "pc-span-1": "PC환경에서는 키보드를 사용할 수 있습니다.",
@@ -78,7 +79,9 @@
       "confirm": "확인"
     },
     "collection": {
-      "no-card": "얻은 카드가 없습니다."
+      "no-card": "얻은 카드가 없습니다.",
+      "entire-rarity": "모든 희귀도",
+      "entire-type": "모든 타입"
     },
     "confirm": "확인"
   },
