@@ -24,9 +24,12 @@ export const RARITY_GRADE_LIST: Rarity[] = [
   'r1',
 ];
 
-export const RARE_PACK_RARITY_PERCENTAGE_TUPLES: RarePackPercentTuple = [
-  ['rare', 0.05],
-  ['normal', 99.95],
+// true:rare
+// false:normal
+//문자열로 구현 시 100팩 개봉하면 속도가 느려지기 때문에 boolean구현
+export const IS_RARE_PACK_PERCENTAGE_TUPLES: RarePackPercentTuple = [
+  [false, 99.95],
+  [true, 0.05],
 ];
 
 export const CHARIZARD_RARE_PACK_PERCENT_TUPLES: RarityPercentTuple = [
