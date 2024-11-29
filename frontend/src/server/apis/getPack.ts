@@ -81,16 +81,17 @@ const getNormalPack = (type: PackType) => {
 const emptyPack = Array.from({ length: 5 });
 const getRarePack = (type: PackType) => {
   const generator = rarePackIdGenerator[type];
-  return emptyPack.map(() => {
+  const result = emptyPack.map(() => {
     const nowId = generator.getId();
     if (!nowId) return MISSING_NO_CARD;
     const nowCard = A1_CARD_ID_MAP.get(nowId);
     if (!nowCard) return MISSING_NO_CARD;
     return nowCard;
   });
+  return result;
 };
 export default function getPack(type: PackType) {
   const isRarePack = isRarePackPicker.getRandomValue();
-  if (isRarePack) getRarePack(type);
+  if (isRarePack) return getRarePack(type);
   return getNormalPack(type);
 }
