@@ -9,7 +9,7 @@ import ControlledStepper from '../../../components/ControlledStepper/ControlledS
 import usePackCount from '../../../hooks/atoms/packs/usePackCount';
 import { useTranslation } from 'react-i18next';
 
-const packAdjustCounts = [10, 25, 37, 100];
+const packAdjustCounts = [10, 25, 37, 135];
 export default function AdjustPackCountContent(
   props: AdjustPackCountContentProps
 ) {
@@ -21,7 +21,7 @@ export default function AdjustPackCountContent(
     <section css={S.content}>
       <ControlledStepper
         min={10}
-        max={100}
+        max={135}
         count={packCount}
         onChange={setPackCount}
       />
