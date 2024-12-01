@@ -23,11 +23,15 @@ export const counter = css`
   align-items: center;
 
   width: 40%;
+  height: 100%;
   padding: 20px;
 
   font-size: 3rem;
   font-weight: 700;
   color: ${COLOR.PRIMARY_COLOR};
+  text-align: center;
+
+  border: 0;
 `;
 
 export const buttonWrapper = css`

@@ -6,6 +6,7 @@ import * as S from './AdjustPackCountContent.styles';
 
 import Button from '../../../components/Button/Button';
 import ControlledStepper from '../../../components/ControlledStepper/ControlledStepper';
+import { css } from '@emotion/react';
 import usePackCount from '../../../hooks/atoms/packs/usePackCount';
 import { useTranslation } from 'react-i18next';
 
@@ -25,7 +26,13 @@ export default function AdjustPackCountContent(
         count={packCount}
         onChange={setPackCount}
       />
-
+      <span
+        css={css`
+          font-size: 15px;
+        `}
+      >
+        (10 ~ 135)
+      </span>
       <div css={S.recommendCountContainer}>
         {packAdjustCounts.map(cnt => (
           <Button

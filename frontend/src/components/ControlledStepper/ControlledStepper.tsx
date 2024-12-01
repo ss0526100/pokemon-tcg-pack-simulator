@@ -1,6 +1,6 @@
 import * as S from './ControlledStepper.styles';
 
-import { Dispatch, useCallback, useEffect } from 'react';
+import { ChangeEvent, Dispatch, useCallback, useEffect } from 'react';
 
 import COLOR from '../../constant/colors';
 import MinusSvg from '../svgs/MinusSvg';
@@ -44,13 +44,30 @@ export default function Stepper(props: StepperProps) {
 
     return () => document.removeEventListener('keydown', handleKeyDown);
   }, [decreaseCount, increaseCount]);
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const stringValue = e.currentTarget.value;
+    const value = Number(stringValue);
+    if (isNaN(value)) return (e.target.value = stringValue);
+    if (value < min) {
+      onChange(min);
+      setTimeout(() => (e.target.value = stringValue), 0);
+      return;
+    }
+
+    if (value > max) {
+      onChange(max);
+      setTimeout(() => (e.target.value = stringValue), 0);
+      return;
+    }
+    return onChange(value);
+  };
 
   return (
     <div css={S.container}>
       <div css={S.buttonWrapper} onClick={decreaseCount}>
         {min < count && <MinusSvg fill={COLOR.PRIMARY_COLOR} size={30} />}
       </div>
-      <div css={S.counter}>{count}</div>
+      <input value={count} css={S.counter} onChange={handleChange} />
       <div css={S.buttonWrapper} onClick={increaseCount}>
         {count < max && <PlusSvg fill={COLOR.PRIMARY_COLOR} size={30} />}
       </div>
