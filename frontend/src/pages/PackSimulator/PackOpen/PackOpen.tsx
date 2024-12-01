@@ -91,11 +91,11 @@ export default function PackOpen(props: PackOpenProps) {
   const packCount = usePackCount()[0];
 
   const reopen = useCallback(() => {
-    if (!isLastCard) return;
+    if (!packOpenOneTime && !isLastCard) return;
     countLeftCards();
     initPackIndex();
     goOpen();
-  }, [isLastCard, countLeftCards, initPackIndex, goOpen]);
+  }, [isLastCard, packOpenOneTime, countLeftCards, initPackIndex, goOpen]);
 
   const handleGoSelect = useCallback(() => {
     countLeftCards();
