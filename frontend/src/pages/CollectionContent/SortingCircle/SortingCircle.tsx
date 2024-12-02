@@ -94,7 +94,7 @@ export default function SortingCircle(props: SortingCircleProps) {
       {isModalOpened && (
         <Modal position='bottom' onClose={() => setIsModalOpened(false)}>
           <div css={S.modalContent}>
-            <div css={S.modalHeader}>정렬</div>
+            <div css={S.modalHeader}>{i18n.t('modal.collection.sorting')}</div>
             <ContentContour />
             <div css={S.modalItemContainer}>
               <ModalItem
@@ -118,7 +118,7 @@ export default function SortingCircle(props: SortingCircleProps) {
               />
             </div>
             <Button secondary onClick={() => setIsModalOpened(false)}>
-              닫기
+              {i18n.t('modal.confirm')}
             </Button>
           </div>
         </Modal>
