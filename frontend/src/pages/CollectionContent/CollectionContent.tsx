@@ -7,6 +7,10 @@ import {
   A1_STAR_CARD_COUNT,
   MISSING_NO_CARD,
 } from '../../server/constants/cards/a1';
+import SortingCircle, {
+  SortOrder,
+  SortStandard,
+} from './SortingCircle/SortingCircle';
 import {
   useCrownIdSet,
   useRarityIdSet,
@@ -15,17 +19,82 @@ import {
 
 import Button from '../../components/Button/Button';
 import Card from '../../components/Card/Card';
+import Dropdown from '../../components/Dropdown/Dropdown';
+import PokemonType from '../../components/PokemonType/CardType';
 import Rarity from '../../components/Rarity/Rarity';
+import getCard from '../../server/apis/getCard';
 import useCardIdCntMap from '../../hooks/atoms/packs/useCardCollections';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-// import Dropdown from '../../components/Dropdown/Dropdown';
-// import PokemonType from '../../components/PokemonType/CardType';
-
 interface CollectionContentProps {
   onClose: () => void;
 }
+
+const typeOrderRecord: Record<PokemonType, number> = {
+  Grass: 0,
+  Fire: 1,
+  Water: 2,
+  Lightning: 3,
+  Psychic: 4,
+  Fighting: 5,
+  Darkness: 6,
+  Metal: 7,
+  Dragon: 8,
+  Colorless: 9,
+  nonPokemon: 10,
+};
+
+const rarityOrder: Record<Rarity, number> = {
+  crown: 0,
+  s3: 1,
+  s2: 2,
+  s1: 3,
+  r4: 4,
+  r3: 5,
+  r2: 6,
+  r1: 7,
+};
+
+const filterCard = (
+  idList: string[],
+  type: SelectType<PokemonType>,
+  rarity: SelectType<Rarity>,
+  standard: SortStandard,
+  order: SortOrder
+) => {
+  const typeFilteredList = idList.filter(id => {
+    const card = getCard(id);
+    return type === 'All' || card.type === type;
+  });
+
+  const finalFilteredCard = typeFilteredList.filter(id => {
+    const card = getCard(id);
+    return rarity === 'All' || card?.rarity === rarity;
+  });
+
+  const nowFlag = order === 'asc' ? 1 : -1;
+
+  if (standard === 'id') {
+    return finalFilteredCard.sort(
+      (a, b) => nowFlag * getCard(a).id.localeCompare(getCard(b).id)
+    );
+  }
+
+  if (standard === 'type') {
+    return finalFilteredCard.sort(
+      (a, b) =>
+        nowFlag *
+        (typeOrderRecord[getCard(a).type] - typeOrderRecord[getCard(b).type])
+    );
+  }
+
+  return finalFilteredCard.sort(
+    (a, b) =>
+      nowFlag *
+      (rarityOrder[getCard(a).rarity] - rarityOrder[getCard(b).rarity])
+  );
+};
 
 export default function CollectionContent(props: CollectionContentProps) {
   const { t } = useTranslation();
@@ -35,10 +104,21 @@ export default function CollectionContent(props: CollectionContentProps) {
   const [starSet] = useStarIdSet();
   const [crownSet] = useCrownIdSet();
   const [isCardDetailViewed, setIsCardDetailViewed] = useState(false);
-  // const [targetRarity, setTargetRarity] = useState<SelectType<Rarity>>('All');
-  // const [targetPokemonType, setTargetPokemonType] =
-  //   useState<SelectType<PokemonType>>('All');
+  const [targetRarity, setTargetRarity] = useState<SelectType<Rarity>>('All');
+  const [targetPokemonType, setTargetPokemonType] =
+    useState<SelectType<PokemonType>>('All');
+  const [sortStandard, setSortStandard] = useState<SortStandard>('id');
+  const [sortOrder, setSortOrder] = useState<SortOrder>('asc');
+
   const [cardId, setCardId] = useState('');
+
+  const nowIds = filterCard(
+    [...cardIdCntMap.keys()].sort(),
+    targetPokemonType,
+    targetRarity,
+    sortStandard,
+    sortOrder
+  );
   return (
     <>
       <div css={S.layout}>
@@ -69,7 +149,7 @@ export default function CollectionContent(props: CollectionContentProps) {
             >{`${crownSet.size}/${A1_CROWN_CARD_COUNT}`}</span>
           </div>
         </div>
-        {/* <div css={S.dropdownRow}>
+        <div css={S.dropdownRow}>
           <Dropdown
             defaultValue={'All'}
             values={
@@ -109,31 +189,34 @@ export default function CollectionContent(props: CollectionContentProps) {
                 'Metal',
                 'Dragon',
                 'Colorless',
+                'nonPokemon',
               ] as SelectType<PokemonType>[]
             }
             render={type =>
               type === 'All' ? (
                 t('modal.collection.entire-type')
+              ) : type === 'nonPokemon' ? (
+                t('modal.collection.non-pokemon')
               ) : (
                 <PokemonType pokemonType={type} />
               )
             }
             onChange={type => setTargetPokemonType(type)}
           />
-        </div> */}
+        </div>
 
         {/* <div css={S.selectRow}>
           <div>타입</div>
           <div>등급</div>
           <div>미보유</div>
         </div> */}
-        {cardIdCntMap.size === 0 && (
+        {nowIds.length === 0 && (
           <span css={S.emptyCardFallback}>{t('modal.collection.no-card')}</span>
         )}
 
-        {cardIdCntMap.size > 0 && (
+        {nowIds.length > 0 && (
           <ul css={S.cardList}>
-            {[...cardIdCntMap].sort().map(([id, value]) => {
+            {nowIds.map(id => {
               return (
                 <li
                   css={S.cardContainer}
@@ -144,10 +227,19 @@ export default function CollectionContent(props: CollectionContentProps) {
                   }}
                 >
                   <Card cardInfo={A1_CARD_ID_MAP.get(id) || MISSING_NO_CARD} />
-                  <div css={S.cardCount}>{value}</div>
+                  {cardIdCntMap.get(id) && (
+                    <div css={S.cardCount}>{cardIdCntMap.get(id) || 0}</div>
+                  )}
                 </li>
               );
             })}
+
+            <SortingCircle
+              standard={sortStandard}
+              order={sortOrder}
+              changeStandard={setSortStandard}
+              changeOrder={setSortOrder}
+            />
           </ul>
         )}
         <div css={S.bottomButtonContainer}>

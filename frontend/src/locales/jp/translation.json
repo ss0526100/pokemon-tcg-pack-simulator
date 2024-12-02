@@ -79,7 +79,12 @@
     "collection": {
       "no-card": "獲得したカードはありません。",
       "entire-rarity": "すべてのレアリティ",
-      "entire-type": "すべてのタイプ"
+      "entire-type": "すべてのタイプ",
+      "non-pokemon": "ポケモン以外",
+      "id-standard": "コレクション番号順",
+      "rarity-standard": "レアリティ順",
+      "type-standard": "タイプ順",
+      "sorting": "ソート"
     },
     "confirm": "確認"
   },

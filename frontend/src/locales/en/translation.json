@@ -79,7 +79,12 @@
     "collection": {
       "no-card": "You have no cards obtained.",
       "entire-rarity": "All Rarities",
-      "entire-type": "All Types"
+      "entire-type": "All Types",
+      "non-pokemon": "Non-Pokémon",
+      "id-standard": "By Collection Number",
+      "rarity-standard": "By Rarity",
+      "type-standard": "By Type",
+      "sorting": "Sorting"
     },
     "confirm": "OK"
   },

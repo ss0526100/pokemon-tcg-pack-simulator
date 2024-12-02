@@ -88,6 +88,8 @@ const reset = css`
 
     font-family: Pretendard, sans-serif;
     font-size: 62.5%;
+    font-weight: 600;
+    color: #454f5b;
     vertical-align: baseline;
 
     border: 0;
