@@ -7,6 +7,10 @@ import {
   A1_STAR_CARD_COUNT,
   MISSING_NO_CARD,
 } from '../../server/constants/cards/a1';
+import SortingCircle, {
+  SortOrder,
+  SortStandard,
+} from './SortingCircle/SortingCircle';
 import {
   useCrownIdSet,
   useRarityIdSet,
@@ -38,6 +42,9 @@ export default function CollectionContent(props: CollectionContentProps) {
   // const [targetRarity, setTargetRarity] = useState<SelectType<Rarity>>('All');
   // const [targetPokemonType, setTargetPokemonType] =
   //   useState<SelectType<PokemonType>>('All');
+  const [sortStandard, setSortStandard] = useState<SortStandard>('id');
+  const [sortOrder, setSortOrder] = useState<SortOrder>('asc');
+
   const [cardId, setCardId] = useState('');
   return (
     <>
@@ -148,6 +155,13 @@ export default function CollectionContent(props: CollectionContentProps) {
                 </li>
               );
             })}
+
+            <SortingCircle
+              standard={sortStandard}
+              order={sortOrder}
+              changeStandard={setSortStandard}
+              changeOrder={setSortOrder}
+            />
           </ul>
         )}
         <div css={S.bottomButtonContainer}>
