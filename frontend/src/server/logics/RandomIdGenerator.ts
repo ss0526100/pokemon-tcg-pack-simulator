@@ -1,4 +1,4 @@
-import getRandomElement from '../../utils/getRandomElement';
+import getRandomElement from '@_utils/getRandomElement';
 
 export default class RandomIdGenerator<Rarity extends string> {
   private cardRecords: Record<Rarity, string[]>;

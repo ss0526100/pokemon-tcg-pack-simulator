@@ -10,8 +10,8 @@ import {
   useState,
 } from 'react';
 
-import Card from '../Card/Card';
-import isMobile from '../../utils/isMobile';
+import Card from '@_components/Card/Card';
+import isMobile from '@_utils/isMobile';
 
 interface MovingCardProps extends HTMLProps<HTMLDivElement> {
   cardInfo: CardInfo;

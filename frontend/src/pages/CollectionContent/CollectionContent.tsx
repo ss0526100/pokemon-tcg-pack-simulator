@@ -6,7 +6,7 @@ import {
   A1_RARITY_CARD_COUNT,
   A1_STAR_CARD_COUNT,
   MISSING_NO_CARD,
-} from '../../server/constants/cards/a1';
+} from '@_server/constants/cards/a1';
 import SortingCircle, {
   SortOrder,
   SortStandard,
@@ -15,15 +15,15 @@ import {
   useCrownIdSet,
   useRarityIdSet,
   useStarIdSet,
-} from '../../hooks/atoms/packs/useRaritySet';
+} from '@_hooks/atoms/packs/useRaritySet';
 
-import Button from '../../components/Button/Button';
-import Card from '../../components/Card/Card';
-import Dropdown from '../../components/Dropdown/Dropdown';
-import PokemonType from '../../components/PokemonType/CardType';
-import Rarity from '../../components/Rarity/Rarity';
-import getCard from '../../server/apis/getCard';
-import useCardIdCntMap from '../../hooks/atoms/packs/useCardCollections';
+import Button from '@_components/Button/Button';
+import Card from '@_components/Card/Card';
+import Dropdown from '@_components/Dropdown/Dropdown';
+import PokemonType from '@_components/PokemonType/CardType';
+import Rarity from '@_components/Rarity/Rarity';
+import getCard from '@_server/apis/getCard';
+import useCardIdCntMap from '@_hooks/atoms/packs/useCardCollections';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 

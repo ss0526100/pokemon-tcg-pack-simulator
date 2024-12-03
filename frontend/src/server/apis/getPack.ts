@@ -1,19 +1,19 @@
-import { A1_CARD_ID_MAP, MISSING_NO_CARD } from '../constants/cards/a1';
+import { A1_CARD_ID_MAP, MISSING_NO_CARD } from '@_server/constants/cards/a1';
 import {
   CHARIZARD_PACK_CARD_ID_LIST,
   MEWTWO_PACK_CARD_ID_LIST,
   PIKACHU_PACK_CARD_ID_LIST,
-} from '../constants/packs/a1';
+} from '@_server/constants/packs/a1';
 import {
   CHARIZARD_RARE_PACK_PERCENT_TUPLES,
   IS_RARE_PACK_PERCENTAGE_TUPLES,
   MEWTWO_RARE_PACK_PERCENT_TUPLES,
   NORMAL_PACK_RARITY_PERCENTAGE_LIST_BY_INDEX,
   PIKACHU_RARE_PACK_PERCENT_TUPLES,
-} from '../../constant/service';
+} from '@_constant/service';
 
-import RandomIdGenerator from '../logics/RandomIdGenerator';
-import RandomPickerByTuple from '../logics/RandomPickerByTuple';
+import RandomIdGenerator from '@_server/logics/RandomIdGenerator';
+import RandomPickerByTuple from '@_server/logics/RandomPickerByTuple';
 
 const isRarePackPicker = new RandomPickerByTuple(
   IS_RARE_PACK_PERCENTAGE_TUPLES

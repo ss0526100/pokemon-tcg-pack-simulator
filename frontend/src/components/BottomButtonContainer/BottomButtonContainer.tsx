@@ -2,7 +2,7 @@ import * as S from './BottomButtonContainer.style';
 
 import { HTMLAttributes, ReactElement } from 'react';
 
-import Button from '../Button/Button';
+import Button from '@_components/Button/Button';
 
 type ChildrenType = ReactElement<typeof Button> | null | boolean;
 interface BottomButtonContainerProps extends HTMLAttributes<HTMLDivElement> {

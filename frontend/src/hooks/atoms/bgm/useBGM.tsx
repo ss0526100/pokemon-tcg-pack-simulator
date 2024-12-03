@@ -1,7 +1,7 @@
-import chooseGetChallenge from '../../../assets/audios/bgm/select-get-challenge.m4a';
-import openPack from '../../../assets/audios/bgm/open-pack.m4a';
-import playChallenge from '../../../assets/audios/bgm/play-get-challenge.m4a';
-import selectPack from '../../../assets/audios/bgm/pack-select.m4a';
+import chooseGetChallenge from '@_assets/audios/bgm/select-get-challenge.m4a';
+import openPack from '@_assets/audios/bgm/open-pack.m4a';
+import playChallenge from '@_assets/audios/bgm/play-get-challenge.m4a';
+import selectPack from '@_assets/audios/bgm/pack-select.m4a';
 import { useEffect } from 'react';
 import useIsPlayingBGM from './useIsPlayingBGM';
 import useNowBGM from './useNowBgm';

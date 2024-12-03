@@ -2,8 +2,8 @@ import * as S from './FlippingCard.style';
 
 import { HTMLProps, useState } from 'react';
 
-import CARD_BACK from '../../assets/cards/CardBack.png';
-import Card from '../Card/Card';
+import CARD_BACK from '@_assets/cards/CardBack.png';
+import Card from '@_components/Card/Card';
 
 interface FlippingCard extends HTMLProps<HTMLDivElement> {
   flipped?: boolean;

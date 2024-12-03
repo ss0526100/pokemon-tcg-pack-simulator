@@ -1,8 +1,8 @@
 import * as S from './Card.style';
 
 import { HTMLProps } from 'react';
-import LANGUAGES from '../../constant/language';
-import i18n from '../../locales/i18n';
+import LANGUAGES from '@_constant/language';
+import i18n from '@_locales/i18n';
 
 interface Pack extends HTMLProps<HTMLImageElement> {
   cardInfo: CardInfo;

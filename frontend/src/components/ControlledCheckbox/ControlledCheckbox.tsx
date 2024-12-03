@@ -1,5 +1,5 @@
-import CheckboxSvg from '../svgs/CheckBoxSvg';
-import EmptyCheckboxSvg from '../svgs/EmptyCheckBox';
+import CheckboxSvg from '@_components/svgs/CheckBoxSvg';
+import EmptyCheckboxSvg from '@_components/svgs/EmptyCheckBox';
 import { SVGProps } from 'react';
 
 interface ControlledCheckboxProps extends SVGProps<SVGSVGElement> {

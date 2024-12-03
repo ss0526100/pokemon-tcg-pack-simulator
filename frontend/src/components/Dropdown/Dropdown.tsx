@@ -2,9 +2,9 @@ import * as S from './Dropdown.style';
 
 import { HTMLProps, ReactNode, useEffect, useState } from 'react';
 
-import COLOR from '../../constant/colors';
-import DownArrowSvg from '../svgs/DownArrowSvg';
-import UpArrowSvg from '../svgs/UpArrowSvg';
+import COLOR from '@_constant/colors';
+import DownArrowSvg from '@_components/svgs/DownArrowSvg';
+import UpArrowSvg from '@_components/svgs/UpArrowSvg';
 
 interface DropdownHeaderProps<ValueType extends string | number> {
   onToggle: () => void;

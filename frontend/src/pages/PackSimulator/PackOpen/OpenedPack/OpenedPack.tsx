@@ -1,7 +1,7 @@
 import * as S from './OpenedPack.style';
 
-import Card from '../../../../components/Card/Card';
-import SwipeXDetector from '../../../../components/SwipeXDetector/SwipeXDetector';
+import Card from '@_components/Card/Card';
+import SwipeXDetector from '@_components/SwipeXDetector/SwipeXDetector';
 
 interface OpenedPackProps {
   beforeCard: CardInfo | null;
