@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react-swc';
+import tsconfigPaths from 'vite-tsconfig-paths';
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -7,6 +8,7 @@ export default defineConfig({
     react({
       jsxImportSource: '@emotion/react',
     }),
+    tsconfigPaths(),
   ],
   build: {
     rollupOptions: {
