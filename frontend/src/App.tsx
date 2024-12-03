@@ -4,9 +4,9 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
 import Article from './pages/Article/Article';
 import ErrorPage from './pages/ErrorPage/ErrorPage';
-import GetChallenge from './pages/GetChallenge/GetChallenge';
+import GetChallenge from '@_pages/GetChallenge/GetChallenge';
 import { Global } from '@emotion/react';
-import MainLayout from './layouts/MainLayout/MainLayout';
+import MainLayout from '@_layouts/MainLayout/MainLayout';
 import PackSimulator from './pages/PackSimulator/PackSimulator';
 import { RecoilRoot } from 'recoil';
 import StartPage from './pages/StartPage/StartPage';

@@ -28,6 +28,8 @@ type CardId = string;
 
 type Language = 'ko-KR' | 'en-US' | 'ko' | 'en' | 'ja' | 'ja-JP';
 
+type LanguageSet<T> = Record<Language | 'default', T>;
+
 interface CardInfo {
   id: CardId;
   cardName: string;

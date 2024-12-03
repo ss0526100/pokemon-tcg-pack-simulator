@@ -2,7 +2,7 @@ import * as S from './ToolbarItem.style';
 
 import { Fragment, HTMLAttributes, ReactNode } from 'react';
 
-import Button from '../Button/Button';
+import Button from '@_components/Button/Button';
 
 interface ToolbarItemProps extends HTMLAttributes<HTMLDivElement> {
   svg: ReactNode;

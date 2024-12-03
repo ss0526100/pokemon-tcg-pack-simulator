@@ -81,7 +81,11 @@
     "collection": {
       "no-card": "얻은 카드가 없습니다.",
       "entire-rarity": "모든 희귀도",
-      "entire-type": "모든 타입"
+      "entire-type": "모든 타입",
+      "non-pokemon": "비 포켓몬",
+      "id-standard": "컬렉션 넘버 순",
+      "rarity-standard": "희귀도 순",
+      "type-standard": "타입 순"
     },
     "confirm": "확인"
   },

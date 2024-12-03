@@ -1,15 +1,15 @@
 import * as S from './CardType.styles';
 
-import ColorlessPng from '../../assets/types/colorless.png';
-import DarknessPng from '../../assets/types/darkness.png';
-import DragonPng from '../../assets/types/dragon.png';
-import FightingPng from '../../assets/types/fighting.png';
-import FirePng from '../../assets/types/fire.png';
-import GrassPng from '../../assets/types/grass.png';
-import LightningPng from '../../assets/types/lightning.png';
-import MetalPng from '../../assets/types/metal.png';
-import PsychicPng from '../../assets/types/psychic.png';
-import WaterPng from '../../assets/types/water.png';
+import ColorlessPng from '@_assets/types/colorless.png';
+import DarknessPng from '@_assets/types/darkness.png';
+import DragonPng from '@_assets/types/dragon.png';
+import FightingPng from '@_assets/types/fighting.png';
+import FirePng from '@_assets/types/fire.png';
+import GrassPng from '@_assets/types/grass.png';
+import LightningPng from '@_assets/types/lightning.png';
+import MetalPng from '@_assets/types/metal.png';
+import PsychicPng from '@_assets/types/psychic.png';
+import WaterPng from '@_assets/types/water.png';
 
 interface CardTypeProps {
   pokemonType: PokemonType;

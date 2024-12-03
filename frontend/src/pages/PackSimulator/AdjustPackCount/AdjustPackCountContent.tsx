@@ -4,12 +4,13 @@ interface AdjustPackCountContentProps {
 
 import * as S from './AdjustPackCountContent.styles';
 
-import Button from '../../../components/Button/Button';
-import ControlledStepper from '../../../components/ControlledStepper/ControlledStepper';
-import usePackCount from '../../../hooks/atoms/packs/usePackCount';
+import Button from '@_components/Button/Button';
+import ControlledStepper from '@_components/ControlledStepper/ControlledStepper';
+import { css } from '@emotion/react';
+import usePackCount from '@_hooks/atoms/packs/usePackCount';
 import { useTranslation } from 'react-i18next';
 
-const packAdjustCounts = [10, 25, 37, 100];
+const packAdjustCounts = [10, 25, 37, 135];
 export default function AdjustPackCountContent(
   props: AdjustPackCountContentProps
 ) {
@@ -21,11 +22,17 @@ export default function AdjustPackCountContent(
     <section css={S.content}>
       <ControlledStepper
         min={10}
-        max={100}
+        max={135}
         count={packCount}
         onChange={setPackCount}
       />
-
+      <span
+        css={css`
+          font-size: 15px;
+        `}
+      >
+        (10 ~ 135)
+      </span>
       <div css={S.recommendCountContainer}>
         {packAdjustCounts.map(cnt => (
           <Button

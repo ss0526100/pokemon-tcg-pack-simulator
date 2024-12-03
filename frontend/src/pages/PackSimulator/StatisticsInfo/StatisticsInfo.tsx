@@ -1,8 +1,8 @@
-import COLOR from '../../../constant/colors';
-import Modal from '../../../components/Modal/Modal';
+import COLOR from '@_constant/colors';
+import Modal from '@_components/Modal/Modal';
 import StatisticContent from './StatisticContent/StatisticContent';
-import StatisticsSvg from '../../../components/svgs/StatisticsSvg';
-import ToolbarItem from '../../../components/ToolbarItem/ToolbarItem';
+import StatisticsSvg from '@_components/svgs/StatisticsSvg';
+import ToolbarItem from '@_components/ToolbarItem/ToolbarItem';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 

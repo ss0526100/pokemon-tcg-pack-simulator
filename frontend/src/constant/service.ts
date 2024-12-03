@@ -11,7 +11,7 @@ import {
   PIKACHU_RARE_PACK_S1_PERCENT,
   PIKACHU_RARE_PACK_S2_PERCENT,
   PIKACHU_RARE_PACK_S3_PERCENT,
-} from '../server/constants/packs/a1';
+} from '@_server/constants/packs/a1';
 
 export const RARITY_GRADE_LIST: Rarity[] = [
   'crown',

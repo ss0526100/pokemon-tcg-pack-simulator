@@ -9,8 +9,8 @@ import {
   useState,
 } from 'react';
 
-import Button from '../Button/Button';
-import HamburgerSvg from '../svgs/HamgurgerSvg';
+import Button from '@_components/Button/Button';
+import HamburgerSvg from '@_components/svgs/HamgurgerSvg';
 
 export default function MobileTopRightHamburger(
   props: SVGProps<SVGSVGElement>

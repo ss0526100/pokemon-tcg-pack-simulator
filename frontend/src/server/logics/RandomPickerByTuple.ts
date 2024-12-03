@@ -1,4 +1,4 @@
-import getRandom from '../../utils/getRandom';
+import getRandom from '@_utils/getRandom';
 
 export default class RandomPickerByTuple<T> {
   private valueList: T[];

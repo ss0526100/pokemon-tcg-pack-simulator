@@ -3,17 +3,17 @@ import * as S from './PackSimulator.style';
 import { useCallback, useEffect, useState } from 'react';
 
 import AdjustPackCount from './AdjustPackCount/AdjustPackCount';
-import BGMOnOffToolbar from '../ToolbarItems/BGMOnOffToolbar';
-import COLOR from '../../constant/colors';
-import CardCollectionToolbar from '../ToolbarItems/CardCollectionToolbar';
-import GameLayout from '../../layouts/GameLayout/GameLayout';
+import BGMOnOffToolbar from '@_pages/ToolbarItems/BGMOnOffToolbar';
+import COLOR from '@_constant/colors';
+import CardCollectionToolbar from '@_pages/ToolbarItems/CardCollectionToolbar';
+import GameLayout from '@_layouts/GameLayout/GameLayout';
 import PackOpen from './PackOpen/PackOpen';
 import PackSelect from './PackSelect/PackSelect';
-import PokeBallSvg from '../../components/svgs/PokeBallSvg';
+import PokeBallSvg from '@_components/svgs/PokeBallSvg';
 import StatisticsInfo from './StatisticsInfo/StatisticsInfo';
-import ToolbarItem from '../../components/ToolbarItem/ToolbarItem';
-import getPacks from '../../server/apis/getPacks';
-import isMobile from '../../utils/isMobile';
+import ToolbarItem from '@_components/ToolbarItem/ToolbarItem';
+import getPacks from '@_server/apis/getPacks';
+import isMobile from '@_utils/isMobile';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 

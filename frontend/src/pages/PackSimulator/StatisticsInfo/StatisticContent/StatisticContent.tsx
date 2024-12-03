@@ -1,13 +1,13 @@
 import * as S from './StatisticContent.style';
 
-import Button from '../../../../components/Button/Button';
-import Rarity from '../../../../components/Rarity/Rarity';
+import Button from '@_components/Button/Button';
+import Rarity from '@_components/Rarity/Rarity';
 import StatisticItem from './StatisticItem';
-import useCardCount from '../../../../hooks/atoms/packs/useCardCount';
-import useGetChallengeCnt from '../../../../hooks/atoms/packs/useGetChallengeCnt';
-import useOpenedPackCount from '../../../../hooks/atoms/packs/useOpenedPackCount';
-import usePackUtil from '../../../../hooks/atoms/packs/usePackUtil';
-import useRarityCntMap from '../../../../hooks/atoms/packs/useRarityCntMap';
+import useCardCount from '@_hooks/atoms/packs/useCardCount';
+import useGetChallengeCnt from '@_hooks/atoms/packs/useGetChallengeCnt';
+import useOpenedPackCount from '@_hooks/atoms/packs/useOpenedPackCount';
+import usePackUtil from '@_hooks/atoms/packs/usePackUtil';
+import useRarityCntMap from '@_hooks/atoms/packs/useRarityCntMap';
 import { useTranslation } from 'react-i18next';
 
 interface StatisticContentProps {

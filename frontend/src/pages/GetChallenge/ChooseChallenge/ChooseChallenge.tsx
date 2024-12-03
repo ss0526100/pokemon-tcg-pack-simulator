@@ -2,24 +2,24 @@ import * as S from './ChooseChallenge.style';
 
 import { forwardRef, useState } from 'react';
 
-import { A1_CARD_LIST } from '../../../server/constants/cards/a1';
-import BGMSvg from '../../../components/SoundSvg/SoundSvg';
-import Button from '../../../components/Button/Button';
-import COLOR from '../../../constant/colors';
-import Card from '../../../components/Card/Card';
-import CollectionContent from '../../CollectionContent/CollectionContent';
+import { A1_CARD_LIST } from '@_server/constants/cards/a1';
+import BGMSvg from '@_components/SoundSvg/SoundSvg';
+import Button from '@_components/Button/Button';
+import COLOR from '@_constant/colors';
+import Card from '@_components/Card/Card';
+import CollectionContent from '@_pages/CollectionContent/CollectionContent';
 import ConfirmContent from './ConfirmContent/ConfirmContent';
-import ItemDisplay from '../../../components/ItemDisplay/ItemDisplay';
-import MobileTopRightHamburger from '../../../components/MobileTopRightHamburger/MobileTopRightHamburger';
-import Modal from '../../../components/Modal/Modal';
-import PokeBallSvg from '../../../components/svgs/PokeBallSvg';
-import SixPacksSvg from '../../../components/svgs/SixPacksSvg';
-import StatisticContent from '../../PackSimulator/StatisticsInfo/StatisticContent/StatisticContent';
-import StatisticsSvg from '../../../components/svgs/StatisticsSvg';
-import i18n from '../../../locales/i18n';
-import useBGM from '../../../hooks/atoms/bgm/useBGM';
-import useBGMUtils from '../../../hooks/atoms/bgm/useBGMUtils';
-import useIsPlayingBGM from '../../../hooks/atoms/bgm/useIsPlayingBGM';
+import ItemDisplay from '@_components/ItemDisplay/ItemDisplay';
+import MobileTopRightHamburger from '@_components/MobileTopRightHamburger/MobileTopRightHamburger';
+import Modal from '@_components/Modal/Modal';
+import PokeBallSvg from '@_components/svgs/PokeBallSvg';
+import SixPacksSvg from '@_components/svgs/SixPacksSvg';
+import StatisticContent from '@_pages/PackSimulator/StatisticsInfo/StatisticContent/StatisticContent';
+import StatisticsSvg from '@_components/svgs/StatisticsSvg';
+import i18n from '@_locales/i18n';
+import useBGM from '@_hooks/atoms/bgm/useBGM';
+import useBGMUtils from '@_hooks/atoms/bgm/useBGMUtils';
+import useIsPlayingBGM from '@_hooks/atoms/bgm/useIsPlayingBGM';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
@@ -33,7 +33,7 @@ function ChallengeBox(props: ChallengeBoxProps) {
     <div css={S.boxContainer} onClick={onClick}>
       <ItemDisplay>
         {pack.map(card => (
-          <Card cardInfo={card} key={card.id} />
+          <Card cardImageSet={card.imgSrc} key={card.id} />
         ))}
       </ItemDisplay>
     </div>

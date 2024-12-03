@@ -1,8 +1,8 @@
 import AdjustPackCountContent from './AdjustPackCountContent';
-import COLOR from '../../../constant/colors';
-import Modal from '../../../components/Modal/Modal';
-import PlusMinusSvg from '../../../components/svgs/PlusMinusSvg';
-import ToolbarItem from '../../../components/ToolbarItem/ToolbarItem';
+import COLOR from '@_constant/colors';
+import Modal from '@_components/Modal/Modal';
+import PlusMinusSvg from '@_components/svgs/PlusMinusSvg';
+import ToolbarItem from '@_components/ToolbarItem/ToolbarItem';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 

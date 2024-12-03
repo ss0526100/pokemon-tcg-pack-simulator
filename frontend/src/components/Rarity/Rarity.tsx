@@ -1,8 +1,8 @@
 import * as S from './Rarity.styles';
 
-import crownImg from '../../assets/rarity/crown.png';
-import rarityImg from '../../assets/rarity/rarity.png';
-import starImg from '../../assets/rarity/star.png';
+import crownImg from '@_assets/rarity/crown.png';
+import rarityImg from '@_assets/rarity/rarity.png';
+import starImg from '@_assets/rarity/star.png';
 
 interface RarityProps {
   rarity: Rarity;
