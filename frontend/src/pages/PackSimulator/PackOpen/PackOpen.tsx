@@ -206,7 +206,7 @@ export default function PackOpen(props: PackOpenProps) {
               <ItemDisplay>
                 {pack.map((card, idx) => (
                   <div css={S.packOpenOneTimeCardContainer} key={idx}>
-                    <Card cardInfo={card} />
+                    <Card cardImageSet={card.imgSrc} />
                   </div>
                 ))}
               </ItemDisplay>
