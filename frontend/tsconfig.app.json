@@ -29,7 +29,7 @@
     "paths": {
       "@_assets/*": ["assets/*"],
       "@_components/*": ["components/*"],
-      "@_constants/*": ["constants/*"],
+      "@_constant/*": ["constant/*"],
       "@_hooks/*": ["hooks/*"],
       "@_layouts/*": ["layouts/*"],
       "@_locales/*": ["locales/*"],
