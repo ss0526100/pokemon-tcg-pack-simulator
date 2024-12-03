@@ -24,7 +24,7 @@ export default function ConfirmContent(props: ConfirmContentProps) {
         <div css={S.displayContainer}>
           <ItemDisplay>
             {pack.map(card => (
-              <Card cardInfo={card} key={card.id} />
+              <Card cardImageSet={card.imgSrc} key={card.id} />
             ))}
           </ItemDisplay>
         </div>

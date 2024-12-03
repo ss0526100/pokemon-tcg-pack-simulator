@@ -34,16 +34,16 @@ export default function OpenedPack(props: OpenedPackProps) {
       >
         {nextCard && (
           <div key={nowIndex + 1} css={S.cardContainer}>
-            <Card cardInfo={nextCard} />
+            <Card cardImageSet={nextCard.imgSrc} />
           </div>
         )}
 
         <div key={nowIndex} css={S.cardContainer}>
-          <Card cardInfo={nowCard} onClick={setNextCard} />
+          <Card cardImageSet={nowCard.imgSrc} onClick={setNextCard} />
         </div>
         {beforeCard && (
           <div key={nowIndex - 1} css={S.rightOutCardContainer}>
-            <Card cardInfo={beforeCard} />
+            <Card cardImageSet={beforeCard.imgSrc} />
           </div>
         )}
       </SwipeXDetector>
@@ -58,12 +58,12 @@ export default function OpenedPack(props: OpenedPackProps) {
     >
       {nextCard && (
         <div key={nowIndex + 1} css={S.cardContainer}>
-          <Card cardInfo={nextCard} />
+          <Card cardImageSet={nextCard.imgSrc} />
         </div>
       )}
 
       <div key={nowIndex} css={S.rightInCardContainer}>
-        <Card cardInfo={nowCard} onClick={setNextCard} />
+        <Card cardImageSet={nowCard.imgSrc} onClick={setNextCard} />
       </div>
     </SwipeXDetector>
   );

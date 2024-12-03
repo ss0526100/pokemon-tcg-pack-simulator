@@ -5,13 +5,17 @@ import LANGUAGES from '@_constant/language';
 import i18n from '@_locales/i18n';
 
 interface Pack extends HTMLProps<HTMLImageElement> {
-  cardInfo: CardInfo;
+  cardImageSet: LanguageSet<string> | string;
 }
 
 export default function Card(props: Pack) {
-  const { cardInfo, ...restProps } = props;
+  const { cardImageSet, ...restProps } = props;
 
   const region =
     LANGUAGES.find(language => language === i18n.language) || 'default';
-  return <img src={cardInfo.imgSrc[region]} css={S.card} {...restProps} />;
+
+  const imgSrc =
+    typeof cardImageSet === 'string' ? cardImageSet : cardImageSet[region];
+
+  return <img src={imgSrc} css={S.card} {...restProps} />;
 }

@@ -73,7 +73,7 @@ export default function MovingCard(props: MovingCardProps) {
       onTouchEnd={handleMoveOut}
       {...restProps}
     >
-      <Card cardInfo={cardInfo} />
+      <Card cardImageSet={cardInfo.imgSrc} />
     </div>
   );
 }

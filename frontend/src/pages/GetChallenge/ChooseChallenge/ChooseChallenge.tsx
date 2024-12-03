@@ -33,7 +33,7 @@ function ChallengeBox(props: ChallengeBoxProps) {
     <div css={S.boxContainer} onClick={onClick}>
       <ItemDisplay>
         {pack.map(card => (
-          <Card cardInfo={card} key={card.id} />
+          <Card cardImageSet={card.imgSrc} key={card.id} />
         ))}
       </ItemDisplay>
     </div>

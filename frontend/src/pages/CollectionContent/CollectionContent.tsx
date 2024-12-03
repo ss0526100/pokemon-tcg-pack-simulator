@@ -226,7 +226,11 @@ export default function CollectionContent(props: CollectionContentProps) {
                     setIsCardDetailViewed(true);
                   }}
                 >
-                  <Card cardInfo={A1_CARD_ID_MAP.get(id) || MISSING_NO_CARD} />
+                  <Card
+                    cardImageSet={
+                      (A1_CARD_ID_MAP.get(id) || MISSING_NO_CARD).imgSrc
+                    }
+                  />
                   {cardIdCntMap.get(id) && (
                     <div css={S.cardCount}>{cardIdCntMap.get(id) || 0}</div>
                   )}
@@ -251,7 +255,11 @@ export default function CollectionContent(props: CollectionContentProps) {
       {isCardDetailViewed && (
         <div css={S.layout}>
           <div css={S.cardDetailCardContainer}>
-            <Card cardInfo={A1_CARD_ID_MAP.get(cardId) || MISSING_NO_CARD} />
+            <Card
+              cardImageSet={
+                (A1_CARD_ID_MAP.get(cardId) || MISSING_NO_CARD).imgSrc
+              }
+            />
           </div>
           <div css={S.bottomButtonContainer}>
             <Button
