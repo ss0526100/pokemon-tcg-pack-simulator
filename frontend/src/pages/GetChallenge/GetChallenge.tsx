@@ -1,4 +1,3 @@
-import { A1_CARD_ID_MAP, MISSING_NO_CARD } from '@_server/constants/cards/a1';
 import { useEffect, useRef, useState } from 'react';
 
 import { A1_CARD_POOL_ID_LIST } from '@_server/constants/packs/a1';
@@ -9,6 +8,7 @@ import ChooseChallenge from './ChooseChallenge/ChooseChallenge';
 import { GET_CHALLENGE_RARITY_PERCENTAGE_LIST_BY_INDEX } from '@_constant/service';
 import GameLayout from '@_layouts/GameLayout/GameLayout';
 import LockedLockSvg from '@_components/svgs/LockedLockSvg';
+import { MISSING_NO_CARD } from '@_server/constants/cards/a1';
 import MobileTopRightHamburger from '@_components/MobileTopRightHamburger/MobileTopRightHamburger';
 import OpenedLockSvg from '@_components/svgs/OpenedLockSvg';
 import PlayChallenge from './PlayChallenge/PlayChallenge';
@@ -17,6 +17,7 @@ import RefreshSvg from '@_components/svgs/RefreshSvg';
 import StatisticsInfo from '@_pages/PackSimulator/StatisticsInfo/StatisticsInfo';
 import ToolbarItem from '@_components/ToolbarItem/ToolbarItem';
 import fisherShuffle from '@_utils/fisherShuffle';
+import getCardById from '@_server/apis/getCardById';
 import { getCardInWhereA1Pack } from '@_utils/getCardInWhereA1Pack';
 import getRandomElement from '@_utils/getRandomElement';
 import getRandomStrByPercentFunc from '@_utils/getRandomStrByPercentFunc';
@@ -36,24 +37,23 @@ const getRandomPackRarity = () =>
 const getRandomPackType = () =>
   fisherShuffle(['charizard', 'pikachu', 'mewtwo'])[0] as PackType;
 
+// 추후 원하는 카드 확정 겟챌린지를 위한 targetId 인자
 const getRandomPack = (targetId?: string) => {
   const packType = targetId
     ? getCardInWhereA1Pack(targetId)[0] || getRandomPackType()
     : getRandomPackType();
   const cardPoolById = A1_CARD_POOL_ID_LIST[packType];
-  const map = A1_CARD_ID_MAP;
 
   const randomPackRarity = getRandomPackRarity();
 
   const randomPack = randomPackRarity.map((rarity, idx) => {
-    if (idx === 4 && targetId && map.get(targetId))
-      return map.get(targetId) || MISSING_NO_CARD;
+    if (idx === 4 && targetId && getCardById(targetId) !== MISSING_NO_CARD)
+      return getCardById(targetId);
 
     const randomCardIds = cardPoolById[idx][rarity];
-    const randomId = getRandomElement(randomCardIds);
+    const randomId = getRandomElement(randomCardIds) || '';
 
-    if (randomId === undefined) return MISSING_NO_CARD;
-    return map.get(randomId) || MISSING_NO_CARD;
+    return getCardById(randomId);
   });
   return fisherShuffle(randomPack);
 };

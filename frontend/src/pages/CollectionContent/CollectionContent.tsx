@@ -1,11 +1,9 @@
 import * as S from './CollectionContent.style';
 
 import {
-  A1_CARD_ID_MAP,
   A1_CROWN_CARD_COUNT,
   A1_RARITY_CARD_COUNT,
   A1_STAR_CARD_COUNT,
-  MISSING_NO_CARD,
 } from '@_server/constants/cards/a1';
 import SortingCircle, {
   SortOrder,
@@ -22,7 +20,7 @@ import Card from '@_components/Card/Card';
 import Dropdown from '@_components/Dropdown/Dropdown';
 import PokemonType from '@_components/PokemonType/CardType';
 import Rarity from '@_components/Rarity/Rarity';
-import getCard from '@_server/apis/getCard';
+import getCardById from '@_server/apis/getCardById';
 import useCardIdCntMap from '@_hooks/atoms/packs/useCardCollections';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -64,12 +62,12 @@ const filterCard = (
   order: SortOrder
 ) => {
   const typeFilteredList = idList.filter(id => {
-    const card = getCard(id);
+    const card = getCardById(id);
     return type === 'All' || card.type === type;
   });
 
   const finalFilteredCard = typeFilteredList.filter(id => {
-    const card = getCard(id);
+    const card = getCardById(id);
     return rarity === 'All' || card?.rarity === rarity;
   });
 
@@ -77,7 +75,7 @@ const filterCard = (
 
   if (standard === 'id') {
     return finalFilteredCard.sort(
-      (a, b) => nowFlag * getCard(a).id.localeCompare(getCard(b).id)
+      (a, b) => nowFlag * getCardById(a).id.localeCompare(getCardById(b).id)
     );
   }
 
@@ -85,14 +83,15 @@ const filterCard = (
     return finalFilteredCard.sort(
       (a, b) =>
         nowFlag *
-        (typeOrderRecord[getCard(a).type] - typeOrderRecord[getCard(b).type])
+        (typeOrderRecord[getCardById(a).type] -
+          typeOrderRecord[getCardById(b).type])
     );
   }
 
   return finalFilteredCard.sort(
     (a, b) =>
       nowFlag *
-      (rarityOrder[getCard(a).rarity] - rarityOrder[getCard(b).rarity])
+      (rarityOrder[getCardById(a).rarity] - rarityOrder[getCardById(b).rarity])
   );
 };
 
@@ -110,7 +109,7 @@ export default function CollectionContent(props: CollectionContentProps) {
   const [sortStandard, setSortStandard] = useState<SortStandard>('id');
   const [sortOrder, setSortOrder] = useState<SortOrder>('asc');
 
-  const [cardId, setCardId] = useState('');
+  const [detailCardId, setDetailCardId] = useState('');
 
   const nowIds = filterCard(
     [...cardIdCntMap.keys()].sort(),
@@ -222,15 +221,11 @@ export default function CollectionContent(props: CollectionContentProps) {
                   css={S.cardContainer}
                   key={id}
                   onClick={() => {
-                    setCardId(id);
+                    setDetailCardId(id);
                     setIsCardDetailViewed(true);
                   }}
                 >
-                  <Card
-                    cardImageSet={
-                      (A1_CARD_ID_MAP.get(id) || MISSING_NO_CARD).imgSrc
-                    }
-                  />
+                  <Card cardImageSet={getCardById(id).imgSrc} />
                   {cardIdCntMap.get(id) && (
                     <div css={S.cardCount}>{cardIdCntMap.get(id) || 0}</div>
                   )}
@@ -255,11 +250,7 @@ export default function CollectionContent(props: CollectionContentProps) {
       {isCardDetailViewed && (
         <div css={S.layout}>
           <div css={S.cardDetailCardContainer}>
-            <Card
-              cardImageSet={
-                (A1_CARD_ID_MAP.get(cardId) || MISSING_NO_CARD).imgSrc
-              }
-            />
+            <Card cardImageSet={getCardById(detailCardId).imgSrc} />
           </div>
           <div css={S.bottomButtonContainer}>
             <Button
