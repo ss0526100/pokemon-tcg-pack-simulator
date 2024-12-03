@@ -138,7 +138,7 @@ export default function PlayChallenge(props: PlayChallengeProps) {
               {idx === getIndex && <div css={S.cardTag}>GET!</div>}
               <FlippingCard
                 onClick={() => handleClick(idx)}
-                cardInfo={card}
+                imageSet={card.imgSrc}
                 flipped={!flippedIndex.includes(idx)}
                 controlled
               />
