@@ -2,19 +2,19 @@ import * as S from './FlippingCard.style';
 
 import { HTMLProps, useState } from 'react';
 
-import CARD_BACK from '../../assets/cards/CardBack.png';
-import Card from '../Card/Card';
+import CARD_BACK from '@_assets/cards/CardBack.png';
+import Card from '@_components/Card/Card';
 
 interface FlippingCard extends HTMLProps<HTMLDivElement> {
   flipped?: boolean;
   controlled?: boolean;
   onClick?: () => void;
-  cardInfo: CardInfo;
+  imageSet: LanguageSet<string>;
 }
 
 export default function FlippingCard(props: FlippingCard) {
   const {
-    cardInfo,
+    imageSet,
     flipped = false,
     controlled = true,
     onClick,
@@ -30,27 +30,8 @@ export default function FlippingCard(props: FlippingCard) {
   return (
     <div css={S.flip} onClick={handleFlip} {...restProps}>
       <div css={S.card(controlled ? flipped : isFlipped)}>
-        <Card css={S.front} cardInfo={cardInfo} />
-        <Card
-          css={S.back}
-          cardInfo={{
-            id: '',
-            cardName: 'back',
-            imgSrc: {
-              'ko-KR': CARD_BACK,
-              'en-US': CARD_BACK,
-              ko: CARD_BACK,
-              en: CARD_BACK,
-              ja: CARD_BACK,
-              'ja-JP': CARD_BACK,
-              default: CARD_BACK,
-            },
-            rarity: 's3',
-            expansion: 'A1',
-            category: 'normal',
-            type: 'nonPokemon',
-          }}
-        />
+        <Card css={S.front} cardImageSet={imageSet} />
+        <Card css={S.back} cardImageSet={CARD_BACK} />
       </div>
     </div>
   );

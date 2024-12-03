@@ -2,7 +2,7 @@ import * as S from './StartPage.style';
 
 import { useEffect, useState } from 'react';
 
-import useBGMUtils from '../../hooks/atoms/bgm/useBGMUtils';
+import useBGMUtils from '@_hooks/atoms/bgm/useBGMUtils';
 import { useTranslation } from 'react-i18next';
 
 export default function StartPage() {

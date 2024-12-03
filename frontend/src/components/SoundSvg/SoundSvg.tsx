@@ -1,7 +1,7 @@
 import { SVGProps } from 'react';
-import SoundOffSvg from '../svgs/SoundOffSvg';
-import SoundOnSvg from '../svgs/SoundOnSvg';
-import useBGMUtils from '../../hooks/atoms/bgm/useBGMUtils';
+import SoundOffSvg from '@_components/svgs/SoundOffSvg';
+import SoundOnSvg from '@_components/svgs/SoundOnSvg';
+import useBGMUtils from '@_hooks/atoms/bgm/useBGMUtils';
 
 interface BGMSvgProps extends SVGProps<SVGSVGElement> {
   fill?: string;

@@ -1,7 +1,7 @@
 import * as S from './Article.style';
 
-import Button from '../../components/Button/Button';
-import getMobileOperatingSystem from '../../utils/getMobilOperatingSystem';
+import Button from '@_components/Button/Button';
+import getMobileOperatingSystem from '@_utils/getMobilOperatingSystem';
 import { useTranslation } from 'react-i18next';
 
 const APP_STORE_ID = 6479970832;

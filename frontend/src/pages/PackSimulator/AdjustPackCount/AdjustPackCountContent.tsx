@@ -4,10 +4,10 @@ interface AdjustPackCountContentProps {
 
 import * as S from './AdjustPackCountContent.styles';
 
-import Button from '../../../components/Button/Button';
-import ControlledStepper from '../../../components/ControlledStepper/ControlledStepper';
+import Button from '@_components/Button/Button';
+import ControlledStepper from '@_components/ControlledStepper/ControlledStepper';
 import { css } from '@emotion/react';
-import usePackCount from '../../../hooks/atoms/packs/usePackCount';
+import usePackCount from '@_hooks/atoms/packs/usePackCount';
 import { useTranslation } from 'react-i18next';
 
 const packAdjustCounts = [10, 25, 37, 135];

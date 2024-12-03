@@ -1,7 +1,7 @@
-import BGMSvg from '../../components/SoundSvg/SoundSvg';
-import COLOR from '../../constant/colors';
-import ToolbarItem from '../../components/ToolbarItem/ToolbarItem';
-import useBGMUtils from '../../hooks/atoms/bgm/useBGMUtils';
+import BGMSvg from '@_components/SoundSvg/SoundSvg';
+import COLOR from '@_constant/colors';
+import ToolbarItem from '@_components/ToolbarItem/ToolbarItem';
+import useBGMUtils from '@_hooks/atoms/bgm/useBGMUtils';
 import { useTranslation } from 'react-i18next';
 
 export default function BGMOnOffToolbar() {

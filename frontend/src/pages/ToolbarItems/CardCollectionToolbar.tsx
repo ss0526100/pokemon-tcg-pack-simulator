@@ -1,7 +1,7 @@
-import COLOR from '../../constant/colors';
-import CollectionContent from '../CollectionContent/CollectionContent';
-import SixPacksSvg from '../../components/svgs/SixPacksSvg';
-import ToolbarItem from '../../components/ToolbarItem/ToolbarItem';
+import COLOR from '@_constant/colors';
+import CollectionContent from '@_pages/CollectionContent/CollectionContent';
+import SixPacksSvg from '@_components/svgs/SixPacksSvg';
+import ToolbarItem from '@_components/ToolbarItem/ToolbarItem';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 

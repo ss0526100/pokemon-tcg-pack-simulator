@@ -2,16 +2,16 @@ import * as S from './SortingCircle.style';
 
 import { Dispatch, ReactNode, SVGProps, SetStateAction, useState } from 'react';
 
-import Button from '../../../components/Button/Button';
-import COLOR from '../../../constant/colors';
-import ContentContour from '../../../components/ContentContour/ContentContour';
-import DownArrowSolidSvg from '../../../components/svgs/DownSolidArrow';
-import HashTagSvg from '../../../components/svgs/HashTagSvg';
-import Modal from '../../../components/Modal/Modal';
-import RaritySvg from '../../../components/svgs/RaritySvg';
-import UpArrowSolidSvg from '../../../components/svgs/UpSolidArrow';
-import WrongColorlessTypeSvg from '../../../components/svgs/WrongColorlessTypeSvg';
-import i18n from '../../../locales/i18n';
+import Button from '@_components/Button/Button';
+import COLOR from '@_constant/colors';
+import ContentContour from '@_components/ContentContour/ContentContour';
+import DownArrowSolidSvg from '@_components/svgs/DownSolidArrow';
+import HashTagSvg from '@_components/svgs/HashTagSvg';
+import Modal from '@_components/Modal/Modal';
+import RaritySvg from '@_components/svgs/RaritySvg';
+import UpArrowSolidSvg from '@_components/svgs/UpSolidArrow';
+import WrongColorlessTypeSvg from '@_components/svgs/WrongColorlessTypeSvg';
+import i18n from '@_locales/i18n';
 
 export type SortStandard = 'type' | 'rarity' | 'id';
 export type SortOrder = 'asc' | 'desc';

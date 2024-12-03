@@ -1,9 +1,9 @@
 import * as S from './ConfirmContent.styles';
 
-import BottomButtonContainer from '../../../../components/BottomButtonContainer/BottomButtonContainer';
-import Button from '../../../../components/Button/Button';
-import Card from '../../../../components/Card/Card';
-import ItemDisplay from '../../../../components/ItemDisplay/ItemDisplay';
+import BottomButtonContainer from '@_components/BottomButtonContainer/BottomButtonContainer';
+import Button from '@_components/Button/Button';
+import Card from '@_components/Card/Card';
+import ItemDisplay from '@_components/ItemDisplay/ItemDisplay';
 import { useTranslation } from 'react-i18next';
 
 interface ConfirmContentProps {
@@ -24,7 +24,7 @@ export default function ConfirmContent(props: ConfirmContentProps) {
         <div css={S.displayContainer}>
           <ItemDisplay>
             {pack.map(card => (
-              <Card cardInfo={card} key={card.id} />
+              <Card cardImageSet={card.imgSrc} key={card.id} />
             ))}
           </ItemDisplay>
         </div>

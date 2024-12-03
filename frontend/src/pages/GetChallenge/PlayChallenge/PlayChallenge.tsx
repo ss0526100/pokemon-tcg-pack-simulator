@@ -2,26 +2,26 @@ import * as S from './PlayChallenge.styles';
 
 import { useRef, useState } from 'react';
 
-import BGMSvg from '../../../components/SoundSvg/SoundSvg';
-import BottomButtonContainer from '../../../components/BottomButtonContainer/BottomButtonContainer';
-import Button from '../../../components/Button/Button';
-import COLOR from '../../../constant/colors';
-import CollectionContent from '../../CollectionContent/CollectionContent';
-import FlippingCard from '../../../components/FilppingCard/FlippingCard';
-import ItemDisplay from '../../../components/ItemDisplay/ItemDisplay';
-import MobileTopRightHamburger from '../../../components/MobileTopRightHamburger/MobileTopRightHamburger';
-import Modal from '../../../components/Modal/Modal';
-import PokeBallSvg from '../../../components/svgs/PokeBallSvg';
-import SixPacksSvg from '../../../components/svgs/SixPacksSvg';
-import StatisticContent from '../../PackSimulator/StatisticsInfo/StatisticContent/StatisticContent';
-import StatisticsSvg from '../../../components/svgs/StatisticsSvg';
+import BGMSvg from '@_components/SoundSvg/SoundSvg';
+import BottomButtonContainer from '@_components/BottomButtonContainer/BottomButtonContainer';
+import Button from '@_components/Button/Button';
+import COLOR from '@_constant/colors';
+import CollectionContent from '@_pages/CollectionContent/CollectionContent';
+import FlippingCard from '@_components/FilppingCard/FlippingCard';
+import ItemDisplay from '@_components/ItemDisplay/ItemDisplay';
+import MobileTopRightHamburger from '@_components/MobileTopRightHamburger/MobileTopRightHamburger';
+import Modal from '@_components/Modal/Modal';
+import PokeBallSvg from '@_components/svgs/PokeBallSvg';
+import SixPacksSvg from '@_components/svgs/SixPacksSvg';
+import StatisticContent from '@_pages/PackSimulator/StatisticsInfo/StatisticContent/StatisticContent';
+import StatisticsSvg from '@_components/svgs/StatisticsSvg';
 import { css } from '@emotion/react';
-import fisherShuffle from '../../../utils/fisherShuffle';
-import useBGM from '../../../hooks/atoms/bgm/useBGM';
-import useBGMUtils from '../../../hooks/atoms/bgm/useBGMUtils';
-import useGetChallengeCnt from '../../../hooks/atoms/packs/useGetChallengeCnt';
+import fisherShuffle from '@_utils/fisherShuffle';
+import useBGM from '@_hooks/atoms/bgm/useBGM';
+import useBGMUtils from '@_hooks/atoms/bgm/useBGMUtils';
+import useGetChallengeCnt from '@_hooks/atoms/packs/useGetChallengeCnt';
 import { useNavigate } from 'react-router-dom';
-import usePackUtil from '../../../hooks/atoms/packs/usePackUtil';
+import usePackUtil from '@_hooks/atoms/packs/usePackUtil';
 import { useTranslation } from 'react-i18next';
 
 interface PlayChallengeProps {
@@ -138,7 +138,7 @@ export default function PlayChallenge(props: PlayChallengeProps) {
               {idx === getIndex && <div css={S.cardTag}>GET!</div>}
               <FlippingCard
                 onClick={() => handleClick(idx)}
-                cardInfo={card}
+                imageSet={card.imgSrc}
                 flipped={!flippedIndex.includes(idx)}
                 controlled
               />

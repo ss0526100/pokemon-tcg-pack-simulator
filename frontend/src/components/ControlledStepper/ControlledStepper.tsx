@@ -2,9 +2,9 @@ import * as S from './ControlledStepper.styles';
 
 import { ChangeEvent, Dispatch, useCallback, useEffect } from 'react';
 
-import COLOR from '../../constant/colors';
-import MinusSvg from '../svgs/MinusSvg';
-import PlusSvg from '../svgs/PlusSvg';
+import COLOR from '@_constant/colors';
+import MinusSvg from '@_components/svgs/MinusSvg';
+import PlusSvg from '@_components/svgs/PlusSvg';
 
 interface StepperProps {
   min?: number;

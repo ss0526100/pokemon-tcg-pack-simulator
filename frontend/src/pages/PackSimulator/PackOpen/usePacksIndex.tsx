@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 
-import usePackUtil from '../../../hooks/atoms/packs/usePackUtil';
+import usePackUtil from '@_hooks/atoms/packs/usePackUtil';
 
 export interface PackIndexInfo {
   packIndex: number;
